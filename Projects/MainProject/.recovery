@@ -6,7 +6,7 @@
         <Source name="UART.v" type="Verilog" type_short="Verilog">
             <Options top_module="UART"/>
         </Source>
-        <Source name="UART_tb.v" type="Verilog" type_short="Verilog">
+        <Source name="UART_tb.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="MainProject.lpf" type="Logic Preference" type_short="LPF">

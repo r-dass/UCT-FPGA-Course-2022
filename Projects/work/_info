@@ -63,3 +63,57 @@ R6
 R7
 R8
 n@counter_@t@b
+vUART
+R1
+!s110 1651149000
+!i10b 1
+!s100 DH`]]8B^KflH^Ml<[X7Ak3
+R3
+IB0:]EcPiTUhOG=NoAdL^]1
+S1
+R0
+w1651148996
+8C:/Users/reeve/git/EEE5117,8Z/Projects/MainProject/UART.v
+FC:/Users/reeve/git/EEE5117,8Z/Projects/MainProject/UART.v
+!i122 40
+L0 19 61
+R4
+R5
+r1
+!s85 0
+31
+!s108 1651149000.000000
+!s107 C:/Users/reeve/git/EEE5117,8Z/Projects/MainProject/UART.v|
+!s90 -F=C:/Users/reeve/git/EEE5117,8Z/Projects/vlog.opt|-F=|-reportprogress|300|-work|work|-O0|C:/Users/reeve/git/EEE5117,8Z/Projects/MainProject/UART.v|
+!s101 -O0
+!i113 1
+R7
+R8
+n@u@a@r@t
+vUART_TB
+R1
+!s110 1651140686
+!i10b 1
+!s100 bLi:mVOJd275WABTKX0i82
+R3
+IX9Ch9Z3P0_zHa?XUmeY6d1
+S1
+R0
+w1651140264
+8C:/Users/reeve/git/EEE5117,8Z/Projects/MainProject/UART_tb.v
+FC:/Users/reeve/git/EEE5117,8Z/Projects/MainProject/UART_tb.v
+!i122 26
+L0 2 110
+R4
+R5
+r1
+!s85 0
+31
+!s108 1651140686.000000
+!s107 C:/Users/reeve/git/EEE5117,8Z/Projects/MainProject/UART_tb.v|
+!s90 -F=C:/Users/reeve/git/EEE5117,8Z/Projects/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/git/EEE5117,8Z/Projects/MainProject/UART_tb.v|
+!s101 -O0
+!i113 1
+R7
+R8
+n@u@a@r@t_@t@b
