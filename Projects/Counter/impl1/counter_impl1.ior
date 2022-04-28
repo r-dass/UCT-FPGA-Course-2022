@@ -1,0 +1,49 @@
+Loading design for application iotiming from file counter_impl1.ncd.
+Design name: Counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFXP2-5E
+Package:     TQFP144
+Performance: 7
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 11.5.
+Loading design for application iotiming from file counter_impl1.ncd.
+Design name: Counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFXP2-5E
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 11.5.
+// Design: Counter
+// Package: TQFP144
+// ncd File: counter_impl1.ncd
+// Version: Diamond (64-bit) 3.12.0.240.2
+// Written on Wed Apr 27 15:34:22 2022
+// M: Minimum Performance Grade
+// iotiming Counter_impl1.ncd Counter_impl1.prf -gui
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 7, 6):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port     Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+opLED[0] ipClk R     4.634         6        1.447          M
+opLED[1] ipClk R     5.119         6        1.604          M
+opLED[2] ipClk R     5.119         6        1.604          M
+opLED[3] ipClk R     4.861         6        1.528          M
+opLED[4] ipClk R     4.892         6        1.524          M
+opLED[5] ipClk R     5.119         6        1.604          M
+opLED[6] ipClk R     4.634         6        1.447          M
+opLED[7] ipClk R     5.119         6        1.604          M

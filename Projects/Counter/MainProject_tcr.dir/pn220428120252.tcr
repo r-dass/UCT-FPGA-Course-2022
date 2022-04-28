@@ -1,0 +1,8 @@
+#Start recording tcl command: 4/27/2022 17:07:41
+#Project Location: C:/Users/reeve/git/EEE5117,8Z/Projects/Counter; Project name: MainProject
+prj_project new -name "MainProject" -impl "impl1" -dev LFXP2-5E-6TN144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v"
+prj_project save
+prj_project close
+#Stop recording: 4/28/2022 12:02:52

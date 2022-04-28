@@ -1,0 +1,2 @@
+@E: CG906 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":8:9:8:19|Reference to unknown variable Clk.
+

@@ -1,0 +1,2 @@
+@W: CG1337 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":10:7:10:9|Net LED is not declared.
+

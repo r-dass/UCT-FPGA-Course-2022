@@ -1,0 +1,160 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: RD-LAPTOP
+
+Implementation : impl1
+
+# Written on Wed Apr 27 15:33:48 2022
+
+##### DESIGN INFO #######################################################
+
+Top View:                "Counter"
+Constraint File(s):      "C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 5 issues in 3 out of 6 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting     Ending     |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------
+ipClk        ipClk      |     20.000           |     No paths         |     No paths         |     No paths                         
+===================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:opLED[0]
+p:opLED[1]
+p:opLED[2]
+p:opLED[3]
+p:opLED[4]
+p:opLED[5]
+p:opLED[6]
+p:opLED[7]
+
+
+Inapplicable constraints
+************************
+
+set_false_path -from [get_registers *] -to [get_ports bp*]
+	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":9:0:9:0|Timing constraint (from [get_registers *] to [get_ports bp*]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design
+	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":9:0:9:0|collection "[get_ports bp*]" is empty
+set_false_path -to [get_registers *] -from [get_ports bp*]
+	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":8:0:8:0|Timing constraint (from [get_ports bp*] to [get_registers *]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":8:0:8:0|collection "[get_ports bp*]" is empty
+
+Applicable constraints with issues
+**********************************
+
+set_false_path -to [get_registers *] -from [get_ports ip*]
+	@W::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":6:0:6:0|Timing constraint (from [get_ports ip*] to [get_registers *]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+
+Constraints with matching wildcard expressions
+**********************************************
+
+set_false_path -from [get_registers *] -to [get_ports op*]
+	@N:MF891:"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":7:0:7:0|expression "[get_registers *]" applies to objects:
+		Count[0]
+		Count[1]
+		Count[2]
+		Count[3]
+		Count[4]
+		Count[5]
+		Count[6]
+		Count[7]
+		Count[8]
+		Count[9]
+		Count[10]
+		Count[11]
+		Count[12]
+		Count[13]
+		Count[14]
+		Count[15]
+		Count[16]
+		Count[17]
+		Count[18]
+		Count[19]
+		Count[20]
+		Count[21]
+		Count[22]
+		Count[23]
+		Count[24]
+		Count[25]
+		Count[26]
+		Count[27]
+		Count[28]
+		Count[29]
+		Count[30]
+	@N:MF891:"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":7:0:7:0|expression "[get_ports op*]" applies to objects:
+		opLED[0]
+		opLED[1]
+		opLED[2]
+		opLED[3]
+		opLED[4]
+		opLED[5]
+		opLED[6]
+		opLED[7]
+set_false_path -to [get_registers *] -from [get_ports ip*]
+	@N:MF891:"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":6:0:6:0|expression "[get_registers *]" applies to objects:
+		Count[0]
+		Count[1]
+		Count[2]
+		Count[3]
+		Count[4]
+		Count[5]
+		Count[6]
+		Count[7]
+		Count[8]
+		Count[9]
+		Count[10]
+		Count[11]
+		Count[12]
+		Count[13]
+		Count[14]
+		Count[15]
+		Count[16]
+		Count[17]
+		Count[18]
+		Count[19]
+		Count[20]
+		Count[21]
+		Count[22]
+		Count[23]
+		Count[24]
+		Count[25]
+		Count[26]
+		Count[27]
+		Count[28]
+		Count[29]
+		Count[30]
+	@N:MF891:"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":6:0:6:0|expression "[get_ports ip*]" applies to objects:
+		ipClk
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

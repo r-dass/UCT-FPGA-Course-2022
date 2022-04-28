@@ -1,0 +1,9 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":1:7:1:13|Synthesizing module Counter in library work.
+@N|Running in 64-bit mode
+@N: NF107 :"c:\users\reeve\git\eee5117,8z\projects\counter\counter.v":1:7:1:13|Selected library: work cell: Counter view verilog as top level
+@N: NF107 :"c:\users\reeve\git\eee5117,8z\projects\counter\counter.v":1:7:1:13|Selected library: work cell: Counter view verilog as top level
+

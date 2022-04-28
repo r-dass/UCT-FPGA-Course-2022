@@ -1,0 +1,65 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.10, Oct 14 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/reeve/git/EEE5117,8Z/Projects
+vCounter
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1651070995
+!i10b 1
+!s100 nV6KZVU5WcoM:15_NY5XP2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IfkN28>7fk:J7[0;hX:g8:2
+S1
+R0
+w1651070334
+8Counter/Counter.v
+FCounter/Counter.v
+!i122 19
+L0 1 16
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OT;L;2020.3;71
+r1
+!s85 0
+31
+Z6 !s108 1651070995.000000
+!s107 Counter/Counter.v|
+!s90 -F=C:/Users/reeve/git/EEE5117,8Z/Projects/vlog.opt|-F=|-reportprogress|300|-work|work|Counter/Counter.v|
+!s101 -O0
+!i113 1
+Z7 o-work work -O0
+Z8 tSvlog 1 CvgOpt 0
+n@counter
+vCounter_TB
+R1
+R2
+!i10b 1
+!s100 KASQJ5kW6^izkccYE0O^U0
+R3
+I_<?BzY3T2YKVM0nTUeg3>1
+S1
+R0
+w1651067146
+8Counter/Counter_TB.v
+FCounter/Counter_TB.v
+!i122 20
+L0 3 22
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 Counter/Counter_TB.v|
+!s90 -F=C:/Users/reeve/git/EEE5117,8Z/Projects/vlog.opt|-F=|-reportprogress|300|-work|work|Counter/Counter_TB.v|
+!s101 -O0
+!i113 1
+R7
+R8
+n@counter_@t@b
