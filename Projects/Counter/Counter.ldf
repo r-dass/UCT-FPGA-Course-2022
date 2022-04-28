@@ -2,12 +2,12 @@
 <BaliProject version="3.2" title="Counter" device="LFXP2-5E-6TN144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options VerilogStandard="System Verilog" def_top="Counter_TB"/>
+        <Options VerilogStandard="System Verilog" def_top="Counter"/>
         <Source name="Counter.v" type="Verilog" type_short="Verilog">
-            <Options/>
+            <Options top_module="Counter"/>
         </Source>
-        <Source name="Counter_TB.v" type="Verilog" type_short="Verilog">
-            <Options top_module="Counter_TB"/>
+        <Source name="Counter_TB.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
         </Source>
         <Source name="Counter.fdc" type="Synplify Design Constraints File" type_short="SDC">
             <Options/>

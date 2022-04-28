@@ -4,146 +4,10 @@
         <Message>
             <ID>1100679</ID>
             <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(3): Semantic error in &quot;LOCATE COMP &quot;Clk&quot; SITE &quot;21&quot; ;&quot;: </Dynamic>
-            <Dynamic>Clk</Dynamic>
+            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(21): Semantic error in &quot;LOCATE COMP &quot;ipReset&quot; SITE &quot;30&quot; ;&quot;: </Dynamic>
+            <Dynamic>ipReset</Dynamic>
             <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>3</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(4): Semantic error in &quot;LOCATE COMP &quot;LED[0]&quot; SITE &quot;46&quot; ;&quot;: </Dynamic>
-            <Dynamic>LED[0]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>4</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(5): Semantic error in &quot;LOCATE COMP &quot;LED[1]&quot; SITE &quot;45&quot; ;&quot;: </Dynamic>
-            <Dynamic>LED[1]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>5</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(6): Semantic error in &quot;LOCATE COMP &quot;LED[2]&quot; SITE &quot;44&quot; ;&quot;: </Dynamic>
-            <Dynamic>LED[2]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>6</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(7): Semantic error in &quot;LOCATE COMP &quot;LED[3]&quot; SITE &quot;43&quot; ;&quot;: </Dynamic>
-            <Dynamic>LED[3]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>7</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(8): Semantic error in &quot;LOCATE COMP &quot;LED[4]&quot; SITE &quot;40&quot; ;&quot;: </Dynamic>
-            <Dynamic>LED[4]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>8</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(9): Semantic error in &quot;LOCATE COMP &quot;LED[5]&quot; SITE &quot;39&quot; ;&quot;: </Dynamic>
-            <Dynamic>LED[5]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>9</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(10): Semantic error in &quot;LOCATE COMP &quot;LED[6]&quot; SITE &quot;38&quot; ;&quot;: </Dynamic>
-            <Dynamic>LED[6]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>10</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(11): Semantic error in &quot;LOCATE COMP &quot;LED[7]&quot; SITE &quot;37&quot; ;&quot;: </Dynamic>
-            <Dynamic>LED[7]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>11</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(12): Semantic error in &quot;IOBUF PORT &quot;Clk&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>Clk</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>12</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(13): Semantic error in &quot;IOBUF PORT &quot;LED[0]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>LED[0]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>13</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(14): Semantic error in &quot;IOBUF PORT &quot;LED[1]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>LED[1]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>14</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(15): Semantic error in &quot;IOBUF PORT &quot;LED[2]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>LED[2]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>15</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(16): Semantic error in &quot;IOBUF PORT &quot;LED[3]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>LED[3]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>16</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(17): Semantic error in &quot;IOBUF PORT &quot;LED[4]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>LED[4]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>17</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(18): Semantic error in &quot;IOBUF PORT &quot;LED[5]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>LED[5]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>18</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(19): Semantic error in &quot;IOBUF PORT &quot;LED[6]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>LED[6]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>19</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(20): Semantic error in &quot;IOBUF PORT &quot;LED[7]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>LED[7]</Dynamic>
-            <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf</Navigation>
-            <Navigation>20</Navigation>
+            <Navigation>21</Navigation>
         </Message>
     </Task>
     <Task name="Synplify_Synthesis">
@@ -152,47 +16,30 @@
             <Severity>Info</Severity>
         </Message>
         <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\reeve\git\eee5117,8z\projects\counter\counter.v&quot;:9:0:9:5|Found inferred clock Counter|ipClk which controls 31 sequential elements including Count[30:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\reeve\git\eee5117,8z\projects\counter\counter.v</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock Counter|ipClk which controls 31 sequential elements including Count[30:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MF511 |Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Dynamic>
-            <Navigation>MF511</Navigation>
-            <Navigation>Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Navigation>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
         </Message>
         <Message>
-            <ID>2019991</ID>
+            <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT447 :&quot;c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc&quot;:6:0:6:0|Timing constraint (from [get_ports ip*] to [get_registers *]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design</Dynamic>
-            <Navigation>MT447</Navigation>
-            <Navigation>c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc</Navigation>
-            <Navigation>6</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>6</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Timing constraint (from [get_ports ip*] to [get_registers *]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design </Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT447 :&quot;c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc&quot;:8:0:8:0|Timing constraint (from [get_ports bp*] to [get_registers *]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design</Dynamic>
-            <Navigation>MT447</Navigation>
-            <Navigation>c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Timing constraint (from [get_ports bp*] to [get_registers *]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design </Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT447 :&quot;c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc&quot;:9:0:9:0|Timing constraint (from [get_registers *] to [get_ports bp*]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design</Dynamic>
-            <Navigation>MT447</Navigation>
-            <Navigation>c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Timing constraint (from [get_registers *] to [get_ports bp*]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design </Navigation>
+            <Dynamic>MT420 |Found inferred clock Counter|ipClk with period 5.00ns. Please declare a user-defined clock on port ipClk.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock Counter|ipClk with period 5.00ns. Please declare a user-defined clock on port ipClk.</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

@@ -1,1 +1,1 @@
-@W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_cck.rpt" .
+@W: MT529 :"c:\users\reeve\git\eee5117,8z\projects\counter\counter.v":9:0:9:5|Found inferred clock Counter|ipClk which controls 31 sequential elements including Count[30:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

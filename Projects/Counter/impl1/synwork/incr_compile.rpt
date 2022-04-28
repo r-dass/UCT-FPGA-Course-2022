@@ -16,23 +16,23 @@ Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-0        C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v (2022-04-27 15:32:58, 2022-04-27 15:33:44)
+0        C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v (2022-04-28 16:30:11, 2022-04-28 16:32:47)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 1
 MID:  lib.cell.view
 0        work.Counter.verilog may have changed because the following files changed:
-                        C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v (2022-04-27 15:32:58, 2022-04-27 15:33:44) <-- (module definition)
+                        C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v (2022-04-28 16:30:11, 2022-04-28 16:32:47) <-- (module definition)
 
 *******************************************************************
 Unmodified files: 6
 FID:  path (timestamp)
-1        C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v (2020-10-29 10:20:54)
-2        C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v (2020-10-29 10:20:54)
-3        C:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v (2020-10-29 10:23:10)
-4        C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v (2020-10-29 10:23:10)
-5        C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh (2020-10-29 10:23:10)
-6        C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v (2020-10-29 10:23:10)
+2        C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v (2020-10-29 10:20:54)
+3        C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v (2020-10-29 10:20:54)
+4        C:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v (2020-10-29 10:23:10)
+5        C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v (2020-10-29 10:23:10)
+6        C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh (2020-10-29 10:23:10)
+7        C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v (2020-10-29 10:23:10)
 
 *******************************************************************
 Unchanged modules: 0

@@ -1,2 +1,3 @@
-@E: CG906 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":8:9:8:19|Reference to unknown variable Clk.
+@E: CG285 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":11:1:11:4|Expecting statement
+@E: CS187 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":16:0:16:8|Expecting endmodule
 

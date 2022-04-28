@@ -60,7 +60,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 27 15:33:46 2022
+# Thu Apr 28 16:32:51 2022
 
 ###########################################################]
 ###########################################################[
@@ -81,16 +81,13 @@ Implementation : impl1
 Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
 @N|Running in 64-bit mode
-File C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synwork\layer0.srs changed - recompiling
-@N: NF107 :"c:\users\reeve\git\eee5117,8z\projects\counter\counter.v":1:7:1:13|Selected library: work cell: Counter view verilog as top level
-@N: NF107 :"c:\users\reeve\git\eee5117,8z\projects\counter\counter.v":1:7:1:13|Selected library: work cell: Counter view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 90MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 27 15:33:46 2022
+# Thu Apr 28 16:32:51 2022
 
 ###########################################################]
 
@@ -105,6 +102,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 27 15:33:46 2022
+# Thu Apr 28 16:32:51 2022
 
 ###########################################################]

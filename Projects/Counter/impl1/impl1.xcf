@@ -21,8 +21,8 @@
 			</Bypass>
 			<File>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/Counter_impl1.jed</File>
 			<MaskFile>C:/lscc/diamond/3.12/data/vmdata/database\xpga\xp2\lfxp2-5.msk</MaskFile>
-			<FileTime>04/27/22 15:34:27</FileTime>
-			<JedecChecksum>0x567D</JedecChecksum>
+			<FileTime>04/28/22 16:33:22</FileTime>
+			<JedecChecksum>0x57F5</JedecChecksum>
 			<Operation>SRAM Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

@@ -49,6 +49,8 @@ set_option -seqshift_no_replicate 0
 set_option -include_path {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter}
 add_file -verilog -vlog_std sysv {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v}
 
+#-- top module name
+set_option -top_module Counter
 
 #-- set result format/file last
 project -result_file {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/Counter_impl1.edi}
@@ -60,4 +62,4 @@ project -log_file {Counter_impl1.srf}
 
 
 #-- run Synplify with 'arrange HDL file'
-project -run
+project -run -clean
