@@ -31,14 +31,16 @@ module UART(
 );
 //------------------------------------------------------------------------------
 
-reg[7:0] Data;
-reg[3:0] ClkCount;
-wire ClkBaud = (ClkCount == 9); //Divide the Clock 9 Times
+reg[9:0] ClkCount = 0; 
+reg[3:0] BitsSent = 0; 
+reg[3:0] BitRecevied = 0; 
+
+wire ClkBaud = (ClkCount == 434); //Divide the Clock 9 Times
 
 // TODO: Put the transmitter here
 always @(posedge(ipClk)) begin
 	if(ClkBaud) begin
-		ClkCount <= 4'd1;
+		ClkCount <= 9'd1;
 	end
 	else begin 
 		ClkCount <= ClkCount + 1'b1;
@@ -46,10 +48,26 @@ always @(posedge(ipClk)) begin
 	
 	if (!ipReset) begin
 		if (ClkBaud) begin //Main Code Here
-
+			if (ipTxSend || (BitsSent != 1'd0))  begin 
+				BitsSent <= BitsSent + 1'b1; 
+				 
+				if (BitsSent == 0) opTx <= 0; //Start Bit 
+				else if (BitsSent == 9) opTx <= 1; //Stop Bit 
+				else opTx <= ipTxData[BitsSent-1]; 
+				 
+				if (BitsSent == 10) begin 
+					opTxBusy <= 1'b0; 
+					BitsSent <= 16'b0; 
+					opTx <= 1; //Idle High 
+				end else begin 
+					opTxBusy <= 1'b1; 
+				end 
+			end
 		end
 	end else begin //Reset Code Here
-		
+		opTxBusy <= 0; 
+		opRxValid <= 0; 
+		opTx <= 1;
 	end
 end
 //------------------------------------------------------------------------------
