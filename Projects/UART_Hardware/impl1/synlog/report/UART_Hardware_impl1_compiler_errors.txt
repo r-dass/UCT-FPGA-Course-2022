@@ -1,2 +1,0 @@
-@E: CS219 :"C:\Users\reeve\git\EEE5117,8Z\Projects\UART_Hardware\UART_Transceive.v":1:0:1:2|Expecting one of the keywords module, primitive or macromodule
-
