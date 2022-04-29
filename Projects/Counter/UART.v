@@ -33,14 +33,15 @@ module UART(
 
 typedef enum{ // SystemVerilog only
 Wait,
-Start,
-Send,
-Stop
+Send
 } tState;
-tState txStates;
+tState txState;
+tState rxState;
 
 
 reg[9:0] ClkCount = 0; 
+reg[7:0] txData = 0;
+reg[7:0] rxData = 0;
 reg[3:0] BitsSent = 0; 
 reg[3:0] BitsReceived = 0; 
 wire ClkBaud = (ClkCount == 433); //Divide the Clock to 115200
@@ -59,43 +60,66 @@ always @(posedge(ipClk)) begin
 	
 	if (!ipReset) begin
 		if (ClkBaud) begin //Main Code Here
-
-			
-			
-			
-			if (ipTxSend || (BitsSent != 1'd0))  begin 
-				BitsSent <= BitsSent + 1'b1; 
-				 
-				if (BitsSent == 0) opTx <= 0; //Start Bit 
-				else if (BitsSent == 9) opTx <= 1; //Stop Bit 
-				else opTx <= ipTxData >> (BitsSent-1); 
-				 
-				if (BitsSent == 12) begin 
-
-				end else begin 
-					opTxBusy <= 1'b1; 
-				end 
-			end
-			
-			if (BitsReceived == 0)begin
-				if (Rx == 0) begin 
-					opRxValid <= 0;
-					BitsReceived <= BitsReceived + 1;
-				end else begin
-					opRxValid <= 1;
+			case(txState)
+				Wait: begin 
+					if (~ipTxSend) begin
+						opTxBusy <= 0;  
+						opTx <= 1; //Idle High 
+					end else begin
+						txData <= ipTxData;
+						opTxBusy <= 1;  
+						opTx <= 0; 
+						txState <= Send;
+					end
 				end
-			end else if (BitsReceived == 9) begin
-				opRxValid <= 1;
-				BitsReceived <= 0;
-			end else begin
-				opRxData <= {Rx, opRxData[7:1]};
-				BitsReceived <= BitsReceived + 1;
-			end
+				Send: begin
+					if (BitsSent != 8) begin
+						txData <= txData >> 1;
+						opTx <= txData;
+						BitsSent <= BitsSent + 1;
+					end else begin 
+						opTx <= 1;
+						BitsSent <= 16'b0;
+						txState <= Wait;
+					end
+				end
+				default:;
+			endcase
+		
+			case (rxState)
+				Wait: begin
+					if (~ipRx) begin
+						opRxValid <= 1;
+					end else begin
+						opRxValid <=0;
+						rxState <= Send;
+					end
+				end
+				Send: begin
+					if (BitsReceived != 8) begin
+						rxData <= {Rx, rxData[7:1]};
+						BitsReceived <= BitsReceived + 1;
+					end else begin
+						if (Rx == 1) begin
+							opRxData <= rxData;
+							rxState <= Wait;
+						end
+					end				
+				end
+				default:;
+			endcase
 		end
 	end else begin //Reset Code Here
 		opTxBusy <= 0; 
 		opRxValid <= 1; 
 		opTx <= 1;
+		ClkCount <= 0; 
+		BitsSent <= 0; 
+		BitsReceived <= 0; 
+		txState <= Wait;
+		rxState <= Wait;
+		rxData <= 0;
+		txData <= 0;
 	end
 end
 //------------------------------------------------------------------------------

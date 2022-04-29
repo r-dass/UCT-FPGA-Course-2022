@@ -1,0 +1,16 @@
+
+fsm_encoding {1332543251} sequential
+
+fsm_state_encoding {1332543251} Wait {0}
+
+fsm_state_encoding {1332543251} Send {1}
+
+fsm_registers {1332543251} {txState[0]} 
+
+fsm_encoding {1332543252} sequential
+
+fsm_state_encoding {1332543252} Wait {0}
+
+fsm_state_encoding {1332543252} Send {1}
+
+fsm_registers {1332543252} {rxState[0]} 

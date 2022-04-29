@@ -20,7 +20,7 @@ Performance Hardware Data Status:   Final          Version 11.5.
 // Package: TQFP144
 // ncd File: counter_impl1.ncd
 // Version: Diamond (64-bit) 3.12.0.240.2
-// Written on Fri Apr 29 14:31:07 2022
+// Written on Fri Apr 29 17:01:55 2022
 // M: Minimum Performance Grade
 // iotiming Counter_impl1.ncd Counter_impl1.prf -gui -msgset C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/promote.xml
 
@@ -32,22 +32,21 @@ Worst Case Results across Performance Grades (M, 7, 6):
 
 Port      Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 ----------------------------------------------------------------------
-ipReset   ipClk R     4.376      6      -0.005     M
-ipUART_Rx ipClk R     0.149      M       1.747     6
+ipReset   ipClk R     5.646      6       0.043     M
+ipUART_Rx ipClk R     2.775      6       1.747     6
 
 
 // Clock to Output Delay
 
 Port      Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-opLED[0]  ipClk R     4.202         6        1.592          M
-opLED[1]  ipClk R     4.429         6        1.672          M
-opLED[2]  ipClk R     3.944         6        1.515          M
-opLED[3]  ipClk R     4.171         6        1.596          M
+opLED[0]  ipClk R     4.715         6        1.744          M
+opLED[1]  ipClk R     4.534         6        1.664          M
+opLED[2]  ipClk R     4.230         6        1.586          M
+opLED[3]  ipClk R     4.460         6        1.668          M
 opLED[4]  ipClk R     4.230         6        1.586          M
-opLED[5]  ipClk R     4.715         6        1.744          M
-opLED[6]  ipClk R     4.715         6        1.744          M
+opLED[5]  ipClk R     4.429         6        1.672          M
+opLED[6]  ipClk R     4.488         6        1.663          M
 opLED[7]  ipClk R     4.230         6        1.586          M
 opUART_Tx ipClk R     4.247         6        1.365          M
 WARNING: you must also run trce with hold speed: 6
-WARNING: you must also run trce with setup speed: M

@@ -105,7 +105,7 @@
         <Message>
             <ID>2049992</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v(19,1-96,10) (VERI-9000) elaborating module 'UART_uniq_1'</Dynamic>
+            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v(19,1-131,10) (VERI-9000) elaborating module 'UART_uniq_1'</Dynamic>
             <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v</Navigation>
             <Navigation>19</Navigation>
         </Message>
@@ -179,6 +179,13 @@
             <Dynamic>MF499 |Found issues with constraints. Check report file C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_scck.rpt.</Dynamic>
             <Navigation>MF499</Navigation>
             <Navigation>Found issues with constraints. Check report file C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_scck.rpt.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

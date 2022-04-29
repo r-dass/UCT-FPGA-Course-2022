@@ -65,24 +65,24 @@ R8
 n@counter_@t@b
 vUART
 R1
-!s110 1651238509
+!s110 1651244453
 !i10b 1
-!s100 J>J^2^>nb?d0[@@[?9^l^0
+!s100 dOJU9RL>LUiAMikJc0<@d1
 R3
-I5Y`MO0Tn4Ga@ZUNRiZ_QO0
+I26HGM8C9ba8fVRZ_UkF;;0
 S1
 R0
-w1651238490
+w1651244446
 8C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v
 FC:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v
-!i122 89
-L0 19 78
+!i122 107
+L0 19 113
 R4
 R5
 r1
 !s85 0
 31
-!s108 1651238509.000000
+!s108 1651244453.000000
 !s107 C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v|
 !s90 -F=C:/Users/reeve/git/EEE5117,8Z/Projects/vlog.opt|-F=|-reportprogress|300|-work|work|-O0|C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v|
 !s101 -O0

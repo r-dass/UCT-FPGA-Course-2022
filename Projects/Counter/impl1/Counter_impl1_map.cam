@@ -1,18 +1,18 @@
 [ START MERGED ]
-ipReset_c_i ipReset_c
-Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tu_0/reset_n_i Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n
-Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/reset_n_i Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n
-Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/reset_n_i Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n
-Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/reset_n_i Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n
-Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jtck_i jtaghub16_jtck
-Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/jshift_d2.CN jtaghub16_jtck
-Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/jrstn_i jtaghub16_jrstn
 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/reset_n_i Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n
 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/r_w.CN jtaghub16_jtck
 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jrstn_i jtaghub16_jrstn
+Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jtck_i jtaghub16_jtck
+Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jrstn_i jtaghub16_jrstn
+Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/jshift_d2.CN jtaghub16_jtck
+Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/jrstn_i jtaghub16_jrstn
+Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tu_0/reset_n_i Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n
+Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/reset_n_i Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n
+Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/reset_n_i Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n
+Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/reset_n_i Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n
 mg5ahub/jtck_i_0 jtaghub16_jtck
 mg5ahub/jrstn_i jtaghub16_jrstn
-Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jrstn_i jtaghub16_jrstn
+ipReset_c_i ipReset_c
 [ END MERGED ]
 [ START CLIPPED ]
 mg5ahub/ip_enable_13
@@ -153,18 +153,17 @@ Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr
 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1ac7f_0_0_0/DOA1
 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1ac7f_0_0_0/DOA0
 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/rd_dout_tu[3]
-UART_Inst/un2_ClkCount_cry_0_0_S1
-UART_Inst/un2_ClkCount_cry_0_0_S0
+UART_Inst/ClkCount_4_cry_0_0_S0
 UART_Inst/N_1
-UART_Inst/un2_ClkCount_s_9_0_S1
-UART_Inst/un2_ClkCount_s_9_0_COUT
+UART_Inst/ClkCount_4_s_9_0_S1
+UART_Inst/ClkCount_4_s_9_0_COUT
 un2_Count_cry_0_0_S1
 un2_Count_cry_0_0_S0
 N_1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Fri Apr 29 14:30:41 2022
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Fri Apr 29 17:01:34 2022
 
 SYSCONFIG DONE_OD=ON DONE_EX=OFF CONFIG_SECURE=OFF WAKE_UP=21 WAKE_ON_LOCK=OFF INBUF=ON MASTER_SPI_PORT=DISABLE SLAVE_SPI_PORT=DISABLE MY_ASSP=OFF ONE_TIME_PROGRAM=OFF ;
 LOCATE COMP "opUART_Tx" SITE "109" ;
