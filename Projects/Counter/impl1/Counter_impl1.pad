@@ -6,13 +6,14 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.42
 
-Fri Apr 29 12:16:52 2022
+Fri Apr 29 12:56:49 2022
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-------------------------------+
 | Port Name | Pin/Bank | Buffer Type  | Site  | Properties                    |
 +-----------+----------+--------------+-------+-------------------------------+
 | ipClk     | 21/7     | LVCMOS33_IN  | PL12A | SLEW:FAST PULL:UP             |
+| ipReset   | 19/7     | LVCMOS25_IN  | PL11A | SLEW:FAST PULL:UP             |
 | opLED[0]  | 46/5     | LVCMOS33_OUT | PB14A | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[1]  | 45/5     | LVCMOS33_OUT | PB15A | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[2]  | 44/5     | LVCMOS33_OUT | PB13A | DRIVE:12mA SLEW:FAST PULL:UP  |
@@ -55,7 +56,7 @@ Pinout by Pin Number:
 | 16/7     |     unused, PULL:UP |            |              | PL10A | CCLK/LDQ9            |
 | 17/7     |     unused, PULL:UP |            |              | PL9B  | LDQ9                 |
 | 18/7     |     unused, PULL:UP |            |              | PL10B | SO/LDQ9              |
-| 19/7     |     unused, PULL:UP |            |              | PL11A | SI/LDQ9              |
+| 19/7     | ipReset             | LOCATED    | LVCMOS25_IN  | PL11A | SI/LDQ9              |
 | 20/7     |     unused, PULL:UP |            |              | PL11B | INITN/LDQ9           |
 | 21/7     | ipClk               | LOCATED    | LVCMOS33_IN  | PL12A | PCLKT7_0/LDQ9        |
 | 22/7     |     unused, PULL:UP |            |              | PL12B | PCLKC7_0/LDQ9        |
@@ -248,6 +249,7 @@ List of All Pins' Locate Preferences Based on Final Placement After PAR
 to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
 
 LOCATE  COMP  "ipClk"  SITE  "21";
+LOCATE  COMP  "ipReset"  SITE  "19";
 LOCATE  COMP  "opLED[0]"  SITE  "46";
 LOCATE  COMP  "opLED[1]"  SITE  "45";
 LOCATE  COMP  "opLED[2]"  SITE  "44";
@@ -267,5 +269,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Apr 29 12:16:52 2022
+Fri Apr 29 12:56:49 2022
 

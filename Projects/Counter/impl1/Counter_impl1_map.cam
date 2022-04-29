@@ -1,13 +1,15 @@
 [ START MERGED ]
+ipReset_c_i ipReset_c
 [ END MERGED ]
 [ START CLIPPED ]
-Count_cry_0_COUT[29]
-Count_cry_0_S0[0]
+un2_Count_cry_29_0_COUT
+un2_Count_cry_0_0_S1
+un2_Count_cry_0_0_S0
 N_1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Fri Apr 29 12:16:30 2022
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Fri Apr 29 12:56:24 2022
 
 SYSCONFIG DONE_OD=ON DONE_EX=OFF CONFIG_SECURE=OFF WAKE_UP=21 WAKE_ON_LOCK=OFF INBUF=ON MASTER_SPI_PORT=DISABLE SLAVE_SPI_PORT=DISABLE MY_ASSP=OFF ONE_TIME_PROGRAM=OFF ;
 LOCATE COMP "opLED[0]" SITE "46" ;
@@ -19,5 +21,6 @@ LOCATE COMP "opLED[4]" SITE "40" ;
 LOCATE COMP "opLED[3]" SITE "43" ;
 LOCATE COMP "opLED[2]" SITE "44" ;
 LOCATE COMP "opLED[1]" SITE "45" ;
+LOCATE COMP "ipReset" SITE "19" ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

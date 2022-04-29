@@ -23,23 +23,23 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   6
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  04/29/22  12:16:29
+Mapped on:  04/29/22  12:56:24
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of registers:     31 out of  3864 (1%)
       PFU registers:           31 out of  3564 (1%)
       PIO registers:            0 out of   300 (0%)
-   Number of SLICEs:        17 out of  2376 (1%)
-      SLICEs as Logic/ROM:     17 out of  2376 (1%)
+   Number of SLICEs:        18 out of  2376 (1%)
+      SLICEs as Logic/ROM:     18 out of  2376 (1%)
       SLICEs as RAM:            0 out of   405 (0%)
       SLICEs as Carry:         16 out of  2376 (1%)
-   Number of LUT4s:         33 out of  4752 (1%)
-      Number used as logic LUTs:          1
+   Number of LUT4s:         34 out of  4752 (1%)
+      Number used as logic LUTs:          2
       Number used as distributed RAM:     0
       Number used as ripple logic:       32
       Number used as shift registers:     0
-   Number of PIO sites used: 9 out of 100 (9%)
+   Number of PIO sites used: 10 out of 100 (10%)
    Number of PIO FIXEDDELAY:    0
    Number of DQSDLLs:  0 out of 2 (0%)
    Number of PLLs:  0 out of 2 (0%)
@@ -72,10 +72,13 @@ Mapped on:  04/29/22  12:16:29
    Number of clocks:  1
      Net ipClk_c: 16 loads, 16 rising, 0 falling (Driver: PIO ipClk )
    Number of Clock Enables:  0
-   Number of LSRs:  0
+   Number of LSRs:  1
+     Net ipReset_c: 16 loads, 16 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net VCC: 31 loads
+     Net ipReset_c: 16 loads
+     Net Count[0]: 2 loads
      Net opLED_c[0]: 2 loads
      Net opLED_c[1]: 2 loads
      Net opLED_c[2]: 2 loads
@@ -83,13 +86,11 @@ Mapped on:  04/29/22  12:16:29
      Net opLED_c[4]: 2 loads
      Net opLED_c[5]: 2 loads
      Net opLED_c[6]: 2 loads
-     Net opLED_c[7]: 2 loads
-     Net Count[0]: 1 loads
 
 
 
 
-   Number of warnings:  1
+   Number of warnings:  0
    Number of errors:    0
      
 
@@ -98,9 +99,7 @@ Mapped on:  04/29/22  12:16:29
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(21):
-     Semantic error in "LOCATE COMP "ipReset" SITE "30" ;": COMP "ipReset"
-     cannot be found in design. This preference has been disabled.
+   No errors or warnings present.
 
 
 
@@ -127,7 +126,9 @@ WARNING - map: C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(21):
 | opLED[2]            | OUTPUT    | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
 | opLED[1]            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
 
+| ipReset             | INPUT     | LVCMOS25  |            |            |
 +---------------------+-----------+-----------+------------+------------+
 
 
@@ -135,9 +136,12 @@ WARNING - map: C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf(21):
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal Count_cry_0_COUT[29] undriven or does not drive anything - clipped.
-Signal Count_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal ipReset_c_i was merged into signal ipReset_c
+Signal un2_Count_cry_29_0_COUT undriven or does not drive anything - clipped.
+Signal un2_Count_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un2_Count_cry_0_0_S0 undriven or does not drive anything - clipped.
 Signal N_1 undriven or does not drive anything - clipped.
+Block ipReset_pad_RNIGPSC was optimized away.
 
 
 
@@ -148,10 +152,6 @@ Signal N_1 undriven or does not drive anything - clipped.
    Total REAL Time: 0 secs  
    Peak Memory Usage: 58 MB
         
-
-
-
-
 
 
 

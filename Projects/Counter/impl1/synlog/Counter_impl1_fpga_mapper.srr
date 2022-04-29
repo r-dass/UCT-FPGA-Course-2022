@@ -1,4 +1,4 @@
-# Fri Apr 29 12:16:24 2022
+# Fri Apr 29 12:56:20 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -37,21 +37,21 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @W: BN309 |One or more non-fatal issues found in constraints; Please run Constraint Check for analysis
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 167MB peak: 167MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 166MB peak: 166MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 170MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 169MB peak: 169MB)
 
-@N: MO231 :"c:\users\reeve\git\eee5117,8z\projects\counter\counter.v":9:0:9:5|Found counter in view:work.Counter(verilog) instance Count[30:0] 
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 170MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 170MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 171MB)
 
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
@@ -60,29 +60,29 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CP
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 172MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 172MB)
 
-@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
+   1		0h:00m:01s		     1.40ns		   2 /        31
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 173MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 137MB peak: 173MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 173MB)
 
 Writing Analyst data base C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synwork\Counter_impl1_m.srm
 
@@ -92,7 +92,7 @@ Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 178MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 179MB)
@@ -101,7 +101,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Apr 29 12:16:27 2022
+# Timing report written on Fri Apr 29 12:56:22 2022
 #
 
 
@@ -121,12 +121,12 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 0.901
+Worst slack in design: 0.828
 
                    Requested     Estimated     Requested     Estimated               Clock        Clock              
 Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group              
 ---------------------------------------------------------------------------------------------------------------------
-Counter|ipClk      200.0 MHz     243.9 MHz     5.000         4.099         0.901     inferred     Inferred_clkgroup_0
+Counter|ipClk      200.0 MHz     239.7 MHz     5.000         4.172         0.828     inferred     Inferred_clkgroup_0
 =====================================================================================================================
 
 
@@ -140,7 +140,7 @@ Clocks                        |    rise  to  rise   |    fall  to  fall   |    r
 --------------------------------------------------------------------------------------------------------------------
 Starting       Ending         |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
 --------------------------------------------------------------------------------------------------------------------
-Counter|ipClk  Counter|ipClk  |  5.000       0.901  |  No paths    -      |  No paths    -      |  No paths    -    
+Counter|ipClk  Counter|ipClk  |  5.000       0.828  |  No paths    -      |  No paths    -      |  No paths    -    
 ====================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -167,37 +167,37 @@ Starting Points with Worst Slack
 Instance     Reference         Type        Pin     Net          Time        Slack
              Clock                                                               
 ---------------------------------------------------------------------------------
-Count[0]     Counter|ipClk     FD1S3AX     Q       Count[0]     0.857       0.901
-Count[1]     Counter|ipClk     FD1S3AX     Q       Count[1]     0.857       0.974
-Count[2]     Counter|ipClk     FD1S3AX     Q       Count[2]     0.857       0.974
-Count[3]     Counter|ipClk     FD1S3AX     Q       Count[3]     0.857       1.047
-Count[4]     Counter|ipClk     FD1S3AX     Q       Count[4]     0.857       1.047
-Count[5]     Counter|ipClk     FD1S3AX     Q       Count[5]     0.857       1.120
-Count[6]     Counter|ipClk     FD1S3AX     Q       Count[6]     0.857       1.120
-Count[7]     Counter|ipClk     FD1S3AX     Q       Count[7]     0.857       1.193
-Count[8]     Counter|ipClk     FD1S3AX     Q       Count[8]     0.857       1.193
-Count[9]     Counter|ipClk     FD1S3AX     Q       Count[9]     0.857       1.266
+Count[0]     Counter|ipClk     FD1S3IX     Q       Count[0]     0.929       0.828
+Count[1]     Counter|ipClk     FD1S3IX     Q       Count[1]     0.857       0.974
+Count[2]     Counter|ipClk     FD1S3IX     Q       Count[2]     0.857       0.974
+Count[3]     Counter|ipClk     FD1S3IX     Q       Count[3]     0.857       1.047
+Count[4]     Counter|ipClk     FD1S3IX     Q       Count[4]     0.857       1.047
+Count[5]     Counter|ipClk     FD1S3IX     Q       Count[5]     0.857       1.120
+Count[6]     Counter|ipClk     FD1S3IX     Q       Count[6]     0.857       1.120
+Count[7]     Counter|ipClk     FD1S3IX     Q       Count[7]     0.857       1.193
+Count[8]     Counter|ipClk     FD1S3IX     Q       Count[8]     0.857       1.193
+Count[9]     Counter|ipClk     FD1S3IX     Q       Count[9]     0.857       1.266
 =================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-              Starting                                              Required          
-Instance      Reference         Type        Pin     Net             Time         Slack
-              Clock                                                                   
---------------------------------------------------------------------------------------
-Count[29]     Counter|ipClk     FD1S3AX     D       Count_s[29]     5.069        0.901
-Count[30]     Counter|ipClk     FD1S3AX     D       Count_s[30]     5.069        0.901
-Count[27]     Counter|ipClk     FD1S3AX     D       Count_s[27]     5.069        0.974
-Count[28]     Counter|ipClk     FD1S3AX     D       Count_s[28]     5.069        0.974
-Count[25]     Counter|ipClk     FD1S3AX     D       Count_s[25]     5.069        1.047
-Count[26]     Counter|ipClk     FD1S3AX     D       Count_s[26]     5.069        1.047
-Count[23]     Counter|ipClk     FD1S3AX     D       Count_s[23]     5.069        1.120
-Count[24]     Counter|ipClk     FD1S3AX     D       Count_s[24]     5.069        1.120
-Count[21]     Counter|ipClk     FD1S3AX     D       Count_s[21]     5.069        1.193
-Count[22]     Counter|ipClk     FD1S3AX     D       Count_s[22]     5.069        1.193
-======================================================================================
+              Starting                                                        Required          
+Instance      Reference         Type        Pin     Net                       Time         Slack
+              Clock                                                                             
+------------------------------------------------------------------------------------------------
+Count[29]     Counter|ipClk     FD1S3IX     D       un2_Count_cry_29_0_S0     5.069        0.828
+Count[30]     Counter|ipClk     FD1S3IX     D       un2_Count_cry_29_0_S1     5.069        0.828
+Count[27]     Counter|ipClk     FD1S3IX     D       un2_Count_cry_27_0_S0     5.069        0.901
+Count[28]     Counter|ipClk     FD1S3IX     D       un2_Count_cry_27_0_S1     5.069        0.901
+Count[25]     Counter|ipClk     FD1S3IX     D       un2_Count_cry_25_0_S0     5.069        0.974
+Count[26]     Counter|ipClk     FD1S3IX     D       un2_Count_cry_25_0_S1     5.069        0.974
+Count[23]     Counter|ipClk     FD1S3IX     D       un2_Count_cry_23_0_S0     5.069        1.047
+Count[24]     Counter|ipClk     FD1S3IX     D       un2_Count_cry_23_0_S1     5.069        1.047
+Count[21]     Counter|ipClk     FD1S3IX     D       un2_Count_cry_21_0_S0     5.069        1.120
+Count[22]     Counter|ipClk     FD1S3IX     D       un2_Count_cry_21_0_S1     5.069        1.120
+================================================================================================
 
 
 
@@ -211,9 +211,9 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         5.069
 
-    - Propagation time:                      4.168
+    - Propagation time:                      4.241
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     0.901
+    = Slack (critical) :                     0.828
 
     Number of logic level(s):                16
     Starting point:                          Count[0] / Q
@@ -221,61 +221,61 @@ Path information for path number 1:
     The start point is clocked by            Counter|ipClk [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            Counter|ipClk [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                  Pin      Pin               Arrival     No. of    
-Name                Type        Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------
-Count[0]            FD1S3AX     Q        Out     0.857     0.857 r     -         
-Count[0]            Net         -        -       -         -           1         
-Count_cry_0[0]      CCU2B       A1       In      0.000     0.857 r     -         
-Count_cry_0[0]      CCU2B       COUT     Out     1.056     1.912 r     -         
-Count_cry[0]        Net         -        -       -         -           1         
-Count_cry_0[1]      CCU2B       CIN      In      0.000     1.912 r     -         
-Count_cry_0[1]      CCU2B       COUT     Out     0.073     1.985 r     -         
-Count_cry[2]        Net         -        -       -         -           1         
-Count_cry_0[3]      CCU2B       CIN      In      0.000     1.985 r     -         
-Count_cry_0[3]      CCU2B       COUT     Out     0.073     2.058 r     -         
-Count_cry[4]        Net         -        -       -         -           1         
-Count_cry_0[5]      CCU2B       CIN      In      0.000     2.058 r     -         
-Count_cry_0[5]      CCU2B       COUT     Out     0.073     2.131 r     -         
-Count_cry[6]        Net         -        -       -         -           1         
-Count_cry_0[7]      CCU2B       CIN      In      0.000     2.131 r     -         
-Count_cry_0[7]      CCU2B       COUT     Out     0.073     2.204 r     -         
-Count_cry[8]        Net         -        -       -         -           1         
-Count_cry_0[9]      CCU2B       CIN      In      0.000     2.204 r     -         
-Count_cry_0[9]      CCU2B       COUT     Out     0.073     2.277 r     -         
-Count_cry[10]       Net         -        -       -         -           1         
-Count_cry_0[11]     CCU2B       CIN      In      0.000     2.277 r     -         
-Count_cry_0[11]     CCU2B       COUT     Out     0.073     2.350 r     -         
-Count_cry[12]       Net         -        -       -         -           1         
-Count_cry_0[13]     CCU2B       CIN      In      0.000     2.350 r     -         
-Count_cry_0[13]     CCU2B       COUT     Out     0.073     2.423 r     -         
-Count_cry[14]       Net         -        -       -         -           1         
-Count_cry_0[15]     CCU2B       CIN      In      0.000     2.423 r     -         
-Count_cry_0[15]     CCU2B       COUT     Out     0.073     2.496 r     -         
-Count_cry[16]       Net         -        -       -         -           1         
-Count_cry_0[17]     CCU2B       CIN      In      0.000     2.496 r     -         
-Count_cry_0[17]     CCU2B       COUT     Out     0.073     2.569 r     -         
-Count_cry[18]       Net         -        -       -         -           1         
-Count_cry_0[19]     CCU2B       CIN      In      0.000     2.569 r     -         
-Count_cry_0[19]     CCU2B       COUT     Out     0.073     2.642 r     -         
-Count_cry[20]       Net         -        -       -         -           1         
-Count_cry_0[21]     CCU2B       CIN      In      0.000     2.642 r     -         
-Count_cry_0[21]     CCU2B       COUT     Out     0.073     2.715 r     -         
-Count_cry[22]       Net         -        -       -         -           1         
-Count_cry_0[23]     CCU2B       CIN      In      0.000     2.715 r     -         
-Count_cry_0[23]     CCU2B       COUT     Out     0.073     2.788 r     -         
-Count_cry[24]       Net         -        -       -         -           1         
-Count_cry_0[25]     CCU2B       CIN      In      0.000     2.788 r     -         
-Count_cry_0[25]     CCU2B       COUT     Out     0.073     2.861 r     -         
-Count_cry[26]       Net         -        -       -         -           1         
-Count_cry_0[27]     CCU2B       CIN      In      0.000     2.861 r     -         
-Count_cry_0[27]     CCU2B       COUT     Out     0.073     2.934 r     -         
-Count_cry[28]       Net         -        -       -         -           1         
-Count_cry_0[29]     CCU2B       CIN      In      0.000     2.934 r     -         
-Count_cry_0[29]     CCU2B       S1       Out     1.234     4.168 r     -         
-Count_s[30]         Net         -        -       -         -           1         
-Count[30]           FD1S3AX     D        In      0.000     4.168 r     -         
-=================================================================================
+Instance / Net                        Pin      Pin               Arrival     No. of    
+Name                      Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------
+Count[0]                  FD1S3IX     Q        Out     0.929     0.929 r     -         
+Count[0]                  Net         -        -       -         -           2         
+un2_Count_cry_0_0         CCU2B       A1       In      0.000     0.929 r     -         
+un2_Count_cry_0_0         CCU2B       COUT     Out     1.056     1.985 r     -         
+un2_Count_cry_0           Net         -        -       -         -           1         
+un2_Count_cry_1_0         CCU2B       CIN      In      0.000     1.985 r     -         
+un2_Count_cry_1_0         CCU2B       COUT     Out     0.073     2.058 r     -         
+un2_Count_cry_2           Net         -        -       -         -           1         
+un2_Count_cry_3_0         CCU2B       CIN      In      0.000     2.058 r     -         
+un2_Count_cry_3_0         CCU2B       COUT     Out     0.073     2.131 r     -         
+un2_Count_cry_4           Net         -        -       -         -           1         
+un2_Count_cry_5_0         CCU2B       CIN      In      0.000     2.131 r     -         
+un2_Count_cry_5_0         CCU2B       COUT     Out     0.073     2.204 r     -         
+un2_Count_cry_6           Net         -        -       -         -           1         
+un2_Count_cry_7_0         CCU2B       CIN      In      0.000     2.204 r     -         
+un2_Count_cry_7_0         CCU2B       COUT     Out     0.073     2.277 r     -         
+un2_Count_cry_8           Net         -        -       -         -           1         
+un2_Count_cry_9_0         CCU2B       CIN      In      0.000     2.277 r     -         
+un2_Count_cry_9_0         CCU2B       COUT     Out     0.073     2.350 r     -         
+un2_Count_cry_10          Net         -        -       -         -           1         
+un2_Count_cry_11_0        CCU2B       CIN      In      0.000     2.350 r     -         
+un2_Count_cry_11_0        CCU2B       COUT     Out     0.073     2.423 r     -         
+un2_Count_cry_12          Net         -        -       -         -           1         
+un2_Count_cry_13_0        CCU2B       CIN      In      0.000     2.423 r     -         
+un2_Count_cry_13_0        CCU2B       COUT     Out     0.073     2.496 r     -         
+un2_Count_cry_14          Net         -        -       -         -           1         
+un2_Count_cry_15_0        CCU2B       CIN      In      0.000     2.496 r     -         
+un2_Count_cry_15_0        CCU2B       COUT     Out     0.073     2.569 r     -         
+un2_Count_cry_16          Net         -        -       -         -           1         
+un2_Count_cry_17_0        CCU2B       CIN      In      0.000     2.569 r     -         
+un2_Count_cry_17_0        CCU2B       COUT     Out     0.073     2.642 r     -         
+un2_Count_cry_18          Net         -        -       -         -           1         
+un2_Count_cry_19_0        CCU2B       CIN      In      0.000     2.642 r     -         
+un2_Count_cry_19_0        CCU2B       COUT     Out     0.073     2.715 r     -         
+un2_Count_cry_20          Net         -        -       -         -           1         
+un2_Count_cry_21_0        CCU2B       CIN      In      0.000     2.715 r     -         
+un2_Count_cry_21_0        CCU2B       COUT     Out     0.073     2.788 r     -         
+un2_Count_cry_22          Net         -        -       -         -           1         
+un2_Count_cry_23_0        CCU2B       CIN      In      0.000     2.788 r     -         
+un2_Count_cry_23_0        CCU2B       COUT     Out     0.073     2.861 r     -         
+un2_Count_cry_24          Net         -        -       -         -           1         
+un2_Count_cry_25_0        CCU2B       CIN      In      0.000     2.861 r     -         
+un2_Count_cry_25_0        CCU2B       COUT     Out     0.073     2.934 r     -         
+un2_Count_cry_26          Net         -        -       -         -           1         
+un2_Count_cry_27_0        CCU2B       CIN      In      0.000     2.934 r     -         
+un2_Count_cry_27_0        CCU2B       COUT     Out     0.073     3.007 r     -         
+un2_Count_cry_28          Net         -        -       -         -           1         
+un2_Count_cry_29_0        CCU2B       CIN      In      0.000     3.007 r     -         
+un2_Count_cry_29_0        CCU2B       S1       Out     1.234     4.241 r     -         
+un2_Count_cry_29_0_S1     Net         -        -       -         -           1         
+Count[30]                 FD1S3IX     D        In      0.000     4.241 r     -         
+=======================================================================================
 
 
 
@@ -283,10 +283,10 @@ Count[30]           FD1S3AX     D        In      0.000     4.168 r     -
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 179MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 179MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -294,23 +294,24 @@ Part: lfxp2_5e-6
 
 Register bits: 31 of 4752 (1%)
 PIC Latch:       0
-I/O cells:       9
+I/O cells:       10
 
 
 Details:
 CCU2B:          16
-FD1S3AX:        31
+FD1S3IX:        31
 GSR:            1
-IB:             1
+IB:             2
+INV:            2
 OB:             8
 PUR:            1
 VHI:            1
 VLO:            1
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 64MB peak: 179MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 63MB peak: 179MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Fri Apr 29 12:16:27 2022
+# Fri Apr 29 12:56:23 2022
 
 ###########################################################]
