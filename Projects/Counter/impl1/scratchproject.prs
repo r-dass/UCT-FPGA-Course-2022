@@ -5,6 +5,7 @@
 #project files
 add_file -fpga_constraint "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.fdc"
 add_file -verilog -vlog_std sysv "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v"
+add_file -verilog -vlog_std sysv "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v"
 
 
 #implementation: "impl1"

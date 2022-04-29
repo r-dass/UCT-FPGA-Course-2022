@@ -1,6 +1,2 @@
-@W: CG730 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter_TB.v":3:7:3:16|Top-level module Counter_TB has no ports
-@W: CG294 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter_TB.v":6:0:6:5|always block should contain at least one event control
-@W: CG532 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter_TB.v":10:0:10:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored. Simulation mismatch may occur
-@W: CG781 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter_TB.v":19:8:19:10|Input ipReset on instance DUT is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
-@W: CL168 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter_TB.v":19:8:19:10|Removing instance DUT because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL156 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":20:14:20:21|*Input ipnReset to expression [not] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 

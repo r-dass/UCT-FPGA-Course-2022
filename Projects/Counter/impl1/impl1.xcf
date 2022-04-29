@@ -21,8 +21,8 @@
 			</Bypass>
 			<File>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/Counter_impl1.jed</File>
 			<MaskFile>C:/lscc/diamond/3.12/data/vmdata/database\xpga\xp2\lfxp2-5.msk</MaskFile>
-			<FileTime>04/28/22 16:33:22</FileTime>
-			<JedecChecksum>0x57F5</JedecChecksum>
+			<FileTime>04/29/22 12:57:00</FileTime>
+			<JedecChecksum>0x5069</JedecChecksum>
 			<Operation>SRAM Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -31,6 +31,7 @@
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
 				<Reinitialize value="TRUE"/>
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0xFFFFFFFF</Usercode>
 				<AccessMode>SRAM</AccessMode>
 			</Option>

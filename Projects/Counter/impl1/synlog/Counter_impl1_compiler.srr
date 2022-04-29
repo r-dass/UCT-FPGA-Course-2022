@@ -44,24 +44,30 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
 @I::"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v" (library work)
+@I::"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\UART.v" (library work)
 Verilog syntax check successful!
-File C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module Counter
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\UART.v":19:7:19:10|Synthesizing module UART in library work.
+Running optimization stage 1 on UART .......
 @N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":1:7:1:13|Synthesizing module Counter in library work.
 Running optimization stage 1 on Counter .......
 Running optimization stage 2 on Counter .......
+Running optimization stage 2 on UART .......
 
 For a summary of runtime and memory usage per design unit, please see file:
 ==========================================================
 @L: C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 93MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 91MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Apr 29 12:56:17 2022
+# Fri Apr 29 13:14:07 2022
 
 ###########################################################]
 ###########################################################[
@@ -88,7 +94,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Apr 29 12:56:17 2022
+# Fri Apr 29 13:14:07 2022
 
 ###########################################################]
 
@@ -103,6 +109,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Apr 29 12:56:17 2022
+# Fri Apr 29 13:14:07 2022
 
 ###########################################################]

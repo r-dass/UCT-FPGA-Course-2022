@@ -6,7 +6,7 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.42
 
-Fri Apr 29 12:56:49 2022
+Fri Apr 29 13:14:29 2022
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-------------------------------+
@@ -14,6 +14,7 @@ Pinout by Port Name:
 +-----------+----------+--------------+-------+-------------------------------+
 | ipClk     | 21/7     | LVCMOS33_IN  | PL12A | SLEW:FAST PULL:UP             |
 | ipReset   | 19/7     | LVCMOS25_IN  | PL11A | SLEW:FAST PULL:UP             |
+| ipUART_Rx | 31/6     | LVCMOS25_IN  | PL16B | SLEW:FAST PULL:UP             |
 | opLED[0]  | 46/5     | LVCMOS33_OUT | PB14A | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[1]  | 45/5     | LVCMOS33_OUT | PB15A | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[2]  | 44/5     | LVCMOS33_OUT | PB13A | DRIVE:12mA SLEW:FAST PULL:UP  |
@@ -22,6 +23,7 @@ Pinout by Port Name:
 | opLED[5]  | 39/5     | LVCMOS33_OUT | PB8B  | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[6]  | 38/5     | LVCMOS33_OUT | PB7A  | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[7]  | 37/5     | LVCMOS33_OUT | PB8A  | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opUART_Tx | 32/6     | LVCMOS25_OUT | PL16A | DRIVE:12mA SLEW:FAST PULL:UP  |
 +-----------+----------+--------------+-------+-------------------------------+
 
 Vccio by Bank:
@@ -29,6 +31,7 @@ Vccio by Bank:
 | Bank | Vccio |
 +------+-------+
 | 5    | 3.3V  |
+| 6    | 2.5V  |
 | 7    |       |
 +------+-------+
 
@@ -64,8 +67,8 @@ Pinout by Pin Number:
 | 28/6     |     unused, PULL:UP |            |              | PL14A | PCLKT6_0/LDQ18       |
 | 29/6     |     unused, PULL:UP |            |              | PL15B | LDQ18                |
 | 30/6     |     unused, PULL:UP |            |              | PL14B | PCLKC6_0/LDQ18       |
-| 31/6     |     unused, PULL:UP |            |              | PL16B | LDQ18                |
-| 32/6     |     unused, PULL:UP |            |              | PL16A | LDQ18                |
+| 31/6     | ipUART_Rx           |            | LVCMOS25_IN  | PL16B | LDQ18                |
+| 32/6     | opUART_Tx           |            | LVCMOS25_OUT | PL16A | LDQ18                |
 | 35/6     |     unused, PULL:UP |            |              | PL25A | VREF1_6              |
 | 36/6     |     unused, PULL:UP |            |              | PL25B | VREF2_6              |
 | 37/5     | opLED[7]            | LOCATED    | LVCMOS33_OUT | PB8A  |                      |
@@ -250,6 +253,7 @@ to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste):
 
 LOCATE  COMP  "ipClk"  SITE  "21";
 LOCATE  COMP  "ipReset"  SITE  "19";
+LOCATE  COMP  "ipUART_Rx"  SITE  "31";
 LOCATE  COMP  "opLED[0]"  SITE  "46";
 LOCATE  COMP  "opLED[1]"  SITE  "45";
 LOCATE  COMP  "opLED[2]"  SITE  "44";
@@ -258,6 +262,7 @@ LOCATE  COMP  "opLED[4]"  SITE  "40";
 LOCATE  COMP  "opLED[5]"  SITE  "39";
 LOCATE  COMP  "opLED[6]"  SITE  "38";
 LOCATE  COMP  "opLED[7]"  SITE  "37";
+LOCATE  COMP  "opUART_Tx"  SITE  "32";
 
 
 
@@ -269,5 +274,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Apr 29 12:56:49 2022
+Fri Apr 29 13:14:29 2022
 

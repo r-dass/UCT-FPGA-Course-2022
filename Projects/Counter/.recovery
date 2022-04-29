@@ -9,6 +9,9 @@
         <Source name="Counter_TB.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
+        <Source name="UART.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="Counter.fdc" type="Synplify Design Constraints File" type_short="SDC">
             <Options/>
         </Source>

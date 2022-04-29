@@ -1,3 +1,2 @@
-@E: CG285 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":11:1:11:4|Expecting statement
-@E: CS187 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":16:0:16:8|Expecting endmodule
+@E: CG243 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":4:18:4:18|Expecting ) or comma delimiter
 

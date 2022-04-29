@@ -3,7 +3,7 @@
 #
 
 # Period Constraints 
-#FREQUENCY PORT "ipClk" 200.0 MHz;
+FREQUENCY PORT "ipClk" 50.0 MHz;
 
 
 # Output Constraints 

@@ -23,23 +23,23 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   6
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  04/29/22  12:56:24
+Mapped on:  04/29/22  13:14:16
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     31 out of  3864 (1%)
-      PFU registers:           31 out of  3564 (1%)
-      PIO registers:            0 out of   300 (0%)
-   Number of SLICEs:        18 out of  2376 (1%)
-      SLICEs as Logic/ROM:     18 out of  2376 (1%)
+   Number of registers:     70 out of  3864 (2%)
+      PFU registers:           68 out of  3564 (2%)
+      PIO registers:            2 out of   300 (1%)
+   Number of SLICEs:        61 out of  2376 (3%)
+      SLICEs as Logic/ROM:     61 out of  2376 (3%)
       SLICEs as RAM:            0 out of   405 (0%)
-      SLICEs as Carry:         16 out of  2376 (1%)
-   Number of LUT4s:         34 out of  4752 (1%)
-      Number used as logic LUTs:          2
+      SLICEs as Carry:         22 out of  2376 (1%)
+   Number of LUT4s:        103 out of  4752 (2%)
+      Number used as logic LUTs:         59
       Number used as distributed RAM:     0
-      Number used as ripple logic:       32
+      Number used as ripple logic:       44
       Number used as shift registers:     0
-   Number of PIO sites used: 10 out of 100 (10%)
+   Number of PIO sites used: 12 out of 100 (12%)
    Number of PIO FIXEDDELAY:    0
    Number of DQSDLLs:  0 out of 2 (0%)
    Number of PLLs:  0 out of 2 (0%)
@@ -70,22 +70,29 @@ Mapped on:  04/29/22  12:56:24
 
    Number of Used DSP Sites:  0 out of 24 (0 %)
    Number of clocks:  1
-     Net ipClk_c: 16 loads, 16 rising, 0 falling (Driver: PIO ipClk )
-   Number of Clock Enables:  0
-   Number of LSRs:  1
-     Net ipReset_c: 16 loads, 16 LSLICEs
+     Net ipClk_c: 43 loads, 43 rising, 0 falling (Driver: PIO ipClk )
+   Number of Clock Enables:  4
+     Net UART_Inst.opTxBusy_1_sqmuxa_i: 2 loads, 1 LSLICEs
+     Net UART_TxData17: 4 loads, 4 LSLICEs
+     Net UART_Inst/opRxData_1_sqmuxa: 5 loads, 5 LSLICEs
+     Net un1_UART_TxData17: 1 loads, 1 LSLICEs
+   Number of LSRs:  4
+     Net ipReset_c: 17 loads, 17 LSLICEs
+     Net UART_Inst.opTx_0_sqmuxa: 1 loads, 0 LSLICEs
+     Net UART_Inst/opRxValid_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net UART_Inst/ClkBaud: 4 loads, 4 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net VCC: 31 loads
-     Net ipReset_c: 16 loads
-     Net Count[0]: 2 loads
-     Net opLED_c[0]: 2 loads
-     Net opLED_c[1]: 2 loads
-     Net opLED_c[2]: 2 loads
-     Net opLED_c[3]: 2 loads
-     Net opLED_c[4]: 2 loads
-     Net opLED_c[5]: 2 loads
-     Net opLED_c[6]: 2 loads
+     Net ipReset_c: 28 loads
+     Net UART_Inst/ClkBaud: 14 loads
+     Net UART_Inst/CO0: 13 loads
+     Net UART_Inst/VCC: 10 loads
+     Net UART_Inst/ANB1: 8 loads
+     Net UART_Inst/ANB2: 7 loads
+     Net UART_Inst/ANB3: 6 loads
+     Net UART_Inst/UART_RxData[3]: 6 loads
+     Net UART_Inst/UART_RxData[4]: 6 loads
 
 
 
@@ -109,7 +116,7 @@ Mapped on:  04/29/22  12:56:24
 | IO Name             | Direction | Levelmode | IO         | FIXEDDELAY |
 |                     |           |  IO_TYPE  | Register   |            |
 +---------------------+-----------+-----------+------------+------------+
-| opLED[0]            | OUTPUT    | LVCMOS33  |            |            |
+| opUART_Tx           | OUTPUT    | LVCMOS25  | OUT        |            |
 +---------------------+-----------+-----------+------------+------------+
 | ipClk               | INPUT     | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
@@ -120,6 +127,7 @@ Mapped on:  04/29/22  12:56:24
 | opLED[5]            | OUTPUT    | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
 | opLED[4]            | OUTPUT    | LVCMOS33  |            |            |
+
 +---------------------+-----------+-----------+------------+------------+
 | opLED[3]            | OUTPUT    | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
@@ -127,7 +135,10 @@ Mapped on:  04/29/22  12:56:24
 +---------------------+-----------+-----------+------------+------------+
 | opLED[1]            | OUTPUT    | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
-
+| opLED[0]            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| ipUART_Rx           | INPUT     | LVCMOS25  | IN         |            |
++---------------------+-----------+-----------+------------+------------+
 | ipReset             | INPUT     | LVCMOS25  |            |            |
 +---------------------+-----------+-----------+------------+------------+
 
@@ -136,12 +147,19 @@ Mapped on:  04/29/22  12:56:24
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal ipReset_c_i was merged into signal ipReset_c
 Signal un2_Count_cry_29_0_COUT undriven or does not drive anything - clipped.
+Signal UART_Inst/un2_ClkCount_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal UART_Inst/un2_ClkCount_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal UART_Inst/N_1 undriven or does not drive anything - clipped.
+Signal UART_Inst/un2_ClkCount_s_9_0_S1 undriven or does not drive anything -
+     clipped.
+Signal UART_Inst/un2_ClkCount_s_9_0_COUT undriven or does not drive anything -
+     clipped.
 Signal un2_Count_cry_0_0_S1 undriven or does not drive anything - clipped.
 Signal un2_Count_cry_0_0_S0 undriven or does not drive anything - clipped.
 Signal N_1 undriven or does not drive anything - clipped.
-Block ipReset_pad_RNIGPSC was optimized away.
 
 
 
@@ -150,26 +168,8 @@ Block ipReset_pad_RNIGPSC was optimized away.
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 58 MB
+   Peak Memory Usage: 59 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

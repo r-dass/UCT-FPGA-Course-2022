@@ -63,25 +63,6 @@
         <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN309 |One or more non-fatal issues found in constraints; Please run Constraint Check for analysis</Dynamic>
-            <Navigation>BN309</Navigation>
-            <Navigation>One or more non-fatal issues found in constraints; Please run Constraint Check for analysis</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\reeve\git\eee5117,8z\projects\counter\counter.v&quot;:9:0:9:5|Found inferred clock Counter|ipClk which controls 31 sequential elements including Count[30:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
-            <Navigation>MT529</Navigation>
-            <Navigation>c:\users\reeve\git\eee5117,8z\projects\counter\counter.v</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Found inferred clock Counter|ipClk which controls 31 sequential elements including Count[30:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
-        </Message>
-        <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
             <Dynamic>MF511 |Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Dynamic>
             <Navigation>MF511</Navigation>
             <Navigation>Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Navigation>
@@ -89,23 +70,9 @@
         <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN309 |One or more non-fatal issues found in constraints; Please run Constraint Check for analysis</Dynamic>
-            <Navigation>BN309</Navigation>
-            <Navigation>One or more non-fatal issues found in constraints; Please run Constraint Check for analysis</Navigation>
-        </Message>
-        <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
             <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
             <Navigation>FX474</Navigation>
             <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
-        </Message>
-        <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock Counter|ipClk with period 5.00ns. Please declare a user-defined clock on port ipClk.</Dynamic>
-            <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock Counter|ipClk with period 5.00ns. Please declare a user-defined clock on port ipClk.</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

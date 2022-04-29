@@ -1,4 +1,4 @@
-create_clock =name ipClk -period 20 [get_ports ipclk]
+create_clock -name ipClk -period 20 [get_ports ipClk]
 
 derive_pll_clocks
 derive_clock_uncertainty

@@ -2,6 +2,7 @@
 @N|Running in 64-bit mode
 @N: CG1349 :	| Running Verilog Compiler in System Verilog mode
 @N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\UART.v":19:7:19:10|Synthesizing module UART in library work.
 @N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":1:7:1:13|Synthesizing module Counter in library work.
 @N|Running in 64-bit mode
 

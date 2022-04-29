@@ -48,6 +48,7 @@ set_option -seqshift_no_replicate 0
 #-- add_file options
 set_option -include_path {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter}
 add_file -verilog -vlog_std sysv {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v}
+add_file -verilog -vlog_std sysv {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v}
 
 #-- top module name
 set_option -top_module Counter

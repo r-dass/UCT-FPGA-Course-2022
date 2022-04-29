@@ -1,19 +1,46 @@
 ----------------------------------------------------------------------
 Report for cell Counter.verilog
 
-Register bits: 31 of 4752 (1%)
+Register bits: 70 of 4752 (1%)
 PIC Latch:       0
-I/O cells:       10
+I/O cells:       12
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2B       16       100.0
-                            FD1S3IX       31       100.0
+                              CCU2B       22       100.0
+                            FD1P3AX       17       100.0
+                            FD1P3IX        1       100.0
+                            FD1S3AX       13       100.0
+                            FD1S3IX       37       100.0
                                 GSR        1       100.0
-                                 IB        2       100.0
-                                INV        2       100.0
-                                 OB        8       100.0
+                                 IB        3       100.0
+                           IFS1P3DX        1       100.0
+                                INV        1       100.0
+                            L6MUX21        1       100.0
+                                 OB        9       100.0
+                           OFS1P3JX        1       100.0
+                           ORCALUT4       56       100.0
+                              PFUMX        2       100.0
                                 PUR        1       100.0
-                                VHI        1       100.0
-                                VLO        1       100.0
+                                VHI        2       100.0
+                                VLO        2       100.0
+SUB MODULES 
+                               UART        1       100.0
                             
-                         TOTAL            63           
+                         TOTAL           171           
+----------------------------------------------------------------------
+Report for cell UART.netlist
+     Instance path:  UART_Inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B        6        27.3
+                            FD1P3AX        8        47.1
+                            FD1P3IX        1       100.0
+                            FD1S3AX       13       100.0
+                            FD1S3IX        6        16.2
+                            L6MUX21        1       100.0
+                           ORCALUT4       56       100.0
+                              PFUMX        2       100.0
+                                VHI        1        50.0
+                                VLO        1        50.0
+                            
+                         TOTAL            95           

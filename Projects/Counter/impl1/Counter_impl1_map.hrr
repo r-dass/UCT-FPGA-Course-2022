@@ -3,8 +3,22 @@ Report for cell Counter
    Instance path: Counter
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      18.00        100.0
-                                  LUT4	       2.00        100.0
-                                 IOBUF	         10        100.0
-                                PFUREG	         31        100.0
-                                RIPPLE	         16        100.0
+                                  SLIC	      61.00        100.0
+                                 IOLGC	       2.00        100.0
+                                  LUT4	      59.00        100.0
+                                 IOREG	          2        100.0
+                                 IOBUF	         12        100.0
+                                PFUREG	         68        100.0
+                                RIPPLE	         22        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                  UART	          1        65.6
+---------------------------------------------------
+Report for cell UART
+   Instance path: Counter/UART_Inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      40.00        65.6
+                                  LUT4	      57.00        96.6
+                                PFUREG	         28        41.2
+                                RIPPLE	          6        27.3
