@@ -33,12 +33,14 @@ module UART(
 
 reg[9:0] ClkCount = 0; 
 reg[3:0] BitsSent = 0; 
-reg[3:0] BitRecevied = 0; 
+reg[3:0] BitsReceived = 0; 
+wire ClkBaud = (ClkCount == 433); //Divide the Clock to 115200
 
-wire ClkBaud = (ClkCount == 434); //Divide the Clock 9 Times
+reg Rx;
 
 // TODO: Put the transmitter here
 always @(posedge(ipClk)) begin
+	Rx <= ipRx;
 	if(ClkBaud) begin
 		ClkCount <= 9'd1;
 	end
@@ -53,7 +55,7 @@ always @(posedge(ipClk)) begin
 				 
 				if (BitsSent == 0) opTx <= 0; //Start Bit 
 				else if (BitsSent == 9) opTx <= 1; //Stop Bit 
-				else opTx <= ipTxData[BitsSent-1]; 
+				else opTx <= ipTxData >> (BitsSent-1); 
 				 
 				if (BitsSent == 10) begin 
 					opTxBusy <= 1'b0; 
@@ -63,10 +65,25 @@ always @(posedge(ipClk)) begin
 					opTxBusy <= 1'b1; 
 				end 
 			end
+			
+			if (BitsReceived == 0)begin
+				if (Rx == 0) begin 
+					opRxValid <= 0;
+					BitsReceived <= BitsReceived + 1;
+				end else begin
+					opRxValid <= 1;
+				end
+			end else if (BitsReceived == 9) begin
+				opRxValid <= 1;
+				BitsReceived <= 0;
+			end else begin
+				opRxData <= {Rx, opRxData[7:1]};
+				BitsReceived <= BitsReceived + 1;
+			end
 		end
 	end else begin //Reset Code Here
 		opTxBusy <= 0; 
-		opRxValid <= 0; 
+		opRxValid <= 1; 
 		opTx <= 1;
 	end
 end

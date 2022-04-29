@@ -62,7 +62,7 @@ always @(posedge(ipClk)) begin
 				end else begin 
 					opTxBusy <= 1'b1; 
 				end 
-			end
+			endz
 		end
 	end else begin //Reset Code Here
 		opTxBusy <= 0; 
