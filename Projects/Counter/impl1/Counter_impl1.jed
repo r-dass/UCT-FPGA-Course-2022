@@ -2,7 +2,7 @@
 NOTE Diamond (64-bit) 3.12.0.240.2 JEDEC Compatible Fuse File.*
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation.*
 NOTE All Rights Reserved.*
-NOTE DATE CREATED:	Thu Apr 28 16:33:20 2022*
+NOTE DATE CREATED:	Fri Apr 29 12:17:01 2022*
 NOTE DESIGN NAME:	Counter_impl1.ncd*
 NOTE DEVICE NAME:	LFXP2-5E-6TQFP144*
 NOTE PIN ASSIGNMENTS*
@@ -15530,4 +15530,4 @@ L1236444
 C57F5*
 NOTE User Electronic Signature Data*
 UHFFFFFFFF*
-16DC
+16CA

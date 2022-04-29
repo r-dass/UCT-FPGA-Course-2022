@@ -20,9 +20,9 @@ Performance Hardware Data Status:   Final          Version 11.5.
 // Package: TQFP144
 // ncd File: counter_impl1.ncd
 // Version: Diamond (64-bit) 3.12.0.240.2
-// Written on Thu Apr 28 16:33:19 2022
+// Written on Fri Apr 29 12:16:59 2022
 // M: Minimum Performance Grade
-// iotiming Counter_impl1.ncd Counter_impl1.prf -gui
+// iotiming Counter_impl1.ncd Counter_impl1.prf -gui -msgset C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/promote.xml
 
 I/O Timing Report (All units are in ns)
 

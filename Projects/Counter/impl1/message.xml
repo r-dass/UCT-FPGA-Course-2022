@@ -18,6 +18,68 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
+            <Dynamic>&quot;c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc&quot;:6:0:6:0|Duplicate parameter &quot;-syn_tdm&quot; and &quot;-disable&quot; for param &quot;-&quot;. Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.</Dynamic>
+            <Navigation></Navigation>
+            <Navigation>c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>Duplicate parameter &quot;-syn_tdm&quot; and &quot;-disable&quot; for param &quot;-&quot;. Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>&quot;c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc&quot;:7:0:7:0|Duplicate parameter &quot;-syn_tdm&quot; and &quot;-disable&quot; for param &quot;-&quot;. Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.</Dynamic>
+            <Navigation></Navigation>
+            <Navigation>c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>Duplicate parameter &quot;-syn_tdm&quot; and &quot;-disable&quot; for param &quot;-&quot;. Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>&quot;c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc&quot;:8:0:8:0|Duplicate parameter &quot;-syn_tdm&quot; and &quot;-disable&quot; for param &quot;-&quot;. Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.</Dynamic>
+            <Navigation></Navigation>
+            <Navigation>c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>Duplicate parameter &quot;-syn_tdm&quot; and &quot;-disable&quot; for param &quot;-&quot;. Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>&quot;c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc&quot;:9:0:9:0|Duplicate parameter &quot;-syn_tdm&quot; and &quot;-disable&quot; for param &quot;-&quot;. Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.</Dynamic>
+            <Navigation></Navigation>
+            <Navigation>c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>Duplicate parameter &quot;-syn_tdm&quot; and &quot;-disable&quot; for param &quot;-&quot;. Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MF499 |Found issues with constraints. Check report file C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_scck.rpt.</Dynamic>
+            <Navigation>MF499</Navigation>
+            <Navigation>Found issues with constraints. Check report file C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_scck.rpt.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN309 |One or more non-fatal issues found in constraints; Please run Constraint Check for analysis</Dynamic>
+            <Navigation>BN309</Navigation>
+            <Navigation>One or more non-fatal issues found in constraints; Please run Constraint Check for analysis</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
             <Dynamic>MT529 :&quot;c:\users\reeve\git\eee5117,8z\projects\counter\counter.v&quot;:9:0:9:5|Found inferred clock Counter|ipClk which controls 31 sequential elements including Count[30:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>c:\users\reeve\git\eee5117,8z\projects\counter\counter.v</Navigation>
@@ -26,6 +88,20 @@
             <Navigation>9</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Found inferred clock Counter|ipClk which controls 31 sequential elements including Count[30:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MF511 |Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Dynamic>
+            <Navigation>MF511</Navigation>
+            <Navigation>Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN309 |One or more non-fatal issues found in constraints; Please run Constraint Check for analysis</Dynamic>
+            <Navigation>BN309</Navigation>
+            <Navigation>One or more non-fatal issues found in constraints; Please run Constraint Check for analysis</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>

@@ -13,7 +13,7 @@ Hostname: RD-LAPTOP
 
 Implementation : impl1
 
-# Written on Thu Apr 28 16:32:53 2022
+# Written on Fri Apr 29 12:16:23 2022
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.fdc"
@@ -23,7 +23,20 @@ Constraint File(s):      "C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter
 
 
 
-No issues found in constraint syntax.
+Constraints with issues
+***********************
+
+create_clock =name ipClk -period 20 [get_ports ipclk]
+	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":1:0:1:0|Parameter "ipClk" is not valid.
+	@N::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":1:0:1:0|Constraint will be disabled.
+set_false_path -from [get_registers *] - - to [get_ports bp*]
+	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":9:0:9:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
+set_false_path -from [get_registers *] - - to [get_ports op*]
+	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":7:0:7:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
+set_false_path -to [get_registers *] - - from [get_ports bp*]
+	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":8:0:8:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
+set_false_path -to [get_registers *] - - from [get_ports ip*]
+	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":6:0:6:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
 
 
 

@@ -9,12 +9,13 @@ Command line:   map -a LatticeXP2 -p LFXP2-5E -t TQFP144 -s 6 -oc Commercial
      Counter_impl1.ngd -o Counter_impl1_map.ncd -pr Counter_impl1.prf -mp
      Counter_impl1.mrp -lpf C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1
      /Counter_impl1_synplify.lpf -lpf
-     C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf -gui 
+     C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf -gui -msgset
+     C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   6
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  04/28/22  16:32:58
+Mapped on:  04/29/22  12:16:29
 
 Design Summary
 --------------
@@ -59,17 +60,17 @@ Design Summary
    MULT9X9ADDSUBB      0
    MULT9X9ADDSUBSUMB   0
    --------------------------------
-   Number of Used DSP Sites:  0 out of 24 (0 %)
 
                                     Page 1
 
 
 
 
-Design:  Counter                                       Date:  04/28/22  16:32:58
+Design:  Counter                                       Date:  04/29/22  12:16:29
 
 Design Summary (cont)
 ---------------------
+   Number of Used DSP Sites:  0 out of 24 (0 %)
    Number of clocks:  1
      Net ipClk_c: 16 loads, 16 rising, 0 falling (Driver: PIO ipClk )
    Number of Clock Enables:  0
@@ -125,15 +126,17 @@ IO (PIO) Attributes
 | opLED[2]            | OUTPUT    | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
 | opLED[1]            | OUTPUT    | LVCMOS33  |            |            |
-+---------------------+-----------+-----------+------------+------------+
 
                                     Page 2
 
 
 
 
-Design:  Counter                                       Date:  04/28/22  16:32:58
+Design:  Counter                                       Date:  04/29/22  12:16:29
 
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+------------+
 
 Removed logic
 -------------
@@ -150,9 +153,6 @@ Run Time and Memory Usage
    Total REAL Time: 0 secs  
    Peak Memory Usage: 58 MB
         
-
-
-
 
 
 
