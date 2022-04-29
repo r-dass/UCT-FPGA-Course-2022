@@ -30,7 +30,7 @@ UART UART_Inst(
 );
 
 always @(posedge ipClk) begin
-	if (ipReset) Count <= 0;
+	if (!ipReset) Count <= 0;
 	else 
 		Count++;
 		
