@@ -13,7 +13,7 @@ Hostname: RD-LAPTOP
 
 Implementation : impl1
 
-# Written on Fri Apr 29 13:14:10 2022
+# Written on Fri Apr 29 14:30:29 2022
 
 ##### DESIGN INFO #######################################################
 
@@ -35,10 +35,18 @@ Found 4 issues in 4 out of 6 constraints
 Clock Relationships
 *******************
 
-Starting     Ending     |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
------------------------------------------------------------------------------------------------------------------------------------
-ipClk        ipClk      |     20.000           |     No paths         |     No paths         |     No paths                         
-===================================================================================================================================
+Starting                                  Ending                                    |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                    System                                    |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                    ipClk                                     |     20.000           |     No paths         |     No paths         |     No paths                         
+System                                    reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     No paths         |     5.000            |     No paths                         
+ipClk                                     System                                    |     20.000           |     No paths         |     No paths         |     No paths                         
+ipClk                                     ipClk                                     |     20.000           |     No paths         |     No paths         |     No paths                         
+ipClk                                     reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     No paths         |     Diff grp         |     No paths                         
+reveal_coretop|jtck_inferred_clock[0]     System                                    |     No paths         |     No paths         |     No paths         |     5.000                            
+reveal_coretop|jtck_inferred_clock[0]     ipClk                                     |     No paths         |     No paths         |     No paths         |     Diff grp                         
+reveal_coretop|jtck_inferred_clock[0]     reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     5.000            |     No paths         |     No paths                         
+===============================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 

@@ -31,6 +31,15 @@ module UART(
 );
 //------------------------------------------------------------------------------
 
+typedef enum{ // SystemVerilog only
+Wait,
+Start,
+Send,
+Stop
+} tState;
+tState txStates;
+
+
 reg[9:0] ClkCount = 0; 
 reg[3:0] BitsSent = 0; 
 reg[3:0] BitsReceived = 0; 
@@ -50,6 +59,10 @@ always @(posedge(ipClk)) begin
 	
 	if (!ipReset) begin
 		if (ClkBaud) begin //Main Code Here
+
+			
+			
+			
 			if (ipTxSend || (BitsSent != 1'd0))  begin 
 				BitsSent <= BitsSent + 1'b1; 
 				 
@@ -57,10 +70,8 @@ always @(posedge(ipClk)) begin
 				else if (BitsSent == 9) opTx <= 1; //Stop Bit 
 				else opTx <= ipTxData >> (BitsSent-1); 
 				 
-				if (BitsSent == 10) begin 
-					opTxBusy <= 1'b0; 
-					BitsSent <= 16'b0; 
-					opTx <= 1; //Idle High 
+				if (BitsSent == 12) begin 
+
 				end else begin 
 					opTxBusy <= 1'b1; 
 				end 

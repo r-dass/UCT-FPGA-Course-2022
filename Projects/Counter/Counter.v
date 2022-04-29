@@ -17,7 +17,7 @@ wire      UART_RxValid;
 
 UART UART_Inst(
   .ipClk    ( ipClk   ),
-  .ipReset  (ipReset),
+  .ipReset  (~ipReset),
 
   .ipTxData (  UART_TxData),
   .ipTxSend (  UART_TxSend),
@@ -30,9 +30,8 @@ UART UART_Inst(
 );
 
 always @(posedge ipClk) begin
-	if (!ipReset) Count <= 0;
-	else 
-		Count++;
+	if (~ipReset) Count <= 0;
+	else Count++;
 		
   if(~UART_TxSend && ~UART_TxBusy) begin
     case(UART_RxData) inside

@@ -22,7 +22,7 @@ set_option -disable_io_insertion false
 set_option -retiming false; set_option -pipe true
 set_option -force_gsr false
 set_option -compiler_compatible 0
-set_option -dup false
+set_option -dup 1
 
 add_file -constraint {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.fdc}
 set_option -default_enum_encoding default
@@ -47,8 +47,14 @@ set_option -seqshift_no_replicate 0
 
 #-- add_file options
 set_option -include_path {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter}
-add_file -verilog -vlog_std sysv {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v}
-add_file -verilog -vlog_std sysv {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v}
+add_file -verilog {C:/lscc/diamond/3.12/cae_library/synthesis/verilog/pmi_def.v}
+add_file -verilog {C:/lscc/diamond/3.12/module/reveal/src/ertl/ertl.v}
+add_file -verilog {C:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v}
+add_file -verilog {C:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/wb2sci.v}
+add_file -verilog {C:/lscc/diamond/3.12/module/reveal/src/ertl/JTAG_SOFT.v}
+add_file -verilog -vlog_std v2001 {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/counter_la0_trig_gen.v}
+add_file -verilog -vlog_std v2001 {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/counter_la0_gen.v}
+add_file -verilog -vlog_std sysv {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/Counter_rvl.v} 
 
 #-- top module name
 set_option -top_module Counter

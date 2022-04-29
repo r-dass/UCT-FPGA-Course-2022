@@ -1,9 +1,22 @@
-@P:  Worst Slack : 14.436
-@P:  ipClk - Estimated Frequency : 179.7 MHz
+@P:  Worst Slack : -1.515
+@P:  ipClk - Estimated Frequency : 176.9 MHz
 @P:  ipClk - Requested Frequency : 50.0 MHz
-@P:  ipClk - Estimated Period : 5.564
+@P:  ipClk - Estimated Period : 5.653
 @P:  ipClk - Requested Period : 20.000
-@P:  ipClk - Slack : 14.436
-@P:  Total Area : 57.0
+@P:  ipClk - Slack : 14.347
+@P:  reveal_coretop|jtck_inferred_clock[0] - Estimated Frequency : 153.5 MHz
+@P:  reveal_coretop|jtck_inferred_clock[0] - Requested Frequency : 200.0 MHz
+@P:  reveal_coretop|jtck_inferred_clock[0] - Estimated Period : 6.515
+@P:  reveal_coretop|jtck_inferred_clock[0] - Requested Period : 5.000
+@P:  reveal_coretop|jtck_inferred_clock[0] - Slack : -1.515
+@P:  System - Estimated Frequency : 337.8 MHz
+@P:  System - Requested Frequency : 200.0 MHz
+@P:  System - Estimated Period : 2.960
+@P:  System - Requested Period : 5.000
+@P:  System - Slack : 2.040
+@P:  Total Area : 481.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:03s
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:06s

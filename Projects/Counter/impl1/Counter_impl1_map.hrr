@@ -3,22 +3,207 @@ Report for cell Counter
    Instance path: Counter
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      61.00        100.0
+                                  SLIC	     412.00        100.0
                                  IOLGC	       2.00        100.0
-                                  LUT4	      59.00        100.0
+                                  LUT4	     497.00        100.0
                                  IOREG	          2        100.0
                                  IOBUF	         12        100.0
-                                PFUREG	         68        100.0
-                                RIPPLE	         22        100.0
+                                PFUREG	        390        100.0
+                                RIPPLE	         52        100.0
+                                   EBR	          2        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                  UART	          1        65.6
+                        reveal_coretop	          1        76.6
+                               mg5ahub	          1         8.1
+                           UART_uniq_1	          1         9.7
 ---------------------------------------------------
-Report for cell UART
+Report for cell UART_uniq_1
    Instance path: Counter/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      40.00        65.6
-                                  LUT4	      57.00        96.6
-                                PFUREG	         28        41.2
-                                RIPPLE	          6        27.3
+                                  SLIC	      40.00         9.7
+                                  LUT4	      57.00        11.5
+                                PFUREG	         28         7.2
+                                RIPPLE	          6        11.5
+---------------------------------------------------
+Report for cell reveal_coretop
+   Instance path: Counter/Counter_reveal_coretop_instance
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     315.67        76.6
+                                  LUT4	     414.00        83.3
+                                PFUREG	        281        72.1
+                                RIPPLE	         25        48.1
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           counter_la0	          1        76.6
+---------------------------------------------------
+Report for cell counter_la0
+   Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     315.67        76.6
+                                  LUT4	     414.00        83.3
+                                PFUREG	        281        72.1
+                                RIPPLE	         25        48.1
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             rvl_tm_Z3	          1        21.2
+     rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s	          1        36.2
+                      counter_la0_trig	          1        18.8
+---------------------------------------------------
+Report for cell counter_la0_trig
+   Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      77.58        18.8
+                                  LUT4	      93.00        18.7
+                                PFUREG	         65        16.7
+                                RIPPLE	          9        17.3
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                 rvl_tu_1s_0s_0s_0s_1s	          1         2.8
+                             rvl_te_Z1	          1        11.6
+                   rvl_tcnt_1s_3s_1_0s	          1         3.0
+                      rvl_decode_1s_1s	          1         0.9
+---------------------------------------------------
+Report for cell rvl_decode_1s_1s
+   Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/decode_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.75         0.9
+                                  LUT4	       7.50         1.5
+---------------------------------------------------
+Report for cell rvl_tu_1s_0s_0s_0s_1s
+   Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tu_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.50         2.8
+                                  LUT4	      14.00         2.8
+                                PFUREG	          8         2.1
+---------------------------------------------------
+Report for cell rvl_te_Z1
+   Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      47.83        11.6
+                                  LUT4	      47.50         9.6
+                                PFUREG	         45        11.5
+                                RIPPLE	          9        17.3
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+   pmi_ram_dpXbnonesadr112112p12e1ac7f	          1         0.0
+---------------------------------------------------
+Report for cell pmi_ram_dpXbnonesadr112112p12e1ac7f
+   Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te_tt_ebr_ram
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        50.0
+---------------------------------------------------
+Report for cell rvl_tcnt_1s_3s_1_0s
+   Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      12.42         3.0
+                                  LUT4	      20.00         4.0
+                                PFUREG	         12         3.1
+---------------------------------------------------
+Report for cell rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s
+   Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     149.25        36.2
+                                  LUT4	     225.50        45.4
+                                PFUREG	        130        33.3
+                                RIPPLE	          4         7.7
+---------------------------------------------------
+Report for cell rvl_tm_Z3
+   Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      87.50        21.2
+                                  LUT4	      94.00        18.9
+                                PFUREG	         86        22.1
+                                RIPPLE	         12        23.1
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+ pmi_ram_dpXbnonesadr85328532p13060cf5	          1         0.0
+---------------------------------------------------
+Report for cell pmi_ram_dpXbnonesadr85328532p13060cf5
+   Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        50.0
+---------------------------------------------------
+Report for cell mg5ahub
+   Instance path: Counter/mg5ahub
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      33.33         8.1
+                                  LUT4	      24.00         4.8
+                                PFUREG	         41        10.5
+                                RIPPLE	          5         9.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              ORCALUT5	         10         0.0
+---------------------------------------------------
+Report for cell ORCALUT5
+   Instance path: Counter/mg5ahub/genblk0_genblk5_jtage_u_RNO_11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell ORCALUT5
+   Instance path: Counter/mg5ahub/genblk0_genblk5_jtage_u_RNO_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.1
+                                  LUT4	       1.00         0.2
+---------------------------------------------------
+Report for cell ORCALUT5
+   Instance path: Counter/mg5ahub/genblk0_genblk5_jtage_u_RNO_7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell ORCALUT5
+   Instance path: Counter/mg5ahub/genblk0_genblk5_jtage_u_RNO_8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell ORCALUT5
+   Instance path: Counter/mg5ahub/genblk0_genblk5_jtage_u_RNO_4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell ORCALUT5
+   Instance path: Counter/mg5ahub/bit_count_RNO_3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.1
+                                  LUT4	       2.00         0.4
+---------------------------------------------------
+Report for cell ORCALUT5
+   Instance path: Counter/mg5ahub/genblk0_genblk5_jtage_u_RNO_9
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell ORCALUT5
+   Instance path: Counter/mg5ahub/genblk0_genblk5_jtage_u_RNO_5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell ORCALUT5
+   Instance path: Counter/mg5ahub/genblk0_genblk5_jtage_u_RNO_6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.1
+                                  LUT4	       1.00         0.2
+---------------------------------------------------
+Report for cell ORCALUT5
+   Instance path: Counter/mg5ahub/genblk0_genblk5_jtage_u_RNO_10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

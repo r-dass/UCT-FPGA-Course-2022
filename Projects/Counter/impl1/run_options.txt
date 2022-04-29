@@ -1,13 +1,19 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
 #--  Project file C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\run_options.txt
-#--  Written on Fri Apr 29 13:14:07 2022
+#--  Written on Fri Apr 29 14:30:23 2022
 
 
 #project files
 add_file -fpga_constraint "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.fdc"
-add_file -verilog -vlog_std sysv "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v"
-add_file -verilog -vlog_std sysv "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v"
+add_file -verilog "C:/lscc/diamond/3.12/cae_library/synthesis/verilog/pmi_def.v"
+add_file -verilog "C:/lscc/diamond/3.12/module/reveal/src/ertl/ertl.v"
+add_file -verilog "C:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v"
+add_file -verilog "C:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/wb2sci.v"
+add_file -verilog "C:/lscc/diamond/3.12/module/reveal/src/ertl/JTAG_SOFT.v"
+add_file -verilog -vlog_std v2001 "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/counter_la0_trig_gen.v"
+add_file -verilog -vlog_std v2001 "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/counter_la0_gen.v"
+add_file -verilog -vlog_std sysv "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/Counter_rvl.v"
 
 
 #implementation: "impl1"
@@ -67,6 +73,7 @@ set_option -resource_sharing 1
 set_option -multi_file_compilation_unit 1
 
 # Compiler Options
+set_option -allow_duplicate_modules 1
 set_option -auto_infer_blackbox 0
 
 # Compiler Options
