@@ -27,7 +27,7 @@
   <WinUI CoreIndex="0">
    <TraceSigTreeData>
     <TraceSignal IsHidden="false" Name="UART_RxData" NodeType="1" PortIndex="0">
-     <BusRadix Radix="3"/>
+     <BusRadix Radix="0"/>
      <IsExpanded Expand="false"/>
     </TraceSignal>
     <TraceSignal IsHidden="false" Name="UART_RxData:0" NodeType="2" PortIndex="0"/>
