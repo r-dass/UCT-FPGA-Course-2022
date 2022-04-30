@@ -2,7 +2,7 @@
 @N|Running in 64-bit mode
 @N: CG1349 :	| Running Verilog Compiler in System Verilog mode
 @N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":302:7:302:17|Synthesizing module UART_uniq_1 in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":303:7:303:17|Synthesizing module UART_uniq_1 in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v":1269:7:1269:9|Synthesizing module VHI in library work.
 @N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":11:7:11:22|Synthesizing module counter_la0_trig in library work.
 @N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":12:7:12:17|Synthesizing module counter_la0 in library work.
@@ -11,7 +11,7 @@
 @N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":69:7:69:13|Synthesizing module Counter in library work.
 @N: CL159 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":52:7:52:13|Input reset_n is unused.
 @N: CL159 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":64:7:64:16|Input trigger_en is unused.
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":325:4:325:9|Trying to extract state machine for register txState.
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":325:4:325:9|Trying to extract state machine for register rxState.
+@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":326:4:326:9|Trying to extract state machine for register txState.
+@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":326:4:326:9|Trying to extract state machine for register rxState.
 @N|Running in 64-bit mode
 

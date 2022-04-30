@@ -9,6 +9,9 @@
         <Source name="Counter_TB.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
+        <Source name="UART.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="Counter.fdc" type="Synplify Design Constraints File" type_short="SDC">
             <Options/>
         </Source>
@@ -16,6 +19,12 @@
             <Options/>
         </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="UART_Rx.rva" type="Reveal Analyzer Project File" type_short="RVA">
+            <Options/>
+        </Source>
+        <Source name="UART_Rx.rvl" type="Reveal" type_short="Reveal">
             <Options/>
         </Source>
     </Implementation>

@@ -1,4 +1,4 @@
-# Fri Apr 29 17:01:22 2022
+# Sat Apr 30 18:32:22 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -34,7 +34,7 @@ Reading constraint file: C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 129MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 129MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 130MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
@@ -45,7 +45,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: FX493 |Applying initial value "00000000" on instance rxData[7:0].
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 @N: FX493 |Applying initial value "00000000" on instance txData[7:0].
-@A: FX681 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":325:4:325:9|Initial value on register ClkCount[9:0] is non-zero which can prevent the register from being packed into a block RAM or DSP.
+@A: FX681 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":326:4:326:9|Initial value on register ClkCount[9:0] is non-zero which can prevent the register from being packed into a block RAM or DSP.
 @N: FX493 |Applying initial value "0000000000" on instance ClkCount[9:0].
 @W: BN117 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
 @W: BN117 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
@@ -111,20 +111,20 @@ Encoding state machine txState[1:0] (in view: work.UART_uniq_1(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0
    00000000000000000000000000000001 -> 1
-@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":325:4:325:9|There are no possible illegal states for state machine txState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":326:4:326:9|There are no possible illegal states for state machine txState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
 Encoding state machine rxState[1:0] (in view: work.UART_uniq_1(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0
    00000000000000000000000000000001 -> 1
-@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":325:4:325:9|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":326:4:326:9|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
-
-
-Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 @W: BN117 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
 @W: BN117 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
@@ -207,17 +207,17 @@ Finished Pre Mapping Phase.
 Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 95MB peak: 177MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 95MB peak: 177MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Apr 29 17:01:24 2022
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Sat Apr 30 18:32:24 2022
 
 ###########################################################]

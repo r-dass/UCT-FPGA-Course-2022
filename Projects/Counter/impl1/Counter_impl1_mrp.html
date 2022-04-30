@@ -23,7 +23,7 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   6
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  04/29/22  17:01:33
+Mapped on:  04/30/22  18:32:35
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -34,8 +34,8 @@ Mapped on:  04/29/22  17:01:33
       SLICEs as Logic/ROM:    423 out of  2376 (18%)
       SLICEs as RAM:            0 out of   405 (0%)
       SLICEs as Carry:         52 out of  2376 (2%)
-   Number of LUT4s:        621 out of  4752 (13%)
-      Number used as logic LUTs:        517
+   Number of LUT4s:        622 out of  4752 (13%)
+      Number used as logic LUTs:        518
       Number used as distributed RAM:     0
       Number used as ripple logic:      104
       Number used as shift registers:     0
@@ -76,12 +76,12 @@ Mapped on:  04/29/22  17:01:33
    Number of Clock Enables:  50
      Net UART_Inst.ClkCount_1_sqmuxa_i: 1 loads, 0 LSLICEs
      Net UART_TxData17: 4 loads, 4 LSLICEs
+     Net UART_Inst/N_55: 1 loads, 1 LSLICEs
      Net UART_Inst/N_53: 1 loads, 1 LSLICEs
-     Net UART_Inst/N_51: 1 loads, 1 LSLICEs
-     Net UART_Inst/N_47: 4 loads, 4 LSLICEs
      Net UART_Inst/N_49: 4 loads, 4 LSLICEs
-     Net UART_Inst/rxState_3_sqmuxa: 5 loads, 5 LSLICEs
-     Net N_72_i_i: 1 loads, 1 LSLICEs
+     Net UART_Inst/N_51: 4 loads, 4 LSLICEs
+     Net UART_Inst/N_17_i: 5 loads, 5 LSLICEs
+     Net N_74_i_i: 1 loads, 1 LSLICEs
      Net
      Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tu_0/op_code8: 2
      loads, 2 LSLICEs
@@ -165,9 +165,10 @@ Mapped on:  04/29/22  17:01:33
      Net jtaghub16_jupdate: 3 loads, 3 LSLICEs
      Net mg5ahub/id_enable_0_sqmuxa: 1 loads, 1 LSLICEs
      Net mg5ahub/N_45_i: 10 loads, 10 LSLICEs
-   Number of LSRs:  5
-     Net N_18_i: 1 loads, 0 LSLICEs
-     Net ipReset_c: 20 loads, 20 LSLICEs
+   Number of LSRs:  6
+     Net N_21_i: 1 loads, 0 LSLICEs
+     Net UART_Inst/N_25_i: 1 loads, 1 LSLICEs
+     Net ipReset_c: 19 loads, 19 LSLICEs
      Net UART_Inst/un1_ipReset_0: 2 loads, 2 LSLICEs
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n: 75
      loads, 73 LSLICEs
@@ -180,8 +181,8 @@ Mapped on:  04/29/22  17:01:33
      Net ipReset_c: 68 loads
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/addr[0]: 49 loads
      Net jtaghub16_ip_enable0: 48 loads
-     Net Counter_reveal_coretop_instance/counter_la0_inst_0/capture_dr: 46 loads
 
+     Net Counter_reveal_coretop_instance/counter_la0_inst_0/capture_dr: 46 loads
      
      Net jtaghub16_jshift: 45 loads
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/addr[1]: 44 loads
@@ -241,8 +242,8 @@ Mapped on:  04/29/22  17:01:33
 
 Block mg5ahub/jtdo2_int_m9_0_m3_0_a2_2 undriven or does not drive anything -
      clipped.
-Block mg5ahub/jtdo2_int_m3_0_s undriven or does not drive anything - clipped.
 
+Block mg5ahub/jtdo2_int_m3_0_s undriven or does not drive anything - clipped.
 Block mg5ahub/ip_enable_14 undriven or does not drive anything - clipped.
 Block mg5ahub/ip_enable_13 undriven or does not drive anything - clipped.
 Block mg5ahub/ip_enable_12 undriven or does not drive anything - clipped.
@@ -285,7 +286,6 @@ Block Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/decode_u/GND_0
      undriven or does not drive anything - clipped.
 Signal mg5ahub/jrstn_i was merged into signal jtaghub16_jrstn
 Signal mg5ahub/jtck_i_0 was merged into signal jtaghub16_jtck
-Signal ipReset_c_i was merged into signal ipReset_c
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jrstn_i was
      merged into signal jtaghub16_jrstn
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jtck_i was merged
@@ -636,13 +636,12 @@ Signal un2_Count_cry_0_0_S0 undriven or does not drive anything - clipped.
 Signal N_1 undriven or does not drive anything - clipped.
 Block mg5ahub/genblk0_genblk5_jtage_u_RNIO59 was optimized away.
 Block mg5ahub/jtck_inferred_clock_RNINV91 was optimized away.
-Block ipReset_pad_RNIGPSC was optimized away.
 Block Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jrstn_RNIH98D was
      optimized away.
 Block Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jtck_RNICM68 was
      optimized away.
-
 Block Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/reset_n_RNIGUS4
+
      was optimized away.
 Block Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/parity_calc.
      CN was optimized away.
@@ -699,8 +698,8 @@ Block Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te_
 /Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te_tt_eb
      r_ram:
     EBRs: 1
-
     RAM SLICEs: 0
+
     Logic SLICEs: 0
     PFU Registers: 0
     -Contains EBR pmi_ram_dpXbnonesadr112112p12e1ac7f_0_0_0:  TYPE= DP16KB,
@@ -729,9 +728,10 @@ Instance Name: mg5ahub/genblk0_genblk5_jtage_u
 -------------------------
 
    Total CPU Time: 0 secs  
-   Total REAL Time: 0 secs  
+   Total REAL Time: 2 secs  
    Peak Memory Usage: 64 MB
         
+
 
 
 

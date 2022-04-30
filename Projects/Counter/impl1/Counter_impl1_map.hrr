@@ -5,7 +5,7 @@ Report for cell Counter
                                   cell	      count    Res Usage(%)
                                   SLIC	     423.00        100.0
                                  IOLGC	       2.00        100.0
-                                  LUT4	     517.00        100.0
+                                  LUT4	     518.00        100.0
                                  IOREG	          2        100.0
                                  IOBUF	         12        100.0
                                 PFUREG	        408        100.0
@@ -15,13 +15,13 @@ SUB MODULES
                                   cell	      count    SLC Usage(%)
                         reveal_coretop	          1        74.6
                                mg5ahub	          1         7.9
-                           UART_uniq_1	          1        12.1
+                           UART_uniq_1	          1        11.9
 ---------------------------------------------------
 Report for cell UART_uniq_1
    Instance path: Counter/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      51.00        12.1
+                                  SLIC	      50.50        11.9
                                   LUT4	      77.00        14.9
                                 PFUREG	         46        11.3
                                 RIPPLE	          6        11.5
@@ -31,7 +31,7 @@ Report for cell reveal_coretop
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	     315.67        74.6
-                                  LUT4	     414.00        80.1
+                                  LUT4	     414.00        79.9
                                 PFUREG	        281        68.9
                                 RIPPLE	         25        48.1
                                    EBR	          2        100.0
@@ -44,7 +44,7 @@ Report for cell counter_la0
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	     315.67        74.6
-                                  LUT4	     414.00        80.1
+                                  LUT4	     414.00        79.9
                                 PFUREG	        281        68.9
                                 RIPPLE	         25        48.1
                                    EBR	          2        100.0
@@ -75,7 +75,7 @@ Report for cell rvl_decode_1s_1s
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	       3.75         0.9
-                                  LUT4	       7.50         1.5
+                                  LUT4	       7.50         1.4
 ---------------------------------------------------
 Report for cell rvl_tu_1s_0s_0s_0s_1s
    Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tu_0
@@ -117,7 +117,7 @@ Report for cell rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	     149.25        35.3
-                                  LUT4	     225.50        43.6
+                                  LUT4	     225.50        43.5
                                 PFUREG	        130        31.9
                                 RIPPLE	          4         7.7
 ---------------------------------------------------
@@ -126,7 +126,7 @@ Report for cell rvl_tm_Z3
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	      87.50        20.7
-                                  LUT4	      94.00        18.2
+                                  LUT4	      94.00        18.1
                                 PFUREG	         86        21.1
                                 RIPPLE	         12        23.1
                                    EBR	          1        50.0

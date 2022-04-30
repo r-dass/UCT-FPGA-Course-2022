@@ -1,4 +1,4 @@
-<Project ModBy="Analyzer" Name="C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART_Rx.rvs" Date="2022-04-29">
+<Project ModBy="Analyzer" Name="C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART_Rx.rvs" Date="2022-04-30">
  <Core Name="Counter_LA0">
   <Setting>
    <Capture SamplesPerTrig="32" NumTrigsCap="1"/>

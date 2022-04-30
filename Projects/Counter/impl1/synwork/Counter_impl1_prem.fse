@@ -1,16 +1,16 @@
 
-fsm_encoding {1332543251} sequential
+fsm_encoding {1332643261} sequential
 
-fsm_state_encoding {1332543251} Wait {0}
+fsm_state_encoding {1332643261} Wait {0}
 
-fsm_state_encoding {1332543251} Send {1}
+fsm_state_encoding {1332643261} Process {1}
 
-fsm_registers {1332543251} {txState[0]} 
+fsm_registers {1332643261} {txState[0]} 
 
-fsm_encoding {1332543252} sequential
+fsm_encoding {1332643262} sequential
 
-fsm_state_encoding {1332543252} Wait {0}
+fsm_state_encoding {1332643262} Wait {0}
 
-fsm_state_encoding {1332543252} Send {1}
+fsm_state_encoding {1332643262} Process {1}
 
-fsm_registers {1332543252} {rxState[0]} 
+fsm_registers {1332643262} {rxState[0]} 

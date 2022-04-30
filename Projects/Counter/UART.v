@@ -33,7 +33,7 @@ module UART(
 
 typedef enum{ // SystemVerilog only
 Wait,
-Send
+Process
 } tState;
 tState txState;
 tState rxState;
@@ -69,17 +69,17 @@ always @(posedge(ipClk)) begin
 						txData <= ipTxData;
 						opTxBusy <= 1;  
 						opTx <= 0; 
-						txState <= Send;
+						txState <= Process;
 					end
 				end
-				Send: begin
+				Process: begin
 					if (BitsSent != 8) begin
 						txData <= txData >> 1;
 						opTx <= txData;
 						BitsSent <= BitsSent + 1;
 					end else begin 
 						opTx <= 1;
-						BitsSent <= 16'b0;
+						BitsSent <= 0;
 						txState <= Wait;
 					end
 				end
@@ -88,20 +88,21 @@ always @(posedge(ipClk)) begin
 		
 			case (rxState)
 				Wait: begin
-					if (~ipRx) begin
+					if (Rx) begin
 						opRxValid <= 1;
 					end else begin
 						opRxValid <=0;
-						rxState <= Send;
+						rxState <= Process;
 					end
 				end
-				Send: begin
+				Process: begin
 					if (BitsReceived != 8) begin
 						rxData <= {Rx, rxData[7:1]};
 						BitsReceived <= BitsReceived + 1;
 					end else begin
 						if (Rx == 1) begin
 							opRxData <= rxData;
+							opRxValid <= 1;
 							rxState <= Wait;
 						end
 					end				

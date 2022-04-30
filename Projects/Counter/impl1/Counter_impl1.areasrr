@@ -19,11 +19,11 @@ I/O cells:       12
                                 GSR        1       100.0
                                  IB        3       100.0
                            IFS1P3DX        1       100.0
-                                INV       14       100.0
+                                INV       13       100.0
                             L6MUX21        1       100.0
                                  OB        9       100.0
                            OFS1P3JX        1       100.0
-                           ORCALUT4      487       100.0
+                           ORCALUT4      488       100.0
                               PFUMX        4       100.0
                                 PUR        1       100.0
                                 VHI       10       100.0
@@ -49,8 +49,7 @@ Report for cell UART_uniq_1.netlist
                             FD1P3JX        1       100.0
                             FD1S3AX       12       100.0
                             FD1S3IX        8        20.5
-                                INV        1         7.1
-                           ORCALUT4       75        15.4
+                           ORCALUT4       76        15.6
                                 VHI        1        10.0
                                 VLO        1         9.1
                             
@@ -66,9 +65,9 @@ Report for cell reveal_coretop.verilog
                             FD1P3DX      191       100.0
                             FD1S3BX        1       100.0
                             FD1S3DX       38       100.0
-                                INV       11        78.6
+                                INV       11        84.6
                             L6MUX21        1       100.0
-                           ORCALUT4      412        84.6
+                           ORCALUT4      412        84.4
                               PFUMX        4       100.0
                                 VHI        8        80.0
                                 VLO        9        81.8
@@ -91,9 +90,9 @@ Report for cell counter_la0.netlist
                             FD1P3DX      191       100.0
                             FD1S3BX        1       100.0
                             FD1S3DX       38       100.0
-                                INV       11        78.6
+                                INV       11        84.6
                             L6MUX21        1       100.0
-                           ORCALUT4      412        84.6
+                           ORCALUT4      412        84.4
                               PFUMX        4       100.0
                                 VHI        7        70.0
                                 VLO        8        72.7
@@ -114,7 +113,7 @@ Report for cell counter_la0_trig.netlist
                             FD1P3DX       33        17.3
                             FD1S3BX        1       100.0
                             FD1S3DX       14        36.8
-                                INV        5        35.7
+                                INV        5        38.5
                             L6MUX21        1       100.0
                            ORCALUT4       94        19.3
                               PFUMX        3        75.0
