@@ -3,9 +3,9 @@ Report for cell Counter
    Instance path: Counter
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     423.00        100.0
+                                  SLIC	     424.00        100.0
                                  IOLGC	       2.00        100.0
-                                  LUT4	     518.00        100.0
+                                  LUT4	     522.00        100.0
                                  IOREG	          2        100.0
                                  IOBUF	         12        100.0
                                 PFUREG	        408        100.0
@@ -13,16 +13,16 @@ Report for cell Counter
                                    EBR	          2        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                        reveal_coretop	          1        74.6
+                        reveal_coretop	          1        74.4
                                mg5ahub	          1         7.9
-                           UART_uniq_1	          1        11.9
+                           UART_uniq_1	          1        12.1
 ---------------------------------------------------
 Report for cell UART_uniq_1
    Instance path: Counter/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      50.50        11.9
-                                  LUT4	      77.00        14.9
+                                  SLIC	      51.50        12.1
+                                  LUT4	      81.00        15.5
                                 PFUREG	         46        11.3
                                 RIPPLE	          6        11.5
 ---------------------------------------------------
@@ -30,28 +30,28 @@ Report for cell reveal_coretop
    Instance path: Counter/Counter_reveal_coretop_instance
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     315.67        74.6
-                                  LUT4	     414.00        79.9
+                                  SLIC	     315.67        74.4
+                                  LUT4	     414.00        79.3
                                 PFUREG	        281        68.9
                                 RIPPLE	         25        48.1
                                    EBR	          2        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                           counter_la0	          1        74.6
+                           counter_la0	          1        74.4
 ---------------------------------------------------
 Report for cell counter_la0
    Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     315.67        74.6
-                                  LUT4	     414.00        79.9
+                                  SLIC	     315.67        74.4
+                                  LUT4	     414.00        79.3
                                 PFUREG	        281        68.9
                                 RIPPLE	         25        48.1
                                    EBR	          2        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                             rvl_tm_Z3	          1        20.7
-     rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s	          1        35.3
+                             rvl_tm_Z3	          1        20.6
+     rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s	          1        35.2
                       counter_la0_trig	          1        18.3
 ---------------------------------------------------
 Report for cell counter_la0_trig
@@ -59,7 +59,7 @@ Report for cell counter_la0_trig
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	      77.58        18.3
-                                  LUT4	      93.00        18.0
+                                  LUT4	      93.00        17.8
                                 PFUREG	         65        15.9
                                 RIPPLE	          9        17.3
                                    EBR	          1        50.0
@@ -90,7 +90,7 @@ Report for cell rvl_te_Z1
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	      47.83        11.3
-                                  LUT4	      47.50         9.2
+                                  LUT4	      47.50         9.1
                                 PFUREG	         45        11.0
                                 RIPPLE	          9        17.3
                                    EBR	          1        50.0
@@ -109,15 +109,15 @@ Report for cell rvl_tcnt_1s_3s_1_0s
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	      12.42         2.9
-                                  LUT4	      20.00         3.9
+                                  LUT4	      20.00         3.8
                                 PFUREG	         12         2.9
 ---------------------------------------------------
 Report for cell rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s
    Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     149.25        35.3
-                                  LUT4	     225.50        43.5
+                                  SLIC	     149.25        35.2
+                                  LUT4	     225.50        43.2
                                 PFUREG	        130        31.9
                                 RIPPLE	          4         7.7
 ---------------------------------------------------
@@ -125,8 +125,8 @@ Report for cell rvl_tm_Z3
    Instance path: Counter/Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      87.50        20.7
-                                  LUT4	      94.00        18.1
+                                  SLIC	      87.50        20.6
+                                  LUT4	      94.00        18.0
                                 PFUREG	         86        21.1
                                 RIPPLE	         12        23.1
                                    EBR	          1        50.0

@@ -18,12 +18,12 @@ FD1S3DX:        38
 FD1S3IX:        39
 GSR:            1
 IB:             3
-IFS1P3DX:       1
+IFS1P3IX:       1
 INV:            13
 L6MUX21:        1
 OB:             9
 OFS1P3JX:       1
-ORCALUT4:       488
+ORCALUT4:       492
 PFUMX:          4
 PUR:            1
 VHI:            10

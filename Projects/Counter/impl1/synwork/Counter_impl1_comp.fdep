@@ -11,9 +11,9 @@
 #CUR:"C:\\lscc\\diamond\\3.12\\module\\reveal\\src\\rvl_j2w_module\\rvl_j2w_module.v":1385388154
 #CUR:"C:\\lscc\\diamond\\3.12\\module\\reveal\\src\\rvl_j2w_module\\wb2sci.v":1384179546
 #CUR:"C:\\lscc\\diamond\\3.12\\module\\reveal\\src\\ertl\\JTAG_SOFT.v":1459337100
-#CUR:"C:\\Users\\reeve\\git\\EEE5117,8Z\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\counter_la0_trig_gen.v":1651336334
-#CUR:"C:\\Users\\reeve\\git\\EEE5117,8Z\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\counter_la0_gen.v":1651336334
-#CUR:"C:\\Users\\reeve\\git\\EEE5117,8Z\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\Counter_rvl.v":1651336334
+#CUR:"C:\\Users\\reeve\\git\\EEE5117,8Z\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\counter_la0_trig_gen.v":1651341946
+#CUR:"C:\\Users\\reeve\\git\\EEE5117,8Z\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\counter_la0_gen.v":1651341946
+#CUR:"C:\\Users\\reeve\\git\\EEE5117,8Z\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\Counter_rvl.v":1651341946
 0			"C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v" verilog
 1			"C:\lscc\diamond\3.12\module\reveal\src\ertl\ertl.v" verilog
 2			"C:\lscc\diamond\3.12\module\reveal\src\rvl_j2w_module\rvl_j2w_module.v" verilog

@@ -92,6 +92,7 @@ always @(posedge(ipClk)) begin
 						opRxValid <= 1;
 					end else begin
 						opRxValid <=0;
+						ClkCount <= 100;
 						rxState <= Process;
 					end
 				end
@@ -102,7 +103,9 @@ always @(posedge(ipClk)) begin
 					end else begin
 						if (Rx == 1) begin
 							opRxData <= rxData;
+							rxData <= 0;
 							opRxValid <= 1;
+							BitsReceived <= 0; 
 							rxState <= Wait;
 						end
 					end				
@@ -114,13 +117,14 @@ always @(posedge(ipClk)) begin
 		opTxBusy <= 0; 
 		opRxValid <= 1; 
 		opTx <= 1;
-		ClkCount <= 0; 
-		BitsSent <= 0; 
-		BitsReceived <= 0; 
+		ClkCount <= 10'b0; 
+		BitsSent <= 3'b0; 
+		BitsReceived <= 3'b0; 
 		txState <= Wait;
 		rxState <= Wait;
-		rxData <= 0;
-		txData <= 0;
+		rxData <= 8'b0;
+		txData <= 8'b0;
+		Rx <= 0;
 	end
 end
 //------------------------------------------------------------------------------
