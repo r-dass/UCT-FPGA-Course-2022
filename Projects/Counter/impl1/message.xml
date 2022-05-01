@@ -116,12 +116,12 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v&quot;:16:29:16:39|Removing wire trigger_out, as there is no assignment to it.</Dynamic>
+            <Dynamic>CG360 :&quot;C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v&quot;:31:29:31:39|Removing wire trigger_out, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
             <Navigation>C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v</Navigation>
-            <Navigation>16</Navigation>
+            <Navigation>31</Navigation>
             <Navigation>29</Navigation>
-            <Navigation>16</Navigation>
+            <Navigation>31</Navigation>
             <Navigation>39</Navigation>
             <Navigation>Removing wire trigger_out, as there is no assignment to it.</Navigation>
         </Message>
@@ -1068,12 +1068,12 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v&quot;:52:15:52:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v&quot;:67:15:67:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
             <Navigation>c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v</Navigation>
-            <Navigation>52</Navigation>
+            <Navigation>67</Navigation>
             <Navigation>15</Navigation>
-            <Navigation>52</Navigation>
+            <Navigation>67</Navigation>
             <Navigation>31</Navigation>
             <Navigation>Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
         </Message>

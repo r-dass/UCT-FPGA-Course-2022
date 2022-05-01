@@ -4,7 +4,7 @@
 @N: FX493 |Applying initial value "00000000" on instance rxData[7:0].
 @N: FX493 |Applying initial value "00000000" on instance txData[7:0].
 @N: FX493 |Applying initial value "0000000000" on instance ClkCount[9:0].
-@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":330:4:330:9|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
-@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":330:4:330:9|There are no possible illegal states for state machine txState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":345:4:345:9|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":345:4:345:9|There are no possible illegal states for state machine txState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
 @N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Counter 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

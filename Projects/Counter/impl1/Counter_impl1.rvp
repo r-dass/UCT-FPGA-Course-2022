@@ -27,6 +27,7 @@ VHDL2008 = true
 [HDLs]
 C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v = System Verilog
 C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v = System Verilog
+C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Structures.v = System Verilog
 [HDL_Defines]
 SBP_SYNTHESIS=
 [HDL_Param]

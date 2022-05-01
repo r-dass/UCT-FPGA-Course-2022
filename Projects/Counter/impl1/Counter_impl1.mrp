@@ -15,7 +15,7 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   6
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  04/30/22  20:06:19
+Mapped on:  05/01/22  17:38:12
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Design Summary (cont)
 ---------------------
@@ -198,7 +198,7 @@ Design Summary (cont)
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Design Summary (cont)
 ---------------------
@@ -264,7 +264,7 @@ Block mg5ahub/jtdo2_int_m9_0_m3_0_a2_2 undriven or does not drive anything -
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Removed logic (cont)
 --------------------
@@ -330,7 +330,7 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/reset_n_i
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Removed logic (cont)
 --------------------
@@ -396,7 +396,7 @@ Signal mg5ahub/er2_tdo_4 undriven or does not drive anything - clipped.
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Removed logic (cont)
 --------------------
@@ -528,7 +528,7 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Removed logic (cont)
 --------------------
@@ -594,7 +594,7 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Removed logic (cont)
 --------------------
@@ -660,7 +660,7 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Removed logic (cont)
 --------------------
@@ -726,7 +726,7 @@ Block Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jrstn_RNIH98D was
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
 Removed logic (cont)
 --------------------
@@ -792,7 +792,7 @@ Memory Usage
 
 
 
-Design:  Counter                                       Date:  04/30/22  20:06:19
+Design:  Counter                                       Date:  05/01/22  17:38:12
 
  (cont)
 -------
@@ -822,7 +822,7 @@ Instance Name: mg5ahub/genblk0_genblk5_jtage_u
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 1 secs  
+   Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
    Peak Memory Usage: 64 MB
         
