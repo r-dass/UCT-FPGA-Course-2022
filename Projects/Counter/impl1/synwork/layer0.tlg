@@ -1,6 +1,6 @@
 @N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":2:8:2:17|Synthesizing module Structures in library work.
 Selecting top level module Counter
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":330:7:330:17|Synthesizing module UART_uniq_1 in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":351:7:351:17|Synthesizing module UART_uniq_1 in library work.
 Running optimization stage 1 on UART_uniq_1 .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v":1269:7:1269:9|Synthesizing module VHI in library work.
 Running optimization stage 1 on VHI .......
@@ -40,12 +40,12 @@ Running optimization stage 2 on rvl_decode_1s_1s .......
 Running optimization stage 2 on rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s .......
 Running optimization stage 2 on VHI .......
 Running optimization stage 2 on UART_uniq_1 .......
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":353:4:353:9|Trying to extract state machine for register txState.
+@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":376:4:376:9|Trying to extract state machine for register txState.
 Extracted state machine for register txState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
    00000000000000000000000000000001
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":353:4:353:9|Trying to extract state machine for register rxState.
+@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":376:4:376:9|Trying to extract state machine for register rxState.
 Extracted state machine for register rxState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000

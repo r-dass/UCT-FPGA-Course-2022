@@ -1,6 +1,6 @@
 i ipClk
 m 0 0
-u 86 210
+u 87 220
 p {p:ipClk}{t:UART_TxData[7:0].C}
 e ckid0_0 {t:UART_TxData[7:0].C} dffe
 c ckid0_0 {p:ipClk} port Unsupported/too complex instance on clock path

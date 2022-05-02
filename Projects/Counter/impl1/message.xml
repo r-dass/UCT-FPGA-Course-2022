@@ -105,7 +105,7 @@
         <Message>
             <ID>2049992</ID>
             <Severity>Info</Severity>
-            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v(19,1-135,10) (VERI-9000) elaborating module 'UART_uniq_1'</Dynamic>
+            <Dynamic>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v(19,1-153,10) (VERI-9000) elaborating module 'UART_uniq_1'</Dynamic>
             <Navigation>C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v</Navigation>
             <Navigation>19</Navigation>
         </Message>

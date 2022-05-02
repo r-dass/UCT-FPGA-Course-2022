@@ -1,2 +1,2 @@
-@E: CG243 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.v":4:18:4:18|Expecting ) or comma delimiter
+@E: CS153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":431:35:431:35|Can't mix blocking and non-blocking assignments to a variable
 

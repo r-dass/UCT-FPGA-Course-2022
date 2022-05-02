@@ -38,28 +38,30 @@ Process
 tState txState;
 tState rxState;
 
+reg[9:0] txClkCount = 0; 
+reg[9:0] rxClkCount = 0; 
 
-reg[9:0] ClkCount = 0; 
 reg[7:0] txData = 0;
 reg[7:0] rxData = 0;
 reg[3:0] BitsSent = 0; 
 reg[3:0] BitsReceived = 0; 
-wire ClkBaud = (ClkCount == 433); //Divide the Clock to 115200
 
+wire txClkBaud = (txClkCount == 433); //Divide the Clock to 115200
+wire rxClkBaud = (rxClkCount == 433); //Divide the Clock to 115200
+ 
 reg Rx;
 
 // TODO: Put the transmitter here
 always @(posedge(ipClk)) begin
-	Rx <= ipRx;
-	if(ClkBaud) begin
-		ClkCount <= 9'd1;
+	if(txClkBaud) begin
+		txClkCount <= 9'd1;
 	end
 	else begin 
-		ClkCount <= ClkCount + 1'b1;
+		txClkCount <= txClkCount + 1'b1;
 	end
 	
 	if (!ipReset) begin
-		if (ClkBaud) begin //Main Code Here
+		if (txClkBaud) begin //Main Code Here
 			case(txState)
 				Wait: begin 
 					if (~ipTxSend) begin
@@ -85,7 +87,20 @@ always @(posedge(ipClk)) begin
 				end
 				default:;
 			endcase
-		
+		end
+
+		Rx <= ipRx;
+
+		if (rxState == Wait && Rx) begin
+			rxClkCount <= 221; //Sync data to halfway
+		end else if(rxClkBaud) begin
+			rxClkCount <= 9'd1;
+		end else begin 
+			rxClkCount <= rxClkCount + 1'b1;
+		end
+
+
+		if (rxClkBaud) begin
 			case (rxState)
 				Wait: begin
 					if (Rx) begin
@@ -94,7 +109,7 @@ always @(posedge(ipClk)) begin
 						opRxValid <=0;
 						rxState <= Process;
 					end
-				end
+				end 
 				Process: begin
 					if (BitsReceived != 8) begin
 						rxData <= {Rx, rxData[7:1]};
@@ -111,12 +126,14 @@ always @(posedge(ipClk)) begin
 				end
 				default:;
 			endcase
+		end else begin
+			opRxValid <= 0;
 		end
 	end else begin //Reset Code Here
 		opTxBusy <= 0; 
 		opRxValid <= 0; 
 		opTx <= 1;
-		ClkCount <= 10'b0; 
+		txClkCount <= 10'b0; 
 		BitsSent <= 3'b0; 
 		BitsReceived <= 3'b0; 
 		txState <= Wait;
