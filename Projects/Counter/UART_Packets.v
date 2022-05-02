@@ -19,9 +19,9 @@ reg[7:0] UART_RxData;
 
 reg UART_TxSend;
 reg UART_TxBusy;
-reg UART_RxValid; 
+reg UART_RxValid;  
 
-reg TxReady;
+reg TxReady; 
 
 // TODO: Instantiate the UART module here
 UART UART_Inst(
@@ -47,6 +47,16 @@ ReceivePayload
 } rState;
 rState rxState;
 
+typedef enum{ 
+Wait,
+TransmitSync,
+TransmitDestination,
+TransmitSource,
+TransmitLength,
+TransmitPayload
+} tState;
+tState txState;
+
 reg[2:0] BytesReceived;
 
 //------------------------------------------------------------------------------
@@ -55,6 +65,28 @@ reg[2:0] BytesReceived;
 
 always @(posedge(ipClk)) begin
     if (!ipReset) begin
+        case(txState) 
+            Wait: begin
+                txState <= TransmitSync;
+            end
+            TransmitSync: begin
+                txState <= TransmitDestination;
+            end
+            TransmitDestination: begin
+                txState <= TransmitSource;
+            end
+            TransmitSource: begin
+                txState <= TransmitLength;
+            end
+            TransmitLength: begin
+                txState <= TransmitPayload;
+            end
+            TransmitPayload: begin
+                txState <= Wait;
+            end
+            default:;   
+        endcase
+
         case(rxState) 
             ReceiveSync: begin
                 if (UART_RxValid && (UART_RxData == 'h55)) begin
@@ -85,21 +117,17 @@ always @(posedge(ipClk)) begin
                     if (BytesReceived == 0) begin
                         opRxStream.SoP <=1;
                     end 
-
                     if (BytesReceived == 1) begin
                         opRxStream.SoP <= 0;
                     end 
-                    
                     if (BytesReceived == opRxStream.Length - 1) begin
                         opRxStream.EoP <=1;
                     end
-                    
                     if (BytesReceived == opRxStream.Length) begin
                         opRxStream.EoP <= 0;
                         opRxStream.Valid <=1;
                         rxState <= ReceiveSync;
                     end
-
                     BytesReceived <= BytesReceived + 1;
                 end else begin
                     opRxStream.Valid <= 0;
