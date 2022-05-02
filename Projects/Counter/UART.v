@@ -92,7 +92,7 @@ always @(posedge(ipClk)) begin
 						opRxValid <= 1;
 					end else begin
 						opRxValid <=0;
-						ClkCount <= 100;
+						// ClkCount <= 100;
 						rxState <= Process;
 					end
 				end
