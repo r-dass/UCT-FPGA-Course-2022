@@ -2,17 +2,19 @@
 @N|Running in 64-bit mode
 @N: CG1349 :	| Running Verilog Compiler in System Verilog mode
 @N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":2:8:2:17|Synthesizing module Structures in library work.
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":351:7:351:17|Synthesizing module UART_uniq_1 in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":2:8:2:17|Synthesizing module Structures in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":97:0:97:5|Synthesizing module work_C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v_unit in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":456:7:456:17|Synthesizing module UART_uniq_1 in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v":1269:7:1269:9|Synthesizing module VHI in library work.
 @N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":11:7:11:22|Synthesizing module counter_la0_trig in library work.
 @N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":12:7:12:17|Synthesizing module counter_la0 in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":26:7:26:20|Synthesizing module reveal_coretop in library work.
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":93:7:93:13|Synthesizing module Counter in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":26:7:26:20|Synthesizing module reveal_coretop in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":329:7:329:18|Synthesizing module UART_Packets in library work.
+@N: CL159 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":332:22:332:31|Input ipTxStream is unused.
 @N: CL159 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":52:7:52:13|Input reset_n is unused.
 @N: CL159 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":64:7:64:16|Input trigger_en is unused.
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":376:4:376:9|Trying to extract state machine for register txState.
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":376:4:376:9|Trying to extract state machine for register rxState.
+@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":481:4:481:9|Trying to extract state machine for register txState.
+@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":481:4:481:9|Trying to extract state machine for register rxState.
 @N|Running in 64-bit mode
 

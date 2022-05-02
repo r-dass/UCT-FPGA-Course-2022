@@ -54,10 +54,10 @@ add_file -verilog {C:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/wb2sci.
 add_file -verilog {C:/lscc/diamond/3.12/module/reveal/src/ertl/JTAG_SOFT.v}
 add_file -verilog -vlog_std v2001 {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/counter_la0_trig_gen.v}
 add_file -verilog -vlog_std v2001 {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/counter_la0_gen.v}
-add_file -verilog -vlog_std sysv {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/Counter_rvl.v} 
+add_file -verilog -vlog_std sysv {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/UART_Packets_rvl.v} 
 
 #-- top module name
-set_option -top_module Counter
+set_option -top_module UART_Packets
 
 #-- set result format/file last
 project -result_file {C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/Counter_impl1.edi}

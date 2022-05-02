@@ -1,2 +1,14 @@
-@W: CG360 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":40:29:40:39|Removing wire trigger_out, as there is no assignment to it.
+@W: CG921 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":344:8:344:16|opTxReady is already declared in this scope.
+@W: CG360 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":40:29:40:39|Removing wire trigger_out, as there is no assignment to it.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":344:8:344:16|Object opTxReady is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":12:20:12:25|Object opRxStream.Source is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":13:20:13:30|Object opRxStream.Destination is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":14:20:14:25|Object opRxStream.Length is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":15:14:15:16|Object opRxStream.SoP is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":16:14:16:16|Object opRxStream.EoP is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":17:20:17:23|Object opRxStream.Data is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":18:14:18:18|Object opRxStream.Valid is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":339:14:339:24|Object UART_TxData is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":341:8:341:18|Object UART_TxSend is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":357:11:357:17|Object rxState is declared but not assigned. Either assign a value or remove the declaration.
 

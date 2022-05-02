@@ -1,6 +1,7 @@
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":2:8:2:17|Synthesizing module Structures in library work.
-Selecting top level module Counter
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":351:7:351:17|Synthesizing module UART_uniq_1 in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":2:8:2:17|Synthesizing module Structures in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":97:0:97:5|Synthesizing module work_C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v_unit in library work.
+Selecting top level module UART_Packets
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":456:7:456:17|Synthesizing module UART_uniq_1 in library work.
 Running optimization stage 1 on UART_uniq_1 .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v":1269:7:1269:9|Synthesizing module VHI in library work.
 Running optimization stage 1 on VHI .......
@@ -18,12 +19,34 @@ Running optimization stage 1 on rvl_tm_Z3 .......
 Running optimization stage 1 on counter_la0 .......
 @N: CG364 :"C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
 Running optimization stage 1 on jtagconn16 .......
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":26:7:26:20|Synthesizing module reveal_coretop in library work.
-@W: CG360 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":40:29:40:39|Removing wire trigger_out, as there is no assignment to it.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":26:7:26:20|Synthesizing module reveal_coretop in library work.
+@W: CG360 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":40:29:40:39|Removing wire trigger_out, as there is no assignment to it.
 Running optimization stage 1 on reveal_coretop .......
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":93:7:93:13|Synthesizing module Counter in library work.
-Running optimization stage 1 on Counter .......
-Running optimization stage 2 on Counter .......
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":329:7:329:18|Synthesizing module UART_Packets in library work.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":344:8:344:16|Object opTxReady is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":12:20:12:25|Object opRxStream.Source is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":13:20:13:30|Object opRxStream.Destination is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":14:20:14:25|Object opRxStream.Length is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":15:14:15:16|Object opRxStream.SoP is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":16:14:16:16|Object opRxStream.EoP is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":17:20:17:23|Object opRxStream.Data is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":18:14:18:18|Object opRxStream.Valid is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":339:14:339:24|Object UART_TxData is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":341:8:341:18|Object UART_TxSend is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":357:11:357:17|Object rxState is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on UART_Packets .......
+Running optimization stage 2 on UART_Packets .......
+@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":12:20:12:25|*Unassigned bits of opRxStream.Source[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":13:20:13:30|*Unassigned bits of opRxStream.Destination[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":14:20:14:25|*Unassigned bits of opRxStream.Length[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":15:14:15:16|*Unassigned bits of opRxStream.SoP are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":16:14:16:16|*Unassigned bits of opRxStream.EoP are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":17:20:17:23|*Unassigned bits of opRxStream.Data[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":18:14:18:18|*Unassigned bits of opRxStream.Valid are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":339:14:339:24|*Unassigned bits of UART_TxData[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":341:8:341:18|*Unassigned bits of UART_TxSend are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":344:8:344:16|*Unassigned bits of opTxReady are referenced and tied to 0 -- simulation mismatch possible.
+@N: CL159 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":332:22:332:31|Input ipTxStream is unused.
 Running optimization stage 2 on reveal_coretop .......
 Running optimization stage 2 on jtagconn16 .......
 Running optimization stage 2 on counter_la0 .......
@@ -40,12 +63,12 @@ Running optimization stage 2 on rvl_decode_1s_1s .......
 Running optimization stage 2 on rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s .......
 Running optimization stage 2 on VHI .......
 Running optimization stage 2 on UART_uniq_1 .......
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":376:4:376:9|Trying to extract state machine for register txState.
+@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":481:4:481:9|Trying to extract state machine for register txState.
 Extracted state machine for register txState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
    00000000000000000000000000000001
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":376:4:376:9|Trying to extract state machine for register rxState.
+@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":481:4:481:9|Trying to extract state machine for register rxState.
 Extracted state machine for register rxState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
