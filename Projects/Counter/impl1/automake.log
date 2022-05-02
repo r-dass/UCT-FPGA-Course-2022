@@ -1,12 +1,12 @@
 
 istflow -prj "C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART_Rx.rvl" -design "Counter_impl1.rvp" 
 -- all messages logged in file C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_error.log
+-- Analyzing Verilog file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Structures.v' (VERI-1482)
 -- Analyzing Verilog file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v' (VERI-1482)
 -- Analyzing Verilog file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v' (VERI-1482)
--- Analyzing Verilog file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Structures.v' (VERI-1482)
 C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v(1): INFO: compiling module 'Counter' (VERI-1018)
 C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v(54): INFO: elaborating module 'Counter' (VERI-9000)
-C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v(136): INFO: elaborating module 'UART_uniq_1' (VERI-9000)
+C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v(135): INFO: elaborating module 'UART_uniq_1' (VERI-9000)
 Copyright (c) 2001-2013 Lattice Semiconductor Corporation. All rights reserved.
 Check Reveal Inserter settings...
     <postMsg mid="2120344" type="Info"    dynamic="1" navigation="0" arg0="2"  />
@@ -23,12 +23,12 @@ all messages logged in file C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1
 (VERI-1482) Analyzing Verilog file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/UART_Rx/counter_la0_bb.v'
 all messages logged in file C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_error.log
 (VERI-1482) Analyzing Verilog file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/Counter_reveal_coretop.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Structures.v'
 (VERI-1482) Analyzing Verilog file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v'
 (VERI-1482) Analyzing Verilog file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v'
-(VERI-1482) Analyzing Verilog file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Structures.v'
     <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v(1,8-1,15) (VERI-1018) compiling module &apos;Counter&apos;" arg1="C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v" arg2="1"  />
     <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v(1,1-54,10) (VERI-9000) elaborating module &apos;Counter&apos;" arg1="C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.v" arg2="1"  />
-    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v(19,1-136,10) (VERI-9000) elaborating module &apos;UART_uniq_1&apos;" arg1="C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v" arg2="19"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v(19,1-135,10) (VERI-9000) elaborating module &apos;UART_uniq_1&apos;" arg1="C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/UART.v" arg2="19"  />
 (VERI-1491) Pretty printing all design elements in library 'work' to file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/impl1/reveal_workspace/tmpreveal/Counter_rvl.v'
 Lpf file 'C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/Counter.lpf' is updated.
 
@@ -43,7 +43,7 @@ Lattice Diamond Version 3.12.0.240.2
 #OS: Windows 8 6.2
 #Hostname: RD-LAPTOP
 
-# Sun May  1 17:37:48 2022
+# Mon May  2 13:26:15 2022
 
 #Implementation: impl1
 
@@ -106,7 +106,7 @@ File C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpre
 File C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v changed - recompiling
 @N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":2:8:2:17|Synthesizing module Structures in library work.
 Selecting top level module Counter
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":322:7:322:17|Synthesizing module UART_uniq_1 in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":330:7:330:17|Synthesizing module UART_uniq_1 in library work.
 Running optimization stage 1 on UART_uniq_1 .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v":1269:7:1269:9|Synthesizing module VHI in library work.
 Running optimization stage 1 on VHI .......
@@ -124,10 +124,10 @@ Running optimization stage 1 on rvl_tm_Z3 .......
 Running optimization stage 1 on counter_la0 .......
 @N: CG364 :"C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
 Running optimization stage 1 on jtagconn16 .......
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":17:7:17:20|Synthesizing module reveal_coretop in library work.
-@W: CG360 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":31:29:31:39|Removing wire trigger_out, as there is no assignment to it.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":26:7:26:20|Synthesizing module reveal_coretop in library work.
+@W: CG360 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":40:29:40:39|Removing wire trigger_out, as there is no assignment to it.
 Running optimization stage 1 on reveal_coretop .......
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":84:7:84:13|Synthesizing module Counter in library work.
+@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":93:7:93:13|Synthesizing module Counter in library work.
 Running optimization stage 1 on Counter .......
 Running optimization stage 2 on Counter .......
 Running optimization stage 2 on reveal_coretop .......
@@ -146,12 +146,12 @@ Running optimization stage 2 on rvl_decode_1s_1s .......
 Running optimization stage 2 on rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s .......
 Running optimization stage 2 on VHI .......
 Running optimization stage 2 on UART_uniq_1 .......
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":345:4:345:9|Trying to extract state machine for register txState.
+@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":353:4:353:9|Trying to extract state machine for register txState.
 Extracted state machine for register txState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
    00000000000000000000000000000001
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":345:4:345:9|Trying to extract state machine for register rxState.
+@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":353:4:353:9|Trying to extract state machine for register rxState.
 Extracted state machine for register rxState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
@@ -162,12 +162,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 107MB peak: 115MB)
+At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 107MB peak: 115MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+Process took 0h:00m:05s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Sun May  1 17:37:52 2022
+# Mon May  2 13:26:21 2022
 
 ###########################################################]
 ###########################################################[
@@ -194,7 +194,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun May  1 17:37:53 2022
+# Mon May  2 13:26:22 2022
 
 ###########################################################]
 
@@ -204,12 +204,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 29MB peak: 29MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 29MB peak: 29MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+Process took 0h:00m:06s realtime, 0h:00m:05s cputime
 
 Process completed successfully.
-# Sun May  1 17:37:53 2022
+# Mon May  2 13:26:22 2022
 
 ###########################################################]
 ###########################################################[
@@ -237,10 +237,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun May  1 17:37:54 2022
+# Mon May  2 13:26:23 2022
 
 ###########################################################]
-# Sun May  1 17:37:54 2022
+# Mon May  2 13:26:23 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -279,15 +279,15 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 130MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 141MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
 
 @N: FX493 |Applying initial value "00000000" on instance rxData[7:0].
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 @N: FX493 |Applying initial value "00000000" on instance txData[7:0].
-@A: FX681 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":345:4:345:9|Initial value on register ClkCount[9:0] is non-zero which can prevent the register from being packed into a block RAM or DSP.
+@A: FX681 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":353:4:353:9|Initial value on register ClkCount[9:0] is non-zero which can prevent the register from being packed into a block RAM or DSP.
 @N: FX493 |Applying initial value "0000000000" on instance ClkCount[9:0].
 @W: BN117 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
 @W: BN117 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
@@ -353,12 +353,12 @@ Encoding state machine rxState[1:0] (in view: work.UART_uniq_1(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0
    00000000000000000000000000000001 -> 1
-@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":345:4:345:9|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":353:4:353:9|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
 Encoding state machine txState[1:0] (in view: work.UART_uniq_1(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0
    00000000000000000000000000000001 -> 1
-@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":345:4:345:9|There are no possible illegal states for state machine txState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":353:4:353:9|There are no possible illegal states for state machine txState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
 
 Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
@@ -446,24 +446,24 @@ Clock Tree ID     Driving Element                                            Dri
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 95MB peak: 177MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 95MB peak: 177MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Sun May  1 17:37:57 2022
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+# Mon May  2 13:26:26 2022
 
 ###########################################################]
-# Sun May  1 17:37:57 2022
+# Mon May  2 13:26:27 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -508,17 +508,17 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 
-Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 178MB)
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 180MB peak: 180MB)
 
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 180MB peak: 180MB)
@@ -537,42 +537,42 @@ Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:04s		    -1.06ns		 472 /       361
-   2		0h:00m:04s		    -1.06ns		 468 /       361
-   3		0h:00m:04s		    -1.06ns		 468 /       361
+   1		0h:00m:04s		    -1.06ns		 471 /       361
+   2		0h:00m:04s		    -1.06ns		 467 /       361
+   3		0h:00m:04s		    -1.06ns		 467 /       361
 Timing driven replication report
 Added 8 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
-   4		0h:00m:05s		    -0.23ns		 506 /       369
-   5		0h:00m:05s		     0.04ns		 508 /       369
-   6		0h:00m:05s		     0.07ns		 509 /       369
-   7		0h:00m:05s		     0.07ns		 509 /       369
+   4		0h:00m:06s		    -0.23ns		 505 /       369
+   5		0h:00m:06s		     0.04ns		 507 /       369
+   6		0h:00m:06s		     0.07ns		 508 /       369
+   7		0h:00m:06s		     0.07ns		 508 /       369
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 187MB peak: 192MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@A: BN291 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":345:4:345:9|Boundary register UART_Inst.opTx.fb (in view: work.Counter(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":353:4:353:9|Boundary register UART_Inst.opTx.fb (in view: work.Counter(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 188MB peak: 192MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 188MB peak: 192MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 151MB peak: 192MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 153MB peak: 192MB)
 
 Writing Analyst data base C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synwork\Counter_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 189MB peak: 192MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 190MB peak: 192MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 194MB peak: 194MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 195MB peak: 195MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 191MB peak: 195MB)
 
-@W: MT246 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":67:15:67:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\reeve\git\eee5117,8z\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":76:15:76:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\lscc\diamond\3.12\module\reveal\src\ertl\ertl.v":1192:8:1192:20|Blackbox pmi_ram_dp_Z2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\lscc\diamond\3.12\module\reveal\src\ertl\ertl.v":2162:8:2162:13|Blackbox pmi_ram_dp_Z4 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @N: MT615 |Found clock ipClk with period 20.00ns 
@@ -580,7 +580,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sun May  1 17:38:07 2022
+# Timing report written on Mon May  2 13:26:37 2022
 #
 
 
@@ -605,7 +605,7 @@ Worst slack in design: -1.515
                                           Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock                            Frequency     Frequency     Period        Period        Slack      Type         Group              
 ---------------------------------------------------------------------------------------------------------------------------------------------
-ipClk                                     50.0 MHz      181.4 MHz     20.000        5.511         14.489     declared     default_clkgroup   
+ipClk                                     50.0 MHz      181.3 MHz     20.000        5.514         14.486     declared     default_clkgroup   
 reveal_coretop|jtck_inferred_clock[0]     200.0 MHz     153.5 MHz     5.000         6.515         -1.515     inferred     Inferred_clkgroup_0
 System                                    200.0 MHz     337.8 MHz     5.000         2.960         2.040      system       system_clkgroup    
 =============================================================================================================================================
@@ -625,7 +625,7 @@ System                                 System                                 | 
 System                                 ipClk                                  |  20.000      18.147  |  No paths    -       |  No paths    -       |  No paths    -    
 System                                 reveal_coretop|jtck_inferred_clock[0]  |  No paths    -       |  No paths    -       |  5.000       -0.250  |  No paths    -    
 ipClk                                  System                                 |  20.000      16.197  |  No paths    -       |  No paths    -       |  No paths    -    
-ipClk                                  ipClk                                  |  20.000      14.489  |  No paths    -       |  No paths    -       |  No paths    -    
+ipClk                                  ipClk                                  |  20.000      14.486  |  No paths    -       |  No paths    -       |  No paths    -    
 ipClk                                  reveal_coretop|jtck_inferred_clock[0]  |  No paths    -       |  No paths    -       |  Diff grp    -       |  No paths    -    
 reveal_coretop|jtck_inferred_clock[0]  System                                 |  No paths    -       |  No paths    -       |  No paths    -       |  5.000       0.885
 reveal_coretop|jtck_inferred_clock[0]  ipClk                                  |  No paths    -       |  No paths    -       |  No paths    -       |  Diff grp    -    
@@ -656,14 +656,14 @@ Starting Points with Worst Slack
 Instance                                                              Reference     Type        Pin     Net             Time        Slack 
                                                                       Clock                                                               
 ------------------------------------------------------------------------------------------------------------------------------------------
-UART_Inst.ClkCount[2]                                                 ipClk         FD1S3AX     Q       ClkCount[2]     0.929       14.489
-UART_Inst.ClkCount[3]                                                 ipClk         FD1S3AX     Q       ClkCount[3]     0.929       14.489
-UART_Inst.ClkCount[4]                                                 ipClk         FD1S3AX     Q       ClkCount[4]     0.929       14.489
-UART_Inst.ClkCount[5]                                                 ipClk         FD1S3AX     Q       ClkCount[5]     0.929       14.489
-UART_Inst.ClkCount[6]                                                 ipClk         FD1S3AX     Q       ClkCount[6]     0.929       14.489
-UART_Inst.ClkCount[7]                                                 ipClk         FD1S3AX     Q       ClkCount[7]     0.929       14.489
-UART_Inst.ClkCount[8]                                                 ipClk         FD1S3AX     Q       ClkCount[8]     0.929       14.489
-UART_Inst.ClkCount[9]                                                 ipClk         FD1S3AX     Q       ClkCount[9]     0.929       14.489
+UART_Inst.ClkCount[0]                                                 ipClk         FD1S3AX     Q       ClkCount[0]     0.929       14.486
+UART_Inst.ClkCount[1]                                                 ipClk         FD1S3AX     Q       ClkCount[1]     0.929       14.486
+UART_Inst.ClkCount[3]                                                 ipClk         FD1S3AX     Q       ClkCount[3]     0.929       14.486
+UART_Inst.ClkCount[4]                                                 ipClk         FD1S3AX     Q       ClkCount[4]     0.929       14.486
+UART_Inst.ClkCount[5]                                                 ipClk         FD1S3AX     Q       ClkCount[5]     0.929       14.486
+UART_Inst.ClkCount[7]                                                 ipClk         FD1S3AX     Q       ClkCount[7]     0.929       14.486
+UART_Inst.ClkCount[8]                                                 ipClk         FD1S3AX     Q       ClkCount[8]     0.929       14.486
+UART_Inst.ClkCount[9]                                                 ipClk         FD1S3AX     Q       ClkCount[9]     0.929       14.486
 Counter_reveal_coretop_instance.counter_la0_inst_0.tm_u.start_bit     ipClk         FD1P3DX     Q       start_bit       1.091       14.539
 Counter_reveal_coretop_instance.counter_la0_inst_0.tm_u.start_d       ipClk         FD1P3DX     Q       start_d         1.067       14.563
 ==========================================================================================================================================
@@ -676,7 +676,7 @@ Ending Points with Worst Slack
 Instance                                                                       Reference     Type        Pin     Net                           Time         Slack 
                                                                                Clock                                                                              
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-UART_Inst.BitsReceived[3]                                                      ipClk         FD1S3IX     D       un1_BitsReceived_4_axbxc3     19.389       14.489
+UART_Inst.BitsReceived[3]                                                      ipClk         FD1S3IX     D       un1_BitsReceived_4_axbxc3     19.389       14.486
 Counter_reveal_coretop_instance.counter_la0_inst_0.tm_u.post_trig_cntr[3]      ipClk         FD1P3DX     D       post_trig_cntr_s[3]           20.069       14.539
 Counter_reveal_coretop_instance.counter_la0_inst_0.tm_u.post_trig_cntr[4]      ipClk         FD1P3DX     D       post_trig_cntr_s[4]           20.069       14.539
 Counter_reveal_coretop_instance.counter_la0_inst_0.tm_u.pre_trig_cntr[3]       ipClk         FD1P3DX     D       pre_trig_cntr_s[3]            20.069       14.539
@@ -700,12 +700,12 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         19.389
 
-    - Propagation time:                      4.900
+    - Propagation time:                      4.904
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 14.489
+    = Slack (non-critical) :                 14.486
 
     Number of logic level(s):                5
-    Starting point:                          UART_Inst.ClkCount[2] / Q
+    Starting point:                          UART_Inst.ClkCount[0] / Q
     Ending point:                            UART_Inst.BitsReceived[3] / D
     The start point is clocked by            ipClk [rising] (rise=0.000 fall=10.000 period=20.000) on pin CK
     The end   point is clocked by            ipClk [rising] (rise=0.000 fall=10.000 period=20.000) on pin CK
@@ -713,24 +713,24 @@ Path information for path number 1:
 Instance / Net                                       Pin      Pin               Arrival     No. of    
 Name                                    Type         Name     Dir     Delay     Time        Fan Out(s)
 ------------------------------------------------------------------------------------------------------
-UART_Inst.ClkCount[2]                   FD1S3AX      Q        Out     0.929     0.929 r     -         
-ClkCount[2]                             Net          -        -       -         -           2         
+UART_Inst.ClkCount[0]                   FD1S3AX      Q        Out     0.929     0.929 r     -         
+ClkCount[0]                             Net          -        -       -         -           2         
 UART_Inst.ClkBaud_5                     ORCALUT4     A        In      0.000     0.929 r     -         
-UART_Inst.ClkBaud_5                     ORCALUT4     Z        Out     0.754     1.684 f     -         
+UART_Inst.ClkBaud_5                     ORCALUT4     Z        Out     0.754     1.684 r     -         
 ClkBaud_5                               Net          -        -       -         -           1         
-UART_Inst.ClkBaud                       ORCALUT4     A        In      0.000     1.684 f     -         
-UART_Inst.ClkBaud                       ORCALUT4     Z        Out     1.083     2.766 f     -         
-ClkBaud                                 Net          -        -       -         -           24        
-UART_Inst.un1_ClkCount6_2_i_a2          ORCALUT4     A        In      0.000     2.766 f     -         
-UART_Inst.un1_ClkCount6_2_i_a2          ORCALUT4     Z        Out     0.965     3.731 f     -         
-N_113                                   Net          -        -       -         -           5         
-UART_Inst.un1_BitsReceived_4_ac0        ORCALUT4     A        In      0.000     3.731 f     -         
-UART_Inst.un1_BitsReceived_4_ac0        ORCALUT4     Z        Out     0.754     4.486 f     -         
+UART_Inst.ClkBaud                       ORCALUT4     A        In      0.000     1.684 r     -         
+UART_Inst.ClkBaud                       ORCALUT4     Z        Out     1.086     2.769 r     -         
+ClkBaud                                 Net          -        -       -         -           25        
+UART_Inst.un1_ClkCount6_2_i_a2          ORCALUT4     A        In      0.000     2.769 r     -         
+UART_Inst.un1_ClkCount6_2_i_a2          ORCALUT4     Z        Out     0.965     3.735 r     -         
+un1_ClkCount6_2_i_a2                    Net          -        -       -         -           5         
+UART_Inst.un1_BitsReceived_4_ac0        ORCALUT4     A        In      0.000     3.735 r     -         
+UART_Inst.un1_BitsReceived_4_ac0        ORCALUT4     Z        Out     0.754     4.489 r     -         
 un1_BitsReceived_4_c1                   Net          -        -       -         -           1         
-UART_Inst.un1_BitsReceived_4_axbxc3     ORCALUT4     D        In      0.000     4.486 f     -         
-UART_Inst.un1_BitsReceived_4_axbxc3     ORCALUT4     Z        Out     0.415     4.900 r     -         
+UART_Inst.un1_BitsReceived_4_axbxc3     ORCALUT4     D        In      0.000     4.489 r     -         
+UART_Inst.un1_BitsReceived_4_axbxc3     ORCALUT4     Z        Out     0.415     4.904 r     -         
 un1_BitsReceived_4_axbxc3               Net          -        -       -         -           1         
-UART_Inst.BitsReceived[3]               FD1S3IX      D        In      0.000     4.900 r     -         
+UART_Inst.BitsReceived[3]               FD1S3IX      D        In      0.000     4.904 r     -         
 ======================================================================================================
 
 
@@ -1310,10 +1310,10 @@ Counter_reveal_coretop_instance.counter_la0_inst_0.jtag_int_u.parity_calc       
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 191MB peak: 195MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 191MB peak: 195MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 191MB peak: 195MB)
+Finished timing report (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 191MB peak: 195MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -1329,8 +1329,7 @@ CCU2B:          47
 FD1P3AX:        51
 FD1P3BX:        33
 FD1P3DX:        191
-FD1P3IX:        1
-FD1P3JX:        1
+FD1P3IX:        2
 FD1S3AX:        12
 FD1S3BX:        1
 FD1S3DX:        38
@@ -1342,7 +1341,7 @@ INV:            13
 L6MUX21:        1
 OB:             9
 OFS1P3JX:       1
-ORCALUT4:       492
+ORCALUT4:       490
 PFUMX:          4
 PUR:            1
 VHI:            10
@@ -1352,7 +1351,7 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 72MB peak: 195MB)
 
 Process took 0h:00m:10s realtime, 0h:00m:10s cputime
-# Sun May  1 17:38:08 2022
+# Mon May  2 13:26:37 2022
 
 ###########################################################]
 
@@ -1374,7 +1373,7 @@ Generating edif netlist for IP cell pmi_ram_dpxbnonesadr112112p12e1ac7f.edn
 
 C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1>"C:/lscc/diamond/3.12/ispfpga/bin/nt64/scuba" -w -bus_exp 7 -bb -arch mg5a00 -type bram -wp 10 -rp 0011 -data_width 1 -num_rows 2 -rdata_width 1 -read_reg1 outreg -gsr DISABLED   -memformat bin -cascade -1 -n pmi_ram_dpXbnonesadr112112p12e1ac7f -pmi 
 SCUBA, Version Diamond (64-bit) 3.12.0.240.2
-Sun May 01 17:38:11 2022
+Mon May 02 13:26:40 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1406,7 +1405,7 @@ Generating edif netlist for IP cell pmi_ram_dpxbnonesadr85328532p13060cf5.edn
 
 C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1>"C:/lscc/diamond/3.12/ispfpga/bin/nt64/scuba" -w -bus_exp 7 -bb -arch mg5a00 -type bram -wp 10 -rp 0011 -data_width 8 -num_rows 32 -rdata_width 8 -read_reg1 outreg -gsr DISABLED   -memformat bin -cascade -1 -n pmi_ram_dpXbnonesadr85328532p13060cf5 -pmi 
 SCUBA, Version Diamond (64-bit) 3.12.0.240.2
-Sun May 01 17:38:11 2022
+Mon May 02 13:26:41 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1434,7 +1433,7 @@ END   SCUBA Module Synthesis
 Writing the design to pmi_ram_dpXbnonesadr85328532p13060cf5.ngo...
 
 Total CPU Time: 0 secs  
-Total REAL Time: 0 secs  
+Total REAL Time: 2 secs  
 Peak Memory Usage: 14 MB
 
 
@@ -1474,7 +1473,7 @@ Running DRC...
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="10"  />
 
 Design Results:
-   1061 blocks expanded
+   1059 blocks expanded
 Complete the first expansion.
 Writing 'Counter_impl1.ngd' ...
 Total CPU Time: 0 secs 
@@ -1512,7 +1511,7 @@ Removing unused logic...
 
 Optimizing...
 
-192 CCU2 constant inputs absorbed.
+180 CCU2 constant inputs absorbed.
 
 
 
@@ -1521,12 +1520,12 @@ Design Summary:
    Number of registers:    410 out of  3864 (11%)
       PFU registers:          408 out of  3564 (11%)
       PIO registers:            2 out of   300 (1%)
-   Number of SLICEs:       424 out of  2376 (18%)
-      SLICEs as Logic/ROM:    424 out of  2376 (18%)
+   Number of SLICEs:       422 out of  2376 (18%)
+      SLICEs as Logic/ROM:    422 out of  2376 (18%)
       SLICEs as RAM:            0 out of   405 (0%)
       SLICEs as Carry:         52 out of  2376 (2%)
-   Number of LUT4s:        626 out of  4752 (13%)
-      Number used as logic LUTs:        522
+   Number of LUT4s:        623 out of  4752 (13%)
+      Number used as logic LUTs:        519
       Number used as distributed RAM:     0
       Number used as ripple logic:      104
       Number used as shift registers:     0
@@ -1561,14 +1560,14 @@ Design Summary:
      Net ipClk_c: 133 loads, 133 rising, 0 falling (Driver: PIO ipClk )
      Net jtaghub16_jtck: 122 loads, 0 rising, 122 falling (Driver: mg5ahub/genblk0_genblk5_jtage_u )
    Number of Clock Enables:  50
-     Net UART_Inst.opTx_3_sqmuxa_i: 1 loads, 0 LSLICEs
+     Net UART_Inst.ClkCount_1_sqmuxa_i: 1 loads, 0 LSLICEs
      Net UART_TxData17: 4 loads, 4 LSLICEs
-     Net UART_Inst/N_69: 1 loads, 1 LSLICEs
-     Net UART_Inst/opTxBusy_1_sqmuxa_i_0: 1 loads, 1 LSLICEs
-     Net UART_Inst/N_62: 4 loads, 4 LSLICEs
-     Net UART_Inst/N_64: 4 loads, 4 LSLICEs
-     Net UART_Inst/N_20_i: 5 loads, 5 LSLICEs
-     Net N_99_i_i: 1 loads, 1 LSLICEs
+     Net UART_Inst/N_23_i: 5 loads, 5 LSLICEs
+     Net UART_Inst/N_50: 1 loads, 1 LSLICEs
+     Net UART_Inst/N_52: 4 loads, 4 LSLICEs
+     Net UART_Inst/N_54: 4 loads, 4 LSLICEs
+     Net UART_Inst/N_56: 1 loads, 1 LSLICEs
+     Net N_76_i_i: 1 loads, 1 LSLICEs
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tu_0/op_code8: 2 loads, 2 LSLICEs
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tu_0/mask_reg[0]_0_sqmuxa: 1 loads, 1 LSLICEs
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tu_0/compare_reg[0]_0_sqmuxa: 1 loads, 1 LSLICEs
@@ -1612,8 +1611,8 @@ Design Summary:
      Net mg5ahub/id_enable_0_sqmuxa: 1 loads, 1 LSLICEs
      Net mg5ahub/N_45_i: 10 loads, 10 LSLICEs
    Number of LSRs:  7
-     Net N_22_i: 1 loads, 0 LSLICEs
-     Net UART_Inst/N_16_i: 1 loads, 1 LSLICEs
+     Net N_16_i: 1 loads, 0 LSLICEs
+     Net UART_Inst/opRxValid_0_sqmuxa: 1 loads, 1 LSLICEs
      Net ipReset_c: 18 loads, 17 LSLICEs
      Net UART_Inst/un1_ipReset_0: 2 loads, 2 LSLICEs
      Net UART_Inst/un1_ipReset_1_0: 2 loads, 2 LSLICEs
@@ -1623,7 +1622,7 @@ Design Summary:
    Top 10 highest fanout non-clock nets:
      Net jtaghub16_jrstn: 123 loads
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n: 75 loads
-     Net ipReset_c: 58 loads
+     Net ipReset_c: 68 loads
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/addr[0]: 49 loads
      Net jtaghub16_ip_enable0: 48 loads
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/capture_dr: 46 loads
@@ -1644,8 +1643,8 @@ be met between the clock and the reset within the memory block.
 See the device specific data sheet for additional details.
 
 
-Total CPU Time: 0 secs  
-Total REAL Time: 0 secs  
+Total CPU Time: 1 secs  
+Total REAL Time: 2 secs  
 Peak Memory Usage: 64 MB
 
 Dumping design to file Counter_impl1_map.ncd.
@@ -1673,7 +1672,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Sun May 01 17:38:15 2022
+Mon May 02 13:26:46 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1703,11 +1702,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 2399 paths, 1 nets, and 2922 connections (92.73% coverage)
+Constraints cover 2376 paths, 1 nets, and 2914 connections (92.45% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Sun May 01 17:38:16 2022
+Mon May 02 13:26:46 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1737,7 +1736,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 2399 paths, 1 nets, and 2922 connections (92.73% coverage)
+Constraints cover 2376 paths, 1 nets, and 2914 connections (92.45% coverage)
 
 
 
@@ -1763,7 +1762,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Counter_impl1_map.ncd"
-Sun May 01 17:38:17 2022
+Mon May 02 13:26:48 2022
 
 PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/reeve/git/EEE5117,8Z/Projects/Counter/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1 Counter_impl1_map.ncd Counter_impl1.dir/5_1.ncd Counter_impl1.prf
@@ -1792,13 +1791,13 @@ Device utilization summary:
                      12/100          12% bonded
    JTAG               1/1           100% used
    EBR                2/9            22% used
-   SLICE            424/2376         17% used
+   SLICE            422/2376         17% used
 
 
 
 chipcheck: INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific datasheet for additional details.
-Number of Signals: 1084
-Number of Connections: 3151
+Number of Signals: 1082
+Number of Connections: 3152
 
 Pin Constraint Summary:
    12 out of 12 pins locked (100% locked).
@@ -1811,8 +1810,8 @@ No signal is selected as DCS clock.
 
 The following 3 signals are selected to use the secondary clock routing resources:
     jtaghub16_jrstn (driver: mg5ahub/genblk0_genblk5_jtage_u, clk load #: 0, sr load #: 119, ce load #: 0)
-    Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n (driver: Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_454, clk load #: 0, sr load #: 75, ce load #: 0)
-    jtaghub16_ip_enable0 (driver: SLICE_460, clk load #: 0, sr load #: 0, ce load #: 26)
+    Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n (driver: Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_452, clk load #: 0, sr load #: 75, ce load #: 0)
+    jtaghub16_ip_enable0 (driver: SLICE_458, clk load #: 0, sr load #: 0, ce load #: 26)
 
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
@@ -1820,14 +1819,14 @@ Starting Placer Phase 0.
 Finished Placer Phase 0.  REAL time: 3 secs 
 
 Starting Placer Phase 1.
-.......................
-Placer score = 116162.
-Finished Placer Phase 1.  REAL time: 17 secs 
+.....................
+Placer score = 129828.
+Finished Placer Phase 1.  REAL time: 16 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  115675
-Finished Placer Phase 2.  REAL time: 18 secs 
+Placer score =  128351
+Finished Placer Phase 2.  REAL time: 16 secs 
 
 
 ------------------ Clock Report ------------------
@@ -1841,8 +1840,8 @@ Global Clocks:
   PRIMARY "ipClk_c" from comp "ipClk" on CLK_PIN site "21 (PL12A)", clk load = 136
   PRIMARY "jtaghub16_jtck" from JTCK on comp "mg5ahub/genblk0_genblk5_jtage_u" on site "JTAG", clk load = 123
   SECONDARY "jtaghub16_jrstn" from JRSTN on comp "mg5ahub/genblk0_genblk5_jtage_u" on site "JTAG", clk load = 0, ce load = 0, sr load = 119
-  SECONDARY "Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n" from F0 on comp "Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_454" on site "R25C19A", clk load = 0, ce load = 0, sr load = 75
-  SECONDARY "jtaghub16_ip_enable0" from Q0 on comp "SLICE_460" on site "R2C18B", clk load = 0, ce load = 26, sr load = 0
+  SECONDARY "Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n" from F0 on comp "Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_452" on site "R12C2C", clk load = 0, ce load = 0, sr load = 75
+  SECONDARY "jtaghub16_ip_enable0" from Q0 on comp "SLICE_458" on site "R2C18A", clk load = 0, ce load = 26, sr load = 0
 
   PRIMARY  : 2 out of 8 (25%)
      DCS   : 0 out of 2 (0%)
@@ -1887,16 +1886,16 @@ DSP Block #:              1 2 3
 # of MULT9X9ADDSUBB            
 # of MULT9X9ADDSUBSUMB         
 
-Total placer CPU time: 16 secs 
+Total placer CPU time: 15 secs 
 
 Dumping design to file Counter_impl1.dir/5_1.ncd.
 
-0 connections routed; 3151 unrouted.
+0 connections routed; 3152 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 20 secs 
+Completed router resource preassignment. Real time: 18 secs 
 
-Start NBR router at 17:38:37 05/01/22
+Start NBR router at 13:27:06 05/02/22
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -1911,44 +1910,47 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 17:38:37 05/01/22
+Start NBR special constraint process at 13:27:07 05/02/22
 
-Start NBR section for initial routing at 17:38:37 05/01/22
+Start NBR section for initial routing at 13:27:07 05/02/22
 Level 4, iteration 1
-101(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 11.708ns/0.000ns; real time: 21 secs 
+129(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.226ns/0.000ns; real time: 20 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 17:38:38 05/01/22
+Start NBR section for normal routing at 13:27:08 05/02/22
 Level 4, iteration 1
-45(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 11.708ns/0.000ns; real time: 21 secs 
+56(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.190ns/0.000ns; real time: 20 secs 
 Level 4, iteration 2
-15(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 11.699ns/0.000ns; real time: 21 secs 
+29(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.190ns/0.000ns; real time: 20 secs 
 Level 4, iteration 3
-6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 11.699ns/0.000ns; real time: 21 secs 
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.190ns/0.000ns; real time: 20 secs 
 Level 4, iteration 4
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 11.699ns/0.000ns; real time: 21 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.190ns/0.000ns; real time: 20 secs 
 Level 4, iteration 5
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 11.699ns/0.000ns; real time: 21 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.190ns/0.000ns; real time: 20 secs 
 Level 4, iteration 6
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.190ns/0.000ns; real time: 20 secs 
+Level 4, iteration 7
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 11.699ns/0.000ns; real time: 21 secs 
+Estimated worst slack/total negative slack<setup>: 11.190ns/0.000ns; real time: 20 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 17:38:38 05/01/22
+Start NBR section for setup/hold timing optimization with effort level 3 at 13:27:08 05/02/22
 
-Start NBR section for re-routing at 17:38:39 05/01/22
+Start NBR section for re-routing at 13:27:10 05/02/22
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 11.699ns/0.000ns; real time: 22 secs 
+Estimated worst slack/total negative slack<setup>: 11.190ns/0.000ns; real time: 22 secs 
 
-Start NBR section for post-routing at 17:38:39 05/01/22
+Start NBR section for post-routing at 13:27:10 05/02/22
 
 End NBR router with 0 unrouted connection
 
@@ -1956,17 +1958,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 11.699ns
+  Estimated worst slack<setup> : 11.190ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 21 secs 
+Total CPU time 22 secs 
 Total REAL time: 23 secs 
 Completely routed.
-End of route.  3151 routed (100.00%); 0 unrouted.
+End of route.  3152 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -1977,13 +1979,13 @@ Dumping design to file Counter_impl1.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 11.699
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 11.190
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.182
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.175
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 21 secs 
+Total CPU  time to completion: 23 secs 
 Total REAL time to completion: 24 secs 
 
 par done!
@@ -2021,7 +2023,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Sun May 01 17:38:43 2022
+Mon May 02 13:27:14 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -2051,11 +2053,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 2399 paths, 1 nets, and 2923 connections (92.76% coverage)
+Constraints cover 2376 paths, 1 nets, and 2915 connections (92.48% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Sun May 01 17:38:43 2022
+Mon May 02 13:27:14 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -2085,7 +2087,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 2399 paths, 1 nets, and 2923 connections (92.76% coverage)
+Constraints cover 2376 paths, 1 nets, and 2915 connections (92.48% coverage)
 
 
 
@@ -2099,7 +2101,7 @@ Cumulative negative slack: 0 (0+0)
 
 --------------------------------------------------------------------------------
 
-Total CPU Time: 2 secs 
+Total CPU Time: 3 secs 
 Total REAL Time: 3 secs 
 Peak Memory Usage: 157 MB
 
@@ -2226,6 +2228,6 @@ Preference Summary:
 
 Creating bit map...
 Saving bit stream in "Counter_impl1.jed".
-Total CPU Time: 3 secs 
-Total REAL Time: 4 secs 
+Total CPU Time: 4 secs 
+Total REAL Time: 5 secs 
 Peak Memory Usage: 278 MB

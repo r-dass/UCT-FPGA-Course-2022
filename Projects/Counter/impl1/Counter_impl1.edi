@@ -5,7 +5,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2022 5 1 17 38 6)
+      (timeStamp 2022 5 2 13 26 36)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "Q-2020.03L-SP1, mapper map202003lat, Build 172R"))
      )
@@ -86,17 +86,6 @@
          (interface
            (port D (direction INPUT))
            (port CK (direction INPUT))
-           (port Q (direction OUTPUT))
-         )
-       )
-    )
-    (cell FD1P3JX (cellType GENERIC)
-       (view PRIM (viewType NETLIST)
-         (interface
-           (port D (direction INPUT))
-           (port SP (direction INPUT))
-           (port CK (direction INPUT))
-           (port PD (direction INPUT))
            (port Q (direction OUTPUT))
          )
        )
@@ -3776,39 +3765,39 @@ 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
-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
+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
-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
+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
-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
+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
@@ -5610,15 +5599,15 @@ RNTX0eUZjUNnzqcoUDUPmufZMkrJLiVF/RR7RHqqkt6kL4TWZwPbTC6tZHPKlVdU
 uFUtrXRrAKtE1NfR5RmNQ2fOpyhQNQ+a59kySskuJUX9FHtEeqqS3qQvhNZnA9tM
 oGG9USSC/Hu4VS2tdGsAq0TU19HlGY1DZ86nKFA1D5rn2TJKyS4lRf0Ue0R6qpLe
 pC+E1mcD20zO1hdm0fMCQbhVLa10awCrRNTX0eUZjUNnzqcoUDUPmufZMkrJLiVF
-/RR7RHqqkt6kL4TWZwPbTECophtlxSXzLXJX03TpQcH+67OD5aWIQyYhap3GaUyN
-Wj01aFWfDCjKNsROhTEYivJTqFnlIZmvitp8g26O5guMp/5kdprLf5svyTa7do0S
-caTyIeZHMpHZz3SXfFNwvr79SFXeSmovOdRWAu7ESkDlo7Tru4QrOxZcWNRuzT2T
-my/JNrt2jRJxpPIh5kcykdnPdJd8U3C+vv1IVd5Kai851FYC7sRKQOWjtOu7hCs7
-Z3xsDMpN4tGbL8k2u3aNEnGk8iHmRzKR2c90l3xTcL6+/UhV3kpqLznUVgLuxEpA
-5aO067uEKzsny1ZtXFN08JsvyTa7do0ScaTyIeZHMpHZz3SXfFNwvr79SFXeSmov
-OdRWAu7ESkDlo7Tru4QrO0541+8B8dEjETBIM4yWKnc/jmMc2qdK2+Xi/OQPWB19
-D/fgVWh9QROSlW5jZp5rngdTeC4jl1g4Ose1hIgDPa0RMEgzjJYqdz+OYxzap0rb
-5eL85A9YHX0P9+BVaH1BE5KVbmNmnmueB1N4LiOXWDh/wczM0CDFIhEwSDOMlip3
+/RR7RHqqkt6kL4TWZwPbTHqpa5vc9u6nLXJX03TpQcH+67OD5aWIQyYhap3GaUyN
+Wj01aFWfDCjKNsROhTEYivJTqFnlIZmv/Gu9M0D0CWwtclfTdOlBwf7rs4PlpYhD
+JiFqncZpTI1aPTVoVZ8MKMo2xE6FMRiK8lOoWeUhma9+rzwc3h48Ri1yV9N06UHB
+/uuzg+WliEMmIWqdxmlMjVo9NWhVnwwoyjbEToUxGIryU6hZ5SGZr4rafINujuYL
+fhjPthIbq2ybL8k2u3aNEnGk8iHmRzKR2c90l3xTcL6+/UhV3kpqLznUVgLuxEpA
+5aO067uEKztOeNfvAfHRIxEwSDOMlip3P45jHNqnStvl4vzkD1gdfQ/34FVofUET
+kpVuY2aea54HU3guI5dYODrHtYSIAz2tETBIM4yWKnc/jmMc2qdK2+Xi/OQPWB19
+D/fgVWh9QROSlW5jZp5rngdTeC4jl1g4f8HMzNAgxSIRMEgzjJYqd6Dv18PwEduG
+n4bYkVDzM/+SOdecrrctNku9Llq75j/73bZDN4E5JL5qru4CXIfBRxEwSDOMlip3
 oO/Xw/AR24afhtiRUPMz/5I515yuty02S70uWrvmP/vdtkM3gTkkvuRIjiVmJ2uK
 ETBIM4yWKneX4dORLXeR1a8ve2JWXaGq0Uhte0JDEqVz5yBGR2THdREwSDOMlip3
 iljq1yKU4i7GK23D7V0G+v2FZkHPKu+ULJrn/fyKjCLvD9W+nWTc81hxPFC/Qw3r
@@ -5630,15 +5619,15 @@ zPXG2J4ghnQP9+BVaH1BE5KVbmNmnmueB1N4LiOXWDhEE17oSUuVnBEwSDOMlip3
 P45jHNqnStvM9cbYniCGdA/34FVofUETkpVuY2aea54HU3guI5dYOHn9sEWMyUE5
 ETBIM4yWKnc/jmMc2qdK28z1xtieIIZ0D/fgVWh9QROSlW5jZp5rngdTeC4jl1g4
 EpaAEywoZ9sRMEgzjJYqdz+OYxzap0rbzPXG2J4ghnQP9+BVaH1BE5KVbmNmnmue
-B1N4LiOXWDjfffF1XyYfKREwSDOMlip3oO/Xw/AR24bKW+MkoOgwx5I515yuty02
-S70uWrvmP/vdtkM3gTkkvnDQBlX81yR4ETBIM4yWKnfjfLdpXSuYIYJGw2qYw4g+
-LYt7Co4m7norMvVtODxUO5zxa8nqZMnlosI22QpZZtMRMEgzjJYqd+N8t2ldK5gh
-gkbDapjDiD4ti3sKjibueisy9W04PFQ7nPFryepkyeU9CQ1Vi0fnuREwSDOMlip3
-43y3aV0rmCGCRsNqmMOIPi2LewqOJu56KzL1bTg8VDuc8WvJ6mTJ5cmRz1yUc3Lh
-ETBIM4yWKnfjfLdpXSuYIYJGw2qYw4g+LYt7Co4m7norMvVtODxUO5zxa8nqZMnl
-Cj5gDTyxx1sRMEgzjJYqd4pY6tcilOIulrqjIwe45kj9hWZBzyrvlLMyuj3oxbNW
-9u6IZKHHC6Gkbprpm/VMjBEwSDOMlip3iljq1yKU4i6WuqMjB7jmSP2FZkHPKu+U
-szK6PejFs1b27ohkoccLoWMcBCtF6UFKNxw7FVgyxnJNqyWXe+12u6A9gOKGzPn0
+B1N4LiOXWDhMFCIUf7nNRREwSDOMlip3oO/Xw/AR24bKW+MkoOgwx5I515yuty02
+S70uWrvmP/vdtkM3gTkkvtfmkB/7OPZYETBIM4yWKneg79fD8BHbhspb4ySg6DDH
+kjnXnK63LTZLvS5au+Y/+922QzeBOSS+xHKZ5Ohy7hARMEgzjJYqd6Dv18PwEduG
+ylvjJKDoMMeSOdecrrctNku9Llq75j/73bZDN4E5JL6mryZvvEVq3xEwSDOMlip3
+43y3aV0rmCGCRsNqmMOIPi2LewqOJu56KzL1bTg8VDuc8WvJ6mTJ5Qo+YA08scdb
+ETBIM4yWKneKWOrXIpTiLpa6oyMHuOZI/YVmQc8q75SzMro96MWzVvbuiGShxwuh
+pG6a6Zv1TIwRMEgzjJYqd4pY6tcilOIulrqjIwe45kj9hWZBzyrvlLMyuj3oxbNW
+9u6IZKHHC6FjHAQrRelBSjccOxVYMsZyTasll3vtdrugPYDihsz59LcbIreFgxXO
+gQpD9dwP4rGu6qMzgzBhv18fpgU2c3g3Nxw7FVgyxnJNqyWXe+12u6A9gOKGzPn0
 txsit4WDFc6BCkP13A/isa7qozODMGG/r8lCcvYj7Vi4VS2tdGsAq0r4/m1QrgTi
 ETBIM4yWKndPR/hTwuZ/PJSfEZFWUyJyZgSWBSKLSq3+67OD5aWIQ4cxpGm//MC1
 Wj01aFWfDCiJDPYnFmmWfK6+sN6EK3uUnv6RvP5Cm+pMAvznWVYDfjccOxVYMsZy
@@ -6105,38 +6094,38 @@ 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
-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
+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
@@ -7381,12 +7370,12 @@ OsUtoLLRa3ur+YX9QPC8FdRSC0EOl7eVrY+ThKPFmK2U69uwTL4T78HzSqges3nv
 eD3KXYOCpqoreP0LyJOHzh/S9t18QoAqqaVeKxb4VkQRMEgzjJYqd1fOAh9dy1Ge
 YNDocHYcLNpX/3au4ak1ncwQ6Kfo6iubHb3ScQ8KqFKXJ3zjV32TiHCQg1KhzI20
 /HHhDGpPe0M3HDsVWDLGcnQZz0LRz28ej5eotf6cQ93AkFrpys2XuVnUESnBKUFA
-aLiWtEaZwoFRq9tN0Tmh5yWgPz87MZ9HTZTRfeQ9V87rrh52haDUTXDyg3Wz3H7L
+aLiWtEaZwoH3uNkdOJZk+iWgPz87MZ9HiUSsaxkeCjHrrh52haDUTXDyg3Wz3H7L
 MFLB7ZifKbyBtrKs9olnvaCe2qDqfUNfRzyTe/b6knxIy8TcYGHlKDccOxVYMsZy
 zExDc+vjPzZ6fzEW8ium00a1S18gZovAChYxjaouRl4+2A2DFnie6nzwhvLCNBrp
 UfJJeI9XdYMNAFS92Zl0ni1yV9N06UHB9mn/pMgqOWYRMEgzjJYqd1o9NWhVnwwo
-JPZ4/NXtgyql02Vm5CKv2yWgPz87MZ9H3T169uEDLhuuupPbI3tklDFxGOBWQp1q
-lWyurmajqhCtj5OEo8WYrZTr27BMvhPvwfNKqB6zee94Pcpdg4Kmqit4/QvIk4fO
+JPZ4/NXtgyql02Vm5CKv2yWgPz87MZ9HmZnffJFdT+SuupPbI3tklDFxGOBWQp1q
+gpqBz0qRevWtj5OEo8WYrZTr27BMvhPvwfNKqB6zee94Pcpdg4Kmqit4/QvIk4fO
 H9L23XxCgCqppV4rFvhWRBEwSDOMlip3V84CH13LUZ5g0Ohwdhws2lf/dq7hqTWd
 zBDop+jqK5sdvdJxDwqoUnEMdMRXvM8PlMUvtDOse3l0FpvnO4YcdzccOxVYMsZy
 EBD6jAiV2EibL8k2u3aNErcbIreFgxXOqHFU4nhiQsPOiyjIYkafQpAYUq4iqvZG
@@ -7418,12 +7407,12 @@ Mu43Abd/z/IB7n2MiEXXaiiNKmntVkN4l5+45+0s5aOtj5OEo8WYrZTr27BMvhPv
 wfNKqB6zee94Pcpdg4Kmqit4/QvIk4fOH9L23XxCgCqppV4rFvhWRBEwSDOMlip3
 V84CH13LUZ5g0Ohwdhws2lf/dq7hqTWdzBDop+jqK5uLHf/fyp3N8K1cshX0EAgc
 Nxw7FVgyxnIQEPqMCJXYSJsvyTa7do0Stxsit4WDFc6ocVTieGJCwwJBhB47pAiS
-MXEY4FZCnWq4Jjdwz9t0aZGkF1DY5OmMX2Vm1O/Qlv8HSEnW+eDoMygYUyc8weKB
+MXEY4FZCnWrA+WTOo5HviZGkF1DY5OmMX2Vm1O/Qlv9VGPeqiMYbwigYUyc8weKB
 mXKDFqkv3O7O048/VvZja24dCVojVmqAWXYhv9YtiIOSGeE2UiZFVN7QiRLtnYuW
 ETBIM4yWKndRx41rnJmxA29Pd/fHA4IPY0jcy4dZXwo60R7qDhoKcMIh9M75Mr4l
 jot2IpJFBuvCp5ldSIXOACtN4cfI+w2VETBIM4yWKnfuyLh6GxuvQY588oxNAFb5
-FwUNr7RyQQ0HYwkjN6QEBJGkF1DY5OmMX2Vm1O/Qlv/f92y1Q2IN71nUESnBKUFA
-1aJL00M2l1Lappzz88BAGUAudNbGYzISQYw2I4f3cQi0lA1IZrexKGnA2iqE7SSJ
+FwUNr7RyQQ0HYwkjN6QEBJGkF1DY5OmMX2Vm1O/Qlv/OUoDOGRnLIFnUESnBKUFA
+1aJL00M2l1Jo1XKK6SlxCEAudNbGYzISQYw2I4f3cQi0lA1IZrexKGnA2iqE7SSJ
 LXPMalZMq2sd1Vjc/+SYvi1yV9N06UHB/uuzg+WliEPqp3Y/MqHGJn9l+mhE5dGh
 1XKKK0QmPGy3qmkG3rFp8MFJsajzQeQoiwBqitwUNgLtujD8qko8P3CQg1KhzI20
 /HHhDGpPe0M3HDsVWDLGcnQZz0LRz28ej5eotf6cQ93AkFrpys2XuVnUESnBKUFA
@@ -7996,9 +7985,9 @@ taeYHKOcZ2ERMEgzjJYqd4pY6tcilOIulRJE3TV+wbv9hWZBzyrvlP8SLfOY2AJK
 JaA/Pzsxn0dmiAr90UVNz7hVLa10awCrRNTX0eUZjUMnfoPBXEQfoOfZMkrJLiVF
 ola06/pH73NZ1BEpwSlBQP/N7Bbc+/pljKf+ZHaay3+bL8k2u3aNEnGk8iHmRzKR
 2c90l3xTcL5RaHQowR7F2JGkF1DY5OmMX2Vm1O/Qlv8CaE2kTJVBSREwSDOMlip3
-oO/Xw/AR24bKW+MkoOgwx5I515yuty02AkGEHjukCJIxcRjgVkKdajxNdUcCFbsH
+oO/Xw/AR24bKW+MkoOgwx5I515yuty02AkGEHjukCJIxcRjgVkKdasBPAr86wF7n
 ETBIM4yWKneKWOrXIpTiLpa6oyMHuOZI/YVmQc8q75T/Ei3zmNgCSiWgPz87MZ9H
-+giqk5xc8Ea4VS2tdGsAq0TU19HlGY1DJiEXN013Xbrn2TJKyS4lRaJWtOv6R+9z
++jnbVVE0cwG4VS2tdGsAq0TU19HlGY1DJiEXN013Xbrn2TJKyS4lRaJWtOv6R+9z
 WdQRKcEpQUDchf3iM15iz2L72Ohk8YPRuFUtrXRrAKtE1NfR5RmNQ2fOpyhQNQ+a
 59kySskuJUWlLxMG//3cfhYAn6kkHJ7MyTw1iq+nVDqJ95EthHizqLhVLa10awCr
 Svj+bVCuBOIRMEgzjJYqdxxDQaotUR3MWZMSpLvMEE0YQvm7rr2E/9JsNB7/cmJd
@@ -8624,8 +8613,8 @@ mCh9f5t94qrn2TJKyS4lRQlX1nOepmSA7KigxaDUVrg57H0JvXBuuxEwSDOMlip3
 sbN6FWQhGLAYxmq3Uh3snhEwSDOMlip3iljq1yKU4i6WuqMjB7jmSP2FZkHPKu+U
 mHLQ2tJ+DhE8m4jya4f6yoouLDOfpcuUETBIM4yWKnc/jmMc2qdK28z1xtieIIZ0
 D/fgVWh9QRNO3MA1vrJt+AunMf7zQoz7uFUtrXRrAKtE1NfR5RmNQyYhFzdNd126
-59kySskuJUWiVrTr+kfvc1nUESnBKUFAAe1BcrMSyaMWXFjUbs09k5svyTa7do0S
-caTyIeZHMpEQ1pA7D9FoWVFodCjBHsXYkaQXUNjk6YxfZWbU79CW/20v5ov2GYlt
+59kySskuJUWiVrTr+kfvc1nUESnBKUFAAe1BcrMSyaN+GM+2EhurbJsvyTa7do0S
+caTyIeZHMpEQ1pA7D9FoWVFodCjBHsXYkaQXUNjk6YxfZWbU79CW/9fmkB/7OPZY
 ETBIM4yWKnctclfTdOlBwXpIec5cgj2blbbxfAG8Rzhz5yBGR2THdREwSDOMlip3
 iljq1yKU4i7GK23D7V0G+v2FZkHPKu+UN9gL05zhxb7YbeoHRwDPCnQsLp1vPELu
 uEhxNUqfbfMHuBTBW12x6k3jxxlYW7itmy/JNrt2jRJxpPIh5kcykdnPdJd8U3C+
@@ -8672,9 +8661,9 @@ JqH3QoPCbwH9hWZBzyrvlP8SLfOY2AJKJaA/Pzsxn0fP7DdorfQtzvkcr1TrSBez
 Nxw7FVgyxnIAfivhz9P1mpK9Tii0pBmZ0lBw/+aYkwMRMEgzjJYqd6Dv18PwEduG
 EOnuAoMPviWSOdecrrctNliyDb83VW2hBNk1A7e2/tgtclfTdOlBwf7rs4PlpYhD
 HfhrY2zXgwBaPTVoVZ8MKAG7pJNRYT5W95Dxp5YrL6vPxcn5TixS6BEwSDOMlip3
-iljq1yKU4i4PG2r43ypXIP2FZkHPKu+U/xIt85jYAkoloD8/OzGfR5ffljdvX8f2
+iljq1yKU4i4PG2r43ypXIP2FZkHPKu+U/xIt85jYAkoloD8/OzGfR9i5f6dfFTJu
 uFUtrXRrAKtE1NfR5RmNQ2fOpyhQNQ+a59kySskuJUWiVrTr+kfvc1nUESnBKUFA
-Ae1BcrMSyaN+GM+2EhurbPkcr1TrSBezNxw7FVgyxnIAfivhz9P1mpCV9BuYSh9Z
+Ae1BcrMSyaMWXFjUbs09k/kcr1TrSBezNxw7FVgyxnIAfivhz9P1mpCV9BuYSh9Z
 0lBw/+aYkwMRMEgzjJYqd6Dv18PwEduGEOnuAoMPviWSOdecrrctNkiq2vfEsBeK
 vK0RFvfxKTq0pyVuSymPNLhVLa10awCrRNTX0eUZjUMmIRc3TXdduufZMkrJLiVF
 pS8TBv/93H4WAJ+pJByezJVLtNj4zZ3ZuFUtrXRrAKtK+P5tUK4E4hEwSDOMlip3
@@ -8686,9 +8675,9 @@ my/JNrt2jRIYXWarnNTgP93MBeFeR9ZI3wCgGDznXAVE1NfR5RmNQ5gofX+bfeKq
 OaDeJhJogR5aPTVoVZ8MKJ0n0fRx8fBBu2WACAk1H+nTCgHZDlcy5REwSDOMlip3
 PcwbqsY+XbWbL8k2u3aNEkp8XrRsgVxP0WNQnvLxnEXfAKAYPOdcBUTU19HlGY1D
 mCh9f5t94qrn2TJKyS4lRWtlhhtr3ULxQ2U6kvEHi8MjXTRW0zcc7REwSDOMlip3
-43y3aV0rmCFxdrzMB3PdSS2LewqOJu56mVwXjU8kvyPvnIT0M6ym89jwozYfo09X
+43y3aV0rmCFxdrzMB3PdSS2LewqOJu56mVwXjU8kvyPvnIT0M6ym8wkXV19q3fMh
 Nxw7FVgyxnJNqyWXe+12u4es1wt9IdJBtxsit4WDFc61lq5LViUL+II7xdSafJ+t
-F4ce/SCxb/AtclfTdOlBwXXffU1w4EoDETBIM4yWKnf7s6q3WccfOwdjCSM3pAQE
+9smB1dYO/o4tclfTdOlBwXXffU1w4EoDETBIM4yWKnf7s6q3WccfOwdjCSM3pAQE
 kaQXUNjk6Yx4sA+mav61OzLuNwG3f8/yMMQ+kMfML5vDr1S3geyaTWYElgUii0qt
 /uuzg+WliEOHMaRpv/zAtVo9NWhVnwwonSfR9HHx8EG7ZYAICTUf6To7NBU6eJs0
 qNLKMRSvrR03HDsVWDLGck2rJZd77Xa7NIIV06RHvui3GyK3hYMVzrWWrktWJQv4
@@ -8812,8 +8801,8 @@ IVoquBxb4Wjn2TJKyS4lRahkUjLymckrvMUZp3Sg1jhYuEc5ize0qLhVLa10awCr
 Svj+bVCuBOIRMEgzjJYqd6UCzSASm17vu2WACAk1H+nwe1/qMaQjwD8o0AjH839/
 3cwF4V5H1kjfAKAYPOdcBUTU19HlGY1DmCh9f5t94qrn2TJKyS4lRWtlhhtr3ULx
 Dlz01WO0T0i7jF9ttS1XQBEwSDOMlip343y3aV0rmCFxdrzMB3PdSS2LewqOJu56
-mVwXjU8kvyPvnIT0M6ym82egwI42qeebNxw7FVgyxnJNqyWXe+12u4es1wt9IdJB
-txsit4WDFc61lq5LViUL+II7xdSafJ+tf89EZT2dm3QtclfTdOlBwXXffU1w4EoD
+mVwXjU8kvyPvnIT0M6ym8798foO60canNxw7FVgyxnJNqyWXe+12u4es1wt9IdJB
+txsit4WDFc61lq5LViUL+II7xdSafJ+tyGcVKGWoLp4tclfTdOlBwXXffU1w4EoD
 ETBIM4yWKnfLcOCq6HL3/JGkF1DY5OmMjchUyhdDUFErhx7PeEAeqd8kctFuy+Nl
 ZgSWBSKLSq3+67OD5aWIQ4cxpGm//MC1Wj01aFWfDCgBu6STUWE+Vunux1OzOnEc
 qLA+dgdlWUcRMEgzjJYqd4pY6tcilOIuJqH3QoPCbwH9hWZBzyrvlP8SLfOY2AJK
@@ -9078,21 +9067,21 @@ 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
-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
+dd99TXDgSgMRMEgzjJYqd8tw4Krocvf8kaQXUNjk6YyNyFTKF0NQUU68EqfbYt1l
+3cwF4V5H1kjfAKAYPOdcBUTU19HlGY1DmCh9f5t94qrn2TJKyS4lRaJWtOv6R+9z
+WdQRKcEpQUAB7UFysxLJoxZcWNRuzT2Tmy/JNrt2jRJxpPIh5kcykVveURdPVHgB
+UWh0KMEexdiRpBdQ2OTpjF9lZtTv0Jb/FlxY1G7NPZP5HK9U60gXszccOxVYMsZy
+AH4r4c/T9Zoy7jcBt3/P8r3ydBqSFFa0kkF9AGteJ1IOAiEN1IS28WYElgUii0qt
+/uuzg+WliEOHMaRpv/zAtVo9NWhVnwwonSfR9HHx8EG7ZYAICTUf6SXeQ+lssLMc
+r4agHeyZt2URMEgzjJYqdz+OYxzap0rbfcUy1L+ZMKcP9+BVaH1BEzLuNwG3f8/y
+k5q8T7Ra93KvhqAd7Jm3Zfxx4QxqT3tDuFUtrXRrAKv0tEND0TBjCwJBhB47pAiS
+MChFPlaPM8PxUorR56M4Jd3MBeFeR9ZI3wCgGDznXAVE1NfR5RmNQ5gofX+bfeKq
+59kySskuJUWiVrTr+kfvc1nUESnBKUFAAe1BcrMSyaN+GM+2EhurbJsvyTa7do0S
+caTyIeZHMpHZz3SXfFNwvlFodCjBHsXYkaQXUNjk6YxfZWbU79CW/34Yz7YSG6ts
++RyvVOtIF7M3HDsVWDLGcgB+K+HP0/WaMu43Abd/z/K98nQakhRWtBidWNN5WQE7
 NR/hFrPSf0Q3HDsVWDLGck2rJZd77Xa7fsAdZLE+h1+3GyK3hYMVzrWWrktWJQv4
-gjvF1Jp8n63IZxUoZaguni1yV9N06UHB/uuzg+WliEM5oN4mEmiBHlo9NWhVnwwo
-nSfR9HHx8EG7ZYAICTUf6Tl4FB31JO9lLXJX03TpQcF1331NcOBKAxEwSDOMlip3
+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
@@ -10061,51 +10050,54 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (port (array (rename uart_txdata "UART_TxData[7:0]") 8) (direction INPUT))
            (port UART_RxData_m_0 (direction OUTPUT))
            (port (array (rename oprxdata_q "opRxData_Q[7:0]") 8) (direction OUTPUT))
-           (port UART_TxData17 (direction OUTPUT))
            (port UART_TxSend_3_1z (direction OUTPUT))
            (port UART_RxValid (direction INPUT))
+           (port UART_TxData17 (direction OUTPUT))
            (port opTx_7 (direction OUTPUT))
-           (port N_99_i_i (direction OUTPUT))
+           (port N_76_i_i (direction OUTPUT))
            (port un7lt1 (direction INPUT))
-           (port opTx_3_sqmuxa_i_1z (direction OUTPUT))
+           (port ClkCount_1_sqmuxa_i (direction OUTPUT))
+           (port N_16_i (direction OUTPUT))
            (port opRxValid_Q (direction OUTPUT))
            (port ipReset_c_i (direction INPUT))
            (port UART_TxSend (direction INPUT))
            (port ipClk_c (direction INPUT))
            (port Rx (direction INPUT))
-           (port N_22_i (direction OUTPUT))
            (port ipReset_c (direction INPUT))
          )
          (contents
-          (instance (rename ClkCount_RNO_4 "ClkCount_RNO[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (!B A))"))
-          )
-          (instance (rename ClkCount_RNO_7 "ClkCount_RNO[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (!B A))"))
+          (instance (rename ClkCount_RNO_9 "ClkCount_RNO[9]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C A+C (!B A))"))
           )
           (instance (rename ClkCount_RNO_8 "ClkCount_RNO[8]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (!B A))"))
+           (property lut_function (string "(!C A+C (!B A))"))
           )
-          (instance (rename ClkCount_RNO_9 "ClkCount_RNO[9]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (!B A))"))
+          (instance (rename ClkCount_RNO_7 "ClkCount_RNO[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C A+C (!B A))"))
           )
-          (instance (rename ClkCount_RNO_1 "ClkCount_RNO[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (!B A))"))
+          (instance (rename ClkCount_RNO_6 "ClkCount_RNO[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C A+C (!B A))"))
+          )
+          (instance (rename ClkCount_RNO_5 "ClkCount_RNO[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C A+C (!B A))"))
+          )
+          (instance (rename ClkCount_RNO_4 "ClkCount_RNO[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C A+C (!B A))"))
           )
           (instance (rename ClkCount_RNO_3 "ClkCount_RNO[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (!B A))"))
+           (property lut_function (string "(!C A+C (!B A))"))
           )
-          (instance (rename BitsSent_RNO_1 "BitsSent_RNO[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D A+D (!C A+C (!B A+B !A)))"))
+          (instance (rename ClkCount_RNO_2 "ClkCount_RNO[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C A+C (!B A))"))
           )
-          (instance opTx_0_sqmuxa_i_o2_RNIKC8I (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (B A))"))
+          (instance (rename ClkCount_RNO_1 "ClkCount_RNO[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C A+C (!B A))"))
+          )
+          (instance (rename ClkCount_RNO_0 "ClkCount_RNO[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C A+C (B+A))"))
           )
           (instance opRxValid_RNO (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C (!B !A))+D (C !A))"))
-          )
-          (instance (rename rxState_RNI1D5R_0 "rxState_RNI1D5R[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (C (B+A)))"))
+           (property lut_function (string "(!D !A+D (!C !A+C (B+!A)))"))
           )
           (instance (rename txState_0 "txState[0]") (viewRef PRIM (cellRef FD1S3AX (libraryRef LUCENT)))
           )
@@ -10145,7 +10137,7 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           )
           (instance opTxBusy (viewRef PRIM (cellRef FD1P3IX (libraryRef LUCENT)))
           )
-          (instance opRxValid (viewRef PRIM (cellRef FD1P3JX (libraryRef LUCENT)))
+          (instance opRxValid (viewRef PRIM (cellRef FD1P3IX (libraryRef LUCENT)))
           )
           (instance (rename opRxData_0 "opRxData[0]") (viewRef PRIM (cellRef FD1P3AX (libraryRef LUCENT)))
           )
@@ -10200,25 +10192,28 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (instance (rename BitsReceived_3 "BitsReceived[3]") (viewRef PRIM (cellRef FD1S3IX (libraryRef LUCENT)))
           )
           (instance un1_BitsSent_3_axbxc3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D C+D (!C (B A)+C (!B+!A)))"))
+           (property lut_function (string "(!C B+C (!B A+B !A))"))
           )
           (instance un1_BitsReceived_4_axbxc3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D C+D (!C (B A)+C (!B+!A)))"))
           )
           (instance un1_BitsSent_3_axbxc2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C B+C (!B A+B !A))"))
+           (property lut_function (string "(!B A+B !A)"))
           )
-          (instance opRxValid_0_sqmuxa_1_i_o2_RNIF33J (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance rxState_3_sqmuxa_i_o2_RNIHNPR (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (C (B !A)))"))
           )
-          (instance (rename ClkCount_RNO_6 "ClkCount_RNO[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (!C (!B A)+C !B))"))
+          (instance opTx_0_sqmuxa_i_o2_0_RNI3UCV (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(C (B A))"))
           )
-          (instance (rename ClkCount_RNO_5 "ClkCount_RNO[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (!C (!B A)+C !B))"))
+          (instance un1_ipReset_1_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D+(C (B !A)))"))
           )
-          (instance (rename ClkCount_RNO_2 "ClkCount_RNO[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (!C (!B A)+C !B))"))
+          (instance un1_BitsSent_3_axbxc1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D B+D (!C B+C (!B A+B !A)))"))
+          )
+          (instance un1_BitsSent_3_ac0_1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(D (C (B A)))"))
           )
           (instance (rename rxState_srsts_0 "rxState_srsts[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C (B A)+C (!B+A)))"))
@@ -10226,17 +10221,8 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (instance (rename txState_srsts_0 "txState_srsts[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C (B !A)+C (!B+!A)))"))
           )
-          (instance opTx_3_sqmuxa_i (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance ClkBaud_RNIDF0I (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B+A)"))
-          )
-          (instance rxData_0_sqmuxa_i_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!B+A)"))
-          )
-          (instance un1_ipReset_1_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D+(C (B A)))"))
-          )
-          (instance opRxValid_2_sqmuxa_i_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C+(!B A))"))
           )
           (instance un1_ipReset_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C+(B A))"))
@@ -10244,14 +10230,17 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (instance opTxBusy_1_sqmuxa_i_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C+(!B A))"))
           )
+          (instance rxData_0_sqmuxa_i_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!B+A)"))
+          )
           (instance txData_0_sqmuxa_1_i_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C+(B !A))"))
           )
+          (instance opRxValid_0_sqmuxa_0_a2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(C (!B A))"))
+          )
           (instance un1_BitsSent_3_axbxc0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C A+C (!B A+B !A))"))
-          )
-          (instance un1_BitsSent_3_ac0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (B A))"))
           )
           (instance un1_BitsReceived_4_axbxc0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B A+B !A)"))
@@ -10259,20 +10248,17 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (instance un1_BitsReceived_4_ac0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(B A)"))
           )
-          (instance opRxValid_0_sqmuxa_1_i_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!B+!A)"))
-          )
           (instance (rename UART_TxData_5_0_f0_2 "UART_TxData_5_0_f0[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C (!B+!A))+D (!B+!A))"))
           )
           (instance (rename UART_TxData_5_0_f0_0 "UART_TxData_5_0_f0[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C (!B+!A))+D (!B+!A))"))
           )
-          (instance un1_UART_RxData_6 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (!B !A))"))
-          )
           (instance un1_ClkCount6_2_i_a2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C (!B A)+C A))"))
+          )
+          (instance un1_UART_RxData_6 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (!B !A))"))
           )
           (instance (rename rxData_7_0 "rxData_7[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B !A))"))
@@ -10298,10 +10284,7 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (instance (rename rxData_7_0_a2_7 "rxData_7_0_a2[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B !A))"))
           )
-          (instance opTx_0_sqmuxa_i_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (!B+A)+C A)"))
-          )
-          (instance opRxValid_0_sqmuxa_1_i_o2_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename rxState_ns_i_i_0 "rxState_ns_i_i[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C !B+C (!B+!A))"))
           )
           (instance un1_UART_RxData_2lto6_1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -10313,8 +10296,11 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (instance (rename UART_TxData_5_0_f1_1 "UART_TxData_5_0_f1[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C+(B A))"))
           )
+          (instance opTx_0_sqmuxa_i_o2_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (!B+A)+C A)"))
+          )
           (instance ClkBaud (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C (B A)))"))
+           (property lut_function (string "(!D (!C (B A)))"))
           )
           (instance (rename txData_RNO_6 "txData_RNO[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C (B A)+C (!B+A)))"))
@@ -10336,6 +10322,9 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           )
           (instance (rename txData_RNO_0 "txData_RNO[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C (B A)+C (!B+A)))"))
+          )
+          (instance rxState_3_sqmuxa_i_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!B+!A)"))
           )
           (instance un1_ipReset_0_a2_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (C (B !A)))"))
@@ -10362,16 +10351,13 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (property lut_function (string "(!D (!C (!B !A)))"))
           )
           (instance ClkBaud_5 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (!C (!B !A)))"))
+           (property lut_function (string "(!D (C (!B A)))"))
           )
           (instance ClkBaud_6 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C (B A)))"))
+           (property lut_function (string "(D (C (B !A)))"))
           )
           (instance un1_UART_RxData_inv_2_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C (B A)))"))
-          )
-          (instance UART_TxSend_3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!B A)"))
           )
           (instance un1_UART_RxData_inv_3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B !A)"))
@@ -10382,20 +10368,17 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (instance UART_TxData17_0_a2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B !A)"))
           )
+          (instance UART_TxSend_3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!B A)"))
+          )
           (instance un1_ipReset_0_a2_0_1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B !A)"))
           )
           (instance un7lto4_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(B A)"))
           )
-          (instance un1_ipReset_1_0_a2_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(B A)"))
-          )
           (instance (rename UART_TxData_5_0_iv_5 "UART_TxData_5_0_iv[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (!B A+B !A))"))
-          )
-          (instance (rename ClkCount_s_0_0 "ClkCount_s_0[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C B+C (B+!A))"))
           )
           (instance un1_UART_RxData_inv (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C (B A)))"))
@@ -10409,47 +10392,61 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (instance un1_BitsReceived_4_axbxc1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C A+C (!B A+B !A))"))
           )
-          (instance un2_ClkCount_s_9_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
-           (property INIT0 (string "0x0a0c"))
+          (instance ClkCount_4_s_9_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
+           (property INIT0 (string "0x080a"))
            (property INJECT1_1 (string "NO"))
            (property INJECT1_0 (string "NO"))
            (property INIT1 (string "0x0a0c"))
           )
-          (instance un2_ClkCount_cry_7_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
+          (instance ClkCount_4_cry_7_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
+           (property INIT0 (string "0x0800"))
+           (property INJECT1_1 (string "NO"))
+           (property INJECT1_0 (string "NO"))
+           (property INIT1 (string "0x0800"))
+          )
+          (instance ClkCount_4_cry_5_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
+           (property INIT0 (string "0x0800"))
+           (property INJECT1_1 (string "NO"))
+           (property INJECT1_0 (string "NO"))
+           (property INIT1 (string "0x0800"))
+          )
+          (instance ClkCount_4_cry_3_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
+           (property INIT0 (string "0x0800"))
+           (property INJECT1_1 (string "NO"))
+           (property INJECT1_0 (string "NO"))
+           (property INIT1 (string "0x0800"))
+          )
+          (instance ClkCount_4_cry_1_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
+           (property INIT0 (string "0x0800"))
+           (property INJECT1_1 (string "NO"))
+           (property INJECT1_0 (string "NO"))
+           (property INIT1 (string "0x0800"))
+          )
+          (instance ClkCount_4_cry_0_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
            (property INIT0 (string "0x0a0c"))
            (property INJECT1_1 (string "NO"))
            (property INJECT1_0 (string "NO"))
-           (property INIT1 (string "0x0a0c"))
-          )
-          (instance un2_ClkCount_cry_5_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
-           (property INIT0 (string "0x0a0c"))
-           (property INJECT1_1 (string "NO"))
-           (property INJECT1_0 (string "NO"))
-           (property INIT1 (string "0x0a0c"))
-          )
-          (instance un2_ClkCount_cry_3_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
-           (property INIT0 (string "0x0a0c"))
-           (property INJECT1_1 (string "NO"))
-           (property INJECT1_0 (string "NO"))
-           (property INIT1 (string "0x0a0c"))
-          )
-          (instance un2_ClkCount_cry_1_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
-           (property INIT0 (string "0x0a0c"))
-           (property INJECT1_1 (string "NO"))
-           (property INJECT1_0 (string "NO"))
-           (property INIT1 (string "0x0a0c"))
-          )
-          (instance un2_ClkCount_cry_0_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
-           (property INIT0 (string "0x0a0c"))
-           (property INJECT1_1 (string "YES"))
-           (property INJECT1_0 (string "NO"))
-           (property INIT1 (string "0x0a0c"))
+           (property INIT1 (string "0x0800"))
           )
           (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
           (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
+          (net (rename ClkCount_4_9 "ClkCount_4[9]") (joined
+           (portRef S0 (instanceRef ClkCount_4_s_9_0))
+           (portRef A (instanceRef ClkCount_RNO_9))
+          ))
           (net ipReset_c (joined
            (portRef ipReset_c)
-           (portRef C (instanceRef ClkCount_s_0_0))
+           (portRef A1 (instanceRef ClkCount_4_cry_0_0))
+           (portRef B0 (instanceRef ClkCount_4_cry_0_0))
+           (portRef A1 (instanceRef ClkCount_4_cry_1_0))
+           (portRef A0 (instanceRef ClkCount_4_cry_1_0))
+           (portRef A1 (instanceRef ClkCount_4_cry_3_0))
+           (portRef A0 (instanceRef ClkCount_4_cry_3_0))
+           (portRef A1 (instanceRef ClkCount_4_cry_5_0))
+           (portRef A0 (instanceRef ClkCount_4_cry_5_0))
+           (portRef A1 (instanceRef ClkCount_4_cry_7_0))
+           (portRef A0 (instanceRef ClkCount_4_cry_7_0))
+           (portRef B0 (instanceRef ClkCount_4_s_9_0))
            (portRef C (instanceRef txData_RNO_7))
            (portRef C (instanceRef opTx_7_iv_0))
            (portRef D (instanceRef txData_RNO_0))
@@ -10467,207 +10464,163 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef C (instanceRef rxData_7_2))
            (portRef C (instanceRef rxData_7_1))
            (portRef C (instanceRef rxData_7_0))
-           (portRef B (instanceRef opRxValid_0_sqmuxa_1_i_o2))
+           (portRef C (instanceRef opRxValid_0_sqmuxa_0_a2))
            (portRef C (instanceRef txData_0_sqmuxa_1_i_0))
+           (portRef B (instanceRef rxData_0_sqmuxa_i_0))
            (portRef C (instanceRef opTxBusy_1_sqmuxa_i_0))
            (portRef C (instanceRef un1_ipReset_0))
-           (portRef C (instanceRef opRxValid_2_sqmuxa_i_0))
-           (portRef D (instanceRef un1_ipReset_1_0))
-           (portRef B (instanceRef rxData_0_sqmuxa_i_0))
-           (portRef B (instanceRef opTx_3_sqmuxa_i))
+           (portRef B (instanceRef ClkBaud_RNIDF0I))
            (portRef D (instanceRef txState_srsts_0))
            (portRef D (instanceRef rxState_srsts_0))
-           (portRef D (instanceRef ClkCount_RNO_2))
-           (portRef D (instanceRef ClkCount_RNO_5))
-           (portRef D (instanceRef ClkCount_RNO_6))
-           (portRef C (instanceRef rxState_RNI1D5R_0))
-           (portRef B (instanceRef opTx_0_sqmuxa_i_o2_RNIKC8I))
-           (portRef A (instanceRef ClkCount_RNO_3))
-           (portRef A (instanceRef ClkCount_RNO_1))
-           (portRef A (instanceRef ClkCount_RNO_9))
-           (portRef A (instanceRef ClkCount_RNO_8))
-           (portRef A (instanceRef ClkCount_RNO_7))
-           (portRef A (instanceRef ClkCount_RNO_4))
+           (portRef D (instanceRef un1_ipReset_1_0))
+           (portRef C (instanceRef opTx_0_sqmuxa_i_o2_0_RNI3UCV))
+           (portRef D (instanceRef rxState_3_sqmuxa_i_o2_RNIHNPR))
+           (portRef A (instanceRef opRxValid_RNO))
+           (portRef B (instanceRef ClkCount_RNO_0))
+           (portRef B (instanceRef ClkCount_RNO_1))
+           (portRef B (instanceRef ClkCount_RNO_2))
+           (portRef B (instanceRef ClkCount_RNO_3))
+           (portRef B (instanceRef ClkCount_RNO_4))
+           (portRef B (instanceRef ClkCount_RNO_5))
+           (portRef B (instanceRef ClkCount_RNO_6))
+           (portRef B (instanceRef ClkCount_RNO_7))
+           (portRef B (instanceRef ClkCount_RNO_8))
+           (portRef B (instanceRef ClkCount_RNO_9))
           ))
           (net ClkBaud (joined
            (portRef Z (instanceRef ClkBaud))
            (portRef A (instanceRef un1_ClkCount6_2_i_a2))
-           (portRef A (instanceRef opRxValid_0_sqmuxa_1_i_o2))
-           (portRef B (instanceRef un1_BitsSent_3_ac0))
            (portRef B (instanceRef un1_BitsSent_3_axbxc0))
+           (portRef A (instanceRef opRxValid_0_sqmuxa_0_a2))
            (portRef B (instanceRef txData_0_sqmuxa_1_i_0))
            (portRef A (instanceRef opTxBusy_1_sqmuxa_i_0))
            (portRef B (instanceRef un1_ipReset_0))
-           (portRef A (instanceRef opRxValid_2_sqmuxa_i_0))
-           (portRef A (instanceRef un1_ipReset_1_0))
-           (portRef A (instanceRef opTx_3_sqmuxa_i))
+           (portRef A (instanceRef ClkBaud_RNIDF0I))
            (portRef B (instanceRef txState_srsts_0))
            (portRef B (instanceRef rxState_srsts_0))
-           (portRef A (instanceRef ClkCount_RNO_2))
-           (portRef A (instanceRef ClkCount_RNO_5))
-           (portRef A (instanceRef ClkCount_RNO_6))
-           (portRef D (instanceRef rxState_RNI1D5R_0))
-           (portRef C (instanceRef opTx_0_sqmuxa_i_o2_RNIKC8I))
-           (portRef C (instanceRef BitsSent_RNO_1))
-           (portRef B (instanceRef ClkCount_RNO_3))
-           (portRef B (instanceRef ClkCount_RNO_1))
-           (portRef B (instanceRef ClkCount_RNO_9))
-           (portRef B (instanceRef ClkCount_RNO_8))
-           (portRef B (instanceRef ClkCount_RNO_7))
-           (portRef B (instanceRef ClkCount_RNO_4))
-          ))
-          (net un2_ClkCount_cry_3_0_S1 (joined
-           (portRef S1 (instanceRef un2_ClkCount_cry_3_0))
+           (portRef C (instanceRef un1_BitsSent_3_ac0_1))
+           (portRef C (instanceRef un1_BitsSent_3_axbxc1))
+           (portRef B (instanceRef un1_ipReset_1_0))
+           (portRef B (instanceRef opTx_0_sqmuxa_i_o2_0_RNI3UCV))
+           (portRef B (instanceRef rxState_3_sqmuxa_i_o2_RNIHNPR))
+           (portRef B (instanceRef opRxValid_RNO))
+           (portRef C (instanceRef ClkCount_RNO_0))
+           (portRef C (instanceRef ClkCount_RNO_1))
+           (portRef C (instanceRef ClkCount_RNO_2))
+           (portRef C (instanceRef ClkCount_RNO_3))
            (portRef C (instanceRef ClkCount_RNO_4))
+           (portRef C (instanceRef ClkCount_RNO_5))
+           (portRef C (instanceRef ClkCount_RNO_6))
+           (portRef C (instanceRef ClkCount_RNO_7))
+           (portRef C (instanceRef ClkCount_RNO_8))
+           (portRef C (instanceRef ClkCount_RNO_9))
           ))
           (net GND (joined
            (portRef Z (instanceRef GND))
-           (portRef C1 (instanceRef un2_ClkCount_cry_0_0))
-           (portRef B1 (instanceRef un2_ClkCount_cry_0_0))
-           (portRef C0 (instanceRef un2_ClkCount_cry_0_0))
-           (portRef A0 (instanceRef un2_ClkCount_cry_0_0))
-           (portRef C1 (instanceRef un2_ClkCount_cry_1_0))
-           (portRef B1 (instanceRef un2_ClkCount_cry_1_0))
-           (portRef C0 (instanceRef un2_ClkCount_cry_1_0))
-           (portRef B0 (instanceRef un2_ClkCount_cry_1_0))
-           (portRef C1 (instanceRef un2_ClkCount_cry_3_0))
-           (portRef B1 (instanceRef un2_ClkCount_cry_3_0))
-           (portRef C0 (instanceRef un2_ClkCount_cry_3_0))
-           (portRef B0 (instanceRef un2_ClkCount_cry_3_0))
-           (portRef C1 (instanceRef un2_ClkCount_cry_5_0))
-           (portRef B1 (instanceRef un2_ClkCount_cry_5_0))
-           (portRef C0 (instanceRef un2_ClkCount_cry_5_0))
-           (portRef B0 (instanceRef un2_ClkCount_cry_5_0))
-           (portRef C1 (instanceRef un2_ClkCount_cry_7_0))
-           (portRef B1 (instanceRef un2_ClkCount_cry_7_0))
-           (portRef C0 (instanceRef un2_ClkCount_cry_7_0))
-           (portRef B0 (instanceRef un2_ClkCount_cry_7_0))
-           (portRef C1 (instanceRef un2_ClkCount_s_9_0))
-           (portRef B1 (instanceRef un2_ClkCount_s_9_0))
-           (portRef A1 (instanceRef un2_ClkCount_s_9_0))
-           (portRef C0 (instanceRef un2_ClkCount_s_9_0))
-           (portRef B0 (instanceRef un2_ClkCount_s_9_0))
-          ))
-          (net (rename ClkCount_RNO_4 "ClkCount_RNO[4]") (joined
-           (portRef Z (instanceRef ClkCount_RNO_4))
-           (portRef D (instanceRef ClkCount_4))
-          ))
-          (net un2_ClkCount_cry_7_0_S0 (joined
-           (portRef S0 (instanceRef un2_ClkCount_cry_7_0))
-           (portRef C (instanceRef ClkCount_RNO_7))
-          ))
-          (net (rename ClkCount_RNO_7 "ClkCount_RNO[7]") (joined
-           (portRef Z (instanceRef ClkCount_RNO_7))
-           (portRef D (instanceRef ClkCount_7))
-          ))
-          (net un2_ClkCount_cry_7_0_S1 (joined
-           (portRef S1 (instanceRef un2_ClkCount_cry_7_0))
-           (portRef C (instanceRef ClkCount_RNO_8))
-          ))
-          (net (rename ClkCount_RNO_8 "ClkCount_RNO[8]") (joined
-           (portRef Z (instanceRef ClkCount_RNO_8))
-           (portRef D (instanceRef ClkCount_8))
-          ))
-          (net un2_ClkCount_s_9_0_S0 (joined
-           (portRef S0 (instanceRef un2_ClkCount_s_9_0))
-           (portRef C (instanceRef ClkCount_RNO_9))
+           (portRef C1 (instanceRef ClkCount_4_cry_0_0))
+           (portRef C0 (instanceRef ClkCount_4_cry_0_0))
+           (portRef A0 (instanceRef ClkCount_4_cry_0_0))
+           (portRef C1 (instanceRef ClkCount_4_cry_1_0))
+           (portRef C0 (instanceRef ClkCount_4_cry_1_0))
+           (portRef C1 (instanceRef ClkCount_4_cry_3_0))
+           (portRef C0 (instanceRef ClkCount_4_cry_3_0))
+           (portRef C1 (instanceRef ClkCount_4_cry_5_0))
+           (portRef C0 (instanceRef ClkCount_4_cry_5_0))
+           (portRef C1 (instanceRef ClkCount_4_cry_7_0))
+           (portRef C0 (instanceRef ClkCount_4_cry_7_0))
+           (portRef C1 (instanceRef ClkCount_4_s_9_0))
+           (portRef B1 (instanceRef ClkCount_4_s_9_0))
+           (portRef A1 (instanceRef ClkCount_4_s_9_0))
+           (portRef C0 (instanceRef ClkCount_4_s_9_0))
           ))
           (net (rename ClkCount_RNO_9 "ClkCount_RNO[9]") (joined
            (portRef Z (instanceRef ClkCount_RNO_9))
            (portRef D (instanceRef ClkCount_9))
           ))
-          (net un2_ClkCount_cry_1_0_S0 (joined
-           (portRef S0 (instanceRef un2_ClkCount_cry_1_0))
-           (portRef C (instanceRef ClkCount_RNO_1))
+          (net (rename ClkCount_4_8 "ClkCount_4[8]") (joined
+           (portRef S1 (instanceRef ClkCount_4_cry_7_0))
+           (portRef A (instanceRef ClkCount_RNO_8))
           ))
-          (net (rename ClkCount_RNO_1 "ClkCount_RNO[1]") (joined
-           (portRef Z (instanceRef ClkCount_RNO_1))
-           (portRef D (instanceRef ClkCount_1))
+          (net (rename ClkCount_RNO_8 "ClkCount_RNO[8]") (joined
+           (portRef Z (instanceRef ClkCount_RNO_8))
+           (portRef D (instanceRef ClkCount_8))
           ))
-          (net un2_ClkCount_cry_3_0_S0 (joined
-           (portRef S0 (instanceRef un2_ClkCount_cry_3_0))
-           (portRef C (instanceRef ClkCount_RNO_3))
+          (net (rename ClkCount_4_7 "ClkCount_4[7]") (joined
+           (portRef S0 (instanceRef ClkCount_4_cry_7_0))
+           (portRef A (instanceRef ClkCount_RNO_7))
+          ))
+          (net (rename ClkCount_RNO_7 "ClkCount_RNO[7]") (joined
+           (portRef Z (instanceRef ClkCount_RNO_7))
+           (portRef D (instanceRef ClkCount_7))
+          ))
+          (net (rename ClkCount_4_6 "ClkCount_4[6]") (joined
+           (portRef S1 (instanceRef ClkCount_4_cry_5_0))
+           (portRef A (instanceRef ClkCount_RNO_6))
+          ))
+          (net (rename ClkCount_RNO_6 "ClkCount_RNO[6]") (joined
+           (portRef Z (instanceRef ClkCount_RNO_6))
+           (portRef D (instanceRef ClkCount_6))
+          ))
+          (net (rename ClkCount_4_5 "ClkCount_4[5]") (joined
+           (portRef S0 (instanceRef ClkCount_4_cry_5_0))
+           (portRef A (instanceRef ClkCount_RNO_5))
+          ))
+          (net (rename ClkCount_RNO_5 "ClkCount_RNO[5]") (joined
+           (portRef Z (instanceRef ClkCount_RNO_5))
+           (portRef D (instanceRef ClkCount_5))
+          ))
+          (net (rename ClkCount_4_4 "ClkCount_4[4]") (joined
+           (portRef S1 (instanceRef ClkCount_4_cry_3_0))
+           (portRef A (instanceRef ClkCount_RNO_4))
+          ))
+          (net (rename ClkCount_RNO_4 "ClkCount_RNO[4]") (joined
+           (portRef Z (instanceRef ClkCount_RNO_4))
+           (portRef D (instanceRef ClkCount_4))
+          ))
+          (net (rename ClkCount_4_3 "ClkCount_4[3]") (joined
+           (portRef S0 (instanceRef ClkCount_4_cry_3_0))
+           (portRef A (instanceRef ClkCount_RNO_3))
           ))
           (net (rename ClkCount_RNO_3 "ClkCount_RNO[3]") (joined
            (portRef Z (instanceRef ClkCount_RNO_3))
            (portRef D (instanceRef ClkCount_3))
           ))
-          (net (rename BitsSent_1 "BitsSent[1]") (joined
-           (portRef Q (instanceRef BitsSent_1))
-           (portRef B (instanceRef un1_ipReset_0_a2_0_1))
-           (portRef A (instanceRef un1_BitsSent_3_axbxc2))
-           (portRef A (instanceRef un1_BitsSent_3_axbxc3))
-           (portRef A (instanceRef BitsSent_RNO_1))
+          (net (rename ClkCount_4_2 "ClkCount_4[2]") (joined
+           (portRef S1 (instanceRef ClkCount_4_cry_1_0))
+           (portRef A (instanceRef ClkCount_RNO_2))
           ))
-          (net (rename txState_0 "txState[0]") (joined
-           (portRef Q (instanceRef txState_0))
-           (portRef A (instanceRef txData_RNO_7))
-           (portRef B (instanceRef opTx_7_iv_0))
-           (portRef C (instanceRef un1_ipReset_0_a2_0))
-           (portRef B (instanceRef txData_RNO_0))
-           (portRef B (instanceRef txData_RNO_1))
-           (portRef B (instanceRef txData_RNO_2))
-           (portRef B (instanceRef txData_RNO_3))
-           (portRef B (instanceRef txData_RNO_4))
-           (portRef B (instanceRef txData_RNO_5))
-           (portRef B (instanceRef txData_RNO_6))
-           (portRef B (instanceRef opTx_0_sqmuxa_i_o2))
-           (portRef C (instanceRef un1_BitsSent_3_ac0))
-           (portRef C (instanceRef un1_BitsSent_3_axbxc0))
-           (portRef B (instanceRef opTxBusy_1_sqmuxa_i_0))
-           (portRef C (instanceRef txState_srsts_0))
-           (portRef B (instanceRef BitsSent_RNO_1))
+          (net (rename ClkCount_RNO_2 "ClkCount_RNO[2]") (joined
+           (portRef Z (instanceRef ClkCount_RNO_2))
+           (portRef D (instanceRef ClkCount_2))
           ))
-          (net (rename BitsSent_0 "BitsSent[0]") (joined
-           (portRef Q (instanceRef BitsSent_0))
-           (portRef A (instanceRef un1_ipReset_0_a2_0_1))
-           (portRef A (instanceRef un1_BitsSent_3_ac0))
-           (portRef A (instanceRef un1_BitsSent_3_axbxc0))
-           (portRef D (instanceRef BitsSent_RNO_1))
+          (net (rename ClkCount_4_1 "ClkCount_4[1]") (joined
+           (portRef S0 (instanceRef ClkCount_4_cry_1_0))
+           (portRef A (instanceRef ClkCount_RNO_1))
           ))
-          (net (rename BitsSent_RNO_1 "BitsSent_RNO[1]") (joined
-           (portRef Z (instanceRef BitsSent_RNO_1))
-           (portRef D (instanceRef BitsSent_1))
+          (net (rename ClkCount_RNO_1 "ClkCount_RNO[1]") (joined
+           (portRef Z (instanceRef ClkCount_RNO_1))
+           (portRef D (instanceRef ClkCount_1))
           ))
-          (net N_95 (joined
-           (portRef Z (instanceRef opTx_0_sqmuxa_i_o2))
-           (portRef A (instanceRef txData_0_sqmuxa_1_i_0))
-           (portRef A (instanceRef txState_srsts_0))
-           (portRef A (instanceRef opTx_0_sqmuxa_i_o2_RNIKC8I))
+          (net (rename ClkCount_4_0 "ClkCount_4[0]") (joined
+           (portRef S1 (instanceRef ClkCount_4_cry_0_0))
+           (portRef A (instanceRef ClkCount_RNO_0))
           ))
-          (net N_22_i (joined
-           (portRef Z (instanceRef opTx_0_sqmuxa_i_o2_RNIKC8I))
-           (portRef N_22_i)
-          ))
-          (net N_100 (joined
-           (portRef Z (instanceRef opRxValid_0_sqmuxa_1_i_o2))
-           (portRef A (instanceRef opRxValid_0_sqmuxa_1_i_o2_RNIF33J))
-           (portRef A (instanceRef opRxValid_RNO))
-          ))
-          (net (rename rxState_0 "rxState[0]") (joined
-           (portRef Q (instanceRef rxState_0))
-           (portRef B (instanceRef un1_ipReset_1_0_a2_0))
-           (portRef C (instanceRef opRxValid_0_sqmuxa_1_i_o2_0))
-           (portRef D (instanceRef un1_ClkCount6_2_i_a2))
-           (portRef B (instanceRef opRxValid_2_sqmuxa_i_0))
-           (portRef C (instanceRef rxState_srsts_0))
-           (portRef D (instanceRef opRxValid_0_sqmuxa_1_i_o2_RNIF33J))
-           (portRef A (instanceRef rxState_RNI1D5R_0))
-           (portRef B (instanceRef opRxValid_RNO))
+          (net (rename ClkCount_RNO_0 "ClkCount_RNO[0]") (joined
+           (portRef Z (instanceRef ClkCount_RNO_0))
+           (portRef D (instanceRef ClkCount_0))
           ))
           (net Rx (joined
            (portRef Rx)
-           (portRef A (instanceRef un1_ipReset_1_0_a2_0))
-           (portRef B (instanceRef opRxValid_0_sqmuxa_1_i_o2_0))
+           (portRef B (instanceRef rxState_3_sqmuxa_i_o2))
+           (portRef B (instanceRef rxState_ns_i_i_0))
            (portRef B (instanceRef rxData_7_0_a2_7))
            (portRef C (instanceRef un1_ClkCount6_2_i_a2))
-           (portRef C (instanceRef opRxValid_0_sqmuxa_1_i_o2_RNIF33J))
-           (portRef B (instanceRef rxState_RNI1D5R_0))
            (portRef C (instanceRef opRxValid_RNO))
           ))
           (net N_39_3 (joined
            (portRef Z (instanceRef rxState_ns_i_a3_0_3_0))
-           (portRef A (instanceRef opRxValid_0_sqmuxa_1_i_o2_0))
+           (portRef A (instanceRef rxState_3_sqmuxa_i_o2))
+           (portRef A (instanceRef rxState_ns_i_i_0))
            (portRef A (instanceRef rxData_7_0_a2_7))
            (portRef A (instanceRef rxData_7_6))
            (portRef A (instanceRef rxData_7_5))
@@ -10677,20 +10630,11 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef A (instanceRef rxData_7_1))
            (portRef A (instanceRef rxData_7_0))
            (portRef B (instanceRef un1_ClkCount6_2_i_a2))
-           (portRef B (instanceRef un1_ipReset_1_0))
-           (portRef B (instanceRef opRxValid_0_sqmuxa_1_i_o2_RNIF33J))
            (portRef D (instanceRef opRxValid_RNO))
           ))
-          (net N_16_i (joined
+          (net N_50 (joined
            (portRef Z (instanceRef opRxValid_RNO))
-           (portRef PD (instanceRef opRxValid))
-          ))
-          (net N_88_i (joined
-           (portRef Z (instanceRef rxState_RNI1D5R_0))
-           (portRef B (instanceRef ClkCount_s_0_0))
-           (portRef B (instanceRef ClkCount_RNO_2))
-           (portRef B (instanceRef ClkCount_RNO_5))
-           (portRef B (instanceRef ClkCount_RNO_6))
+           (portRef SP (instanceRef opRxValid))
           ))
           (net N_81s (joined
            (portRef Z (instanceRef txState_srsts_0))
@@ -10745,27 +10689,45 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef CK (instanceRef txData_0))
            (portRef CK (instanceRef txState_0))
           ))
+          (net (rename txState_0 "txState[0]") (joined
+           (portRef Q (instanceRef txState_0))
+           (portRef A (instanceRef txData_RNO_7))
+           (portRef B (instanceRef opTx_7_iv_0))
+           (portRef C (instanceRef un1_ipReset_0_a2_0))
+           (portRef B (instanceRef txData_RNO_0))
+           (portRef B (instanceRef txData_RNO_1))
+           (portRef B (instanceRef txData_RNO_2))
+           (portRef B (instanceRef txData_RNO_3))
+           (portRef B (instanceRef txData_RNO_4))
+           (portRef B (instanceRef txData_RNO_5))
+           (portRef B (instanceRef txData_RNO_6))
+           (portRef B (instanceRef opTx_0_sqmuxa_i_o2_0))
+           (portRef C (instanceRef un1_BitsSent_3_axbxc0))
+           (portRef B (instanceRef opTxBusy_1_sqmuxa_i_0))
+           (portRef C (instanceRef txState_srsts_0))
+           (portRef D (instanceRef un1_BitsSent_3_ac0_1))
+           (portRef D (instanceRef un1_BitsSent_3_axbxc1))
+          ))
           (net VCC (joined
            (portRef Z (instanceRef VCC))
-           (portRef D1 (instanceRef un2_ClkCount_cry_0_0))
-           (portRef D0 (instanceRef un2_ClkCount_cry_0_0))
-           (portRef B0 (instanceRef un2_ClkCount_cry_0_0))
-           (portRef D1 (instanceRef un2_ClkCount_cry_1_0))
-           (portRef D0 (instanceRef un2_ClkCount_cry_1_0))
-           (portRef D1 (instanceRef un2_ClkCount_cry_3_0))
-           (portRef D0 (instanceRef un2_ClkCount_cry_3_0))
-           (portRef D1 (instanceRef un2_ClkCount_cry_5_0))
-           (portRef D0 (instanceRef un2_ClkCount_cry_5_0))
-           (portRef D1 (instanceRef un2_ClkCount_cry_7_0))
-           (portRef D0 (instanceRef un2_ClkCount_cry_7_0))
-           (portRef D1 (instanceRef un2_ClkCount_s_9_0))
-           (portRef D0 (instanceRef un2_ClkCount_s_9_0))
+           (portRef D1 (instanceRef ClkCount_4_cry_0_0))
+           (portRef D0 (instanceRef ClkCount_4_cry_0_0))
+           (portRef D1 (instanceRef ClkCount_4_cry_1_0))
+           (portRef D0 (instanceRef ClkCount_4_cry_1_0))
+           (portRef D1 (instanceRef ClkCount_4_cry_3_0))
+           (portRef D0 (instanceRef ClkCount_4_cry_3_0))
+           (portRef D1 (instanceRef ClkCount_4_cry_5_0))
+           (portRef D0 (instanceRef ClkCount_4_cry_5_0))
+           (portRef D1 (instanceRef ClkCount_4_cry_7_0))
+           (portRef D0 (instanceRef ClkCount_4_cry_7_0))
+           (portRef D1 (instanceRef ClkCount_4_s_9_0))
+           (portRef D0 (instanceRef ClkCount_4_s_9_0))
           ))
-          (net N_54_i (joined
+          (net N_42_i (joined
            (portRef Z (instanceRef txData_RNO_0))
            (portRef D (instanceRef txData_0))
           ))
-          (net N_62 (joined
+          (net N_52 (joined
            (portRef Z (instanceRef txData_0_sqmuxa_1_i_0))
            (portRef SP (instanceRef txData_7))
            (portRef SP (instanceRef txData_6))
@@ -10780,7 +10742,7 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef Q (instanceRef txData_0))
            (portRef A (instanceRef opTx_7_iv_0))
           ))
-          (net N_52_i (joined
+          (net N_40_i (joined
            (portRef Z (instanceRef txData_RNO_1))
            (portRef D (instanceRef txData_1))
           ))
@@ -10788,7 +10750,7 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef Q (instanceRef txData_1))
            (portRef A (instanceRef txData_RNO_0))
           ))
-          (net N_50_i (joined
+          (net N_38_i (joined
            (portRef Z (instanceRef txData_RNO_2))
            (portRef D (instanceRef txData_2))
           ))
@@ -10796,7 +10758,7 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef Q (instanceRef txData_2))
            (portRef A (instanceRef txData_RNO_1))
           ))
-          (net N_48_i (joined
+          (net N_36_i (joined
            (portRef Z (instanceRef txData_RNO_3))
            (portRef D (instanceRef txData_3))
           ))
@@ -10804,7 +10766,7 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef Q (instanceRef txData_3))
            (portRef A (instanceRef txData_RNO_2))
           ))
-          (net N_46_i (joined
+          (net N_34_i (joined
            (portRef Z (instanceRef txData_RNO_4))
            (portRef D (instanceRef txData_4))
           ))
@@ -10812,7 +10774,7 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef Q (instanceRef txData_4))
            (portRef A (instanceRef txData_RNO_3))
           ))
-          (net N_44_i (joined
+          (net N_32_i (joined
            (portRef Z (instanceRef txData_RNO_5))
            (portRef D (instanceRef txData_5))
           ))
@@ -10820,7 +10782,7 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef Q (instanceRef txData_5))
            (portRef A (instanceRef txData_RNO_4))
           ))
-          (net N_42_i (joined
+          (net N_30_i (joined
            (portRef Z (instanceRef txData_RNO_6))
            (portRef D (instanceRef txData_6))
           ))
@@ -10840,11 +10802,20 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef Z (instanceRef rxState_srsts_0))
            (portRef D (instanceRef rxState_0))
           ))
+          (net (rename rxState_0 "rxState[0]") (joined
+           (portRef Q (instanceRef rxState_0))
+           (portRef C (instanceRef rxState_ns_i_i_0))
+           (portRef D (instanceRef un1_ClkCount6_2_i_a2))
+           (portRef B (instanceRef opRxValid_0_sqmuxa_0_a2))
+           (portRef C (instanceRef rxState_srsts_0))
+           (portRef C (instanceRef un1_ipReset_1_0))
+           (portRef C (instanceRef rxState_3_sqmuxa_i_o2_RNIHNPR))
+          ))
           (net (rename rxData_7_0 "rxData_7[0]") (joined
            (portRef Z (instanceRef rxData_7_0))
            (portRef D (instanceRef rxData_0))
           ))
-          (net N_64 (joined
+          (net N_54 (joined
            (portRef Z (instanceRef rxData_0_sqmuxa_i_0))
            (portRef SP (instanceRef rxData_7))
            (portRef SP (instanceRef rxData_6))
@@ -10924,19 +10895,18 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           ))
           (net UART_TxSend (joined
            (portRef UART_TxSend)
-           (portRef B (instanceRef UART_TxData17_0_a2))
            (portRef B (instanceRef UART_TxSend_3))
+           (portRef B (instanceRef UART_TxData17_0_a2))
            (portRef B (instanceRef opTxBusy_RNI61AQ))
-           (portRef C (instanceRef opTx_0_sqmuxa_i_o2))
+           (portRef C (instanceRef opTx_0_sqmuxa_i_o2_0))
            (portRef D (instanceRef opTxBusy))
           ))
-          (net opTxBusy_1_sqmuxa_i_0 (joined
+          (net N_56 (joined
            (portRef Z (instanceRef opTxBusy_1_sqmuxa_i_0))
            (portRef SP (instanceRef opTxBusy))
           ))
           (net ipReset_c_i (joined
            (portRef ipReset_c_i)
-           (portRef D (instanceRef opRxValid))
            (portRef CD (instanceRef opTxBusy))
           ))
           (net UART_TxBusy (joined
@@ -10944,16 +10914,8 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef A (instanceRef UART_TxData17_0_a2))
            (portRef A (instanceRef opTxBusy_RNI61AQ))
           ))
-          (net N_69 (joined
-           (portRef Z (instanceRef opRxValid_2_sqmuxa_i_0))
-           (portRef SP (instanceRef opRxValid))
-          ))
-          (net opRxValid_Q (joined
-           (portRef Q (instanceRef opRxValid))
-           (portRef opRxValid_Q)
-          ))
-          (net N_20_i (joined
-           (portRef Z (instanceRef opRxValid_0_sqmuxa_1_i_o2_RNIF33J))
+          (net N_23_i (joined
+           (portRef Z (instanceRef rxState_3_sqmuxa_i_o2_RNIHNPR))
            (portRef SP (instanceRef opRxData_7))
            (portRef SP (instanceRef opRxData_6))
            (portRef SP (instanceRef opRxData_5))
@@ -10962,6 +10924,15 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef SP (instanceRef opRxData_2))
            (portRef SP (instanceRef opRxData_1))
            (portRef SP (instanceRef opRxData_0))
+           (portRef D (instanceRef opRxValid))
+          ))
+          (net opRxValid_0_sqmuxa (joined
+           (portRef Z (instanceRef opRxValid_0_sqmuxa_0_a2))
+           (portRef CD (instanceRef opRxValid))
+          ))
+          (net opRxValid_Q (joined
+           (portRef Q (instanceRef opRxValid))
+           (portRef opRxValid_Q)
           ))
           (net (rename opRxData_Q_0 "opRxData_Q[0]") (joined
            (portRef Q (instanceRef opRxData_0))
@@ -10995,72 +10966,55 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef Q (instanceRef opRxData_7))
            (portRef (member oprxdata_q 0))
           ))
-          (net (rename ClkCount_s_0_0 "ClkCount_s_0[0]") (joined
-           (portRef Z (instanceRef ClkCount_s_0_0))
-           (portRef D (instanceRef ClkCount_0))
-          ))
           (net (rename ClkCount_0 "ClkCount[0]") (joined
            (portRef Q (instanceRef ClkCount_0))
-           (portRef A1 (instanceRef un2_ClkCount_cry_0_0))
-           (portRef A (instanceRef ClkCount_s_0_0))
-           (portRef C (instanceRef ClkBaud))
+           (portRef B1 (instanceRef ClkCount_4_cry_0_0))
+           (portRef A (instanceRef ClkBaud_5))
           ))
           (net (rename ClkCount_1 "ClkCount[1]") (joined
            (portRef Q (instanceRef ClkCount_1))
-           (portRef A0 (instanceRef un2_ClkCount_cry_1_0))
-           (portRef D (instanceRef ClkBaud))
-          ))
-          (net N_36_i (joined
-           (portRef Z (instanceRef ClkCount_RNO_2))
-           (portRef D (instanceRef ClkCount_2))
+           (portRef B0 (instanceRef ClkCount_4_cry_1_0))
+           (portRef B (instanceRef ClkBaud_5))
           ))
           (net (rename ClkCount_2 "ClkCount[2]") (joined
            (portRef Q (instanceRef ClkCount_2))
-           (portRef A1 (instanceRef un2_ClkCount_cry_1_0))
-           (portRef A (instanceRef ClkBaud_5))
+           (portRef B1 (instanceRef ClkCount_4_cry_1_0))
+           (portRef C (instanceRef ClkBaud))
           ))
           (net (rename ClkCount_3 "ClkCount[3]") (joined
            (portRef Q (instanceRef ClkCount_3))
-           (portRef A0 (instanceRef un2_ClkCount_cry_3_0))
-           (portRef B (instanceRef ClkBaud_5))
+           (portRef B0 (instanceRef ClkCount_4_cry_3_0))
+           (portRef A (instanceRef ClkBaud_6))
           ))
           (net (rename ClkCount_4 "ClkCount[4]") (joined
            (portRef Q (instanceRef ClkCount_4))
-           (portRef A1 (instanceRef un2_ClkCount_cry_3_0))
-           (portRef A (instanceRef ClkBaud_6))
-          ))
-          (net N_28_i (joined
-           (portRef Z (instanceRef ClkCount_RNO_5))
-           (portRef D (instanceRef ClkCount_5))
+           (portRef B1 (instanceRef ClkCount_4_cry_3_0))
+           (portRef C (instanceRef ClkBaud_5))
           ))
           (net (rename ClkCount_5 "ClkCount[5]") (joined
            (portRef Q (instanceRef ClkCount_5))
-           (portRef A0 (instanceRef un2_ClkCount_cry_5_0))
+           (portRef B0 (instanceRef ClkCount_4_cry_5_0))
            (portRef B (instanceRef ClkBaud_6))
-          ))
-          (net N_30_i (joined
-           (portRef Z (instanceRef ClkCount_RNO_6))
-           (portRef D (instanceRef ClkCount_6))
           ))
           (net (rename ClkCount_6 "ClkCount[6]") (joined
            (portRef Q (instanceRef ClkCount_6))
-           (portRef A1 (instanceRef un2_ClkCount_cry_5_0))
-           (portRef C (instanceRef ClkBaud_5))
+           (portRef B1 (instanceRef ClkCount_4_cry_5_0))
+           (portRef D (instanceRef ClkBaud))
           ))
           (net (rename ClkCount_7 "ClkCount[7]") (joined
            (portRef Q (instanceRef ClkCount_7))
-           (portRef A0 (instanceRef un2_ClkCount_cry_7_0))
+           (portRef B0 (instanceRef ClkCount_4_cry_7_0))
            (portRef C (instanceRef ClkBaud_6))
           ))
           (net (rename ClkCount_8 "ClkCount[8]") (joined
            (portRef Q (instanceRef ClkCount_8))
-           (portRef A1 (instanceRef un2_ClkCount_cry_7_0))
-           (portRef D (instanceRef ClkBaud_5))
+           (portRef B1 (instanceRef ClkCount_4_cry_7_0))
+           (portRef D (instanceRef ClkBaud_6))
           ))
           (net (rename ClkCount_9 "ClkCount[9]") (joined
            (portRef Q (instanceRef ClkCount_9))
-           (portRef A0 (instanceRef un2_ClkCount_s_9_0))
-           (portRef D (instanceRef ClkBaud_6))
+           (portRef A0 (instanceRef ClkCount_4_s_9_0))
+           (portRef D (instanceRef ClkBaud_5))
           ))
           (net un1_BitsSent_3_axbxc0 (joined
            (portRef Z (instanceRef un1_BitsSent_3_axbxc0))
@@ -11073,6 +11027,23 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef CD (instanceRef BitsSent_1))
            (portRef CD (instanceRef BitsSent_0))
           ))
+          (net (rename BitsSent_0 "BitsSent[0]") (joined
+           (portRef Q (instanceRef BitsSent_0))
+           (portRef A (instanceRef un1_ipReset_0_a2_0_1))
+           (portRef A (instanceRef un1_BitsSent_3_axbxc0))
+           (portRef A (instanceRef un1_BitsSent_3_ac0_1))
+           (portRef A (instanceRef un1_BitsSent_3_axbxc1))
+          ))
+          (net un1_BitsSent_3_axbxc1 (joined
+           (portRef Z (instanceRef un1_BitsSent_3_axbxc1))
+           (portRef D (instanceRef BitsSent_1))
+          ))
+          (net (rename BitsSent_1 "BitsSent[1]") (joined
+           (portRef Q (instanceRef BitsSent_1))
+           (portRef B (instanceRef un1_ipReset_0_a2_0_1))
+           (portRef B (instanceRef un1_BitsSent_3_ac0_1))
+           (portRef B (instanceRef un1_BitsSent_3_axbxc1))
+          ))
           (net un1_BitsSent_3_axbxc2 (joined
            (portRef Z (instanceRef un1_BitsSent_3_axbxc2))
            (portRef D (instanceRef BitsSent_2))
@@ -11080,8 +11051,8 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (net (rename BitsSent_2 "BitsSent[2]") (joined
            (portRef Q (instanceRef BitsSent_2))
            (portRef A (instanceRef un1_ipReset_0_a2_0))
-           (portRef B (instanceRef un1_BitsSent_3_axbxc2))
-           (portRef B (instanceRef un1_BitsSent_3_axbxc3))
+           (portRef A (instanceRef un1_BitsSent_3_axbxc2))
+           (portRef A (instanceRef un1_BitsSent_3_axbxc3))
           ))
           (net un1_BitsSent_3_axbxc3 (joined
            (portRef Z (instanceRef un1_BitsSent_3_axbxc3))
@@ -11090,7 +11061,7 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (net (rename BitsSent_3 "BitsSent[3]") (joined
            (portRef Q (instanceRef BitsSent_3))
            (portRef B (instanceRef un1_ipReset_0_a2_0))
-           (portRef C (instanceRef un1_BitsSent_3_axbxc3))
+           (portRef B (instanceRef un1_BitsSent_3_axbxc3))
           ))
           (net un1_BitsReceived_4_axbxc0 (joined
            (portRef Z (instanceRef un1_BitsReceived_4_axbxc0))
@@ -11141,51 +11112,50 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef D (instanceRef rxState_ns_i_a3_0_3_0))
            (portRef C (instanceRef un1_BitsReceived_4_axbxc3))
           ))
-          (net un1_BitsSent_3_c1 (joined
-           (portRef Z (instanceRef un1_BitsSent_3_ac0))
-           (portRef C (instanceRef un1_BitsSent_3_axbxc2))
-           (portRef D (instanceRef un1_BitsSent_3_axbxc3))
+          (net un1_BitsSent_3_c2 (joined
+           (portRef Z (instanceRef un1_BitsSent_3_ac0_1))
+           (portRef B (instanceRef un1_BitsSent_3_axbxc2))
+           (portRef C (instanceRef un1_BitsSent_3_axbxc3))
           ))
           (net un1_BitsReceived_4_c1 (joined
            (portRef Z (instanceRef un1_BitsReceived_4_ac0))
            (portRef D (instanceRef un1_BitsReceived_4_axbxc3))
           ))
-          (net (rename un2_ClkCount_6 "un2_ClkCount[6]") (joined
-           (portRef S1 (instanceRef un2_ClkCount_cry_5_0))
-           (portRef C (instanceRef ClkCount_RNO_6))
+          (net N_98 (joined
+           (portRef Z (instanceRef rxState_3_sqmuxa_i_o2))
+           (portRef A (instanceRef un1_ipReset_1_0))
+           (portRef A (instanceRef rxState_3_sqmuxa_i_o2_RNIHNPR))
           ))
-          (net (rename un2_ClkCount_5 "un2_ClkCount[5]") (joined
-           (portRef S0 (instanceRef un2_ClkCount_cry_5_0))
-           (portRef C (instanceRef ClkCount_RNO_5))
+          (net N_87 (joined
+           (portRef Z (instanceRef opTx_0_sqmuxa_i_o2_0))
+           (portRef A (instanceRef txData_0_sqmuxa_1_i_0))
+           (portRef A (instanceRef txState_srsts_0))
+           (portRef A (instanceRef opTx_0_sqmuxa_i_o2_0_RNI3UCV))
           ))
-          (net (rename un2_ClkCount_2 "un2_ClkCount[2]") (joined
-           (portRef S1 (instanceRef un2_ClkCount_cry_1_0))
-           (portRef C (instanceRef ClkCount_RNO_2))
+          (net N_16_i (joined
+           (portRef Z (instanceRef opTx_0_sqmuxa_i_o2_0_RNI3UCV))
+           (portRef N_16_i)
           ))
-          (net N_108 (joined
-           (portRef Z (instanceRef opRxValid_0_sqmuxa_1_i_o2_0))
+          (net N_45 (joined
+           (portRef Z (instanceRef rxState_ns_i_i_0))
            (portRef A (instanceRef rxState_srsts_0))
           ))
-          (net (rename opTx_3_sqmuxa_i_1z "opTx_3_sqmuxa_i") (joined
-           (portRef Z (instanceRef opTx_3_sqmuxa_i))
-           (portRef opTx_3_sqmuxa_i_1z)
+          (net ClkCount_1_sqmuxa_i (joined
+           (portRef Z (instanceRef ClkBaud_RNIDF0I))
+           (portRef ClkCount_1_sqmuxa_i)
           ))
-          (net N_113 (joined
+          (net N_124 (joined
+           (portRef Z (instanceRef un1_ipReset_0_a2_0))
+           (portRef A (instanceRef opTx_0_sqmuxa_i_o2_0))
+           (portRef A (instanceRef un1_ipReset_0))
+          ))
+          (net un1_ClkCount6_2_i_a2 (joined
            (portRef Z (instanceRef un1_ClkCount6_2_i_a2))
            (portRef C (instanceRef un1_BitsReceived_4_axbxc1))
            (portRef D (instanceRef un1_BitsReceived_4_axbxc2))
            (portRef A (instanceRef un1_BitsReceived_4_ac0))
            (portRef A (instanceRef un1_BitsReceived_4_axbxc0))
            (portRef A (instanceRef rxData_0_sqmuxa_i_0))
-          ))
-          (net un1_ipReset_1_0_a2_0 (joined
-           (portRef Z (instanceRef un1_ipReset_1_0_a2_0))
-           (portRef C (instanceRef un1_ipReset_1_0))
-          ))
-          (net N_151 (joined
-           (portRef Z (instanceRef un1_ipReset_0_a2_0))
-           (portRef A (instanceRef opTx_0_sqmuxa_i_o2))
-           (portRef A (instanceRef un1_ipReset_0))
           ))
           (net un1_UART_RxData_4 (joined
            (portRef Z (instanceRef un1_UART_RxData_4))
@@ -11331,9 +11301,9 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef Z (instanceRef un7lto4_0))
            (portRef A (instanceRef un7lto4))
           ))
-          (net N_99_i_i (joined
+          (net N_76_i_i (joined
            (portRef Z (instanceRef opTxBusy_RNI61AQ))
-           (portRef N_99_i_i)
+           (portRef N_76_i_i)
           ))
           (net opTx_7 (joined
            (portRef Z (instanceRef opTx_7_iv_0))
@@ -11362,6 +11332,10 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef C (instanceRef un1_UART_RxData_inv_2_0_RNIE6751))
            (portRef B (instanceRef un1_UART_RxData_inv))
           ))
+          (net UART_TxData17 (joined
+           (portRef Z (instanceRef UART_TxData17_0_a2))
+           (portRef UART_TxData17)
+          ))
           (net UART_RxValid (joined
            (portRef UART_RxValid)
            (portRef A (instanceRef UART_TxSend_3))
@@ -11369,10 +11343,6 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (net (rename UART_TxSend_3_1z "UART_TxSend_3") (joined
            (portRef Z (instanceRef UART_TxSend_3))
            (portRef UART_TxSend_3_1z)
-          ))
-          (net UART_TxData17 (joined
-           (portRef Z (instanceRef UART_TxData17_0_a2))
-           (portRef UART_TxData17)
           ))
           (net (rename UART_TxData_5_5 "UART_TxData_5[5]") (joined
            (portRef Z (instanceRef UART_TxData_5_0_iv_5))
@@ -11382,40 +11352,37 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef Z (instanceRef un1_UART_RxData_inv_2_0_RNIE6751))
            (portRef UART_RxData_inv_m_i_0)
           ))
-          (net un2_ClkCount_cry_8 (joined
-           (portRef COUT (instanceRef un2_ClkCount_cry_7_0))
-           (portRef CIN (instanceRef un2_ClkCount_s_9_0))
+          (net ClkCount_4_cry_8 (joined
+           (portRef COUT (instanceRef ClkCount_4_cry_7_0))
+           (portRef CIN (instanceRef ClkCount_4_s_9_0))
           ))
-          (net un2_ClkCount_s_9_0_COUT (joined
-           (portRef COUT (instanceRef un2_ClkCount_s_9_0))
+          (net ClkCount_4_s_9_0_COUT (joined
+           (portRef COUT (instanceRef ClkCount_4_s_9_0))
           ))
-          (net un2_ClkCount_s_9_0_S1 (joined
-           (portRef S1 (instanceRef un2_ClkCount_s_9_0))
+          (net ClkCount_4_s_9_0_S1 (joined
+           (portRef S1 (instanceRef ClkCount_4_s_9_0))
           ))
-          (net un2_ClkCount_cry_6 (joined
-           (portRef COUT (instanceRef un2_ClkCount_cry_5_0))
-           (portRef CIN (instanceRef un2_ClkCount_cry_7_0))
+          (net ClkCount_4_cry_6 (joined
+           (portRef COUT (instanceRef ClkCount_4_cry_5_0))
+           (portRef CIN (instanceRef ClkCount_4_cry_7_0))
           ))
-          (net un2_ClkCount_cry_4 (joined
-           (portRef COUT (instanceRef un2_ClkCount_cry_3_0))
-           (portRef CIN (instanceRef un2_ClkCount_cry_5_0))
+          (net ClkCount_4_cry_4 (joined
+           (portRef COUT (instanceRef ClkCount_4_cry_3_0))
+           (portRef CIN (instanceRef ClkCount_4_cry_5_0))
           ))
-          (net un2_ClkCount_cry_2 (joined
-           (portRef COUT (instanceRef un2_ClkCount_cry_1_0))
-           (portRef CIN (instanceRef un2_ClkCount_cry_3_0))
+          (net ClkCount_4_cry_2 (joined
+           (portRef COUT (instanceRef ClkCount_4_cry_1_0))
+           (portRef CIN (instanceRef ClkCount_4_cry_3_0))
           ))
-          (net un2_ClkCount_cry_0 (joined
-           (portRef COUT (instanceRef un2_ClkCount_cry_0_0))
-           (portRef CIN (instanceRef un2_ClkCount_cry_1_0))
+          (net ClkCount_4_cry_0 (joined
+           (portRef COUT (instanceRef ClkCount_4_cry_0_0))
+           (portRef CIN (instanceRef ClkCount_4_cry_1_0))
           ))
-          (net un2_ClkCount_cry_0_0_S0 (joined
-           (portRef S0 (instanceRef un2_ClkCount_cry_0_0))
-          ))
-          (net un2_ClkCount_cry_0_0_S1 (joined
-           (portRef S1 (instanceRef un2_ClkCount_cry_0_0))
+          (net ClkCount_4_cry_0_0_S0 (joined
+           (portRef S0 (instanceRef ClkCount_4_cry_0_0))
           ))
           (net N_1 (joined
-           (portRef CIN (instanceRef un2_ClkCount_cry_0_0))
+           (portRef CIN (instanceRef ClkCount_4_cry_0_0))
           ))
          )
         (property orig_inst_of (string "UART_uniq_1"))
@@ -12022,10 +11989,6 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef opTx_7 (instanceRef UART_Inst))
            (portRef D (instanceRef UART_Inst_opTxio))
           ))
-          (net UART_TxSend_3 (joined
-           (portRef UART_TxSend_3_1z (instanceRef UART_Inst))
-           (portRef D (instanceRef UART_TxSend))
-          ))
           (net (rename UART_TxData_5_5 "UART_TxData_5[5]") (joined
            (portRef UART_TxData_5_5 (instanceRef UART_Inst))
            (portRef D (instanceRef UART_TxData_5))
@@ -12045,6 +12008,10 @@ Nxw7FVgyxnK4VS2tdGsAqw==
           (net (rename UART_TxData_5_0 "UART_TxData_5[0]") (joined
            (portRef UART_TxData_5_0 (instanceRef UART_Inst))
            (portRef D (instanceRef UART_TxData_0))
+          ))
+          (net UART_TxSend_3 (joined
+           (portRef UART_TxSend_3_1z (instanceRef UART_Inst))
+           (portRef D (instanceRef UART_TxSend))
           ))
           (net un2_Count_cry_1_0_S0 (joined
            (portRef S0 (instanceRef un2_Count_cry_1_0))
@@ -12226,20 +12193,20 @@ Nxw7FVgyxnK4VS2tdGsAqw==
            (portRef COUT (instanceRef un2_Count_cry_27_0))
            (portRef CIN (instanceRef un2_Count_cry_29_0))
           ))
-          (net N_99_i_i (joined
-           (portRef N_99_i_i (instanceRef UART_Inst))
+          (net N_76_i_i (joined
+           (portRef N_76_i_i (instanceRef UART_Inst))
            (portRef SP (instanceRef UART_TxSend))
           ))
           (net (rename UART_RxData_inv_m_i_3 "UART_RxData_inv_m_i[3]") (joined
            (portRef UART_RxData_inv_m_i_0 (instanceRef UART_Inst))
            (portRef D (instanceRef UART_TxData_3))
           ))
-          (net N_22_i (joined
-           (portRef N_22_i (instanceRef UART_Inst))
+          (net N_16_i (joined
+           (portRef N_16_i (instanceRef UART_Inst))
            (portRef PD (instanceRef UART_Inst_opTxio))
           ))
-          (net (rename UART_Inst_opTx_3_sqmuxa_i "UART_Inst.opTx_3_sqmuxa_i") (joined
-           (portRef opTx_3_sqmuxa_i_1z (instanceRef UART_Inst))
+          (net (rename UART_Inst_ClkCount_1_sqmuxa_i "UART_Inst.ClkCount_1_sqmuxa_i") (joined
+           (portRef ClkCount_1_sqmuxa_i (instanceRef UART_Inst))
            (portRef SP (instanceRef UART_Inst_opTxio))
           ))
           (net un2_Count_cry_0_0_S0 (joined

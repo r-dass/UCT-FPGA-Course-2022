@@ -15,7 +15,7 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   6
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  05/01/22  17:38:12
+Mapped on:  05/02/22  13:26:42
 
 Design Summary
 --------------
@@ -23,12 +23,12 @@ Design Summary
    Number of registers:    410 out of  3864 (11%)
       PFU registers:          408 out of  3564 (11%)
       PIO registers:            2 out of   300 (1%)
-   Number of SLICEs:       424 out of  2376 (18%)
-      SLICEs as Logic/ROM:    424 out of  2376 (18%)
+   Number of SLICEs:       422 out of  2376 (18%)
+      SLICEs as Logic/ROM:    422 out of  2376 (18%)
       SLICEs as RAM:            0 out of   405 (0%)
       SLICEs as Carry:         52 out of  2376 (2%)
-   Number of LUT4s:        626 out of  4752 (13%)
-      Number used as logic LUTs:        522
+   Number of LUT4s:        623 out of  4752 (13%)
+      Number used as logic LUTs:        519
       Number used as distributed RAM:     0
       Number used as ripple logic:      104
       Number used as shift registers:     0
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Design Summary (cont)
 ---------------------
@@ -76,14 +76,14 @@ Design Summary (cont)
      Net jtaghub16_jtck: 122 loads, 0 rising, 122 falling (Driver:
      mg5ahub/genblk0_genblk5_jtage_u )
    Number of Clock Enables:  50
-     Net UART_Inst.opTx_3_sqmuxa_i: 1 loads, 0 LSLICEs
+     Net UART_Inst.ClkCount_1_sqmuxa_i: 1 loads, 0 LSLICEs
      Net UART_TxData17: 4 loads, 4 LSLICEs
-     Net UART_Inst/N_69: 1 loads, 1 LSLICEs
-     Net UART_Inst/opTxBusy_1_sqmuxa_i_0: 1 loads, 1 LSLICEs
-     Net UART_Inst/N_62: 4 loads, 4 LSLICEs
-     Net UART_Inst/N_64: 4 loads, 4 LSLICEs
-     Net UART_Inst/N_20_i: 5 loads, 5 LSLICEs
-     Net N_99_i_i: 1 loads, 1 LSLICEs
+     Net UART_Inst/N_23_i: 5 loads, 5 LSLICEs
+     Net UART_Inst/N_50: 1 loads, 1 LSLICEs
+     Net UART_Inst/N_52: 4 loads, 4 LSLICEs
+     Net UART_Inst/N_54: 4 loads, 4 LSLICEs
+     Net UART_Inst/N_56: 1 loads, 1 LSLICEs
+     Net N_76_i_i: 1 loads, 1 LSLICEs
      Net
      Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tu_0/op_code8: 2
      loads, 2 LSLICEs
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Design Summary (cont)
 ---------------------
@@ -177,8 +177,8 @@ Design Summary (cont)
      Net mg5ahub/id_enable_0_sqmuxa: 1 loads, 1 LSLICEs
      Net mg5ahub/N_45_i: 10 loads, 10 LSLICEs
    Number of LSRs:  7
-     Net N_22_i: 1 loads, 0 LSLICEs
-     Net UART_Inst/N_16_i: 1 loads, 1 LSLICEs
+     Net N_16_i: 1 loads, 0 LSLICEs
+     Net UART_Inst/opRxValid_0_sqmuxa: 1 loads, 1 LSLICEs
      Net ipReset_c: 18 loads, 17 LSLICEs
      Net UART_Inst/un1_ipReset_0: 2 loads, 2 LSLICEs
      Net UART_Inst/un1_ipReset_1_0: 2 loads, 2 LSLICEs
@@ -190,7 +190,7 @@ Design Summary (cont)
      Net jtaghub16_jrstn: 123 loads
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n: 75
      loads
-     Net ipReset_c: 58 loads
+     Net ipReset_c: 68 loads
      Net Counter_reveal_coretop_instance/counter_la0_inst_0/addr[0]: 49 loads
 
                                     Page 3
@@ -198,7 +198,7 @@ Design Summary (cont)
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Design Summary (cont)
 ---------------------
@@ -264,7 +264,7 @@ Block mg5ahub/jtdo2_int_m9_0_m3_0_a2_2 undriven or does not drive anything -
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Removed logic (cont)
 --------------------
@@ -312,6 +312,7 @@ Block Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/decode_u/GND_0
      undriven or does not drive anything - clipped.
 Signal mg5ahub/jrstn_i was merged into signal jtaghub16_jrstn
 Signal mg5ahub/jtck_i_0 was merged into signal jtaghub16_jtck
+Signal ipReset_c_i was merged into signal ipReset_c
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jrstn_i was
      merged into signal jtaghub16_jrstn
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jtck_i was merged
@@ -323,17 +324,17 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/r_w.CN was
      merged into signal jtaghub16_jtck
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jrstn_i was
      merged into signal jtaghub16_jrstn
-Signal Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/reset_n_i
 
                                     Page 5
 
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Removed logic (cont)
 --------------------
+Signal Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/reset_n_i
      was merged into signal
      Counter_reveal_coretop_instance/counter_la0_inst_0/reset_rvl_n
 Signal
@@ -389,17 +390,17 @@ Signal mg5ahub/er2_tdo_10 undriven or does not drive anything - clipped.
 Signal mg5ahub/er2_tdo_8 undriven or does not drive anything - clipped.
 Signal mg5ahub/er2_tdo_1 undriven or does not drive anything - clipped.
 Signal mg5ahub/er2_tdo_3 undriven or does not drive anything - clipped.
-Signal mg5ahub/er2_tdo_4 undriven or does not drive anything - clipped.
 
                                     Page 6
 
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Removed logic (cont)
 --------------------
+Signal mg5ahub/er2_tdo_4 undriven or does not drive anything - clipped.
 Signal mg5ahub/er2_tdo_2 undriven or does not drive anything - clipped.
 Signal mg5ahub/er2_tdo_14 undriven or does not drive anything - clipped.
 Signal mg5ahub/er2_tdo_15 undriven or does not drive anything - clipped.
@@ -455,17 +456,17 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
      i_ram_dpXbnonesadr85328532p13060cf5_0_0_0/DOB16 undriven or does not drive
      anything - clipped.
-Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
 
                                     Page 7
 
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Removed logic (cont)
 --------------------
+Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
      i_ram_dpXbnonesadr85328532p13060cf5_0_0_0/DOB15 undriven or does not drive
      anything - clipped.
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
@@ -521,17 +522,17 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
      anything - clipped.
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
      i_ram_dpXbnonesadr85328532p13060cf5_0_0_0/DOA7 undriven or does not drive
-     anything - clipped.
 
                                     Page 8
 
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Removed logic (cont)
 --------------------
+     anything - clipped.
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
      i_ram_dpXbnonesadr85328532p13060cf5_0_0_0/DOA6 undriven or does not drive
      anything - clipped.
@@ -587,17 +588,17 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
      _tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1ac7f_0_0_0/DOB15 undriven or
      does not drive anything - clipped.
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
-     _tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1ac7f_0_0_0/DOB14 undriven or
 
                                     Page 9
 
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Removed logic (cont)
 --------------------
+     _tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1ac7f_0_0_0/DOB14 undriven or
      does not drive anything - clipped.
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
      _tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1ac7f_0_0_0/DOB13 undriven or
@@ -653,17 +654,17 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
      _tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1ac7f_0_0_0/DOA13 undriven or
      does not drive anything - clipped.
-Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
 
                                    Page 10
 
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Removed logic (cont)
 --------------------
+Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
      _tt_ebr_ram/pmi_ram_dpXbnonesadr112112p12e1ac7f_0_0_0/DOA12 undriven or
      does not drive anything - clipped.
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
@@ -704,20 +705,19 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
      not drive anything - clipped.
 Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/rd_dout_tu[3]
      undriven or does not drive anything - clipped.
-Signal UART_Inst/un2_ClkCount_cry_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal UART_Inst/un2_ClkCount_cry_0_0_S0 undriven or does not drive anything -
+Signal UART_Inst/ClkCount_4_cry_0_0_S0 undriven or does not drive anything -
      clipped.
 Signal UART_Inst/N_1 undriven or does not drive anything - clipped.
-Signal UART_Inst/un2_ClkCount_s_9_0_S1 undriven or does not drive anything -
+Signal UART_Inst/ClkCount_4_s_9_0_S1 undriven or does not drive anything -
      clipped.
-Signal UART_Inst/un2_ClkCount_s_9_0_COUT undriven or does not drive anything -
+Signal UART_Inst/ClkCount_4_s_9_0_COUT undriven or does not drive anything -
      clipped.
 Signal un2_Count_cry_0_0_S1 undriven or does not drive anything - clipped.
 Signal un2_Count_cry_0_0_S0 undriven or does not drive anything - clipped.
 Signal N_1 undriven or does not drive anything - clipped.
 Block mg5ahub/genblk0_genblk5_jtage_u_RNIO59 was optimized away.
 Block mg5ahub/jtck_inferred_clock_RNINV91 was optimized away.
+Block ipReset_pad_RNIGPSC was optimized away.
 Block Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jrstn_RNIH98D was
      optimized away.
 
@@ -726,7 +726,7 @@ Block Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/jrstn_RNIH98D was
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
 Removed logic (cont)
 --------------------
@@ -792,7 +792,7 @@ Memory Usage
 
 
 
-Design:  Counter                                       Date:  05/01/22  17:38:12
+Design:  Counter                                       Date:  05/02/22  13:26:42
 
  (cont)
 -------
@@ -822,8 +822,8 @@ Instance Name: mg5ahub/genblk0_genblk5_jtage_u
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 0 secs  
-   Total REAL Time: 0 secs  
+   Total CPU Time: 1 secs  
+   Total REAL Time: 2 secs  
    Peak Memory Usage: 64 MB
         
 

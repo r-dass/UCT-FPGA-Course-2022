@@ -10,8 +10,7 @@ I/O cells:       12
                             FD1P3AX       51       100.0
                             FD1P3BX       33       100.0
                             FD1P3DX      191       100.0
-                            FD1P3IX        1       100.0
-                            FD1P3JX        1       100.0
+                            FD1P3IX        2       100.0
                             FD1S3AX       12       100.0
                             FD1S3BX        1       100.0
                             FD1S3DX       38       100.0
@@ -23,7 +22,7 @@ I/O cells:       12
                             L6MUX21        1       100.0
                                  OB        9       100.0
                            OFS1P3JX        1       100.0
-                           ORCALUT4      492       100.0
+                           ORCALUT4      490       100.0
                               PFUMX        4       100.0
                                 PUR        1       100.0
                                 VHI       10       100.0
@@ -37,7 +36,7 @@ SUB MODULES
                    counter_la0_trig        1       100.0
                      reveal_coretop        1       100.0
                             
-                         TOTAL           968           
+                         TOTAL           966           
 ----------------------------------------------------------------------
 Report for cell UART_uniq_1.netlist
      Instance path:  UART_Inst
@@ -45,15 +44,14 @@ Report for cell UART_uniq_1.netlist
                                cell       count    Res Usage(%)
                               CCU2B        6        12.8
                             FD1P3AX       24        47.1
-                            FD1P3IX        1       100.0
-                            FD1P3JX        1       100.0
+                            FD1P3IX        2       100.0
                             FD1S3AX       12       100.0
                             FD1S3IX        8        20.5
-                           ORCALUT4       80        16.3
+                           ORCALUT4       78        15.9
                                 VHI        1        10.0
                                 VLO        1         9.1
                             
-                         TOTAL           134           
+                         TOTAL           132           
 ----------------------------------------------------------------------
 Report for cell reveal_coretop.verilog
      Instance path:  Counter_reveal_coretop_instance
@@ -67,7 +65,7 @@ Report for cell reveal_coretop.verilog
                             FD1S3DX       38       100.0
                                 INV       11        84.6
                             L6MUX21        1       100.0
-                           ORCALUT4      412        83.7
+                           ORCALUT4      412        84.1
                               PFUMX        4       100.0
                                 VHI        8        80.0
                                 VLO        9        81.8
@@ -92,7 +90,7 @@ Report for cell counter_la0.netlist
                             FD1S3DX       38       100.0
                                 INV       11        84.6
                             L6MUX21        1       100.0
-                           ORCALUT4      412        83.7
+                           ORCALUT4      412        84.1
                               PFUMX        4       100.0
                                 VHI        7        70.0
                                 VLO        8        72.7
@@ -115,7 +113,7 @@ Report for cell counter_la0_trig.netlist
                             FD1S3DX       14        36.8
                                 INV        5        38.5
                             L6MUX21        1       100.0
-                           ORCALUT4       94        19.1
+                           ORCALUT4       94        19.2
                               PFUMX        3        75.0
                                 VHI        5        50.0
                                 VLO        5        45.5

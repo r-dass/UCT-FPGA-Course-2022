@@ -89,10 +89,9 @@ always @(posedge(ipClk)) begin
 			case (rxState)
 				Wait: begin
 					if (Rx) begin
-						opRxValid <= 1;
+						opRxValid <= 0;
 					end else begin
 						opRxValid <=0;
-						// ClkCount <= 100;
 						rxState <= Process;
 					end
 				end
@@ -115,7 +114,7 @@ always @(posedge(ipClk)) begin
 		end
 	end else begin //Reset Code Here
 		opTxBusy <= 0; 
-		opRxValid <= 1; 
+		opRxValid <= 0; 
 		opTx <= 1;
 		ClkCount <= 10'b0; 
 		BitsSent <= 3'b0; 

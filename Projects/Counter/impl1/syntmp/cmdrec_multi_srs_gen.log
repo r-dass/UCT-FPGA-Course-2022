@@ -1,7 +1,7 @@
 C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  Counter  -multisrs  C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synwork\Counter_impl1_comp.srs  -osyn  C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synwork\Counter_impl1_mult.srs  -log  C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synlog\Counter_impl1_multi_srs_gen.srr 
 relcom:..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top Counter -multisrs ..\synwork\Counter_impl1_comp.srs -osyn ..\synwork\Counter_impl1_mult.srs -log ..\synlog\Counter_impl1_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:..\synwork\Counter_impl1_comp.srs|io:i|time:1651419473|size:122022|exec:0|csum:932F9E9B56519F20778EBCB3405B57DC
-file:..\synwork\Counter_impl1_mult.srs|io:o|time:1651419474|size:4971|exec:0|csum:
-file:..\synlog\Counter_impl1_multi_srs_gen.srr|io:o|time:1651419474|size:1147|exec:0|csum:
+file:..\synwork\Counter_impl1_comp.srs|io:i|time:1651490782|size:121969|exec:0|csum:558112EF66C0E61D1768BC74F1F35287
+file:..\synwork\Counter_impl1_mult.srs|io:o|time:1651490783|size:4944|exec:0|csum:
+file:..\synlog\Counter_impl1_multi_srs_gen.srr|io:o|time:1651490783|size:1147|exec:0|csum:
 file:..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603959522|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD
