@@ -81,10 +81,28 @@ always @(posedge(ipClk)) begin
             end
             ReceivePayload: begin
                 if (UART_RxValid) begin
-                    opRxStream.Data <= opRxStream.Data >> 8;
-                    opRxStream.Length <= UART_RxData;
-                end else if (BytesReceived == opRxStream.Length) begin
-                    rxState <= ReceivePayload;
+                    opRxStream.Data <= UART_RxData;
+                    if (BytesReceived == 0) begin
+                        opRxStream.SoP <=1;
+                    end 
+
+                    if (BytesReceived == 1) begin
+                        opRxStream.SoP <= 0;
+                    end 
+                    
+                    if (BytesReceived == opRxStream.Length - 1) begin
+                        opRxStream.EoP <=1;
+                    end
+                    
+                    if (BytesReceived == opRxStream.Length) begin
+                        opRxStream.EoP <= 0;
+                        opRxStream.Valid <=1;
+                        rxState <= ReceiveSync;
+                    end
+
+                    BytesReceived <= BytesReceived + 1;
+                end else begin
+                    opRxStream.Valid <= 0;
                 end
             end
             default:;   
