@@ -6,14 +6,14 @@
         <Source name="Structures.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="Registers.v" type="Verilog" type_short="Verilog">
-            <Options top_module="Registers"/>
-        </Source>
         <Source name="UART.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="UART_Packets.v" type="Verilog" type_short="Verilog">
             <Options top_module="UART_Packets"/>
+        </Source>
+        <Source name="Registers.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Registers"/>
         </Source>
         <Source name="Counter.v" type="Verilog" type_short="Verilog">
             <Options top_module="Counter"/>

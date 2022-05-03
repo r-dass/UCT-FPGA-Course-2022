@@ -6,7 +6,7 @@ module UART_Packets(
   input              ipReset,
 
   input  UART_PACKET ipTxStream,
-  output             opTxReady,
+  output reg         opTxReady,
   output             opTx,
 
   input              ipRx,
@@ -15,13 +15,11 @@ module UART_Packets(
 //------------------------------------------------------------------------------
 
 reg[7:0] UART_TxData;
-reg[7:0] UART_RxData;
-
 reg UART_TxSend;
 reg UART_TxBusy;
-reg UART_RxValid;  
 
-reg TxReady; 
+reg[7:0] UART_RxData;  
+reg UART_RxValid; 
 
 // TODO: Instantiate the UART module here
 UART UART_Inst(
@@ -39,7 +37,7 @@ UART UART_Inst(
 );
 
 typedef enum{ 
-ReceiveSync,
+WaitForSync,
 ReceiveDestination,
 ReceiveSource,
 ReceiveLength,
@@ -58,7 +56,6 @@ TransmitPayload
 tState txState;
 
 reg[2:0] BytesReceived;
-
 //------------------------------------------------------------------------------
 
 // TODO: Implement the Tx stream
@@ -67,28 +64,58 @@ always @(posedge(ipClk)) begin
     if (!ipReset) begin
         case(txState) 
             Wait: begin
+                opTxReady <= 1;
+                UART_TxSend <= 1;
                 txState <= TransmitSync;
+                if (ipTxStream.Valid) begin
+                    if (ipTxStream.SoP) begin
+                        opTxReady <= 0;            
+                    end
+                end
             end
             TransmitSync: begin
-                txState <= TransmitDestination;
+                if (!UART_TxBusy) begin
+                    UART_TxData <= 8'h55;
+                    UART_TxSend <= 1;
+                    txState <= TransmitDestination;
+                end 
             end
             TransmitDestination: begin
-                txState <= TransmitSource;
+                if (!UART_TxBusy) begin
+                    UART_TxData <= ipTxStream.Destination;
+                    UART_TxSend <= 1;
+                    txState <= TransmitSource;
+                end 
             end
             TransmitSource: begin
-                txState <= TransmitLength;
+                if (!UART_TxBusy) begin
+                    UART_TxData <= ipTxStream.Source;
+                    UART_TxSend <= 1;
+                    txState <= TransmitLength;
+                end 
             end
             TransmitLength: begin
-                txState <= TransmitPayload;
+                if (!UART_TxBusy) begin
+                    UART_TxData <= ipTxStream.Length;
+                    UART_TxSend <= 1;
+                    txState <= TransmitPayload;
+                end         
             end
             TransmitPayload: begin
-                txState <= Wait;
+                if (!UART_TxBusy) begin
+                    UART_TxData <= ipTxStream.Data;
+                    UART_TxSend <= 1;
+                    txState <= TransmitPayload;
+                    if (ipTxStream.EoP)
+                        txState <= TransmitDestination;
+                end
             end
             default:;   
         endcase
 
         case(rxState) 
-            ReceiveSync: begin
+            WaitForSync: begin
+                opRxStream.Valid <= 0;
                 if (UART_RxValid && (UART_RxData == 'h55)) begin
                     rxState <= ReceiveDestination;
                 end
@@ -126,18 +153,17 @@ always @(posedge(ipClk)) begin
                     if (BytesReceived == opRxStream.Length) begin
                         opRxStream.EoP <= 0;
                         opRxStream.Valid <=1;
-                        rxState <= ReceiveSync;
+                        rxState <= WaitForSync;
                     end
                     BytesReceived <= BytesReceived + 1;
-                end else begin
-                    opRxStream.Valid <= 0;
-                end
+                end 
             end
             default:;   
         endcase
     end else begin
         //Add Reset Code
-        rxState <= ReceiveSync;
+        rxState <= WaitForSync;
+        txState <= Wait;
         BytesReceived <= 0;
     end 
 end
