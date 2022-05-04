@@ -44,6 +44,7 @@ module UART_Packets_tb;
 
     while (!opTxReady) #10;
 
+    #100
     TxPacket.Valid <= 1;
   end
 endmodule
