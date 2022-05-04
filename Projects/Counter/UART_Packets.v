@@ -60,7 +60,7 @@ reg[2:0] BytesReceived;
 
 // TODO: Implement the Tx stream
 // Transition Logic Broken
-always @(posedge ipClk) begin
+always @(posedge(ipClk)) begin
     if (!ipReset) begin
         case(txState) 
             Wait: begin
@@ -120,54 +120,6 @@ always @(posedge ipClk) begin
             end
             default:;   
         endcase
-
-        case(rxState) 
-            ReceiveSync: begin
-                opRxStream.Valid <= 0;
-                if (UART_RxValid && (UART_RxData == 'h55)) begin
-                    rxState <= ReceiveDestination;
-                end
-            end
-            ReceiveDestination: begin
-                if (UART_RxValid) begin
-                    opRxStream.Destination <= UART_RxData;
-                    rxState <= ReceiveSource;
-                end
-            end
-            ReceiveSource: begin
-                if (UART_RxValid) begin
-                    opRxStream.Source <= UART_RxData;
-                    rxState <= ReceiveLength;
-                end
-            end
-            ReceiveLength: begin
-                if (UART_RxValid) begin
-                    opRxStream.Length <= UART_RxData;
-                    rxState <= ReceivePayload;
-                end
-            end
-            ReceivePayload: begin
-                if (UART_RxValid) begin
-                    opRxStream.Data <= UART_RxData;
-                    if (BytesReceived == 0) begin
-                        opRxStream.SoP <=1;
-                    end 
-                    if (BytesReceived == 1) begin
-                        opRxStream.SoP <= 0;
-                    end 
-                    if (BytesReceived == opRxStream.Length - 1) begin
-                        opRxStream.EoP <=1;
-                    end
-                    if (BytesReceived == opRxStream.Length) begin
-                        opRxStream.EoP <= 0;
-                        opRxStream.Valid <=1;
-                        rxState <= ReceiveSync;
-                    end
-                    BytesReceived <= BytesReceived + 1;
-                end 
-            end
-            default:;   
-        endcase
     end else begin
         //Add Reset Code
         rxState <= ReceiveSync;
@@ -179,7 +131,63 @@ end
 //------------------------------------------------------------------------------
 
 // TODO: Implement the Rx stream
-
+always @(posedge(ipClk)) begin
+    if (!ipReset) begin
+        case(rxState) 
+        ReceiveSync: begin
+            opRxStream.Valid <= 0;
+            if (UART_RxValid && (UART_RxData == 'h55)) begin
+                rxState <= ReceiveDestination;
+            end
+        end
+        ReceiveDestination: begin
+            if (UART_RxValid) begin
+                opRxStream.Destination <= UART_RxData;
+                rxState <= ReceiveSource;
+            end
+        end
+        ReceiveSource: begin
+            if (UART_RxValid) begin
+                opRxStream.Source <= UART_RxData;
+                rxState <= ReceiveLength;
+            end
+        end
+        ReceiveLength: begin
+            if (UART_RxValid) begin
+                opRxStream.Length <= UART_RxData;
+                rxState <= ReceivePayload;
+            end
+        end
+        ReceivePayload: begin
+            if (UART_RxValid) begin
+                opRxStream.Data <= UART_RxData;
+                if (BytesReceived == 0) begin
+                    opRxStream.SoP <=1;
+                end 
+                if (BytesReceived == 1) begin
+                    opRxStream.SoP <= 0;
+                end 
+                if (BytesReceived == opRxStream.Length - 1) begin
+                    opRxStream.EoP <=1;
+                end
+                if (BytesReceived == opRxStream.Length) begin
+                    opRxStream.EoP <= 0;
+                    opRxStream.Valid <=1;
+                    rxState <= ReceiveSync;
+                end
+                BytesReceived <= BytesReceived + 1;
+            end 
+        end
+        default:;   
+        endcase
+    end else begin
+        //Add Reset Code
+        rxState <= ReceiveSync;
+        txState <= Wait;
+        BytesReceived <= 0;
+        UART_TxSend <= 0;
+    end 
+end
 //------------------------------------------------------------------------------
 
 endmodule

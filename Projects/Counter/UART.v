@@ -87,10 +87,22 @@ always @(posedge(ipClk)) begin
 				end
 				default:;
 			endcase
-		end
+		end	
+	end else begin //Reset Code Here
+		opTxBusy <= 0; 
+		opTx <= 1;
+		txClkCount <= 10'b0; 
+		BitsSent <= 3'b0; 
+		txState <= Wait;
+		txData <= 8'b0;
+	end
+end
+//------------------------------------------------------------------------------
 
-		Rx <= ipRx;
-
+// TODO: Put the receiver here
+always @(posedge(ipClk)) begin
+	Rx <= ipRx;
+	if (!ipReset) begin
 		if (rxState == Wait && Rx) begin
 			rxClkCount <= 221; //Sync data to halfway
 		end else if(rxClkBaud) begin
@@ -98,8 +110,6 @@ always @(posedge(ipClk)) begin
 		end else begin 
 			rxClkCount <= rxClkCount + 1'b1;
 		end
-
-
 		if (rxClkBaud) begin
 			case (rxState)
 				Wait: begin
@@ -130,23 +140,13 @@ always @(posedge(ipClk)) begin
 			opRxValid <= 0;
 		end
 	end else begin //Reset Code Here
-		opTxBusy <= 0; 
 		opRxValid <= 0; 
-		opTx <= 1;
-		txClkCount <= 10'b0; 
-		BitsSent <= 3'b0; 
 		BitsReceived <= 3'b0; 
-		txState <= Wait;
 		rxState <= Wait;
 		rxData <= 8'b0;
-		txData <= 8'b0;
 		Rx <= 0;
 	end
 end
-//------------------------------------------------------------------------------
-
-// TODO: Put the receiver here
-
 //------------------------------------------------------------------------------
 
 endmodule
