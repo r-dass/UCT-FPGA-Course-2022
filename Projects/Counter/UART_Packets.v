@@ -137,7 +137,7 @@ always @(posedge ipClk) begin
             ReceiveSource: begin
                 if (UART_RxValid) begin
                     opRxStream.Source <= UART_RxData;
-                    rxState <= ReceiveDestination;
+                    rxState <= ReceiveLength;
                 end
             end
             ReceiveLength: begin

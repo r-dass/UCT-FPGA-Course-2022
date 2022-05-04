@@ -18,7 +18,7 @@ module UART_Packets_tb;
   reg opTxReady;
   reg opTx;
 
-  reg ipRx = 0;
+  reg ipRx;
   UART_PACKET RxPacket;
 
   UART_Packets DUT(
@@ -32,6 +32,8 @@ module UART_Packets_tb;
         .ipRx               (ipRx       ),
         .opRxStream         (RxPacket   )
     );
+
+assign ipRx = opTx; 
 
   initial begin
     TxPacket.Destination <= 8'h56;
