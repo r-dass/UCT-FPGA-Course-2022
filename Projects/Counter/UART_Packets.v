@@ -37,7 +37,7 @@ UART UART_Inst(
 );
 
 typedef enum{ 
-WaitForSync,
+ReceiveSync,
 ReceiveDestination,
 ReceiveSource,
 ReceiveLength,
@@ -122,7 +122,7 @@ always @(posedge ipClk) begin
         endcase
 
         case(rxState) 
-            WaitForSync: begin
+            ReceiveSync: begin
                 opRxStream.Valid <= 0;
                 if (UART_RxValid && (UART_RxData == 'h55)) begin
                     rxState <= ReceiveDestination;
@@ -161,7 +161,7 @@ always @(posedge ipClk) begin
                     if (BytesReceived == opRxStream.Length) begin
                         opRxStream.EoP <= 0;
                         opRxStream.Valid <=1;
-                        rxState <= WaitForSync;
+                        rxState <= ReceiveSync;
                     end
                     BytesReceived <= BytesReceived + 1;
                 end 
@@ -170,7 +170,7 @@ always @(posedge ipClk) begin
         endcase
     end else begin
         //Add Reset Code
-        rxState <= WaitForSync;
+        rxState <= ReceiveSync;
         txState <= Wait;
         BytesReceived <= 0;
         UART_TxSend <= 0;
