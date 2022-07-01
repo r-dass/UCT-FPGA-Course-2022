@@ -4,25 +4,47 @@ module Control(
     input               ipClk,
     input               ipReset,
 
-    input   UART_PACKET ipRxStream,
+    input				ipTxReady,
+	
+	input   UART_PACKET ipRxStream,
     output  UART_PACKET opTxStream,
 
-    input   reg[31:0]   ipRdData
-    output  [7:0]       ipAddress,
-    output  [31:0]      ipWrData,
-    output              ipWrEnable, 
+    input   reg[31:0]   ipRdData,
+    output  [7:0]       opAddress,
+    output  [31:0]      opWrData,
+    output               opWrEnable
 );
 
-always @ (posedge(ipClk)) begin
-  if(ipRxStream.Valid) begin
-      if (ipRxStream.ipAddress == 0) begin
-          // write
-      end  
+enum {
+	Wait,
+	Read,
+	Write
+} State;
 
-      if (ipRxStream.ipAddress == 1) begin
-          // read
-      end
-  end
+always @ (posedge(ipClk)) begin
+	if (!ipReset) begin
+		case (State)
+			Wait: begin
+				if(ipRxStream.Valid && ipRxStream.SoP) begin
+					if (ipRxStream.Destination == 0) begin
+						State <= Read;
+					end   
+					if (ipRxStream.Destination == 1) begin
+						State <= Write;
+					end
+				end
+			end
+			Write: begin
+
+			end 
+			Read: begin
+
+			end
+		 	default:;	
+		endcase
+	end else begin // reset code here
+		
+	end
 end
 
 endmodule

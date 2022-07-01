@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="Counter" device="LFXP2-5E-6TN144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options VerilogStandard="System Verilog" def_top="Counter"/>
+        <Options VerilogStandard="System Verilog" def_top="Control"/>
         <Source name="Counter.v" type="Verilog" type_short="Verilog">
             <Options top_module="Counter"/>
         </Source>
@@ -12,17 +12,17 @@
         <Source name="UART.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="Controller.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+        <Source name="Structures.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="Registers.v" type="Verilog" type_short="Verilog" excluded="TRUE">
-            <Options/>
+        <Source name="Registers.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Registers"/>
         </Source>
-        <Source name="Structures.v" type="Verilog" type_short="Verilog" excluded="TRUE">
-            <Options/>
+        <Source name="UART_Packets.v" type="Verilog" type_short="Verilog">
+            <Options top_module="UART_Packets"/>
         </Source>
-        <Source name="UART_Packets.v" type="Verilog" type_short="Verilog" excluded="TRUE">
-            <Options/>
+        <Source name="Controller.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Control"/>
         </Source>
         <Source name="UART_Packets_tb.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
