@@ -1,48 +1,20 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Mon May 02 15:39:35 2022 *
-NOTE DESIGN NAME: UART_Packets *
+NOTE DATE CREATED: Fri Jul 01 20:28:35 2022 *
+NOTE DESIGN NAME: Counter *
 NOTE DEVICE NAME: LFXP2-5E-6TQFP144 *
 NOTE PIN ASSIGNMENTS *
-NOTE PINS opTxReady : 78 : out *
+NOTE PINS opUART_Tx : 109 : out *
 NOTE PINS ipClk : 21 : in *
-NOTE PINS opRxStream[34] : 103 : out *
-NOTE PINS opRxStream[33] : 54 : out *
-NOTE PINS opRxStream[32] : 74 : out *
-NOTE PINS opRxStream[31] : 27 : out *
-NOTE PINS opRxStream[30] : 2 : out *
-NOTE PINS opRxStream[29] : 47 : out *
-NOTE PINS opRxStream[28] : 142 : out *
-NOTE PINS opRxStream[27] : 57 : out *
-NOTE PINS opRxStream[26] : 143 : out *
-NOTE PINS opRxStream[25] : 72 : out *
-NOTE PINS opRxStream[24] : 69 : out *
-NOTE PINS opRxStream[23] : 61 : out *
-NOTE PINS opRxStream[22] : 132 : out *
-NOTE PINS opRxStream[21] : 98 : out *
-NOTE PINS opRxStream[20] : 127 : out *
-NOTE PINS opRxStream[19] : 45 : out *
-NOTE PINS opRxStream[18] : 87 : out *
-NOTE PINS opRxStream[17] : 50 : out *
-NOTE PINS opRxStream[16] : 133 : out *
-NOTE PINS opRxStream[15] : 137 : out *
-NOTE PINS opRxStream[14] : 22 : out *
-NOTE PINS opRxStream[13] : 43 : out *
-NOTE PINS opRxStream[12] : 96 : out *
-NOTE PINS opRxStream[11] : 55 : out *
-NOTE PINS opRxStream[10] : 121 : out *
-NOTE PINS opRxStream[9] : 15 : out *
-NOTE PINS opRxStream[8] : 6 : out *
-NOTE PINS opRxStream[7] : 71 : out *
-NOTE PINS opRxStream[6] : 115 : out *
-NOTE PINS opRxStream[5] : 35 : out *
-NOTE PINS opRxStream[4] : 31 : out *
-NOTE PINS opRxStream[3] : 40 : out *
-NOTE PINS opRxStream[2] : 116 : out *
-NOTE PINS opRxStream[1] : 20 : out *
-NOTE PINS opRxStream[0] : 109 : out *
-NOTE PINS ipRx : 94 : in *
-NOTE PINS opTx : 36 : out *
+NOTE PINS opLED[7] : 37 : out *
+NOTE PINS opLED[6] : 38 : out *
+NOTE PINS opLED[5] : 39 : out *
+NOTE PINS opLED[4] : 40 : out *
+NOTE PINS opLED[3] : 43 : out *
+NOTE PINS opLED[2] : 44 : out *
+NOTE PINS opLED[1] : 45 : out *
+NOTE PINS opLED[0] : 46 : out *
+NOTE PINS ipUART_Rx : 110 : in *
 NOTE PINS ipReset : 19 : in *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: off *

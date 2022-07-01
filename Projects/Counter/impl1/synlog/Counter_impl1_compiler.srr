@@ -9,7 +9,7 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: RD-LAPTOP
+Hostname: AD-DESKTOP
 
 Implementation : impl1
 Synopsys HDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
@@ -27,7 +27,7 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: RD-LAPTOP
+Hostname: AD-DESKTOP
 
 Implementation : impl1
 Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
@@ -48,16 +48,15 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\lscc\diamond\3.12\module\reveal\src\rvl_j2w_module\rvl_j2w_module.v" (library work)
 @I::"C:\lscc\diamond\3.12\module\reveal\src\rvl_j2w_module\wb2sci.v" (library work)
 @I::"C:\lscc\diamond\3.12\module\reveal\src\ertl\JTAG_SOFT.v" (library work)
-@I::"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v" (library work)
-@I::"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v" (library work)
-@I::"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v" (library work)
-@W: CG921 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":344:8:344:16|opTxReady is already declared in this scope.
+@I::"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v" (library work)
+@I::"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v" (library work)
+@I::"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v" (library work)
 Verilog syntax check successful!
-Options changed - recompiling
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":2:8:2:17|Synthesizing module Structures in library work.
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":97:0:97:5|Synthesizing module work_C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v_unit in library work.
-Selecting top level module UART_Packets
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":456:7:456:17|Synthesizing module UART_uniq_1 in library work.
+File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v changed - recompiling
+File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v changed - recompiling
+File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v changed - recompiling
+Selecting top level module Counter
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":339:7:339:17|Synthesizing module UART_uniq_1 in library work.
 Running optimization stage 1 on UART_uniq_1 .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v":1269:7:1269:9|Synthesizing module VHI in library work.
 Running optimization stage 1 on VHI .......
@@ -67,47 +66,25 @@ Running optimization stage 1 on rvl_tu_1s_0s_0s_0s_1s .......
 Running optimization stage 1 on pmi_ram_dp_Z2 .......
 Running optimization stage 1 on rvl_te_Z1 .......
 Running optimization stage 1 on rvl_tcnt_1s_3s_1_0s .......
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":11:7:11:22|Synthesizing module counter_la0_trig in library work.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":11:7:11:22|Synthesizing module counter_la0_trig in library work.
 Running optimization stage 1 on counter_la0_trig .......
 Running optimization stage 1 on pmi_ram_dp_Z4 .......
 Running optimization stage 1 on rvl_tm_Z3 .......
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":12:7:12:17|Synthesizing module counter_la0 in library work.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":12:7:12:17|Synthesizing module counter_la0 in library work.
 Running optimization stage 1 on counter_la0 .......
 @N: CG364 :"C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
 Running optimization stage 1 on jtagconn16 .......
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":26:7:26:20|Synthesizing module reveal_coretop in library work.
-@W: CG360 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":40:29:40:39|Removing wire trigger_out, as there is no assignment to it.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":2:7:2:20|Synthesizing module reveal_coretop in library work.
+@W: CG360 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":16:29:16:39|Removing wire trigger_out, as there is no assignment to it.
 Running optimization stage 1 on reveal_coretop .......
-@N: CG364 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":329:7:329:18|Synthesizing module UART_Packets in library work.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":344:8:344:16|Object opTxReady is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":12:20:12:25|Object opRxStream.Source is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":13:20:13:30|Object opRxStream.Destination is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":14:20:14:25|Object opRxStream.Length is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":15:14:15:16|Object opRxStream.SoP is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":16:14:16:16|Object opRxStream.EoP is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":17:20:17:23|Object opRxStream.Data is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":18:14:18:18|Object opRxStream.Valid is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":339:14:339:24|Object UART_TxData is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":341:8:341:18|Object UART_TxSend is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":357:11:357:17|Object rxState is declared but not assigned. Either assign a value or remove the declaration.
-Running optimization stage 1 on UART_Packets .......
-Running optimization stage 2 on UART_Packets .......
-@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":12:20:12:25|*Unassigned bits of opRxStream.Source[7:0] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":13:20:13:30|*Unassigned bits of opRxStream.Destination[7:0] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":14:20:14:25|*Unassigned bits of opRxStream.Length[7:0] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":15:14:15:16|*Unassigned bits of opRxStream.SoP are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":16:14:16:16|*Unassigned bits of opRxStream.EoP are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":17:20:17:23|*Unassigned bits of opRxStream.Data[7:0] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":18:14:18:18|*Unassigned bits of opRxStream.Valid are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":339:14:339:24|*Unassigned bits of UART_TxData[7:0] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":341:8:341:18|*Unassigned bits of UART_TxSend are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":344:8:344:16|*Unassigned bits of opTxReady are referenced and tied to 0 -- simulation mismatch possible.
-@N: CL159 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":332:22:332:31|Input ipTxStream is unused.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":69:7:69:13|Synthesizing module Counter in library work.
+Running optimization stage 1 on Counter .......
+Running optimization stage 2 on Counter .......
 Running optimization stage 2 on reveal_coretop .......
 Running optimization stage 2 on jtagconn16 .......
 Running optimization stage 2 on counter_la0 .......
-@N: CL159 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":52:7:52:13|Input reset_n is unused.
-@N: CL159 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":64:7:64:16|Input trigger_en is unused.
+@N: CL159 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":52:7:52:13|Input reset_n is unused.
+@N: CL159 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":64:7:64:16|Input trigger_en is unused.
 Running optimization stage 2 on pmi_ram_dp_Z4 .......
 Running optimization stage 2 on rvl_tm_Z3 .......
 Running optimization stage 2 on counter_la0_trig .......
@@ -119,28 +96,28 @@ Running optimization stage 2 on rvl_decode_1s_1s .......
 Running optimization stage 2 on rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s .......
 Running optimization stage 2 on VHI .......
 Running optimization stage 2 on UART_uniq_1 .......
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":481:4:481:9|Trying to extract state machine for register txState.
-Extracted state machine for register txState
+@N: CL201 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":429:4:429:9|Trying to extract state machine for register rxState.
+Extracted state machine for register rxState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
    00000000000000000000000000000001
-@N: CL201 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":481:4:481:9|Trying to extract state machine for register rxState.
-Extracted state machine for register rxState
+@N: CL201 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":364:4:364:9|Trying to extract state machine for register txState.
+Extracted state machine for register txState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
    00000000000000000000000000000001
 
 For a summary of runtime and memory usage per design unit, please see file:
 ==========================================================
-@L: C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synwork\layer0.rt.csv
+@L: C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 104MB peak: 112MB)
+At c_ver Exit (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:05s; Memory used current: 105MB peak: 113MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+Process took 0h:00m:13s realtime, 0h:00m:05s cputime
 
 Process completed successfully.
-# Mon May  2 15:38:46 2022
+# Fri Jul  1 20:27:40 2022
 
 ###########################################################]
 ###########################################################[
@@ -155,33 +132,33 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: RD-LAPTOP
+Hostname: AD-DESKTOP
 
 Implementation : impl1
 Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 93MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 94MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May  2 15:38:47 2022
+# Fri Jul  1 20:27:41 2022
 
 ###########################################################]
 
 For a summary of runtime and memory usage for all design units, please see file:
 ==========================================================
-@L: C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synwork\Counter_impl1_comp.rt.csv
+@L: C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_comp.rt.csv
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:05s; Memory used current: 24MB peak: 24MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+Process took 0h:00m:14s realtime, 0h:00m:05s cputime
 
 Process completed successfully.
-# Mon May  2 15:38:47 2022
+# Fri Jul  1 20:27:41 2022
 
 ###########################################################]

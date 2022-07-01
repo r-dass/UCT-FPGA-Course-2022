@@ -5,14 +5,14 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
-<data>C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synlog\report\Counter_impl1_fpga_mapper_resourceusage.rpt</data>
+<data>C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synlog\report\Counter_impl1_fpga_mapper_resourceusage.rpt</data>
 <title>Resource Usage</title>
 </report_link>
 <parameter tooltip="Total Register bits used" name="Register bits">
-<data>314</data>
+<data>379</data>
 </parameter>
 <parameter tooltip="Total I/O cells used" name="I/O cells">
-<data>40</data>
+<data>12</data>
 </parameter>
 <parameter tcl_name="v_ram" tooltip="Total Block RAMs used" name="Block RAMs">
 <data>0</data>
@@ -21,6 +21,6 @@ The file contains the area information from mapper to be displayed as part of th
 <data>0</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total ORCA LUTs used" name="ORCA LUTs">
-<data>448</data>
+<data>502</data>
 </parameter>
 </report_table>

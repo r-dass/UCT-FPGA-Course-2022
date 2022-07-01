@@ -1,2 +1,2 @@
-@E: CS153 :"C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":431:35:431:35|Can't mix blocking and non-blocking assignments to a variable
+@E: CL172 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\UART_Packets_rvl.v":352:8:352:18|Only one always block can assign a given variable UART_TxSend
 

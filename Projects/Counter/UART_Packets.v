@@ -121,11 +121,13 @@ always @(posedge(ipClk)) begin
             default:;   
         endcase
     end else begin
-        //Add Reset Code
-        rxState <= ReceiveSync;
+		opTxReady <= 0;
+	 
+		UART_TxData <= 0;
+		UART_TxSend <= 0;
+		
         txState <= Wait;
         BytesReceived <= 0;
-        UART_TxSend <= 0;
     end 
 end
 //------------------------------------------------------------------------------
@@ -181,7 +183,14 @@ always @(posedge(ipClk)) begin
         default:;   
         endcase
     end else begin
-        //Add Reset Code
+		opRxStream.Source      <= 0;
+		opRxStream.Destination <= 0;
+		opRxStream.Length      <= 0;
+	
+		opRxStream.SoP <= 0;
+		opRxStream.EoP <= 0;
+		opRxStream.Data <= 0;
+		opRxStream.Valid <=0;
         rxState <= ReceiveSync;
         txState <= Wait;
         BytesReceived <= 0;

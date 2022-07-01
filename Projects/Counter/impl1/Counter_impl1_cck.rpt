@@ -9,16 +9,16 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: RD-LAPTOP
+Hostname: AD-DESKTOP
 
 Implementation : impl1
 
-# Written on Mon May  2 15:38:50 2022
+# Written on Fri Jul  1 20:27:45 2022
 
 ##### DESIGN INFO #######################################################
 
-Top View:                "UART_Packets"
-Constraint File(s):      "C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\Counter.fdc"
+Top View:                "Counter"
+Constraint File(s):      "C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Counter.fdc"
 
 
 
@@ -55,92 +55,29 @@ Unconstrained Start/End Points
 ******************************
 
 p:ipReset
-p:ipRx
-p:ipTxStream[0]
-p:ipTxStream[1]
-p:ipTxStream[2]
-p:ipTxStream[3]
-p:ipTxStream[4]
-p:ipTxStream[5]
-p:ipTxStream[6]
-p:ipTxStream[7]
-p:ipTxStream[8]
-p:ipTxStream[9]
-p:ipTxStream[10]
-p:ipTxStream[11]
-p:ipTxStream[12]
-p:ipTxStream[13]
-p:ipTxStream[14]
-p:ipTxStream[15]
-p:ipTxStream[16]
-p:ipTxStream[17]
-p:ipTxStream[18]
-p:ipTxStream[19]
-p:ipTxStream[20]
-p:ipTxStream[21]
-p:ipTxStream[22]
-p:ipTxStream[23]
-p:ipTxStream[24]
-p:ipTxStream[25]
-p:ipTxStream[26]
-p:ipTxStream[27]
-p:ipTxStream[28]
-p:ipTxStream[29]
-p:ipTxStream[30]
-p:ipTxStream[31]
-p:ipTxStream[32]
-p:ipTxStream[33]
-p:ipTxStream[34]
-p:opRxStream[0]
-p:opRxStream[1]
-p:opRxStream[2]
-p:opRxStream[3]
-p:opRxStream[4]
-p:opRxStream[5]
-p:opRxStream[6]
-p:opRxStream[7]
-p:opRxStream[8]
-p:opRxStream[9]
-p:opRxStream[10]
-p:opRxStream[11]
-p:opRxStream[12]
-p:opRxStream[13]
-p:opRxStream[14]
-p:opRxStream[15]
-p:opRxStream[16]
-p:opRxStream[17]
-p:opRxStream[18]
-p:opRxStream[19]
-p:opRxStream[20]
-p:opRxStream[21]
-p:opRxStream[22]
-p:opRxStream[23]
-p:opRxStream[24]
-p:opRxStream[25]
-p:opRxStream[26]
-p:opRxStream[27]
-p:opRxStream[28]
-p:opRxStream[29]
-p:opRxStream[30]
-p:opRxStream[31]
-p:opRxStream[32]
-p:opRxStream[33]
-p:opRxStream[34]
-p:opTx
-p:opTxReady
+p:ipUART_Rx
+p:opLED[0]
+p:opLED[1]
+p:opLED[2]
+p:opLED[3]
+p:opLED[4]
+p:opLED[5]
+p:opLED[6]
+p:opLED[7]
+p:opUART_Tx
 
 
 Inapplicable constraints
 ************************
 
 set_false_path -from [get_registers *] - - - - to [get_ports bp*]
-	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":9:0:9:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
+	@E::"c:/users/reeve/git/uct-fpga-course-2022/projects/counter/counter.fdc":9:0:9:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
 set_false_path -from [get_registers *] - - - - to [get_ports op*]
-	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":7:0:7:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
+	@E::"c:/users/reeve/git/uct-fpga-course-2022/projects/counter/counter.fdc":7:0:7:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
 set_false_path -to [get_registers *] - - - - from [get_ports bp*]
-	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":8:0:8:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
+	@E::"c:/users/reeve/git/uct-fpga-course-2022/projects/counter/counter.fdc":8:0:8:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
 set_false_path -to [get_registers *] - - - - from [get_ports ip*]
-	@E::"c:/users/reeve/git/eee5117,8z/projects/counter/counter.fdc":6:0:6:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
+	@E::"c:/users/reeve/git/uct-fpga-course-2022/projects/counter/counter.fdc":6:0:6:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
 
 Applicable constraints with issues
 **********************************

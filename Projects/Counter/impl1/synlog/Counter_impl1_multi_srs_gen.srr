@@ -10,19 +10,19 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: RD-LAPTOP
+Hostname: AD-DESKTOP
 
 Implementation : impl1
 Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
 @N|Running in 64-bit mode
-File C:\Users\reeve\git\EEE5117,8Z\Projects\Counter\impl1\synwork\Counter_impl1_comp.srs changed - recompiling
+File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 93MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 94MB peak: 95MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May  2 15:38:48 2022
+# Fri Jul  1 20:27:42 2022
 
 ###########################################################]
