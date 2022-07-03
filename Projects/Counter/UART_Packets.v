@@ -127,7 +127,6 @@ always @(posedge(ipClk)) begin
 		UART_TxSend <= 0;
 		
         txState <= Wait;
-        BytesReceived <= 0;
     end 
 end
 //------------------------------------------------------------------------------
@@ -192,9 +191,7 @@ always @(posedge(ipClk)) begin
 		opRxStream.Data <= 0;
 		opRxStream.Valid <=0;
         rxState <= ReceiveSync;
-        txState <= Wait;
         BytesReceived <= 0;
-        UART_TxSend <= 0;
     end 
 end
 //------------------------------------------------------------------------------
