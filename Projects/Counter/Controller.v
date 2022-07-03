@@ -1,6 +1,6 @@
 import Structures::*;
 //------------------------------------------------------------------------------
-module Control(
+module Controller(
     input               ipClk,
     input               ipReset,
 
