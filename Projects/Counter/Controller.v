@@ -23,9 +23,10 @@ enum {
 } State;
 
 enum {
-	WriteAddress,
+	Send,
 	WriteData
-} wState;
+} rState;
+
 
 reg [1:0] Count;
 
@@ -33,37 +34,29 @@ always @ (posedge(ipClk)) begin
 	if (!ipReset) begin
 		case (State)
 			Wait: begin
-				opWrEnable <= 1;
-
+				opWrEnable <= 0;
 				if(ipRxStream.Valid && ipRxStream.SoP) begin
 					if (ipRxStream.Destination == 0) begin
 						State <= Read;
 					end   
 					if (ipRxStream.Destination == 1) begin
+						opAddress <= ipRxStream.Data;
 						State <= Write;
 					end
 				end
 			end
 			Write: begin
-				case (wState)
-					WriteAddress: begin
-						if (ipRxStream.Valid) begin
-							opAddress <= ipRxStream.Data;
-							WState <= WriteData;
-						end		
-					end
-					WriteData: begin
-						if (ipRxStream.Valid) begin
-							opWrData <= {ipRxStream.Data, opWrData[31:8]};
-							Count <= Count + 1;
+				if (ipRxStream.Valid) begin
+					opWrData <= {ipRxStream.Data, opWrData[31:8]};
+					Count <= Count + 1;
 
-							if (Count == 3) begin
-								WState <= WriteAddress;
-								State <= Wait;
-								opWrEnable <= 1;
-							end
-						end
+					if (Count == 3) begin
+						WState <= WriteAddress;
+						State <= Wait;
+						opWrEnable <= 1;
 					end
+
+				end
 			end 
 			Read: begin
 

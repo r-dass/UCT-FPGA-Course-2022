@@ -8,177 +8,120 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/reeve/git/EEE5117,8Z/Projects
+Z0 dC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/work
 vCounter
-Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1656788493
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1656787713
 !i10b 1
 !s100 [eh<Y^N:]ePP]jgCMCI3Y1
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I7]ATS@@PE@mSUaPkVMd@C3
 S1
-Z3 dC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects
+R0
 Z4 w1655411670
 8C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v
 FC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v
-!i122 167
+!i122 0
 L0 1 54
 Z5 VDg1SIo80bB@j0V0VzS_@n1
 Z6 OT;L;2020.3;71
 r1
 !s85 0
 31
-!s108 1656788492.000000
+Z7 !s108 1656787713.000000
 !s107 C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v|
 !s90 -F=C:/lscc/diamond/3.12/modeltech/win32loem/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v|
 !s101 -O0
 !i113 1
-Z7 o-work work -O0
-Z8 tSvlog 1 CvgOpt 0
+Z8 o-work work -O0
+Z9 tSvlog 1 CvgOpt 0
 n@counter
 vCounter_TB
-R0
 R1
+R2
 !i10b 1
 !s100 KASQJ5kW6^izkccYE0O^U0
-R2
+R3
 IJ>E>XNZDTGQOZbI9VC5dU1
 S1
-R3
+R0
 R4
 8C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter_TB.v
 FC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter_TB.v
-!i122 168
+!i122 1
 L0 3 22
 R5
 R6
 r1
 !s85 0
 31
-Z9 !s108 1656788493.000000
+R7
 !s107 C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter_TB.v|
 !s90 -F=C:/lscc/diamond/3.12/modeltech/win32loem/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter_TB.v|
 !s101 -O0
 !i113 1
-R7
 R8
+R9
 n@counter_@t@b
-vRegisters
-R0
-Z10 DXx4 work 10 Structures 0 22 f8E9ZOlfKP2cmj7bB@H9=2
-DXx4 work 16 Registers_v_unit 0 22 ]T2EzW?7^RCDe9MoggFLo1
-R1
-R5
-r1
-!s85 0
-!i10b 1
-!s100 Q77gFZ6?]:Id?ijYk3Aej2
-I9ZlQ83:KogVW:3;SkcV2A3
-!s105 Registers_v_unit
-S1
-R3
-Z11 w1656709307
-Z12 8C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v
-Z13 FC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v
-!i122 169
-L0 9 41
-R6
-31
-R9
-Z14 !s107 C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v|
-Z15 !s90 -F=C:/lscc/diamond/3.12/modeltech/win32loem/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v|
-!s101 -O0
-!i113 1
-R7
-R8
-n@registers
-XRegisters_v_unit
-R0
-R10
-R1
-V]T2EzW?7^RCDe9MoggFLo1
-r1
-!s85 0
-!i10b 1
-!s100 CX`d9d1jQA8YbFAH2H80R2
-I]T2EzW?7^RCDe9MoggFLo1
-!i103 1
-S1
-R3
-R11
-R12
-R13
-!i122 169
-L0 6 0
-R6
-31
-R9
-R14
-R15
-!s101 -O0
-!i113 1
-R7
-R8
-n@registers_v_unit
 XStructures
-R0
 R1
+Z10 !s110 1656787714
 !i10b 1
 !s100 ZGORJA[L[h;LEkSWG0QOh0
-R2
+R3
 I2n`DbfazI7IU0QM]Gbi1d3
 S1
-R3
-Z16 w1656263212
+R0
+Z11 w1656263212
 8C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v
 FC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v
-!i122 170
-Z17 L0 1 0
+!i122 2
+Z12 L0 1 0
 V2n`DbfazI7IU0QM]Gbi1d3
 R6
 r1
 !s85 0
 31
-R9
+Z13 !s108 1656787714.000000
 !s107 C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v|
 !s90 -F=C:/lscc/diamond/3.12/modeltech/win32loem/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v|
 !s101 -O0
 !i113 1
-R7
 R8
+R9
 n@structures
 vUART
-R0
 R1
+R10
 !i10b 1
 !s100 WeYU>loQ[dT5a6egc`7f_1
-R2
+R3
 IBXI6`8Q;gdz>cdHH[N[512
 S1
-R3
-R16
+R0
+R11
 8C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART.v
 FC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART.v
-!i122 171
+!i122 3
 L0 19 134
 R5
 R6
 r1
 !s85 0
 31
-R9
+R13
 !s107 C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART.v|
 !s90 -F=C:/lscc/diamond/3.12/modeltech/win32loem/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART.v|
 !s101 -O0
 !i113 1
-R7
 R8
+R9
 n@u@a@r@t
 vUART_Packets
-R0
-Z18 DXx4 work 10 Structures 0 22 2n`DbfazI7IU0QM]Gbi1d3
-DXx4 work 19 UART_Packets_v_unit 0 22 7OGDfJ<_EJK<zNaY5K1N[3
 R1
+Z14 DXx4 work 10 Structures 0 22 2n`DbfazI7IU0QM]Gbi1d3
+DXx4 work 19 UART_Packets_v_unit 0 22 7OGDfJ<_EJK<zNaY5K1N[3
+R10
 R5
 r1
 !s85 0
@@ -187,27 +130,27 @@ r1
 Ic:]k9WTa`][9TV_3ibLW:2
 !s105 UART_Packets_v_unit
 S1
-R3
-Z19 w1656700847
-Z20 8C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v
-Z21 FC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v
-!i122 172
+R0
+Z15 w1656700847
+Z16 8C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v
+Z17 FC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v
+!i122 4
 L0 4 199
 R6
 31
-R9
-Z22 !s107 C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v|
-Z23 !s90 -F=C:/lscc/diamond/3.12/modeltech/win32loem/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v|
+R13
+Z18 !s107 C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v|
+Z19 !s90 -F=C:/lscc/diamond/3.12/modeltech/win32loem/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v|
 !s101 -O0
 !i113 1
-R7
 R8
+R9
 n@u@a@r@t_@packets
 vUART_Packets_tb
-R0
-R18
-DXx4 work 22 UART_Packets_tb_v_unit 0 22 H^n:]mmj6oDKA4=B?nGRD3
 R1
+R14
+DXx4 work 22 UART_Packets_tb_v_unit 0 22 H^n:]mmj6oDKA4=B?nGRD3
+R10
 R5
 r1
 !s85 0
@@ -216,26 +159,26 @@ r1
 I0]l3kzb;l5PLhTolbozlA2
 !s105 UART_Packets_tb_v_unit
 S1
-R3
-R16
-Z24 8C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets_tb.v
-Z25 FC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets_tb.v
-!i122 173
+R0
+R11
+Z20 8C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets_tb.v
+Z21 FC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets_tb.v
+!i122 5
 L0 3 50
 R6
 31
-R9
-Z26 !s107 C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets_tb.v|
-Z27 !s90 -F=C:/lscc/diamond/3.12/modeltech/win32loem/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets_tb.v|
+R13
+Z22 !s107 C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets_tb.v|
+Z23 !s90 -F=C:/lscc/diamond/3.12/modeltech/win32loem/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets_tb.v|
 !s101 -O0
 !i113 1
-R7
 R8
+R9
 n@u@a@r@t_@packets_tb
 XUART_Packets_tb_v_unit
-R0
-R18
 R1
+R14
+R10
 VH^n:]mmj6oDKA4=B?nGRD3
 r1
 !s85 0
@@ -244,26 +187,26 @@ r1
 IH^n:]mmj6oDKA4=B?nGRD3
 !i103 1
 S1
-R3
-R16
-R24
-R25
-!i122 173
+R0
+R11
+R20
+R21
+!i122 5
 L0 2 0
 R6
 31
-R9
-R26
-R27
+R13
+R22
+R23
 !s101 -O0
 !i113 1
-R7
 R8
+R9
 n@u@a@r@t_@packets_tb_v_unit
 XUART_Packets_v_unit
-R0
-R18
 R1
+R14
+R10
 V7OGDfJ<_EJK<zNaY5K1N[3
 r1
 !s85 0
@@ -272,46 +215,46 @@ r1
 I7OGDfJ<_EJK<zNaY5K1N[3
 !i103 1
 S1
-R3
-R19
-R20
-R21
-!i122 172
+R0
+R15
+R16
 R17
+!i122 4
+R12
 R6
 31
-R9
-R22
-R23
+R13
+R18
+R19
 !s101 -O0
 !i113 1
-R7
 R8
+R9
 n@u@a@r@t_@packets_v_unit
 vUART_TB
-R0
-!s110 1656788494
+R1
+R10
 !i10b 1
 !s100 bLi:mVOJd275WABTKX0i82
-R2
+R3
 IcV50ZZ]1]fdPn661S?o5[3
 S1
-R3
+R0
 w1655411671
 8C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_tb.v
 FC:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_tb.v
-!i122 174
+!i122 6
 L0 2 110
 R5
 R6
 r1
 !s85 0
 31
-R9
+R13
 !s107 C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_tb.v|
 !s90 -F=C:/lscc/diamond/3.12/modeltech/win32loem/vlog.opt|-F=|-reportprogress|300|-work|work|C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_tb.v|
 !s101 -O0
 !i113 1
-R7
 R8
+R9
 n@u@a@r@t_@t@b
