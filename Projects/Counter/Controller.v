@@ -7,27 +7,25 @@ module Control(
     output  UART_PACKET opTxStream,
     input				ipTxReady,
 
-	output  [7:0]       opAddress,
-    output  [31:0]      opWrData,
-    output              opWrEnable
+	output  reg [7:0]   opAddress,
+    output  reg [31:0]  opWrData,
+	output  reg         opWrEnable,
 	
 	input   UART_PACKET ipRxStream,
 
-    input   reg[31:0]   ipRdData,
+    input   [31:0]   	ipRdData
 );
 
 enum {
 	Wait,
-	TxRead,
+	tRead,
 	Write
 } State;
 
 enum {
 	TransmitAddress,
-	TransmitPayload,
+	TransmitPayload
 } tState;
-
-
 
 reg [1:0] BytesWritten;
 reg [1:0] BytesRead;
@@ -46,7 +44,7 @@ always @ (posedge(ipClk)) begin
 					opAddress <= ipRxStream.Data;
 
 					if (ipRxStream.Destination == 0) begin
-						State <= Read
+						State <= tRead;
 					end   
 					if (ipRxStream.Destination == 1) begin		
 						State <= Write;
@@ -59,7 +57,6 @@ always @ (posedge(ipClk)) begin
 					BytesWritten <= BytesWritten + 1;
 
 					if (BytesWritten == 3) begin
-						WState <= WriteAddress;
 						State <= Wait;
 						opWrEnable <= 1;
 					end
@@ -68,7 +65,7 @@ always @ (posedge(ipClk)) begin
 			end 
 			tRead: begin
 				case (tState)
-					TransmitAddress:
+					TransmitAddress: begin
 						opTxStream.Source      <= ipRxStream.Destination;
 						opTxStream.Destination <= ipRxStream.Source;
 						opTxStream.Length      <= 8'h05;
@@ -76,10 +73,10 @@ always @ (posedge(ipClk)) begin
 
 						if(ipTxReady) begin
 							opTxStream.Valid <= 1;
-							tState <= tRead;
+							tState <= TransmitPayload;
 						end
-						
-					TransmitPayload:
+					end
+					TransmitPayload: begin
 						if(ipTxReady) begin
 							opTxStream.Data  <= opWrData[7:0];
 							opWrData <= {8'hX, opWrData[31:8]};
@@ -90,9 +87,9 @@ always @ (posedge(ipClk)) begin
 								opTxStream.Valid <= 0;
 								tState <= TransmitAddress;
 								State <= Wait;
-							end
-							
+							end	
 						end
+					end
 				endcase 
 			end
 		 	default:;	

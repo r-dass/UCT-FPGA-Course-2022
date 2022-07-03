@@ -47,6 +47,45 @@ prj_project close
 
 
 
+<A name="pn220703193645"></A><B><U><big>pn220703193645</big></U></B>
+#Start recording tcl command: 7/3/2022 19:27:29
+#Project Location: C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter; Project name: Counter
+prj_project open "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.ldf"
+prj_project close
+#Stop recording: 7/3/2022 19:36:45
+
+
+
+<A name="pn220703203357"></A><B><U><big>pn220703203357</big></U></B>
+#Start recording tcl command: 7/3/2022 20:27:46
+#Project Location: C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter; Project name: Counter
+prj_project open "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.ldf"
+prj_src enable "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v"
+prj_src enable "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Controller.v"
+prj_src enable "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter_TB.v"
+prj_src exclude "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter_TB.v"
+prj_project save
+prj_project close
+#Stop recording: 7/3/2022 20:33:57
+
+
+
+<A name="pn220703210347"></A><B><U><big>pn220703210347</big></U></B>
+#Start recording tcl command: 7/3/2022 20:45:34
+#Project Location: C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter; Project name: Counter
+prj_project open "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.ldf"
+prj_run Export -impl impl1 -task Bitgen -forceAll
+prj_run Export -impl impl1 -task Bitgen -forceAll
+pgr_project open "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/impl1/impl1.xcf"
+pgr_project close
+prj_run Export -impl impl1 -task TimingSimFileVHD -forceAll
+prj_run Export -impl impl1 -task Bitgen -forceAll
+prj_project save
+prj_project close
+#Stop recording: 7/3/2022 21:03:47
+
+
+
 <BR>
 <BR>
 <BR>
