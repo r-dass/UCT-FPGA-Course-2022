@@ -18,29 +18,37 @@ module Control(
 
 enum {
 	Wait,
-	Read,
+	TxRead,
 	Write
 } State;
 
 enum {
-	Send,
-	WriteData
-} rState;
+	TransmitAddress,
+	TransmitPayload,
+} tState;
 
 
-reg [1:0] Count;
+
+reg [1:0] BytesWritten;
+reg [1:0] BytesRead;
 
 always @ (posedge(ipClk)) begin
 	if (!ipReset) begin
 		case (State)
 			Wait: begin
 				opWrEnable <= 0;
+				
+				opTxStream.SoP   <= 0;
+				opTxStream.EoP   <= 0;
+				opTxStream.Valid <= 0;
+
 				if(ipRxStream.Valid && ipRxStream.SoP) begin
+					opAddress <= ipRxStream.Data;
+
 					if (ipRxStream.Destination == 0) begin
-						State <= Read;
+						State <= Read
 					end   
-					if (ipRxStream.Destination == 1) begin
-						opAddress <= ipRxStream.Data;
+					if (ipRxStream.Destination == 1) begin		
 						State <= Write;
 					end
 				end
@@ -48,9 +56,9 @@ always @ (posedge(ipClk)) begin
 			Write: begin
 				if (ipRxStream.Valid) begin
 					opWrData <= {ipRxStream.Data, opWrData[31:8]};
-					Count <= Count + 1;
+					BytesWritten <= BytesWritten + 1;
 
-					if (Count == 3) begin
+					if (BytesWritten == 3) begin
 						WState <= WriteAddress;
 						State <= Wait;
 						opWrEnable <= 1;
@@ -58,13 +66,39 @@ always @ (posedge(ipClk)) begin
 
 				end
 			end 
-			Read: begin
+			tRead: begin
+				case (tState)
+					TransmitAddress:
+						opTxStream.Source      <= ipRxStream.Destination;
+						opTxStream.Destination <= ipRxStream.Source;
+						opTxStream.Length      <= 8'h05;
+						opWrData <= ipRdData;
 
+						if(ipTxReady) begin
+							opTxStream.Valid <= 1;
+							tState <= tRead;
+						end
+						
+					TransmitPayload:
+						if(ipTxReady) begin
+							opTxStream.Data  <= opWrData[7:0];
+							opWrData <= {8'hX, opWrData[31:8]};
+
+							BytesWritten <= BytesWritten + 1;
+
+							if(BytesWritten == 3) begin
+								opTxStream.Valid <= 0;
+								tState <= TransmitAddress;
+								State <= Wait;
+							end
+							
+						end
+				endcase 
 			end
 		 	default:;	
 		endcase
 	end else begin // reset code here
-		Count <= 0;
+		BytesWritten <= 0;
 	end
 end
 
