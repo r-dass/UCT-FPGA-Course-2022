@@ -1,2 +1,2 @@
-@W: CG360 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":16:29:16:39|Removing wire trigger_out, as there is no assignment to it.
+@W: CG360 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":40:29:40:39|Removing wire trigger_out, as there is no assignment to it.
 

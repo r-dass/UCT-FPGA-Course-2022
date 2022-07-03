@@ -11,9 +11,9 @@
 #CUR:"C:\\lscc\\diamond\\3.12\\module\\reveal\\src\\rvl_j2w_module\\rvl_j2w_module.v":1385388154
 #CUR:"C:\\lscc\\diamond\\3.12\\module\\reveal\\src\\rvl_j2w_module\\wb2sci.v":1384179546
 #CUR:"C:\\lscc\\diamond\\3.12\\module\\reveal\\src\\ertl\\JTAG_SOFT.v":1459337100
-#CUR:"C:\\Users\\reeve\\Git\\UCT-FPGA-Course-2022\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\counter_la0_trig_gen.v":1656700044
-#CUR:"C:\\Users\\reeve\\Git\\UCT-FPGA-Course-2022\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\counter_la0_gen.v":1656700044
-#CUR:"C:\\Users\\reeve\\Git\\UCT-FPGA-Course-2022\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\Counter_rvl.v":1656700044
+#CUR:"C:\\Users\\reeve\\Git\\UCT-FPGA-Course-2022\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\counter_la0_trig_gen.v":1656880589
+#CUR:"C:\\Users\\reeve\\Git\\UCT-FPGA-Course-2022\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\counter_la0_gen.v":1656880589
+#CUR:"C:\\Users\\reeve\\Git\\UCT-FPGA-Course-2022\\Projects\\Counter\\impl1\\reveal_workspace\\tmpreveal\\Counter_rvl.v":1656880589
 0			"C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v" verilog
 1			"C:\lscc\diamond\3.12\module\reveal\src\ertl\ertl.v" verilog
 2			"C:\lscc\diamond\3.12\module\reveal\src\rvl_j2w_module\rvl_j2w_module.v" verilog
@@ -23,14 +23,14 @@
 6			"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v" verilog
 7			"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v" verilog
 #Dependency Lists(Uses List)
-0 -1
-1 0
-2 -1
-3 -1
-4 -1
-5 1
-6 5 1
-7 0 6
+0 7
+1 7 0
+2 7
+3 7
+4 7
+5 7 1
+6 7 5 1
+7 7 0 6
 #Dependency Lists(Users Of)
 0 7 1
 1 6 5
@@ -39,11 +39,14 @@
 4 -1
 5 6
 6 7
-7 -1
+7 6 5 4 3 2 1 0
 #Design Unit to File Association
-module work UART 7
 module work UART_uniq_1 7
 module work Counter 7
+module work Control 7
+module work UART_Packets 7
+module work UART 7
+module work Registers 7
 module work reveal_coretop 7
 module work counter_la0 6
 module work counter_la0_trig 5

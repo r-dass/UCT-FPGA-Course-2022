@@ -55,8 +55,10 @@ Verilog syntax check successful!
 File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v changed - recompiling
 File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v changed - recompiling
 File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v changed - recompiling
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":2:8:2:17|Synthesizing module Structures in library work.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":97:0:97:5|Synthesizing module work_C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v_unit in library work.
 Selecting top level module Counter
-@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":339:7:339:17|Synthesizing module UART_uniq_1 in library work.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":753:7:753:17|Synthesizing module UART_uniq_1 in library work.
 Running optimization stage 1 on UART_uniq_1 .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v":1269:7:1269:9|Synthesizing module VHI in library work.
 Running optimization stage 1 on VHI .......
@@ -74,10 +76,10 @@ Running optimization stage 1 on rvl_tm_Z3 .......
 Running optimization stage 1 on counter_la0 .......
 @N: CG364 :"C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
 Running optimization stage 1 on jtagconn16 .......
-@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":2:7:2:20|Synthesizing module reveal_coretop in library work.
-@W: CG360 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":16:29:16:39|Removing wire trigger_out, as there is no assignment to it.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":26:7:26:20|Synthesizing module reveal_coretop in library work.
+@W: CG360 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":40:29:40:39|Removing wire trigger_out, as there is no assignment to it.
 Running optimization stage 1 on reveal_coretop .......
-@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":69:7:69:13|Synthesizing module Counter in library work.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":668:7:668:13|Synthesizing module Counter in library work.
 Running optimization stage 1 on Counter .......
 Running optimization stage 2 on Counter .......
 Running optimization stage 2 on reveal_coretop .......
@@ -96,12 +98,12 @@ Running optimization stage 2 on rvl_decode_1s_1s .......
 Running optimization stage 2 on rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s .......
 Running optimization stage 2 on VHI .......
 Running optimization stage 2 on UART_uniq_1 .......
-@N: CL201 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":429:4:429:9|Trying to extract state machine for register rxState.
+@N: CL201 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":843:4:843:9|Trying to extract state machine for register rxState.
 Extracted state machine for register rxState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
    00000000000000000000000000000001
-@N: CL201 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":364:4:364:9|Trying to extract state machine for register txState.
+@N: CL201 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":778:4:778:9|Trying to extract state machine for register txState.
 Extracted state machine for register txState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
@@ -112,12 +114,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:05s; Memory used current: 105MB peak: 113MB)
+At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 105MB peak: 113MB)
 
-Process took 0h:00m:13s realtime, 0h:00m:05s cputime
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Jul  1 20:27:40 2022
+# Sun Jul  3 22:36:34 2022
 
 ###########################################################]
 ###########################################################[
@@ -144,7 +146,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Jul  1 20:27:41 2022
+# Sun Jul  3 22:36:34 2022
 
 ###########################################################]
 
@@ -154,11 +156,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:05s; Memory used current: 24MB peak: 24MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 23MB peak: 24MB)
 
-Process took 0h:00m:14s realtime, 0h:00m:05s cputime
+Process took 0h:00m:04s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Fri Jul  1 20:27:41 2022
+# Sun Jul  3 22:36:34 2022
 
 ###########################################################]

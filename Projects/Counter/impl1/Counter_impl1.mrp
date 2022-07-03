@@ -16,7 +16,7 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   6
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  07/01/22  20:27:58
+Mapped on:  07/03/22  22:36:47
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Design Summary (cont)
 ---------------------
@@ -198,7 +198,7 @@ Design Summary (cont)
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Design Summary (cont)
 ---------------------
@@ -264,7 +264,7 @@ IO (PIO) Attributes
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Removed logic
 -------------
@@ -330,7 +330,7 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/r_w.CN was
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Removed logic (cont)
 --------------------
@@ -396,7 +396,7 @@ Signal mg5ahub/er2_tdo_8 undriven or does not drive anything - clipped.
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Removed logic (cont)
 --------------------
@@ -528,7 +528,7 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pm
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Removed logic (cont)
 --------------------
@@ -594,7 +594,7 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Removed logic (cont)
 --------------------
@@ -660,7 +660,7 @@ Signal Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/genblk1.te
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Removed logic (cont)
 --------------------
@@ -726,7 +726,7 @@ Signal UART_Inst/un4_rxClkCount_s_9_0_S1 undriven or does not drive anything -
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 Removed logic (cont)
 --------------------
@@ -792,7 +792,7 @@ Memory Usage
 
 
 
-Design:  Counter                                       Date:  07/01/22  20:27:58
+Design:  Counter                                       Date:  07/03/22  22:36:47
 
 
 

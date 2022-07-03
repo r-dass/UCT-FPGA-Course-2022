@@ -20,7 +20,7 @@ Performance Hardware Data Status:   Final          Version 11.5.
 // Package: TQFP144
 // ncd File: counter_impl1.ncd
 // Version: Diamond (64-bit) 3.12.0.240.2
-// Written on Fri Jul 01 20:28:30 2022
+// Written on Sun Jul 03 22:37:06 2022
 // M: Minimum Performance Grade
 // iotiming Counter_impl1.ncd Counter_impl1.prf -gui -msgset C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/promote.xml
 

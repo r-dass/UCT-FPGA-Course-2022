@@ -12,7 +12,7 @@
 #OS: Windows 8 6.2
 #Hostname: AD-DESKTOP
 
-# Fri Jul  1 20:27:26 2022
+# Sun Jul  3 22:36:30 2022
 
 #Implementation: impl1
 
@@ -73,8 +73,10 @@ Verilog syntax check successful!
 File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v changed - recompiling
 File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v changed - recompiling
 File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v changed - recompiling
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":2:8:2:17|Synthesizing module Structures in library work.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":97:0:97:5|Synthesizing module work_C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v_unit in library work.
 Selecting top level module Counter
-@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":339:7:339:17|Synthesizing module UART_uniq_1 in library work.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":753:7:753:17|Synthesizing module UART_uniq_1 in library work.
 Running optimization stage 1 on UART_uniq_1 .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v":1269:7:1269:9|Synthesizing module VHI in library work.
 Running optimization stage 1 on VHI .......
@@ -92,10 +94,10 @@ Running optimization stage 1 on rvl_tm_Z3 .......
 Running optimization stage 1 on counter_la0 .......
 @N: CG364 :"C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
 Running optimization stage 1 on jtagconn16 .......
-@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":2:7:2:20|Synthesizing module reveal_coretop in library work.
-@W: CG360 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":16:29:16:39|Removing wire trigger_out, as there is no assignment to it.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":26:7:26:20|Synthesizing module reveal_coretop in library work.
+@W: CG360 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":40:29:40:39|Removing wire trigger_out, as there is no assignment to it.
 Running optimization stage 1 on reveal_coretop .......
-@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":69:7:69:13|Synthesizing module Counter in library work.
+@N: CG364 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":668:7:668:13|Synthesizing module Counter in library work.
 Running optimization stage 1 on Counter .......
 Running optimization stage 2 on Counter .......
 Running optimization stage 2 on reveal_coretop .......
@@ -114,12 +116,12 @@ Running optimization stage 2 on rvl_decode_1s_1s .......
 Running optimization stage 2 on rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s .......
 Running optimization stage 2 on VHI .......
 Running optimization stage 2 on UART_uniq_1 .......
-@N: CL201 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":429:4:429:9|Trying to extract state machine for register rxState.
+@N: CL201 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":843:4:843:9|Trying to extract state machine for register rxState.
 Extracted state machine for register rxState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
    00000000000000000000000000000001
-@N: CL201 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":364:4:364:9|Trying to extract state machine for register txState.
+@N: CL201 :"C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\reveal_workspace\tmpreveal\Counter_rvl.v":778:4:778:9|Trying to extract state machine for register txState.
 Extracted state machine for register txState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
@@ -130,12 +132,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:05s; Memory used current: 105MB peak: 113MB)
+At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 105MB peak: 113MB)
 
-Process took 0h:00m:13s realtime, 0h:00m:05s cputime
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Jul  1 20:27:40 2022
+# Sun Jul  3 22:36:34 2022
 
 ###########################################################]
 ###########################################################[
@@ -162,7 +164,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Jul  1 20:27:41 2022
+# Sun Jul  3 22:36:34 2022
 
 ###########################################################]
 
@@ -172,12 +174,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:05s; Memory used current: 24MB peak: 24MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 23MB peak: 24MB)
 
-Process took 0h:00m:14s realtime, 0h:00m:05s cputime
+Process took 0h:00m:04s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Fri Jul  1 20:27:41 2022
+# Sun Jul  3 22:36:34 2022
 
 ###########################################################]
 ###########################################################[
@@ -200,15 +202,15 @@ Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct
 @N|Running in 64-bit mode
 File C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 94MB peak: 95MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 94MB peak: 94MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Jul  1 20:27:42 2022
+# Sun Jul  3 22:36:36 2022
 
 ###########################################################]
-# Fri Jul  1 20:27:42 2022
+# Sun Jul  3 22:36:36 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -241,21 +243,21 @@ Reading constraint file: C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counte
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 131MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 130MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 131MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 131MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
 
 @N: FX493 |Applying initial value "00000000" on instance txData[7:0].
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 @N: FX493 |Applying initial value "00000000" on instance rxData[7:0].
-@A: FX681 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":364:4:364:9|Initial value on register txClkCount[9:0] is non-zero which can prevent the register from being packed into a block RAM or DSP.
+@A: FX681 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":778:4:778:9|Initial value on register txClkCount[9:0] is non-zero which can prevent the register from being packed into a block RAM or DSP.
 @N: FX493 |Applying initial value "0000000000" on instance txClkCount[9:0].
 @W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
 @W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
@@ -321,20 +323,20 @@ Encoding state machine rxState[1:0] (in view: work.UART_uniq_1(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0
    00000000000000000000000000000001 -> 1
-@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":429:4:429:9|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":843:4:843:9|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
 Encoding state machine txState[1:0] (in view: work.UART_uniq_1(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0
    00000000000000000000000000000001 -> 1
-@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":364:4:364:9|There are no possible illegal states for state machine txState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":778:4:778:9|There are no possible illegal states for state machine txState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
-
-
-Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
 
 @W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
 @W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
@@ -349,11 +351,11 @@ Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time
 @W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
 @W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Counter 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
 
 
 
@@ -414,24 +416,24 @@ Clock Tree ID     Driving Element                                            Dri
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 177MB peak: 177MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 177MB peak: 177MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 177MB)
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 177MB peak: 177MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 97MB peak: 179MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 97MB peak: 178MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Fri Jul  1 20:27:45 2022
+# Sun Jul  3 22:36:38 2022
 
 ###########################################################]
-# Fri Jul  1 20:27:46 2022
+# Sun Jul  3 22:36:38 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -456,27 +458,27 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 130MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 129MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 130MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 129MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 135MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
 
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 
@@ -486,22 +488,22 @@ Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; M
 Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 181MB peak: 181MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 182MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 181MB peak: 181MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 183MB peak: 183MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 182MB peak: 182MB)
 
 
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 186MB peak: 186MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 186MB peak: 187MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 186MB peak: 186MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 187MB peak: 187MB)
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 186MB peak: 186MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 195MB)
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 194MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -517,30 +519,30 @@ Added 0 LUTs via timing driven replication
    6		0h:00m:01s		     0.07ns		 520 /       379
    7		0h:00m:01s		     0.07ns		 520 /       379
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 190MB peak: 195MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 190MB peak: 195MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@A: BN291 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":364:4:364:9|Boundary register UART_Inst.opTx.fb (in view: work.Counter(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":778:4:778:9|Boundary register UART_Inst.opTx.fb (in view: work.Counter(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 191MB peak: 195MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 190MB peak: 195MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 154MB peak: 195MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 155MB peak: 195MB)
 
 Writing Analyst data base C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 193MB peak: 195MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 192MB peak: 195MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 198MB peak: 198MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 197MB peak: 197MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 193MB peak: 198MB)
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 193MB peak: 198MB)
 
-@W: MT246 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":52:15:52:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":76:15:76:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\lscc\diamond\3.12\module\reveal\src\ertl\ertl.v":1192:8:1192:20|Blackbox pmi_ram_dp_Z2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\lscc\diamond\3.12\module\reveal\src\ertl\ertl.v":2162:8:2162:13|Blackbox pmi_ram_dp_Z4 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @N: MT615 |Found clock ipClk with period 20.00ns 
@@ -548,7 +550,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Jul  1 20:27:53 2022
+# Timing report written on Sun Jul  3 22:36:44 2022
 #
 
 
@@ -1278,10 +1280,10 @@ Counter_reveal_coretop_instance.counter_la0_inst_0.jtag_int_u.parity_calc       
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 194MB peak: 198MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:03s; Memory used current: 193MB peak: 198MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 194MB peak: 198MB)
+Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:03s; Memory used current: 193MB peak: 198MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -1316,10 +1318,10 @@ VHI:            10
 VLO:            11
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:03s; Memory used current: 74MB peak: 198MB)
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:03s; Memory used current: 74MB peak: 198MB)
 
-Process took 0h:00m:08s realtime, 0h:00m:03s cputime
-# Fri Jul  1 20:27:54 2022
+Process took 0h:00m:06s realtime, 0h:00m:03s cputime
+# Sun Jul  3 22:36:45 2022
 
 ###########################################################]
 
