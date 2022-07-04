@@ -2,10 +2,7 @@
 <BaliProject version="3.2" title="Counter" device="LFXP2-5E-6TN144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options VerilogStandard="System Verilog" def_top="Control"/>
-        <Source name="Counter.v" type="Verilog" type_short="Verilog">
-            <Options top_module="Counter"/>
-        </Source>
+        <Options VerilogStandard="System Verilog" def_top="Streamer"/>
         <Source name="UART.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
@@ -13,13 +10,16 @@
             <Options/>
         </Source>
         <Source name="Registers.v" type="Verilog" type_short="Verilog">
-            <Options top_module="Registers"/>
+            <Options/>
         </Source>
         <Source name="UART_Packets.v" type="Verilog" type_short="Verilog">
-            <Options top_module="UART_Packets"/>
+            <Options/>
         </Source>
         <Source name="Controller.v" type="Verilog" type_short="Verilog">
-            <Options top_module="Control"/>
+            <Options/>
+        </Source>
+        <Source name="Counter.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Streamer"/>
         </Source>
         <Source name="Counter_TB.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
@@ -39,10 +39,7 @@
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
-        <Source name="UART_Rx.rva" type="Reveal Analyzer Project File" type_short="RVA">
-            <Options/>
-        </Source>
-        <Source name="UART_Rx.rvl" type="Reveal" type_short="Reveal">
+        <Source name="UART_Rx.rvl" type="Reveal" type_short="Reveal" excluded="TRUE">
             <Options/>
         </Source>
     </Implementation>

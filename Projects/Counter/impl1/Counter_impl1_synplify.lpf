@@ -4,7 +4,6 @@
 
 # Period Constraints 
 FREQUENCY PORT "ipClk" 50.0 MHz;
-#FREQUENCY NET "Counter_reveal_coretop_instance/jtck[0]" 200.0 MHz;
 
 
 # Output Constraints 

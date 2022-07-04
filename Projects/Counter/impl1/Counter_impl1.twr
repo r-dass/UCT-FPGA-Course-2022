@@ -1,6 +1,6 @@
 
 Loading design for application trce from file counter_impl1.ncd.
-Design name: Counter
+Design name: Streamer
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LFXP2-5E
@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Sun Jul 03 22:37:03 2022
+Mon Jul 04 16:42:42 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -39,550 +39,534 @@ BLOCK JTAG PATHS
 
 ================================================================================
 Preference: FREQUENCY PORT "ipClk" 50.000000 MHz ;
-            2526 items scored, 0 timing errors detected.
+            2205 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Passed: The following path meets requirements by 10.060ns
+Passed: The following path meets requirements by 13.472ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[9]  (to ipClk_c +)
-                   FF                        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[8]
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/rxClkCount[7]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/BitsReceived[3]  (to ipClk_c +)
 
-   Delay:               9.714ns  (16.0% logic, 84.0% route), 6 logic levels.
+   Delay:               6.451ns  (24.1% logic, 75.9% route), 6 logic levels.
 
  Constraint Details:
 
-      9.714ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_198 meets
+      6.451ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_85 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.226ns CE_SET requirement (totaling 19.774ns) by 10.060ns
+      0.077ns DIN_SET requirement (totaling 19.923ns) by 13.472ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_198:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_85:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.363    R15C11C.CLK to     R15C11C.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 (from ipClk_c)
-ROUTE         5     1.324     R15C11C.Q0 to     R16C12B.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]
-CTOF_DEL    ---     0.238     R16C12B.B1 to     R16C12B.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_406
-ROUTE         1     1.051     R16C12B.F1 to     R15C13C.B0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/wen_1
-CTOF_DEL    ---     0.238     R15C13C.B0 to     R15C13C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_294
-ROUTE         6     1.259     R15C13C.F0 to     R16C11D.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/wen
-CTOF_DEL    ---     0.238     R16C11D.D0 to     R16C11D.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/SLICE_307
-ROUTE         2     0.864     R16C11D.F0 to     R15C11D.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/wen_te[0]
-CTOF_DEL    ---     0.238     R15C11D.B1 to     R15C11D.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_317
-ROUTE         3     1.627     R15C11D.F1 to      R12C2C.C0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/N_78
-CTOF_DEL    ---     0.238      R12C2C.C0 to      R12C2C.F0 SLICE_471
-ROUTE         8     2.036      R12C2C.F0 to      R9C10B.CE Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa (to ipClk_c)
+REG_DEL     ---     0.363    R11C16C.CLK to     R11C16C.Q1 UART_Packets_Inst/UART_Inst/SLICE_91 (from ipClk_c)
+ROUTE         2     1.233     R11C16C.Q1 to     R12C15B.A0 UART_Packets_Inst/UART_Inst/rxClkCount[7]
+CTOF_DEL    ---     0.238     R12C15B.A0 to     R12C15B.F0 UART_Packets_Inst/UART_Inst/SLICE_177
+ROUTE         1     0.448     R12C15B.F0 to     R12C15C.C1 UART_Packets_Inst/UART_Inst/rxClkBaud_6
+CTOF_DEL    ---     0.238     R12C15C.C1 to     R12C15C.F1 UART_Packets_Inst/UART_Inst/SLICE_165
+ROUTE        15     1.635     R12C15C.F1 to     R14C16D.B1 UART_Packets_Inst/UART_Inst/rxClkBaud
+CTOF_DEL    ---     0.238     R14C16D.B1 to     R14C16D.F1 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         5     1.061     R14C16D.F1 to     R15C15C.B1 UART_Packets_Inst/UART_Inst/un1_opRxValid20_1
+CTOF_DEL    ---     0.238     R15C15C.B1 to     R15C15C.F1 UART_Packets_Inst/SLICE_125
+ROUTE         1     0.521     R15C15C.F1 to     R14C15B.D1 UART_Packets_Inst/UART_Inst/un1_BitsReceived_4_c2
+CTOF_DEL    ---     0.238     R14C15B.D1 to     R14C15B.F1 UART_Packets_Inst/UART_Inst/SLICE_85
+ROUTE         1     0.000     R14C15B.F1 to    R14C15B.DI1 UART_Packets_Inst/UART_Inst/un1_BitsReceived_4_axbxc3 (to ipClk_c)
                   --------
-                    9.714   (16.0% logic, 84.0% route), 6 logic levels.
+                    6.451   (24.1% logic, 75.9% route), 6 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_91:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R15C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R11C16C.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_198:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_85:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to     R9C10B.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R14C15B.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.060ns
+Passed: The following path meets requirements by 13.616ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[7]  (to ipClk_c +)
-                   FF                        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[6]
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/rxClkCount[7]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/rxData[7]  (to ipClk_c +)
+                   FF                        UART_Packets_Inst/UART_Inst/rxData[6]
 
-   Delay:               9.714ns  (16.0% logic, 84.0% route), 6 logic levels.
+   Delay:               6.158ns  (21.4% logic, 78.6% route), 5 logic levels.
 
  Constraint Details:
 
-      9.714ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_197 meets
+      6.158ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_96 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.226ns CE_SET requirement (totaling 19.774ns) by 10.060ns
+      0.226ns CE_SET requirement (totaling 19.774ns) by 13.616ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_197:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_96:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.363    R15C11C.CLK to     R15C11C.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 (from ipClk_c)
-ROUTE         5     1.324     R15C11C.Q0 to     R16C12B.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]
-CTOF_DEL    ---     0.238     R16C12B.B1 to     R16C12B.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_406
-ROUTE         1     1.051     R16C12B.F1 to     R15C13C.B0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/wen_1
-CTOF_DEL    ---     0.238     R15C13C.B0 to     R15C13C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_294
-ROUTE         6     1.259     R15C13C.F0 to     R16C11D.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/wen
-CTOF_DEL    ---     0.238     R16C11D.D0 to     R16C11D.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/SLICE_307
-ROUTE         2     0.864     R16C11D.F0 to     R15C11D.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/wen_te[0]
-CTOF_DEL    ---     0.238     R15C11D.B1 to     R15C11D.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_317
-ROUTE         3     1.627     R15C11D.F1 to      R12C2C.C0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/N_78
-CTOF_DEL    ---     0.238      R12C2C.C0 to      R12C2C.F0 SLICE_471
-ROUTE         8     2.036      R12C2C.F0 to      R9C10A.CE Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa (to ipClk_c)
+REG_DEL     ---     0.363    R11C16C.CLK to     R11C16C.Q1 UART_Packets_Inst/UART_Inst/SLICE_91 (from ipClk_c)
+ROUTE         2     1.233     R11C16C.Q1 to     R12C15B.A0 UART_Packets_Inst/UART_Inst/rxClkCount[7]
+CTOF_DEL    ---     0.238     R12C15B.A0 to     R12C15B.F0 UART_Packets_Inst/UART_Inst/SLICE_177
+ROUTE         1     0.448     R12C15B.F0 to     R12C15C.C1 UART_Packets_Inst/UART_Inst/rxClkBaud_6
+CTOF_DEL    ---     0.238     R12C15C.C1 to     R12C15C.F1 UART_Packets_Inst/UART_Inst/SLICE_165
+ROUTE        15     1.635     R12C15C.F1 to     R14C16D.B1 UART_Packets_Inst/UART_Inst/rxClkBaud
+CTOF_DEL    ---     0.238     R14C16D.B1 to     R14C16D.F1 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         5     0.569     R14C16D.F1 to     R14C16D.B0 UART_Packets_Inst/UART_Inst/un1_opRxValid20_1
+CTOF_DEL    ---     0.238     R14C16D.B0 to     R14C16D.F0 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         4     0.958     R14C16D.F0 to     R15C17C.CE UART_Packets_Inst/UART_Inst/rxData_0_sqmuxa_i (to ipClk_c)
                   --------
-                    9.714   (16.0% logic, 84.0% route), 6 logic levels.
+                    6.158   (21.4% logic, 78.6% route), 5 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_91:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R15C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R11C16C.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_197:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_96:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to     R9C10A.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R15C17C.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.318ns
+Passed: The following path meets requirements by 13.616ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[5]  (to ipClk_c +)
-                   FF                        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[4]
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/rxClkCount[7]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/rxData[3]  (to ipClk_c +)
+                   FF                        UART_Packets_Inst/UART_Inst/rxData[2]
 
-   Delay:               9.456ns  (16.4% logic, 83.6% route), 6 logic levels.
+   Delay:               6.158ns  (21.4% logic, 78.6% route), 5 logic levels.
 
  Constraint Details:
 
-      9.456ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_196 meets
+      6.158ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_94 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.226ns CE_SET requirement (totaling 19.774ns) by 10.318ns
+      0.226ns CE_SET requirement (totaling 19.774ns) by 13.616ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_196:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_94:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.363    R15C11C.CLK to     R15C11C.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 (from ipClk_c)
-ROUTE         5     1.324     R15C11C.Q0 to     R16C12B.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]
-CTOF_DEL    ---     0.238     R16C12B.B1 to     R16C12B.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_406
-ROUTE         1     1.051     R16C12B.F1 to     R15C13C.B0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/wen_1
-CTOF_DEL    ---     0.238     R15C13C.B0 to     R15C13C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_294
-ROUTE         6     1.259     R15C13C.F0 to     R16C11D.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/wen
-CTOF_DEL    ---     0.238     R16C11D.D0 to     R16C11D.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/SLICE_307
-ROUTE         2     0.864     R16C11D.F0 to     R15C11D.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/wen_te[0]
-CTOF_DEL    ---     0.238     R15C11D.B1 to     R15C11D.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_317
-ROUTE         3     1.627     R15C11D.F1 to      R12C2C.C0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/N_78
-CTOF_DEL    ---     0.238      R12C2C.C0 to      R12C2C.F0 SLICE_471
-ROUTE         8     1.778      R12C2C.F0 to      R9C11C.CE Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa (to ipClk_c)
+REG_DEL     ---     0.363    R11C16C.CLK to     R11C16C.Q1 UART_Packets_Inst/UART_Inst/SLICE_91 (from ipClk_c)
+ROUTE         2     1.233     R11C16C.Q1 to     R12C15B.A0 UART_Packets_Inst/UART_Inst/rxClkCount[7]
+CTOF_DEL    ---     0.238     R12C15B.A0 to     R12C15B.F0 UART_Packets_Inst/UART_Inst/SLICE_177
+ROUTE         1     0.448     R12C15B.F0 to     R12C15C.C1 UART_Packets_Inst/UART_Inst/rxClkBaud_6
+CTOF_DEL    ---     0.238     R12C15C.C1 to     R12C15C.F1 UART_Packets_Inst/UART_Inst/SLICE_165
+ROUTE        15     1.635     R12C15C.F1 to     R14C16D.B1 UART_Packets_Inst/UART_Inst/rxClkBaud
+CTOF_DEL    ---     0.238     R14C16D.B1 to     R14C16D.F1 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         5     0.569     R14C16D.F1 to     R14C16D.B0 UART_Packets_Inst/UART_Inst/un1_opRxValid20_1
+CTOF_DEL    ---     0.238     R14C16D.B0 to     R14C16D.F0 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         4     0.958     R14C16D.F0 to     R15C18A.CE UART_Packets_Inst/UART_Inst/rxData_0_sqmuxa_i (to ipClk_c)
                   --------
-                    9.456   (16.4% logic, 83.6% route), 6 logic levels.
+                    6.158   (21.4% logic, 78.6% route), 5 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_91:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R15C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R11C16C.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_196:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_94:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to     R9C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R15C18A.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.318ns
+Passed: The following path meets requirements by 13.616ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[11]  (to ipClk_c +)
-                   FF                        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[10]
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/rxClkCount[7]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/rxData[5]  (to ipClk_c +)
+                   FF                        UART_Packets_Inst/UART_Inst/rxData[4]
 
-   Delay:               9.456ns  (16.4% logic, 83.6% route), 6 logic levels.
+   Delay:               6.158ns  (21.4% logic, 78.6% route), 5 logic levels.
 
  Constraint Details:
 
-      9.456ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_199 meets
+      6.158ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_95 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.226ns CE_SET requirement (totaling 19.774ns) by 10.318ns
+      0.226ns CE_SET requirement (totaling 19.774ns) by 13.616ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_199:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.363    R15C11C.CLK to     R15C11C.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 (from ipClk_c)
-ROUTE         5     1.324     R15C11C.Q0 to     R16C12B.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]
-CTOF_DEL    ---     0.238     R16C12B.B1 to     R16C12B.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_406
-ROUTE         1     1.051     R16C12B.F1 to     R15C13C.B0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/wen_1
-CTOF_DEL    ---     0.238     R15C13C.B0 to     R15C13C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_294
-ROUTE         6     1.259     R15C13C.F0 to     R16C11D.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/wen
-CTOF_DEL    ---     0.238     R16C11D.D0 to     R16C11D.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/SLICE_307
-ROUTE         2     0.864     R16C11D.F0 to     R15C11D.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/wen_te[0]
-CTOF_DEL    ---     0.238     R15C11D.B1 to     R15C11D.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_317
-ROUTE         3     1.627     R15C11D.F1 to      R12C2C.C0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/N_78
-CTOF_DEL    ---     0.238      R12C2C.C0 to      R12C2C.F0 SLICE_471
-ROUTE         8     1.778      R12C2C.F0 to      R9C11B.CE Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa (to ipClk_c)
+REG_DEL     ---     0.363    R11C16C.CLK to     R11C16C.Q1 UART_Packets_Inst/UART_Inst/SLICE_91 (from ipClk_c)
+ROUTE         2     1.233     R11C16C.Q1 to     R12C15B.A0 UART_Packets_Inst/UART_Inst/rxClkCount[7]
+CTOF_DEL    ---     0.238     R12C15B.A0 to     R12C15B.F0 UART_Packets_Inst/UART_Inst/SLICE_177
+ROUTE         1     0.448     R12C15B.F0 to     R12C15C.C1 UART_Packets_Inst/UART_Inst/rxClkBaud_6
+CTOF_DEL    ---     0.238     R12C15C.C1 to     R12C15C.F1 UART_Packets_Inst/UART_Inst/SLICE_165
+ROUTE        15     1.635     R12C15C.F1 to     R14C16D.B1 UART_Packets_Inst/UART_Inst/rxClkBaud
+CTOF_DEL    ---     0.238     R14C16D.B1 to     R14C16D.F1 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         5     0.569     R14C16D.F1 to     R14C16D.B0 UART_Packets_Inst/UART_Inst/un1_opRxValid20_1
+CTOF_DEL    ---     0.238     R14C16D.B0 to     R14C16D.F0 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         4     0.958     R14C16D.F0 to     R15C17A.CE UART_Packets_Inst/UART_Inst/rxData_0_sqmuxa_i (to ipClk_c)
                   --------
-                    9.456   (16.4% logic, 83.6% route), 6 logic levels.
+                    6.158   (21.4% logic, 78.6% route), 5 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_91:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R15C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R11C16C.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_199:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to     R9C11B.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R15C17A.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.327ns
+Passed: The following path meets requirements by 13.616ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[13]  (to ipClk_c +)
-                   FF                        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[12]
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/rxClkCount[7]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/rxData[1]  (to ipClk_c +)
+                   FF                        UART_Packets_Inst/UART_Inst/rxData[0]
 
-   Delay:               9.447ns  (16.4% logic, 83.6% route), 6 logic levels.
+   Delay:               6.158ns  (21.4% logic, 78.6% route), 5 logic levels.
 
  Constraint Details:
 
-      9.447ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_200 meets
+      6.158ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_93 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.226ns CE_SET requirement (totaling 19.774ns) by 10.327ns
+      0.226ns CE_SET requirement (totaling 19.774ns) by 13.616ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_200:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_93:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.363    R15C11C.CLK to     R15C11C.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 (from ipClk_c)
-ROUTE         5     1.324     R15C11C.Q0 to     R16C12B.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]
-CTOF_DEL    ---     0.238     R16C12B.B1 to     R16C12B.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_406
-ROUTE         1     1.051     R16C12B.F1 to     R15C13C.B0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/wen_1
-CTOF_DEL    ---     0.238     R15C13C.B0 to     R15C13C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_294
-ROUTE         6     1.259     R15C13C.F0 to     R16C11D.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/wen
-CTOF_DEL    ---     0.238     R16C11D.D0 to     R16C11D.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/SLICE_307
-ROUTE         2     0.864     R16C11D.F0 to     R15C11D.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/wen_te[0]
-CTOF_DEL    ---     0.238     R15C11D.B1 to     R15C11D.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_317
-ROUTE         3     1.627     R15C11D.F1 to      R12C2C.C0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/N_78
-CTOF_DEL    ---     0.238      R12C2C.C0 to      R12C2C.F0 SLICE_471
-ROUTE         8     1.769      R12C2C.F0 to      R8C11A.CE Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa (to ipClk_c)
+REG_DEL     ---     0.363    R11C16C.CLK to     R11C16C.Q1 UART_Packets_Inst/UART_Inst/SLICE_91 (from ipClk_c)
+ROUTE         2     1.233     R11C16C.Q1 to     R12C15B.A0 UART_Packets_Inst/UART_Inst/rxClkCount[7]
+CTOF_DEL    ---     0.238     R12C15B.A0 to     R12C15B.F0 UART_Packets_Inst/UART_Inst/SLICE_177
+ROUTE         1     0.448     R12C15B.F0 to     R12C15C.C1 UART_Packets_Inst/UART_Inst/rxClkBaud_6
+CTOF_DEL    ---     0.238     R12C15C.C1 to     R12C15C.F1 UART_Packets_Inst/UART_Inst/SLICE_165
+ROUTE        15     1.635     R12C15C.F1 to     R14C16D.B1 UART_Packets_Inst/UART_Inst/rxClkBaud
+CTOF_DEL    ---     0.238     R14C16D.B1 to     R14C16D.F1 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         5     0.569     R14C16D.F1 to     R14C16D.B0 UART_Packets_Inst/UART_Inst/un1_opRxValid20_1
+CTOF_DEL    ---     0.238     R14C16D.B0 to     R14C16D.F0 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         4     0.958     R14C16D.F0 to     R15C18B.CE UART_Packets_Inst/UART_Inst/rxData_0_sqmuxa_i (to ipClk_c)
                   --------
-                    9.447   (16.4% logic, 83.6% route), 6 logic levels.
+                    6.158   (21.4% logic, 78.6% route), 5 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_91:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R15C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R11C16C.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_200:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_93:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to     R8C11A.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R15C18B.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.409ns
+Passed: The following path meets requirements by 13.684ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[3]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[7]  (to ipClk_c +)
-                   FF                        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[6]
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/rxClkCount[1]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/BitsReceived[3]  (to ipClk_c +)
 
-   Delay:               9.365ns  (16.6% logic, 83.4% route), 6 logic levels.
+   Delay:               6.239ns  (24.9% logic, 75.1% route), 6 logic levels.
 
  Constraint Details:
 
-      9.365ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_197 meets
+      6.239ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_88 to UART_Packets_Inst/UART_Inst/SLICE_85 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.226ns CE_SET requirement (totaling 19.774ns) by 10.409ns
+      0.077ns DIN_SET requirement (totaling 19.923ns) by 13.684ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_197:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_88 to UART_Packets_Inst/UART_Inst/SLICE_85:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.363    R15C11C.CLK to     R15C11C.Q1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 (from ipClk_c)
-ROUTE         4     0.975     R15C11C.Q1 to     R16C12B.A1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[3]
-CTOF_DEL    ---     0.238     R16C12B.A1 to     R16C12B.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_406
-ROUTE         1     1.051     R16C12B.F1 to     R15C13C.B0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/wen_1
-CTOF_DEL    ---     0.238     R15C13C.B0 to     R15C13C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_294
-ROUTE         6     1.259     R15C13C.F0 to     R16C11D.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/wen
-CTOF_DEL    ---     0.238     R16C11D.D0 to     R16C11D.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/SLICE_307
-ROUTE         2     0.864     R16C11D.F0 to     R15C11D.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/wen_te[0]
-CTOF_DEL    ---     0.238     R15C11D.B1 to     R15C11D.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_317
-ROUTE         3     1.627     R15C11D.F1 to      R12C2C.C0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/N_78
-CTOF_DEL    ---     0.238      R12C2C.C0 to      R12C2C.F0 SLICE_471
-ROUTE         8     2.036      R12C2C.F0 to      R9C10A.CE Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa (to ipClk_c)
+REG_DEL     ---     0.363    R11C15C.CLK to     R11C15C.Q1 UART_Packets_Inst/UART_Inst/SLICE_88 (from ipClk_c)
+ROUTE         2     1.021     R11C15C.Q1 to     R12C15B.B0 UART_Packets_Inst/UART_Inst/rxClkCount[1]
+CTOF_DEL    ---     0.238     R12C15B.B0 to     R12C15B.F0 UART_Packets_Inst/UART_Inst/SLICE_177
+ROUTE         1     0.448     R12C15B.F0 to     R12C15C.C1 UART_Packets_Inst/UART_Inst/rxClkBaud_6
+CTOF_DEL    ---     0.238     R12C15C.C1 to     R12C15C.F1 UART_Packets_Inst/UART_Inst/SLICE_165
+ROUTE        15     1.635     R12C15C.F1 to     R14C16D.B1 UART_Packets_Inst/UART_Inst/rxClkBaud
+CTOF_DEL    ---     0.238     R14C16D.B1 to     R14C16D.F1 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         5     1.061     R14C16D.F1 to     R15C15C.B1 UART_Packets_Inst/UART_Inst/un1_opRxValid20_1
+CTOF_DEL    ---     0.238     R15C15C.B1 to     R15C15C.F1 UART_Packets_Inst/SLICE_125
+ROUTE         1     0.521     R15C15C.F1 to     R14C15B.D1 UART_Packets_Inst/UART_Inst/un1_BitsReceived_4_c2
+CTOF_DEL    ---     0.238     R14C15B.D1 to     R14C15B.F1 UART_Packets_Inst/UART_Inst/SLICE_85
+ROUTE         1     0.000     R14C15B.F1 to    R14C15B.DI1 UART_Packets_Inst/UART_Inst/un1_BitsReceived_4_axbxc3 (to ipClk_c)
                   --------
-                    9.365   (16.6% logic, 83.4% route), 6 logic levels.
+                    6.239   (24.9% logic, 75.1% route), 6 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_88:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R15C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R11C15C.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_197:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_85:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to     R9C10A.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R14C15B.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.409ns
+Passed: The following path meets requirements by 13.729ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[3]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[9]  (to ipClk_c +)
-                   FF                        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[8]
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/rxClkCount[8]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/BitsReceived[3]  (to ipClk_c +)
 
-   Delay:               9.365ns  (16.6% logic, 83.4% route), 6 logic levels.
+   Delay:               6.194ns  (25.1% logic, 74.9% route), 6 logic levels.
 
  Constraint Details:
 
-      9.365ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_198 meets
+      6.194ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_92 to UART_Packets_Inst/UART_Inst/SLICE_85 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.226ns CE_SET requirement (totaling 19.774ns) by 10.409ns
+      0.077ns DIN_SET requirement (totaling 19.923ns) by 13.729ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_198:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_92 to UART_Packets_Inst/UART_Inst/SLICE_85:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.363    R15C11C.CLK to     R15C11C.Q1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 (from ipClk_c)
-ROUTE         4     0.975     R15C11C.Q1 to     R16C12B.A1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[3]
-CTOF_DEL    ---     0.238     R16C12B.A1 to     R16C12B.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_406
-ROUTE         1     1.051     R16C12B.F1 to     R15C13C.B0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/wen_1
-CTOF_DEL    ---     0.238     R15C13C.B0 to     R15C13C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_294
-ROUTE         6     1.259     R15C13C.F0 to     R16C11D.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/wen
-CTOF_DEL    ---     0.238     R16C11D.D0 to     R16C11D.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/SLICE_307
-ROUTE         2     0.864     R16C11D.F0 to     R15C11D.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/wen_te[0]
-CTOF_DEL    ---     0.238     R15C11D.B1 to     R15C11D.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_317
-ROUTE         3     1.627     R15C11D.F1 to      R12C2C.C0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/N_78
-CTOF_DEL    ---     0.238      R12C2C.C0 to      R12C2C.F0 SLICE_471
-ROUTE         8     2.036      R12C2C.F0 to      R9C10B.CE Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa (to ipClk_c)
+REG_DEL     ---     0.363    R11C16A.CLK to     R11C16A.Q0 UART_Packets_Inst/UART_Inst/SLICE_92 (from ipClk_c)
+ROUTE         2     0.976     R11C16A.Q0 to     R12C15B.D0 UART_Packets_Inst/UART_Inst/rxClkCount[8]
+CTOF_DEL    ---     0.238     R12C15B.D0 to     R12C15B.F0 UART_Packets_Inst/UART_Inst/SLICE_177
+ROUTE         1     0.448     R12C15B.F0 to     R12C15C.C1 UART_Packets_Inst/UART_Inst/rxClkBaud_6
+CTOF_DEL    ---     0.238     R12C15C.C1 to     R12C15C.F1 UART_Packets_Inst/UART_Inst/SLICE_165
+ROUTE        15     1.635     R12C15C.F1 to     R14C16D.B1 UART_Packets_Inst/UART_Inst/rxClkBaud
+CTOF_DEL    ---     0.238     R14C16D.B1 to     R14C16D.F1 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         5     1.061     R14C16D.F1 to     R15C15C.B1 UART_Packets_Inst/UART_Inst/un1_opRxValid20_1
+CTOF_DEL    ---     0.238     R15C15C.B1 to     R15C15C.F1 UART_Packets_Inst/SLICE_125
+ROUTE         1     0.521     R15C15C.F1 to     R14C15B.D1 UART_Packets_Inst/UART_Inst/un1_BitsReceived_4_c2
+CTOF_DEL    ---     0.238     R14C15B.D1 to     R14C15B.F1 UART_Packets_Inst/UART_Inst/SLICE_85
+ROUTE         1     0.000     R14C15B.F1 to    R14C15B.DI1 UART_Packets_Inst/UART_Inst/un1_BitsReceived_4_axbxc3 (to ipClk_c)
                   --------
-                    9.365   (16.6% logic, 83.4% route), 6 logic levels.
+                    6.194   (25.1% logic, 74.9% route), 6 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_92:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R15C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R11C16A.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_198:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_85:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to     R9C10B.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R14C15B.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.594ns
+Passed: The following path meets requirements by 13.773ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[15]  (to ipClk_c +)
-                   FF                        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[14]
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/rxClkCount[6]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/BitsReceived[3]  (to ipClk_c +)
 
-   Delay:               9.180ns  (16.9% logic, 83.1% route), 6 logic levels.
+   Delay:               6.150ns  (25.3% logic, 74.7% route), 6 logic levels.
 
  Constraint Details:
 
-      9.180ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_201 meets
+      6.150ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_85 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.226ns CE_SET requirement (totaling 19.774ns) by 10.594ns
+      0.077ns DIN_SET requirement (totaling 19.923ns) by 13.773ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_201:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_91 to UART_Packets_Inst/UART_Inst/SLICE_85:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.363    R15C11C.CLK to     R15C11C.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 (from ipClk_c)
-ROUTE         5     1.324     R15C11C.Q0 to     R16C12B.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[2]
-CTOF_DEL    ---     0.238     R16C12B.B1 to     R16C12B.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_406
-ROUTE         1     1.051     R16C12B.F1 to     R15C13C.B0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/wen_1
-CTOF_DEL    ---     0.238     R15C13C.B0 to     R15C13C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_294
-ROUTE         6     1.259     R15C13C.F0 to     R16C11D.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/wen
-CTOF_DEL    ---     0.238     R16C11D.D0 to     R16C11D.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/SLICE_307
-ROUTE         2     0.864     R16C11D.F0 to     R15C11D.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/wen_te[0]
-CTOF_DEL    ---     0.238     R15C11D.B1 to     R15C11D.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_317
-ROUTE         3     1.627     R15C11D.F1 to      R12C2C.C0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/N_78
-CTOF_DEL    ---     0.238      R12C2C.C0 to      R12C2C.F0 SLICE_471
-ROUTE         8     1.502      R12C2C.F0 to     R11C11A.CE Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa (to ipClk_c)
+REG_DEL     ---     0.363    R11C16C.CLK to     R11C16C.Q0 UART_Packets_Inst/UART_Inst/SLICE_91 (from ipClk_c)
+ROUTE         2     0.932     R11C16C.Q0 to     R12C15B.C0 UART_Packets_Inst/UART_Inst/rxClkCount[6]
+CTOF_DEL    ---     0.238     R12C15B.C0 to     R12C15B.F0 UART_Packets_Inst/UART_Inst/SLICE_177
+ROUTE         1     0.448     R12C15B.F0 to     R12C15C.C1 UART_Packets_Inst/UART_Inst/rxClkBaud_6
+CTOF_DEL    ---     0.238     R12C15C.C1 to     R12C15C.F1 UART_Packets_Inst/UART_Inst/SLICE_165
+ROUTE        15     1.635     R12C15C.F1 to     R14C16D.B1 UART_Packets_Inst/UART_Inst/rxClkBaud
+CTOF_DEL    ---     0.238     R14C16D.B1 to     R14C16D.F1 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         5     1.061     R14C16D.F1 to     R15C15C.B1 UART_Packets_Inst/UART_Inst/un1_opRxValid20_1
+CTOF_DEL    ---     0.238     R15C15C.B1 to     R15C15C.F1 UART_Packets_Inst/SLICE_125
+ROUTE         1     0.521     R15C15C.F1 to     R14C15B.D1 UART_Packets_Inst/UART_Inst/un1_BitsReceived_4_c2
+CTOF_DEL    ---     0.238     R14C15B.D1 to     R14C15B.F1 UART_Packets_Inst/UART_Inst/SLICE_85
+ROUTE         1     0.000     R14C15B.F1 to    R14C15B.DI1 UART_Packets_Inst/UART_Inst/un1_BitsReceived_4_axbxc3 (to ipClk_c)
                   --------
-                    9.180   (16.9% logic, 83.1% route), 6 logic levels.
+                    6.150   (25.3% logic, 74.7% route), 6 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_91:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R15C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R11C16C.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_201:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_85:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R11C11A.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R14C15B.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.667ns
+Passed: The following path meets requirements by 13.828ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[3]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[5]  (to ipClk_c +)
-                   FF                        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[4]
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/rxClkCount[1]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/rxData[1]  (to ipClk_c +)
+                   FF                        UART_Packets_Inst/UART_Inst/rxData[0]
 
-   Delay:               9.107ns  (17.1% logic, 82.9% route), 6 logic levels.
+   Delay:               5.946ns  (22.1% logic, 77.9% route), 5 logic levels.
 
  Constraint Details:
 
-      9.107ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_196 meets
+      5.946ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_88 to UART_Packets_Inst/UART_Inst/SLICE_93 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.226ns CE_SET requirement (totaling 19.774ns) by 10.667ns
+      0.226ns CE_SET requirement (totaling 19.774ns) by 13.828ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_196:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_88 to UART_Packets_Inst/UART_Inst/SLICE_93:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.363    R15C11C.CLK to     R15C11C.Q1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 (from ipClk_c)
-ROUTE         4     0.975     R15C11C.Q1 to     R16C12B.A1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[3]
-CTOF_DEL    ---     0.238     R16C12B.A1 to     R16C12B.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_406
-ROUTE         1     1.051     R16C12B.F1 to     R15C13C.B0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/wen_1
-CTOF_DEL    ---     0.238     R15C13C.B0 to     R15C13C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_294
-ROUTE         6     1.259     R15C13C.F0 to     R16C11D.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/wen
-CTOF_DEL    ---     0.238     R16C11D.D0 to     R16C11D.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/SLICE_307
-ROUTE         2     0.864     R16C11D.F0 to     R15C11D.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/wen_te[0]
-CTOF_DEL    ---     0.238     R15C11D.B1 to     R15C11D.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_317
-ROUTE         3     1.627     R15C11D.F1 to      R12C2C.C0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/N_78
-CTOF_DEL    ---     0.238      R12C2C.C0 to      R12C2C.F0 SLICE_471
-ROUTE         8     1.778      R12C2C.F0 to      R9C11C.CE Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa (to ipClk_c)
+REG_DEL     ---     0.363    R11C15C.CLK to     R11C15C.Q1 UART_Packets_Inst/UART_Inst/SLICE_88 (from ipClk_c)
+ROUTE         2     1.021     R11C15C.Q1 to     R12C15B.B0 UART_Packets_Inst/UART_Inst/rxClkCount[1]
+CTOF_DEL    ---     0.238     R12C15B.B0 to     R12C15B.F0 UART_Packets_Inst/UART_Inst/SLICE_177
+ROUTE         1     0.448     R12C15B.F0 to     R12C15C.C1 UART_Packets_Inst/UART_Inst/rxClkBaud_6
+CTOF_DEL    ---     0.238     R12C15C.C1 to     R12C15C.F1 UART_Packets_Inst/UART_Inst/SLICE_165
+ROUTE        15     1.635     R12C15C.F1 to     R14C16D.B1 UART_Packets_Inst/UART_Inst/rxClkBaud
+CTOF_DEL    ---     0.238     R14C16D.B1 to     R14C16D.F1 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         5     0.569     R14C16D.F1 to     R14C16D.B0 UART_Packets_Inst/UART_Inst/un1_opRxValid20_1
+CTOF_DEL    ---     0.238     R14C16D.B0 to     R14C16D.F0 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         4     0.958     R14C16D.F0 to     R15C18B.CE UART_Packets_Inst/UART_Inst/rxData_0_sqmuxa_i (to ipClk_c)
                   --------
-                    9.107   (17.1% logic, 82.9% route), 6 logic levels.
+                    5.946   (22.1% logic, 77.9% route), 5 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_88:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R15C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R11C15C.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_196:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_93:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to     R9C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R15C18B.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.667ns
+Passed: The following path meets requirements by 13.828ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[3]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[11]  (to ipClk_c +)
-                   FF                        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val[10]
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/rxClkCount[1]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/rxData[5]  (to ipClk_c +)
+                   FF                        UART_Packets_Inst/UART_Inst/rxData[4]
 
-   Delay:               9.107ns  (17.1% logic, 82.9% route), 6 logic levels.
+   Delay:               5.946ns  (22.1% logic, 77.9% route), 5 logic levels.
 
  Constraint Details:
 
-      9.107ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_199 meets
+      5.946ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_88 to UART_Packets_Inst/UART_Inst/SLICE_95 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.226ns CE_SET requirement (totaling 19.774ns) by 10.667ns
+      0.226ns CE_SET requirement (totaling 19.774ns) by 13.828ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_199:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_88 to UART_Packets_Inst/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.363    R15C11C.CLK to     R15C11C.Q1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88 (from ipClk_c)
-ROUTE         4     0.975     R15C11C.Q1 to     R16C12B.A1 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/jupdate_reclk[3]
-CTOF_DEL    ---     0.238     R16C12B.A1 to     R16C12B.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_406
-ROUTE         1     1.051     R16C12B.F1 to     R15C13C.B0 Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/wen_1
-CTOF_DEL    ---     0.238     R15C13C.B0 to     R15C13C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/SLICE_294
-ROUTE         6     1.259     R15C13C.F0 to     R16C11D.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/wen
-CTOF_DEL    ---     0.238     R16C11D.D0 to     R16C11D.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/SLICE_307
-ROUTE         2     0.864     R16C11D.F0 to     R15C11D.B1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/wen_te[0]
-CTOF_DEL    ---     0.238     R15C11D.B1 to     R15C11D.F1 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_317
-ROUTE         3     1.627     R15C11D.F1 to      R12C2C.C0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/N_78
-CTOF_DEL    ---     0.238      R12C2C.C0 to      R12C2C.F0 SLICE_471
-ROUTE         8     1.778      R12C2C.F0 to      R9C11B.CE Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/te_precnt_val_0_sqmuxa (to ipClk_c)
+REG_DEL     ---     0.363    R11C15C.CLK to     R11C15C.Q1 UART_Packets_Inst/UART_Inst/SLICE_88 (from ipClk_c)
+ROUTE         2     1.021     R11C15C.Q1 to     R12C15B.B0 UART_Packets_Inst/UART_Inst/rxClkCount[1]
+CTOF_DEL    ---     0.238     R12C15B.B0 to     R12C15B.F0 UART_Packets_Inst/UART_Inst/SLICE_177
+ROUTE         1     0.448     R12C15B.F0 to     R12C15C.C1 UART_Packets_Inst/UART_Inst/rxClkBaud_6
+CTOF_DEL    ---     0.238     R12C15C.C1 to     R12C15C.F1 UART_Packets_Inst/UART_Inst/SLICE_165
+ROUTE        15     1.635     R12C15C.F1 to     R14C16D.B1 UART_Packets_Inst/UART_Inst/rxClkBaud
+CTOF_DEL    ---     0.238     R14C16D.B1 to     R14C16D.F1 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         5     0.569     R14C16D.F1 to     R14C16D.B0 UART_Packets_Inst/UART_Inst/un1_opRxValid20_1
+CTOF_DEL    ---     0.238     R14C16D.B0 to     R14C16D.F0 UART_Packets_Inst/UART_Inst/SLICE_163
+ROUTE         4     0.958     R14C16D.F0 to     R15C17A.CE UART_Packets_Inst/UART_Inst/rxData_0_sqmuxa_i (to ipClk_c)
                   --------
-                    9.107   (17.1% logic, 82.9% route), 6 logic levels.
+                    5.946   (22.1% logic, 77.9% route), 5 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/jtag_int_u/SLICE_88:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_88:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to    R15C11C.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R11C15C.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/te_0/SLICE_199:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     1.059       21.PADDI to     R9C11B.CLK ipClk_c
+ROUTE       140     1.059       21.PADDI to    R15C17A.CLK ipClk_c
                   --------
                     1.059   (0.0% logic, 100.0% route), 0 logic levels.
 
-Report:  100.604MHz is the maximum frequency for this preference.
+Report:  153.186MHz is the maximum frequency for this preference.
 
 Report Summary
 --------------
@@ -590,7 +574,7 @@ Report Summary
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY PORT "ipClk" 50.000000 MHz ;  |   50.000 MHz|  100.604 MHz|   6  
+FREQUENCY PORT "ipClk" 50.000000 MHz ;  |   50.000 MHz|  153.186 MHz|   6  
                                         |             |             |
 ----------------------------------------------------------------------------
 
@@ -601,16 +585,10 @@ All preferences were met.
 Clock Domains Analysis
 ------------------------
 
-Found 2 clocks:
+Found 1 clocks:
 
-Clock Domain: jtaghub16_jtck   Source: mg5ahub/genblk0_genblk5_jtage_u.JTCK   Loads: 123
-   No transfer within this clock domain is found
-
-Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 141
+Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 140
    Covered under: FREQUENCY PORT "ipClk" 50.000000 MHz ;
-
-   Data transfers from:
-   Clock Domain: jtaghub16_jtck   Source: mg5ahub/genblk0_genblk5_jtage_u.JTCK
 
 
 Timing summary (Setup):
@@ -619,11 +597,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 2526 paths, 1 nets, and 3008 connections (92.55% coverage)
+Constraints cover 2205 paths, 1 nets, and 1270 connections (88.87% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Sun Jul 03 22:37:03 2022
+Mon Jul 04 16:42:43 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -649,7 +627,7 @@ BLOCK JTAG PATHS
 
 ================================================================================
 Preference: FREQUENCY PORT "ipClk" 50.000000 MHz ;
-            2526 items scored, 0 timing errors detected.
+            2205 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
@@ -657,344 +635,299 @@ Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              UART_TxSend  (from ipClk_c +)
-   Destination:    FF         Data in        UART_Inst/opTxBusy  (to ipClk_c +)
+   Source:         FF         Q              RdRegisters.ClockTicks[29]  (from ipClk_c +)
+   Destination:    FF         Data in        Registers_Inst/opRdData[29]  (to ipClk_c +)
 
    Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.161ns physical path delay SLICE_260 to UART_Inst/SLICE_419 meets
+      0.161ns physical path delay SLICE_17 to Registers_Inst/SLICE_71 meets
      -0.014ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path SLICE_260 to UART_Inst/SLICE_419:
+      Data path SLICE_17 to Registers_Inst/SLICE_71:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R18C20B.CLK to     R18C20B.Q0 SLICE_260 (from ipClk_c)
-ROUTE         5     0.041     R18C20B.Q0 to     R18C20A.M0 UART_TxSend (to ipClk_c)
+REG_DEL     ---     0.120    R17C11A.CLK to     R17C11A.Q0 SLICE_17 (from ipClk_c)
+ROUTE         2     0.041     R17C11A.Q0 to     R17C11C.M1 RdRegisters.ClockTicks[29] (to ipClk_c)
                   --------
                     0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to SLICE_260:
+      Source Clock Path ipClk to SLICE_17:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to    R18C20B.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R17C11A.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to UART_Inst/SLICE_419:
+      Destination Clock Path ipClk to Registers_Inst/SLICE_71:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to    R18C20A.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R17C11C.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.197ns
+Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[5]  (from ipClk_c +)
-   Destination:    DP16KB     Port           Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0(ASIC)  (to ipClk_c +)
+   Source:         FF         Q              UART_Packets_Inst/opRxStream.Destination[3]  (from ipClk_c +)
+   Destination:    FF         Data in        RegistersControl_Inst/opTxStream.Source[3]  (to ipClk_c +)
 
-   Delay:               0.344ns  (34.9% logic, 65.1% route), 1 logic levels.
+   Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.344ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_160 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0 meets
-      0.097ns DATA_HLD and
+      0.161ns physical path delay UART_Packets_Inst/SLICE_129 to RegistersControl_Inst/SLICE_146 meets
+     -0.014ns M_HLD and
       0.000ns delay constraint less
-     -0.050ns skew requirement (totaling 0.147ns) by 0.197ns
+      0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_160 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
+      Data path UART_Packets_Inst/SLICE_129 to RegistersControl_Inst/SLICE_146:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R14C19C.CLK to     R14C19C.Q1 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_160 (from ipClk_c)
-ROUTE         1     0.224     R14C19C.Q1 to *R_R13C17.DIA5 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[5] (to ipClk_c)
+REG_DEL     ---     0.120    R16C15B.CLK to     R16C15B.Q1 UART_Packets_Inst/SLICE_129 (from ipClk_c)
+ROUTE         2     0.041     R16C15B.Q1 to     R16C15C.M1 opRxStream.Destination_Q[3] (to ipClk_c)
                   --------
-                    0.344   (34.9% logic, 65.1% route), 1 logic levels.
+                    0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_160:
+      Source Clock Path ipClk to UART_Packets_Inst/SLICE_129:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to    R14C19C.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R16C15B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
+      Destination Clock Path ipClk to RegistersControl_Inst/SLICE_146:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.350       21.PADDI to *R_R13C17.CLKA ipClk_c
+ROUTE       140     0.300       21.PADDI to    R16C15C.CLK ipClk_c
                   --------
-                    0.350   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.197ns
+Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[7]  (from ipClk_c +)
-   Destination:    DP16KB     Port           Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0(ASIC)  (to ipClk_c +)
+   Source:         FF         Q              UART_Packets_Inst/opRxStream.Source[2]  (from ipClk_c +)
+   Destination:    FF         Data in        RegistersControl_Inst/opTxStream.Destination[2]  (to ipClk_c +)
 
-   Delay:               0.344ns  (34.9% logic, 65.1% route), 1 logic levels.
+   Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.344ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_161 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0 meets
-      0.097ns DATA_HLD and
+      0.161ns physical path delay UART_Packets_Inst/SLICE_134 to RegistersControl_Inst/SLICE_142 meets
+     -0.014ns M_HLD and
       0.000ns delay constraint less
-     -0.050ns skew requirement (totaling 0.147ns) by 0.197ns
+      0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_161 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
+      Data path UART_Packets_Inst/SLICE_134 to RegistersControl_Inst/SLICE_142:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R14C20B.CLK to     R14C20B.Q1 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_161 (from ipClk_c)
-ROUTE         1     0.224     R14C20B.Q1 to *R_R13C17.DIA7 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[7] (to ipClk_c)
+REG_DEL     ---     0.120    R19C17B.CLK to     R19C17B.Q0 UART_Packets_Inst/SLICE_134 (from ipClk_c)
+ROUTE         1     0.041     R19C17B.Q0 to     R19C17A.M0 opRxStream.Source_Q[2] (to ipClk_c)
                   --------
-                    0.344   (34.9% logic, 65.1% route), 1 logic levels.
+                    0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_161:
+      Source Clock Path ipClk to UART_Packets_Inst/SLICE_134:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to    R14C20B.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R19C17B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
+      Destination Clock Path ipClk to RegistersControl_Inst/SLICE_142:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.350       21.PADDI to *R_R13C17.CLKA ipClk_c
+ROUTE       140     0.300       21.PADDI to    R19C17A.CLK ipClk_c
                   --------
-                    0.350   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.207ns
+Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[1]  (from ipClk_c +)
-   Destination:    DP16KB     Port           Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0(ASIC)  (to ipClk_c +)
+   Source:         FF         Q              UART_Packets_Inst/opRxStream.Destination[1]  (from ipClk_c +)
+   Destination:    FF         Data in        RegistersControl_Inst/opTxStream.Source[1]  (to ipClk_c +)
 
-   Delay:               0.354ns  (33.9% logic, 66.1% route), 1 logic levels.
+   Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.354ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_158 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0 meets
-      0.097ns DATA_HLD and
+      0.161ns physical path delay UART_Packets_Inst/SLICE_128 to RegistersControl_Inst/SLICE_145 meets
+     -0.014ns M_HLD and
       0.000ns delay constraint less
-     -0.050ns skew requirement (totaling 0.147ns) by 0.207ns
+      0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_158 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
+      Data path UART_Packets_Inst/SLICE_128 to RegistersControl_Inst/SLICE_145:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R15C19B.CLK to     R15C19B.Q1 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_158 (from ipClk_c)
-ROUTE         1     0.234     R15C19B.Q1 to *R_R13C17.DIA1 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[1] (to ipClk_c)
+REG_DEL     ---     0.120    R17C16B.CLK to     R17C16B.Q1 UART_Packets_Inst/SLICE_128 (from ipClk_c)
+ROUTE         2     0.041     R17C16B.Q1 to     R17C16C.M1 opRxStream.Destination_Q[1] (to ipClk_c)
                   --------
-                    0.354   (33.9% logic, 66.1% route), 1 logic levels.
+                    0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_158:
+      Source Clock Path ipClk to UART_Packets_Inst/SLICE_128:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to    R15C19B.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R17C16B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
+      Destination Clock Path ipClk to RegistersControl_Inst/SLICE_145:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.350       21.PADDI to *R_R13C17.CLKA ipClk_c
+ROUTE       140     0.300       21.PADDI to    R17C16C.CLK ipClk_c
                   --------
-                    0.350   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.207ns
+Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[6]  (from ipClk_c +)
-   Destination:    DP16KB     Port           Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0(ASIC)  (to ipClk_c +)
+   Source:         FF         Q              UART_Packets_Inst/opRxStream.Source[4]  (from ipClk_c +)
+   Destination:    FF         Data in        RegistersControl_Inst/opTxStream.Destination[4]  (to ipClk_c +)
 
-   Delay:               0.354ns  (33.9% logic, 66.1% route), 1 logic levels.
+   Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.354ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_161 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0 meets
-      0.097ns DATA_HLD and
+      0.161ns physical path delay UART_Packets_Inst/SLICE_135 to RegistersControl_Inst/SLICE_143 meets
+     -0.014ns M_HLD and
       0.000ns delay constraint less
-     -0.050ns skew requirement (totaling 0.147ns) by 0.207ns
+      0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_161 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
+      Data path UART_Packets_Inst/SLICE_135 to RegistersControl_Inst/SLICE_143:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R14C20B.CLK to     R14C20B.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_161 (from ipClk_c)
-ROUTE         1     0.234     R14C20B.Q0 to *R_R13C17.DIA6 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[6] (to ipClk_c)
+REG_DEL     ---     0.120    R18C17C.CLK to     R18C17C.Q0 UART_Packets_Inst/SLICE_135 (from ipClk_c)
+ROUTE         1     0.041     R18C17C.Q0 to     R18C17B.M0 opRxStream.Source_Q[4] (to ipClk_c)
                   --------
-                    0.354   (33.9% logic, 66.1% route), 1 logic levels.
+                    0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_161:
+      Source Clock Path ipClk to UART_Packets_Inst/SLICE_135:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to    R14C20B.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R18C17C.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
+      Destination Clock Path ipClk to RegistersControl_Inst/SLICE_143:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.350       21.PADDI to *R_R13C17.CLKA ipClk_c
+ROUTE       140     0.300       21.PADDI to    R18C17B.CLK ipClk_c
                   --------
-                    0.350   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.207ns
+Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[0]  (from ipClk_c +)
-   Destination:    DP16KB     Port           Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0(ASIC)  (to ipClk_c +)
+   Source:         FF         Q              UART_Packets_Inst/opRxStream.Destination[0]  (from ipClk_c +)
+   Destination:    FF         Data in        RegistersControl_Inst/opTxStream.Source[0]  (to ipClk_c +)
 
-   Delay:               0.354ns  (33.9% logic, 66.1% route), 1 logic levels.
+   Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.354ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_158 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0 meets
-      0.097ns DATA_HLD and
+      0.161ns physical path delay UART_Packets_Inst/SLICE_128 to RegistersControl_Inst/SLICE_145 meets
+     -0.014ns M_HLD and
       0.000ns delay constraint less
-     -0.050ns skew requirement (totaling 0.147ns) by 0.207ns
+      0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_158 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
+      Data path UART_Packets_Inst/SLICE_128 to RegistersControl_Inst/SLICE_145:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R15C19B.CLK to     R15C19B.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_158 (from ipClk_c)
-ROUTE         1     0.234     R15C19B.Q0 to *R_R13C17.DIA0 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[0] (to ipClk_c)
+REG_DEL     ---     0.120    R17C16B.CLK to     R17C16B.Q0 UART_Packets_Inst/SLICE_128 (from ipClk_c)
+ROUTE         3     0.041     R17C16B.Q0 to     R17C16C.M0 opRxStream.Destination_Q[0] (to ipClk_c)
                   --------
-                    0.354   (33.9% logic, 66.1% route), 1 logic levels.
+                    0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_158:
+      Source Clock Path ipClk to UART_Packets_Inst/SLICE_128:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to    R15C19B.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R17C16B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
+      Destination Clock Path ipClk to RegistersControl_Inst/SLICE_145:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.350       21.PADDI to *R_R13C17.CLKA ipClk_c
+ROUTE       140     0.300       21.PADDI to    R17C16C.CLK ipClk_c
                   --------
-                    0.350   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.207ns
+Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[4]  (from ipClk_c +)
-   Destination:    DP16KB     Port           Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0(ASIC)  (to ipClk_c +)
+   Source:         FF         Q              UART_Packets_Inst/opRxStream.Destination[2]  (from ipClk_c +)
+   Destination:    FF         Data in        RegistersControl_Inst/opTxStream.Source[2]  (to ipClk_c +)
 
-   Delay:               0.354ns  (33.9% logic, 66.1% route), 1 logic levels.
-
- Constraint Details:
-
-      0.354ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_160 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0 meets
-      0.097ns DATA_HLD and
-      0.000ns delay constraint less
-     -0.050ns skew requirement (totaling 0.147ns) by 0.207ns
-
- Physical Path Details:
-
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_160 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R14C19C.CLK to     R14C19C.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_160 (from ipClk_c)
-ROUTE         1     0.234     R14C19C.Q0 to *R_R13C17.DIA4 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/trace_din_d[4] (to ipClk_c)
-                  --------
-                    0.354   (33.9% logic, 66.1% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_160:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to    R14C19C.CLK ipClk_c
-                  --------
-                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr85328532p13060cf5_0_0_0:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.350       21.PADDI to *R_R13C17.CLKA ipClk_c
-                  --------
-                    0.350   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.235ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/trig_cnt[0]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/trig_cnt[0]  (to ipClk_c +)
-
-   Delay:               0.236ns  (75.8% logic, 24.2% route), 2 logic levels.
+   Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.236ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_179 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_179 meets
-      0.001ns DIN_HLD and
+      0.161ns physical path delay UART_Packets_Inst/SLICE_129 to RegistersControl_Inst/SLICE_146 meets
+     -0.014ns M_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.001ns) by 0.235ns
+      0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_179 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_179:
+      Data path UART_Packets_Inst/SLICE_129 to RegistersControl_Inst/SLICE_146:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120     R17C9A.CLK to      R17C9A.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_179 (from ipClk_c)
-ROUTE         3     0.057      R17C9A.Q0 to      R17C9A.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/trig_cnt[0]
-CTOF_DEL    ---     0.059      R17C9A.D0 to      R17C9A.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_179
-ROUTE         1     0.000      R17C9A.F0 to     R17C9A.DI0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/trig_cnt_7[0] (to ipClk_c)
+REG_DEL     ---     0.120    R16C15B.CLK to     R16C15B.Q0 UART_Packets_Inst/SLICE_129 (from ipClk_c)
+ROUTE         2     0.041     R16C15B.Q0 to     R16C15C.M0 opRxStream.Destination_Q[2] (to ipClk_c)
                   --------
-                    0.236   (75.8% logic, 24.2% route), 2 logic levels.
+                    0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_179:
+      Source Clock Path ipClk to UART_Packets_Inst/SLICE_129:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to     R17C9A.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R16C15B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_179:
+      Destination Clock Path ipClk to RegistersControl_Inst/SLICE_146:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to     R17C9A.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R16C15C.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1003,43 +936,43 @@ Passed: The following path meets requirements by 0.235ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/mem_full_cntr[0]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/mem_full_cntr[0]  (to ipClk_c +)
+   Source:         FF         Q              RegistersControl_Inst/opWrEnable  (from ipClk_c +)
+   Destination:    FF         Data in        RegistersControl_Inst/opWrEnable  (to ipClk_c +)
 
    Delay:               0.236ns  (75.8% logic, 24.2% route), 2 logic levels.
 
  Constraint Details:
 
-      0.236ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_142 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_142 meets
+      0.236ns physical path delay RegistersControl_Inst/SLICE_77 to RegistersControl_Inst/SLICE_77 meets
       0.001ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling 0.001ns) by 0.235ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_142 to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_142:
+      Data path RegistersControl_Inst/SLICE_77 to RegistersControl_Inst/SLICE_77:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R20C10C.CLK to     R20C10C.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_142 (from ipClk_c)
-ROUTE         2     0.057     R20C10C.Q0 to     R20C10C.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/mem_full_cntr[0]
-CTOF_DEL    ---     0.059     R20C10C.D0 to     R20C10C.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_142
-ROUTE         1     0.000     R20C10C.F0 to    R20C10C.DI0 Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/N_340_i (to ipClk_c)
+REG_DEL     ---     0.120    R17C13A.CLK to     R17C13A.Q0 RegistersControl_Inst/SLICE_77 (from ipClk_c)
+ROUTE         2     0.057     R17C13A.Q0 to     R17C13A.D0 Registers_WrEnable
+CTOF_DEL    ---     0.059     R17C13A.D0 to     R17C13A.F0 RegistersControl_Inst/SLICE_77
+ROUTE         1     0.000     R17C13A.F0 to    R17C13A.DI0 RegistersControl_Inst/opWrEnable_4 (to ipClk_c)
                   --------
                     0.236   (75.8% logic, 24.2% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_142:
+      Source Clock Path ipClk to RegistersControl_Inst/SLICE_77:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to    R20C10C.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R17C13A.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/tm_u/SLICE_142:
+      Destination Clock Path ipClk to RegistersControl_Inst/SLICE_77:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to    R20C10C.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R17C13A.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1048,43 +981,88 @@ Passed: The following path meets requirements by 0.235ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/trig_cnt[2]  (from ipClk_c +)
-   Destination:    FF         Data in        Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/trig_cnt[2]  (to ipClk_c +)
+   Source:         FF         Q              UART_Packets_Inst/UART_Inst/BitsSent[2]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/UART_Inst/BitsSent[2]  (to ipClk_c +)
 
    Delay:               0.236ns  (75.8% logic, 24.2% route), 2 logic levels.
 
  Constraint Details:
 
-      0.236ns physical path delay Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_180 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_180 meets
+      0.236ns physical path delay UART_Packets_Inst/UART_Inst/SLICE_87 to UART_Packets_Inst/UART_Inst/SLICE_87 meets
       0.001ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling 0.001ns) by 0.235ns
 
  Physical Path Details:
 
-      Data path Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_180 to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_180:
+      Data path UART_Packets_Inst/UART_Inst/SLICE_87 to UART_Packets_Inst/UART_Inst/SLICE_87:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120     R17C9B.CLK to      R17C9B.Q0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_180 (from ipClk_c)
-ROUTE         3     0.057      R17C9B.Q0 to      R17C9B.D0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/trig_cnt[2]
-CTOF_DEL    ---     0.059      R17C9B.D0 to      R17C9B.F0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_180
-ROUTE         1     0.000      R17C9B.F0 to     R17C9B.DI0 Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/trig_cnt_7[2] (to ipClk_c)
+REG_DEL     ---     0.120    R12C19A.CLK to     R12C19A.Q0 UART_Packets_Inst/UART_Inst/SLICE_87 (from ipClk_c)
+ROUTE         3     0.057     R12C19A.Q0 to     R12C19A.D0 UART_Packets_Inst/UART_Inst/BitsSent[2]
+CTOF_DEL    ---     0.059     R12C19A.D0 to     R12C19A.F0 UART_Packets_Inst/UART_Inst/SLICE_87
+ROUTE         1     0.000     R12C19A.F0 to    R12C19A.DI0 UART_Packets_Inst/UART_Inst/un1_BitsSent_3_axbxc2 (to ipClk_c)
                   --------
                     0.236   (75.8% logic, 24.2% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_180:
+      Source Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_87:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to     R17C9B.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R12C19A.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to Counter_reveal_coretop_instance/counter_la0_inst_0/trig_u/tcnt_0/SLICE_180:
+      Destination Clock Path ipClk to UART_Packets_Inst/UART_Inst/SLICE_87:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       141     0.300       21.PADDI to     R17C9B.CLK ipClk_c
+ROUTE       140     0.300       21.PADDI to    R12C19A.CLK ipClk_c
+                  --------
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.235ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              UART_Packets_Inst/txState[4]  (from ipClk_c +)
+   Destination:    FF         Data in        UART_Packets_Inst/txState[4]  (to ipClk_c +)
+
+   Delay:               0.236ns  (75.8% logic, 24.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.236ns physical path delay UART_Packets_Inst/SLICE_124 to UART_Packets_Inst/SLICE_124 meets
+      0.001ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.001ns) by 0.235ns
+
+ Physical Path Details:
+
+      Data path UART_Packets_Inst/SLICE_124 to UART_Packets_Inst/SLICE_124:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.120    R15C16A.CLK to     R15C16A.Q0 UART_Packets_Inst/SLICE_124 (from ipClk_c)
+ROUTE         2     0.057     R15C16A.Q0 to     R15C16A.D0 UART_Packets_Inst/txState[4]
+CTOF_DEL    ---     0.059     R15C16A.D0 to     R15C16A.F0 UART_Packets_Inst/SLICE_124
+ROUTE         1     0.000     R15C16A.F0 to    R15C16A.DI0 UART_Packets_Inst/N_80_i (to ipClk_c)
+                  --------
+                    0.236   (75.8% logic, 24.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path ipClk to UART_Packets_Inst/SLICE_124:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       140     0.300       21.PADDI to    R15C16A.CLK ipClk_c
+                  --------
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path ipClk to UART_Packets_Inst/SLICE_124:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       140     0.300       21.PADDI to    R15C16A.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1105,16 +1083,10 @@ All preferences were met.
 Clock Domains Analysis
 ------------------------
 
-Found 2 clocks:
+Found 1 clocks:
 
-Clock Domain: jtaghub16_jtck   Source: mg5ahub/genblk0_genblk5_jtage_u.JTCK   Loads: 123
-   No transfer within this clock domain is found
-
-Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 141
+Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 140
    Covered under: FREQUENCY PORT "ipClk" 50.000000 MHz ;
-
-   Data transfers from:
-   Clock Domain: jtaghub16_jtck   Source: mg5ahub/genblk0_genblk5_jtage_u.JTCK
 
 
 Timing summary (Hold):
@@ -1123,7 +1095,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 2526 paths, 1 nets, and 3008 connections (92.55% coverage)
+Constraints cover 2205 paths, 1 nets, and 1270 connections (88.87% coverage)
 
 
 

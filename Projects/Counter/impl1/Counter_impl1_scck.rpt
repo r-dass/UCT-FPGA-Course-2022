@@ -13,7 +13,7 @@ Hostname: AD-DESKTOP
 
 Implementation : impl1
 
-# Written on Sun Jul  3 22:36:36 2022
+# Written on Mon Jul  4 16:42:18 2022
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Counter.fdc"
@@ -40,26 +40,18 @@ set_false_path -to [get_registers *] - - from [get_ports ip*]
 Clock Summary
 *************
 
-          Start                                     Requested     Requested     Clock        Clock                   Clock
-Level     Clock                                     Frequency     Period        Type         Group                   Load 
---------------------------------------------------------------------------------------------------------------------------
-0 -       ipClk                                     50.0 MHz      20.000        declared     default_clkgroup        220  
-                                                                                                                          
-0 -       System                                    200.0 MHz     5.000         system       system_clkgroup         0    
-                                                                                                                          
-0 -       reveal_coretop|jtck_inferred_clock[0]     200.0 MHz     5.000         inferred     Inferred_clkgroup_0     166  
-==========================================================================================================================
+          Start     Requested     Requested     Clock        Clock                Clock
+Level     Clock     Frequency     Period        Type         Group                Load 
+---------------------------------------------------------------------------------------
+0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     290  
+=======================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                          Clock     Source                                                                 Clock Pin                                                                    Non-clock Pin     Non-clock Pin                                                                      
-Clock                                     Load      Pin                                                                    Seq Example                                                                  Seq Example       Comb Example                                                                       
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-ipClk                                     220       ipClk(port)                                                            UART_TxSend.C                                                                -                 -                                                                                  
-                                                                                                                                                                                                                                                                                                             
-System                                    0         -                                                                      -                                                                            -                 -                                                                                  
-                                                                                                                                                                                                                                                                                                             
-reveal_coretop|jtck_inferred_clock[0]     166       Counter_reveal_coretop_instance.jtagconn16_inst_0.jtck(jtagconn16)     Counter_reveal_coretop_instance.counter_la0_inst_0.tm_u.tm_first_rd_d1.C     -                 Counter_reveal_coretop_instance.counter_la0_inst_0.tm_u.genblk4\.un1_jtck.I[0](inv)
-=============================================================================================================================================================================================================================================================================================================
+          Clock     Source          Clock Pin                           Non-clock Pin     Non-clock Pin
+Clock     Load      Pin             Seq Example                         Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------
+ipClk     290       ipClk(port)     RdRegisters\.ClockTicks[31:0].C     -                 -            
+=======================================================================================================

@@ -1,4 +1,4 @@
-# Sun Jul  3 22:36:36 2022
+# Mon Jul  4 16:42:17 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -31,92 +31,59 @@ Reading constraint file: C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counte
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 130MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 130MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 131MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 130MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
 
 @N: FX493 |Applying initial value "00000000" on instance txData[7:0].
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 @N: FX493 |Applying initial value "00000000" on instance rxData[7:0].
-@A: FX681 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":778:4:778:9|Initial value on register txClkCount[9:0] is non-zero which can prevent the register from being packed into a block RAM or DSP.
+@A: FX681 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart.v":55:0:55:5|Initial value on register txClkCount[9:0] is non-zero which can prevent the register from being packed into a block RAM or DSP.
 @N: FX493 |Applying initial value "0000000000" on instance txClkCount[9:0].
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-Encoding state machine rxState[1:0] (in view: work.UART_uniq_1(verilog))
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":135:0:135:5|Removing sequential instance opRxStream\.EoP (in view: work.UART_Packets(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+Encoding state machine rxState[1:0] (in view: work.UART(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0
    00000000000000000000000000000001 -> 1
-@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":843:4:843:9|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
-Encoding state machine txState[1:0] (in view: work.UART_uniq_1(verilog))
+@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart.v":103:0:103:5|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
+Encoding state machine txState[1:0] (in view: work.UART(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0
    00000000000000000000000000000001 -> 1
-@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_rvl.v":778:4:778:9|There are no possible illegal states for state machine txState[1:0] (in view: work.UART_uniq_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart.v":55:0:55:5|There are no possible illegal states for state machine txState[1:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
+Encoding state machine txState[5:0] (in view: work.UART_Packets(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000001
+   00000000000000000000000000000001 -> 000010
+   00000000000000000000000000000010 -> 000100
+   00000000000000000000000000000011 -> 001000
+   00000000000000000000000000000100 -> 010000
+   00000000000000000000000000000101 -> 100000
+@N: FX493 |Applying initial value "1" on instance txState[0].
+@N: FX493 |Applying initial value "0" on instance txState[1].
+@N: FX493 |Applying initial value "0" on instance txState[2].
+@N: FX493 |Applying initial value "0" on instance txState[3].
+@N: FX493 |Applying initial value "0" on instance txState[4].
+@N: FX493 |Applying initial value "0" on instance txState[5].
+Encoding state machine rxState[4:0] (in view: work.UART_Packets(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 00001
+   00000000000000000000000000000001 -> 00010
+   00000000000000000000000000000010 -> 00100
+   00000000000000000000000000000011 -> 01000
+   00000000000000000000000000000100 -> 10000
+@N: FX493 |Applying initial value "1" on instance rxState[0].
+@N: FX493 |Applying initial value "0" on instance rxState[1].
+@N: FX493 |Applying initial value "0" on instance rxState[2].
+@N: FX493 |Applying initial value "0" on instance rxState[3].
+@N: FX493 |Applying initial value "0" on instance rxState[4].
 
 Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
 
@@ -126,22 +93,10 @@ Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapse
 
 Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":97:0:97:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_8s_1s_0s_0s_3s_8s_8s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_gen.v":174:0:174:3|Instance tm_u of partition view:work.rvl_tm_Z3(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1(verilog) has no references to its outputs; instance not removed. 
-@W: BN117 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\impl1\reveal_workspace\tmpreveal\counter_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
 
 Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
 
-@N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Counter 
+@N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Streamer 
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
 
@@ -150,31 +105,22 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0
 Clock Summary
 ******************
 
-          Start                                     Requested     Requested     Clock        Clock                   Clock
-Level     Clock                                     Frequency     Period        Type         Group                   Load 
---------------------------------------------------------------------------------------------------------------------------
-0 -       ipClk                                     50.0 MHz      20.000        declared     default_clkgroup        220  
-                                                                                                                          
-0 -       System                                    200.0 MHz     5.000         system       system_clkgroup         0    
-                                                                                                                          
-0 -       reveal_coretop|jtck_inferred_clock[0]     200.0 MHz     5.000         inferred     Inferred_clkgroup_0     166  
-==========================================================================================================================
+          Start     Requested     Requested     Clock        Clock                Clock
+Level     Clock     Frequency     Period        Type         Group                Load 
+---------------------------------------------------------------------------------------
+0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     290  
+=======================================================================================
 
 
 
 Clock Load Summary
 ***********************
 
-                                          Clock     Source                                                                 Clock Pin                                                                    Non-clock Pin     Non-clock Pin                                                                      
-Clock                                     Load      Pin                                                                    Seq Example                                                                  Seq Example       Comb Example                                                                       
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-ipClk                                     220       ipClk(port)                                                            UART_TxSend.C                                                                -                 -                                                                                  
-                                                                                                                                                                                                                                                                                                             
-System                                    0         -                                                                      -                                                                            -                 -                                                                                  
-                                                                                                                                                                                                                                                                                                             
-reveal_coretop|jtck_inferred_clock[0]     166       Counter_reveal_coretop_instance.jtagconn16_inst_0.jtck(jtagconn16)     Counter_reveal_coretop_instance.counter_la0_inst_0.tm_u.tm_first_rd_d1.C     -                 Counter_reveal_coretop_instance.counter_la0_inst_0.tm_u.genblk4\.un1_jtck.I[0](inv)
-=============================================================================================================================================================================================================================================================================================================
-
+          Clock     Source          Clock Pin                           Non-clock Pin     Non-clock Pin
+Clock     Load      Pin             Seq Example                         Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------
+ipClk     290       ipClk(port)     RdRegisters\.ClockTicks[31:0].C     -                 -            
+=======================================================================================================
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -187,16 +133,15 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-2 non-gated/non-generated clock tree(s) driving 386 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 290 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-=============================================== Non-Gated/Non-Generated Clocks ================================================
-Clock Tree ID     Driving Element                                            Drive Element Type     Fanout     Sample Instance 
--------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_0       ipClk                                                      port                   220        UART_TxData[7:0]
-@KP:ckid0_1       Counter_reveal_coretop_instance.jtagconn16_inst_0.jtck     jtagconn16             166        ENCRYPTED       
-===============================================================================================================================
+================================== Non-Gated/Non-Generated Clocks ===================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance              
+-----------------------------------------------------------------------------------------------------
+@KP:ckid0_0       ipClk               port                   290        RdRegisters\.ClockTicks[31:0]
+=====================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -207,17 +152,17 @@ Finished Pre Mapping Phase.
 Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 177MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 177MB peak: 177MB)
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 177MB peak: 177MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 97MB peak: 178MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 95MB peak: 178MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Sun Jul  3 22:36:38 2022
+# Mon Jul  4 16:42:20 2022
 
 ###########################################################]

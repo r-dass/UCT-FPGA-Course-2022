@@ -13,11 +13,11 @@ Hostname: AD-DESKTOP
 
 Implementation : impl1
 
-# Written on Sun Jul  3 22:36:38 2022
+# Written on Mon Jul  4 16:42:19 2022
 
 ##### DESIGN INFO #######################################################
 
-Top View:                "Counter"
+Top View:                "Streamer"
 Constraint File(s):      "C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Counter.fdc"
 
 
@@ -35,18 +35,10 @@ Found 4 issues in 4 out of 6 constraints
 Clock Relationships
 *******************
 
-Starting                                  Ending                                    |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                    System                                    |     5.000            |     No paths         |     No paths         |     No paths                         
-System                                    ipClk                                     |     20.000           |     No paths         |     No paths         |     No paths                         
-System                                    reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     No paths         |     5.000            |     No paths                         
-ipClk                                     System                                    |     20.000           |     No paths         |     No paths         |     No paths                         
-ipClk                                     ipClk                                     |     20.000           |     No paths         |     No paths         |     No paths                         
-ipClk                                     reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     No paths         |     Diff grp         |     No paths                         
-reveal_coretop|jtck_inferred_clock[0]     System                                    |     No paths         |     No paths         |     No paths         |     5.000                            
-reveal_coretop|jtck_inferred_clock[0]     ipClk                                     |     No paths         |     No paths         |     No paths         |     Diff grp                         
-reveal_coretop|jtck_inferred_clock[0]     reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     5.000            |     No paths         |     No paths                         
-===============================================================================================================================================================================================
+Starting     Ending     |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------
+ipClk        ipClk      |     20.000           |     No paths         |     No paths         |     No paths                         
+===================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -54,8 +46,12 @@ reveal_coretop|jtck_inferred_clock[0]     reveal_coretop|jtck_inferred_clock[0] 
 Unconstrained Start/End Points
 ******************************
 
-p:ipReset
+p:ipButtons[0]
+p:ipButtons[1]
+p:ipButtons[2]
+p:ipButtons[3]
 p:ipUART_Rx
+p:ipnReset
 p:opLED[0]
 p:opLED[1]
 p:opLED[2]
