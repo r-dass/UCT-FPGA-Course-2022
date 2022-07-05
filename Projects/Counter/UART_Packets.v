@@ -133,11 +133,14 @@ end
 
 // TODO: Implement the Rx stream
 always @(posedge(ipClk)) begin
-    if (!ipReset) begin
+ if (!ipReset) begin
         case(rxState) 
         ReceiveSync: begin
             opRxStream.Valid <= 0;
-            if (UART_RxValid && (UART_RxData == 'h55)) begin
+			BytesReceived <= 0;
+			opRxStream.EoP <= 0;
+			
+            if (UART_RxValid && (UART_RxData == 8'h55)) begin
                 rxState <= ReceiveDestination;
             end
         end
@@ -160,24 +163,18 @@ always @(posedge(ipClk)) begin
             end
         end
         ReceivePayload: begin
-            if (UART_RxValid) begin
-                opRxStream.Data <= UART_RxData;
-                if (BytesReceived == 0) begin
-                    opRxStream.SoP <=1;
-                end 
-                if (BytesReceived == 1) begin
-                    opRxStream.SoP <= 0;
-                end 
-                if (BytesReceived == opRxStream.Length - 1) begin
-                    opRxStream.EoP <=1;
-                end
-                if (BytesReceived == opRxStream.Length) begin
-                    opRxStream.EoP <= 0;
-                    opRxStream.Valid <=1;
-                    rxState <= ReceiveSync;
-                end
-                BytesReceived <= BytesReceived + 1;
-            end 
+				opRxStream.SoP <= 1;
+				if(UART_RxValid) begin
+					opRxStream.Data  <= UART_RxData;
+					opRxStream.Valid <= 1;
+					if(BytesReceived == 1)
+						opRxStream.SoP <= 0;
+					else if(BytesReceived == opRxStream.Length - 1) begin
+						rxState <= ReceiveSync;
+					end
+					BytesReceived <= BytesReceived + 1;
+				end else 
+					opRxStream.Valid <= 0;
         end
         default:;   
         endcase
