@@ -24,7 +24,7 @@ set_option -force_gsr false
 set_option -compiler_compatible 0
 set_option -dup false
 
-add_file -constraint {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.fdc}
+add_file -constraint {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.fdc}
 set_option -default_enum_encoding default
 
 #simulation options
@@ -46,19 +46,19 @@ set_option -vhdl2008 1
 set_option -seqshift_no_replicate 0
 
 #-- add_file options
-set_option -include_path {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter}
-add_file -verilog -vlog_std sysv {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART.v}
-add_file -verilog -vlog_std sysv {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v}
-add_file -verilog -vlog_std sysv {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v}
-add_file -verilog -vlog_std sysv {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v}
-add_file -verilog -vlog_std sysv {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Controller.v}
-add_file -verilog -vlog_std sysv {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v}
+set_option -include_path {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter}
+add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART.v}
+add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v}
+add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v}
+add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v}
+add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Controller.v}
+add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v}
 
 #-- top module name
 set_option -top_module Streamer
 
 #-- set result format/file last
-project -result_file {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/impl1/Counter_impl1.edi}
+project -result_file {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1/Counter_impl1.edi}
 
 #-- error message log file
 project -log_file {Counter_impl1.srf}

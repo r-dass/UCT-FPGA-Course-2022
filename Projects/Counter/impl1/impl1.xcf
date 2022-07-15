@@ -19,10 +19,10 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/impl1/Counter_impl1.jed</File>
+			<File>C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1/Counter_impl1.jed</File>
 			<MaskFile>C:/lscc/diamond/3.12/data/vmdata/database\xpga\xp2\lfxp2-5.msk</MaskFile>
-			<FileTime>07/01/22 20:28:35</FileTime>
-			<JedecChecksum>0x5FD3</JedecChecksum>
+			<FileTime>07/13/22 17:25:58</FileTime>
+			<JedecChecksum>0xB723</JedecChecksum>
 			<Operation>SRAM Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

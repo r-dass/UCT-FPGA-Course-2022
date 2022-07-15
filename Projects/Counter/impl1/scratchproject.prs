@@ -1,27 +1,27 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
-#--  Project file C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\scratchproject.prs
+#--  Project file C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\scratchproject.prs
 
 #project files
-add_file -fpga_constraint "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.fdc"
-add_file -verilog -vlog_std sysv "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART.v"
-add_file -verilog -vlog_std sysv "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v"
-add_file -verilog -vlog_std sysv "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v"
-add_file -verilog -vlog_std sysv "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v"
-add_file -verilog -vlog_std sysv "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Controller.v"
-add_file -verilog -vlog_std sysv "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v"
+add_file -fpga_constraint "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.fdc"
+add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART.v"
+add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v"
+add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v"
+add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v"
+add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Controller.v"
+add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v"
 
 
 #implementation: "impl1"
-impl -add C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1 -type fpga
+impl -add C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1 -type fpga
 
 #
 #implementation attributes
 
 set_option -vlog_std sysv
 set_option -project_relative_includes 1
-set_option -include_path {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/impl1/}
-set_option -include_path {C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter}
+set_option -include_path {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1/}
+set_option -include_path {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter}
 
 #device options
 set_option -technology LATTICE-XP2
@@ -79,8 +79,8 @@ set_option -vhdl2008 1
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/impl1/Counter_impl1.edi"
+project -result_file "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1/Counter_impl1.edi"
 
 #set log file 
-set_option log_file "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/impl1/Counter_impl1.srf" 
+set_option log_file "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1/Counter_impl1.srf" 
 impl -active "impl1"

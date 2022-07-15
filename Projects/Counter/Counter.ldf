@@ -2,9 +2,9 @@
 <BaliProject version="3.2" title="Counter" device="LFXP2-5E-6TN144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options VerilogStandard="System Verilog" def_top="UART_Packets"/>
+        <Options VerilogStandard="System Verilog" def_top="Controller"/>
         <Source name="Counter.v" type="Verilog" type_short="Verilog">
-            <Options top_module="Counter"/>
+            <Options/>
         </Source>
         <Source name="UART.v" type="Verilog" type_short="Verilog">
             <Options/>
@@ -19,7 +19,7 @@
             <Options top_module="UART_Packets"/>
         </Source>
         <Source name="Controller.v" type="Verilog" type_short="Verilog">
-            <Options/>
+            <Options top_module="Controller"/>
         </Source>
         <Source name="Counter_TB.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>

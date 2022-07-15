@@ -4,10 +4,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Jul 04 16:42:46 2022
+Wed Jul 13 17:25:55 2022
 
 
-Command: bitgen -g RamCfg:Reset -g DisableUES:FALSE -g TAG_MEMORY:Normal -w -jedec -e -s C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.sec -k C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.bek -gui -msgset C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/promote.xml Counter_impl1.ncd Counter_impl1.prf 
+Command: bitgen -g RamCfg:Reset -g DisableUES:FALSE -g TAG_MEMORY:Normal -w -jedec -e -s C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.sec -k C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.bek -gui -msgset C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/promote.xml Counter_impl1.ncd Counter_impl1.prf 
 
 Loading design for application Bitgen from file Counter_impl1.ncd.
 Design name: Streamer
@@ -60,6 +60,6 @@ Preference Summary:
 
 Creating bit map...
 Saving bit stream in "Counter_impl1.jed".
-Total CPU Time: 0 secs 
+Total CPU Time: 3 secs 
 Total REAL Time: 3 secs 
-Peak Memory Usage: 278 MB
+Peak Memory Usage: 277 MB

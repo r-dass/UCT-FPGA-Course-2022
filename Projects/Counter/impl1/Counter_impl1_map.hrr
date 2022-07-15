@@ -3,52 +3,52 @@ Report for cell Streamer
    Instance path: Streamer
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     208.00        100.0
+                                  SLIC	     214.00        100.0
                                  IOLGC	       2.00        100.0
-                                  LUT4	     215.00        100.0
+                                  LUT4	     220.00        100.0
                                  IOREG	          2        100.0
                                  IOBUF	         16        100.0
-                                PFUREG	        258        100.0
-                                RIPPLE	         32        100.0
+                                PFUREG	        259        100.0
+                                RIPPLE	         38        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          UART_Packets	          1        52.2
-                             Registers	          1        16.6
-                            Controller	          1        21.8
+                          UART_Packets	          1        52.3
+                             Registers	          1        16.1
+                            Controller	          1        22.4
 ---------------------------------------------------
 Report for cell Registers
    Instance path: Streamer/Registers_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      34.50        16.6
-                                  LUT4	      24.00        11.2
-                                PFUREG	         41        15.9
+                                  SLIC	      34.50        16.1
+                                  LUT4	      24.00        10.9
+                                PFUREG	         41        15.8
 ---------------------------------------------------
 Report for cell Controller
    Instance path: Streamer/RegistersControl_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      45.33        21.8
-                                  LUT4	      58.00        27.0
-                                PFUREG	         71        27.5
+                                  SLIC	      48.00        22.4
+                                  LUT4	      61.00        27.7
+                                PFUREG	         71        27.4
 ---------------------------------------------------
 Report for cell UART_Packets
    Instance path: Streamer/UART_Packets_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     108.67        52.2
-                                  LUT4	     130.00        60.5
-                                PFUREG	        114        44.2
-                                RIPPLE	         15        46.9
+                                  SLIC	     112.00        52.3
+                                  LUT4	     132.00        60.0
+                                PFUREG	        115        44.4
+                                RIPPLE	         21        55.3
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                  UART	          1        26.4
+                                  UART	          1        25.9
 ---------------------------------------------------
 Report for cell UART
    Instance path: Streamer/UART_Packets_Inst/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      55.00        26.4
-                                  LUT4	      74.00        34.4
-                                PFUREG	         56        21.7
-                                RIPPLE	         12        37.5
+                                  SLIC	      55.50        25.9
+                                  LUT4	      74.00        33.6
+                                PFUREG	         56        21.6
+                                RIPPLE	         12        31.6

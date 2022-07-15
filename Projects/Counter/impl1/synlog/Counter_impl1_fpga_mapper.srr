@@ -1,4 +1,4 @@
-# Mon Jul  4 16:42:20 2022
+# Wed Jul 13 17:25:22 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -11,41 +11,41 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: AD-DESKTOP
+Hostname: RD-LAPTOP
 
 Implementation : impl1
 Synopsys Lattice Technology Mapper, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
 
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 118MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
 
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 129MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 128MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 129MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 128MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 169MB peak: 169MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
 
-@N: MF179 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":174:20:174:54|Found 8 by 8 bit equality operator ('==') opRxStream\.EoP10 (in view: work.UART_Packets(verilog))
+@N: MF179 :|Found 9 by 9 bit equality operator ('==') un1_BytesReceived_3 (in view: work.UART_Packets(verilog))
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\controller.v":33:0:33:5|Removing sequential instance State[5] (in view: work.Controller(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\controller.v":33:0:33:5|Removing sequential instance State[4] (in view: work.Controller(verilog)) because it does not drive other instances.
@@ -78,61 +78,63 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\controller.v":33:0:33:5|Removing sequential instance State[22] (in view: work.Controller(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\controller.v":33:0:33:5|Removing sequential instance State[21] (in view: work.Controller(verilog)) because it does not drive other instances.
 
-Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 179MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+
+@N: FA113 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":172:13:172:51|Pipelining module un1_BytesReceived_3. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":135:0:135:5|Pushed in register opRxStream\\\[Length\\\].
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 178MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 179MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 178MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 180MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 178MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 180MB)
+Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 178MB peak: 178MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 180MB)
-
-
-Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 178MB peak: 178MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		    14.81ns		 215 /       260
+   1		0h:00m:03s		    14.81ns		 219 /       261
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 181MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 178MB peak: 179MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @A: BN291 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart.v":55:0:55:5|Boundary register UART_Packets_Inst.UART_Inst.opTx.fb (in view: work.Streamer(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 181MB peak: 181MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 179MB peak: 179MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 181MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 143MB peak: 179MB)
 
-Writing Analyst data base C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_m.srm
+Writing Analyst data base C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 182MB peak: 182MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 179MB peak: 179MB)
 
 Writing EDIF Netlist and constraint files
-@N: FX1056 |Writing EDF file: C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1.edi
+@N: FX1056 |Writing EDF file: C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 187MB peak: 187MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 184MB peak: 184MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 185MB peak: 187MB)
+Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 183MB peak: 185MB)
 
 @N: MT615 |Found clock ipClk with period 20.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon Jul  4 16:42:25 2022
+# Timing report written on Wed Jul 13 17:25:29 2022
 #
 
 
@@ -140,7 +142,7 @@ Top view:               Streamer
 Requested Frequency:    50.0 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Counter.fdc
+Constraint File(s):    C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.fdc
                        
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
@@ -206,8 +208,8 @@ UART_Packets_Inst.UART_Inst.rxClkCount[6]     ipClk         FD1P3AX     Q       
 UART_Packets_Inst.UART_Inst.rxClkCount[7]     ipClk         FD1P3AX     Q       rxClkCount[7]        0.929       14.525
 UART_Packets_Inst.UART_Inst.rxClkCount[8]     ipClk         FD1P3AX     Q       rxClkCount[8]        0.929       14.525
 UART_Packets_Inst.UART_Inst.rxClkCount[9]     ipClk         FD1P3AX     Q       rxClkCount[9]        0.929       14.525
-UART_Packets_Inst.BytesReceived[0]            ipClk         FD1S3IX     Q       BytesReceived[0]     1.067       14.580
-UART_Packets_Inst.BytesReceived[1]            ipClk         FD1S3IX     Q       BytesReceived[1]     1.035       14.612
+UART_Packets_Inst.BytesReceived[0]            ipClk         FD1S3IX     Q       BytesReceived[0]     1.035       14.677
+UART_Packets_Inst.BytesReceived[1]            ipClk         FD1S3IX     Q       BytesReceived[1]     1.035       14.677
 =======================================================================================================================
 
 
@@ -219,7 +221,8 @@ Instance                                        Reference     Type        Pin   
                                                 Clock                                                                              
 -----------------------------------------------------------------------------------------------------------------------------------
 UART_Packets_Inst.UART_Inst.BitsReceived[3]     ipClk         FD1S3IX     D       un1_BitsReceived_4_axbxc3     19.389       14.525
-UART_Packets_Inst.rxState[0]                    ipClk         FD1S3AY     D       N_206_i                       19.389       14.580
+UART_Packets_Inst.rxState[0]                    ipClk         FD1S3AY     D       N_82_i                        19.389       14.677
+UART_Packets_Inst.rxState[4]                    ipClk         FD1S3AX     D       N_89_i                        19.389       14.677
 UART_Packets_Inst.UART_Inst.rxData[0]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
 UART_Packets_Inst.UART_Inst.rxData[1]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
 UART_Packets_Inst.UART_Inst.rxData[2]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
@@ -227,7 +230,6 @@ UART_Packets_Inst.UART_Inst.rxData[3]           ipClk         FD1P3AX     SP    
 UART_Packets_Inst.UART_Inst.rxData[4]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
 UART_Packets_Inst.UART_Inst.rxData[5]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
 UART_Packets_Inst.UART_Inst.rxData[6]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
-UART_Packets_Inst.UART_Inst.rxData[7]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
 ===================================================================================================================================
 
 
@@ -266,10 +268,10 @@ rxClkBaud                                                 Net          -        
 UART_Packets_Inst.UART_Inst.un1_opRxValid20_1             ORCALUT4     C        In      0.000     2.730 f     -         
 UART_Packets_Inst.UART_Inst.un1_opRxValid20_1             ORCALUT4     Z        Out     0.965     3.695 r     -         
 un1_opRxValid20_1                                         Net          -        -       -         -           5         
-UART_Packets_Inst.UART_Inst.un1_BitsReceived_4_ac0_1      ORCALUT4     C        In      0.000     3.695 r     -         
-UART_Packets_Inst.UART_Inst.un1_BitsReceived_4_ac0_1      ORCALUT4     Z        Out     0.754     4.449 f     -         
-un1_BitsReceived_4_c2                                     Net          -        -       -         -           1         
-UART_Packets_Inst.UART_Inst.un1_BitsReceived_4_axbxc3     ORCALUT4     C        In      0.000     4.449 f     -         
+UART_Packets_Inst.UART_Inst.un1_BitsReceived_4_ac0        ORCALUT4     B        In      0.000     3.695 r     -         
+UART_Packets_Inst.UART_Inst.un1_BitsReceived_4_ac0        ORCALUT4     Z        Out     0.754     4.449 f     -         
+un1_BitsReceived_4_c1                                     Net          -        -       -         -           1         
+UART_Packets_Inst.UART_Inst.un1_BitsReceived_4_axbxc3     ORCALUT4     D        In      0.000     4.449 f     -         
 UART_Packets_Inst.UART_Inst.un1_BitsReceived_4_axbxc3     ORCALUT4     Z        Out     0.415     4.864 r     -         
 un1_BitsReceived_4_axbxc3                                 Net          -        -       -         -           1         
 UART_Packets_Inst.UART_Inst.BitsReceived[3]               FD1S3IX      D        In      0.000     4.864 r     -         
@@ -281,24 +283,25 @@ UART_Packets_Inst.UART_Inst.BitsReceived[3]               FD1S3IX      D        
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 185MB peak: 187MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 183MB peak: 185MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 185MB peak: 187MB)
+Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 183MB peak: 185MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lfxp2_5e-6
 
-Register bits: 260 of 4752 (5%)
+Register bits: 261 of 4752 (5%)
 PIC Latch:       0
 I/O cells:       16
 
 
 Details:
-CCU2B:          32
-FD1P3AX:        113
-FD1P3IX:        43
+CCU2B:          38
+FD1P3AX:        121
+FD1P3IX:        35
+FD1P3JX:        1
 FD1S3AX:        30
 FD1S3AY:        2
 FD1S3IX:        70
@@ -308,15 +311,15 @@ IFS1P3IX:       1
 INV:            11
 OB:             9
 OFS1P3JX:       1
-ORCALUT4:       201
+ORCALUT4:       206
 PUR:            1
 VHI:            5
 VLO:            5
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 69MB peak: 187MB)
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 66MB peak: 185MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:02s cputime
-# Mon Jul  4 16:42:26 2022
+Process took 0h:00m:07s realtime, 0h:00m:05s cputime
+# Wed Jul 13 17:25:29 2022
 
 ###########################################################]

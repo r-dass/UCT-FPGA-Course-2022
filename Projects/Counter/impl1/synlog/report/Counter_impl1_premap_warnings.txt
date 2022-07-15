@@ -2,6 +2,6 @@
 @W:"c:/users/reeve/git/uct-fpga-course-2022/projects/counter/counter.fdc":7:0:7:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
 @W:"c:/users/reeve/git/uct-fpga-course-2022/projects/counter/counter.fdc":8:0:8:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
 @W:"c:/users/reeve/git/uct-fpga-course-2022/projects/counter/counter.fdc":9:0:9:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
-@W: MF499 |Found issues with constraints. Check report file C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_scck.rpt.
+@W: MF499 |Found issues with constraints. Check report file C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_scck.rpt.
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
-@W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt" .
+@W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt" .

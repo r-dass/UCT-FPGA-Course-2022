@@ -4,9 +4,9 @@
         <Message>
             <ID>1100679</ID>
             <Severity>Warning</Severity>
-            <Dynamic>C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.lpf(22): Semantic error in &quot;LOCATE COMP &quot;ipReset&quot; SITE &quot;19&quot; ;&quot;: </Dynamic>
+            <Dynamic>C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.lpf(22): Semantic error in &quot;LOCATE COMP &quot;ipReset&quot; SITE &quot;19&quot; ;&quot;: </Dynamic>
             <Dynamic>ipReset</Dynamic>
-            <Navigation>C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.lpf</Navigation>
+            <Navigation>C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.lpf</Navigation>
             <Navigation>22</Navigation>
         </Message>
     </Task>
@@ -18,9 +18,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:31:10:31:18|Object BytesRead is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:31:10:31:18|Object BytesRead is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
             <Navigation>31</Navigation>
             <Navigation>10</Navigation>
             <Navigation>31</Navigation>
@@ -30,9 +30,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL271 :&quot;C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:33:0:33:5|Pruning unused bits 31 to 1 of tState[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL271 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:33:0:33:5|Pruning unused bits 31 to 1 of tState[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL271</Navigation>
-            <Navigation>C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
             <Navigation>33</Navigation>
             <Navigation>0</Navigation>
             <Navigation>33</Navigation>
@@ -42,9 +42,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL246 :&quot;C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v&quot;:17:22:17:29|Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
+            <Dynamic>CL246 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v&quot;:17:22:17:29|Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
             <Navigation>CL246</Navigation>
-            <Navigation>C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v</Navigation>
             <Navigation>17</Navigation>
             <Navigation>22</Navigation>
             <Navigation>17</Navigation>
@@ -54,9 +54,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL246 :&quot;C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:14:21:14:30|Input port bits 18 to 11 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
+            <Dynamic>CL246 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:14:21:14:30|Input port bits 18 to 11 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
             <Navigation>CL246</Navigation>
-            <Navigation>C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
             <Navigation>14</Navigation>
             <Navigation>21</Navigation>
             <Navigation>14</Navigation>
@@ -66,9 +66,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL247 :&quot;C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:14:21:14:30|Input port bit 9 of ipRxStream[34:0] is unused</Dynamic>
+            <Dynamic>CL247 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:14:21:14:30|Input port bit 9 of ipRxStream[34:0] is unused</Dynamic>
             <Navigation>CL247</Navigation>
-            <Navigation>C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
             <Navigation>14</Navigation>
             <Navigation>21</Navigation>
             <Navigation>14</Navigation>
@@ -78,9 +78,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL247 :&quot;C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v&quot;:8:21:8:30|Input port bit 10 of ipTxStream[34:0] is unused</Dynamic>
+            <Dynamic>CL247 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v&quot;:8:21:8:30|Input port bit 10 of ipTxStream[34:0] is unused</Dynamic>
             <Navigation>CL247</Navigation>
-            <Navigation>C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v</Navigation>
             <Navigation>8</Navigation>
             <Navigation>21</Navigation>
             <Navigation>8</Navigation>
@@ -138,9 +138,9 @@
         <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MF499 |Found issues with constraints. Check report file C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_scck.rpt.</Dynamic>
+            <Dynamic>MF499 |Found issues with constraints. Check report file C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_scck.rpt.</Dynamic>
             <Navigation>MF499</Navigation>
-            <Navigation>Found issues with constraints. Check report file C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_scck.rpt.</Navigation>
+            <Navigation>Found issues with constraints. Check report file C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_scck.rpt.</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>
@@ -152,9 +152,9 @@
         <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MF511 |Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Dynamic>
+            <Dynamic>MF511 |Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Dynamic>
             <Navigation>MF511</Navigation>
-            <Navigation>Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Navigation>
+            <Navigation>Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>

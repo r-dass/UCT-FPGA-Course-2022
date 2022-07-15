@@ -9,16 +9,16 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: AD-DESKTOP
+Hostname: RD-LAPTOP
 
 Implementation : impl1
 
-# Written on Mon Jul  4 16:42:19 2022
+# Written on Wed Jul 13 17:25:22 2022
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "Streamer"
-Constraint File(s):      "C:\Users\reeve\Git\UCT-FPGA-Course-2022\Projects\Counter\Counter.fdc"
+Constraint File(s):      "C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.fdc"
 
 
 

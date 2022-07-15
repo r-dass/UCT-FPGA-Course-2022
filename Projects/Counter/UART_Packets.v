@@ -55,21 +55,26 @@ TransmitPayload
 } tState;
 tState txState;
 
+UART_PACKET BufferPacket;
+
 reg[2:0] BytesReceived;
 //------------------------------------------------------------------------------
 
 // TODO: Implement the Tx stream
 // Transition Logic Broken
 always @(posedge(ipClk)) begin
-    if (!ipReset) begin
+         if (!ipReset) begin
         case(txState) 
-            Wait: begin
+            TransmitWait: begin
                 if (!UART_TxBusy && !ipTxStream.Valid) begin
                     opTxReady <= 1;
                 end else begin
                     opTxReady <= 0;
-                    txState <= TransmitSync; 
-                end
+					if (ipTxStream.Valid) begin
+						txBuffer <= ipTxStream;
+						txState <= TransmitSync; 
+						end
+                end 
             end
             TransmitSync: begin
                 if (!UART_TxBusy && !UART_TxSend) begin
@@ -82,7 +87,7 @@ always @(posedge(ipClk)) begin
             end
             TransmitDestination: begin
                 if (!UART_TxBusy && !UART_TxSend) begin
-                    UART_TxData <= ipTxStream.Destination;
+                    UART_TxData <= txBuffer.Destination;
                     UART_TxSend <= 1;
                 end else if (UART_TxBusy && UART_TxSend) begin
                     UART_TxSend <= 0;
@@ -91,7 +96,7 @@ always @(posedge(ipClk)) begin
             end
             TransmitSource: begin
                 if (!UART_TxBusy && !UART_TxSend) begin
-                    UART_TxData <= ipTxStream.Source;
+                    UART_TxData <= txBuffer.Source;
                     UART_TxSend <= 1;
                 end else if (UART_TxBusy && UART_TxSend) begin
                     UART_TxSend <= 0;
@@ -100,40 +105,48 @@ always @(posedge(ipClk)) begin
             end
             TransmitLength: begin
                 if (!UART_TxBusy && !UART_TxSend) begin
-                    UART_TxData <= ipTxStream.Length;
+                    UART_TxData <= txBuffer.Length;
                     UART_TxSend <= 1;
                 end else if (UART_TxBusy && UART_TxSend) begin
                     UART_TxSend <= 0;
                     txState <= TransmitPayload;
                 end
             end
-            TransmitPayload: begin
-                if (!UART_TxBusy && !UART_TxSend) begin
-                    UART_TxData <= ipTxStream.Data;
-                    UART_TxSend <= 1;
-                end else if (UART_TxBusy && UART_TxSend) begin
-                    UART_TxSend <= 0;
-                    if (ipTxStream.EoP) begin
-                        txState <= TransmitDestination;
-                    end
-                end
+            TransmitPayload: begin	
+				if (!UART_TxBusy && !UART_TxSend) begin
+					if (txBuffer.Valid) begin
+						UART_TxData <= txBuffer.Data;
+						UART_TxSend <= 1;
+						opTxReady   <= 1; 
+					end
+				end	else begin
+					if (UART_TxBusy && UART_TxSend) begin
+						UART_TxSend <= 0;
+						if (txBuffer.EoP && opTxReady) begin
+							opTxReady <= 0;
+							txState <= TransmitWait;
+						end
+					end
+					if (ipTxStream.Valid && opTxReady) begin
+						txBuffer <= ipTxStream;	
+						opTxReady <= 0;
+					end
+				end
             end
             default:;   
         endcase
     end else begin
 		opTxReady <= 0;
-	 
 		UART_TxData <= 0;
 		UART_TxSend <= 0;
-		
-        txState <= Wait;
-    end 
+        txState <= TransmitWait;
+    end
 end
 //------------------------------------------------------------------------------
 
 // TODO: Implement the Rx stream
 always @(posedge(ipClk)) begin
- if (!ipReset) begin
+if (!ipReset) begin
         case(rxState) 
         ReceiveSync: begin
             opRxStream.Valid <= 0;

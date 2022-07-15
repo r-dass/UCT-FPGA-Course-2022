@@ -6,16 +6,16 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.42
 
-Mon Jul 04 16:42:38 2022
+Wed Jul 13 17:25:45 2022
 
 Pinout by Port Name:
 +--------------+----------+--------------+-------+-------------------------------+
 | Port Name    | Pin/Bank | Buffer Type  | Site  | Properties                    |
 +--------------+----------+--------------+-------+-------------------------------+
-| ipButtons[0] | 52/5     | LVCMOS25_IN  | PB16B | SLEW:FAST PULL:UP             |
-| ipButtons[1] | 50/5     | LVCMOS25_IN  | PB16A | SLEW:FAST PULL:UP             |
-| ipButtons[2] | 48/5     | LVCMOS25_IN  | PB14B | SLEW:FAST PULL:UP             |
-| ipButtons[3] | 47/5     | LVCMOS25_IN  | PB15B | SLEW:FAST PULL:UP             |
+| ipButtons[0] | 29/6     | LVCMOS25_IN  | PL15B | SLEW:FAST PULL:UP             |
+| ipButtons[1] | 28/6     | LVCMOS25_IN  | PL14A | SLEW:FAST PULL:UP             |
+| ipButtons[2] | 31/6     | LVCMOS25_IN  | PL16B | SLEW:FAST PULL:UP             |
+| ipButtons[3] | 27/6     | LVCMOS25_IN  | PL15A | SLEW:FAST PULL:UP             |
 | ipClk        | 21/7     | LVCMOS33_IN  | PL12A | SLEW:FAST PULL:UP             |
 | ipUART_Rx    | 110/1    | LVCMOS25_IN  | PT28A | SLEW:FAST PULL:UP             |
 | ipnReset     | 88/2     | LVCMOS25_IN  | PR12A | SLEW:FAST PULL:UP             |
@@ -37,6 +37,7 @@ Vccio by Bank:
 | 1    | 2.5V  |
 | 2    |       |
 | 5    | 3.3V  |
+| 6    |       |
 | 7    |       |
 +------+-------+
 
@@ -68,11 +69,11 @@ Pinout by Pin Number:
 | 20/7     |     unused, PULL:UP |            |              | PL11B | INITN/LDQ9           |
 | 21/7     | ipClk               | LOCATED    | LVCMOS33_IN  | PL12A | PCLKT7_0/LDQ9        |
 | 22/7     |     unused, PULL:UP |            |              | PL12B | PCLKC7_0/LDQ9        |
-| 27/6     |     unused, PULL:UP |            |              | PL15A | LDQ18                |
-| 28/6     |     unused, PULL:UP |            |              | PL14A | PCLKT6_0/LDQ18       |
-| 29/6     |     unused, PULL:UP |            |              | PL15B | LDQ18                |
+| 27/6     | ipButtons[3]        |            | LVCMOS25_IN  | PL15A | LDQ18                |
+| 28/6     | ipButtons[1]        |            | LVCMOS25_IN  | PL14A | PCLKT6_0/LDQ18       |
+| 29/6     | ipButtons[0]        |            | LVCMOS25_IN  | PL15B | LDQ18                |
 | 30/6     |     unused, PULL:UP |            |              | PL14B | PCLKC6_0/LDQ18       |
-| 31/6     |     unused, PULL:UP |            |              | PL16B | LDQ18                |
+| 31/6     | ipButtons[2]        |            | LVCMOS25_IN  | PL16B | LDQ18                |
 | 32/6     |     unused, PULL:UP |            |              | PL16A | LDQ18                |
 | 35/6     |     unused, PULL:UP |            |              | PL25A | VREF1_6              |
 | 36/6     |     unused, PULL:UP |            |              | PL25B | VREF2_6              |
@@ -84,10 +85,10 @@ Pinout by Pin Number:
 | 44/5     | opLED[2]            | LOCATED    | LVCMOS33_OUT | PB13A | BDQ15                |
 | 45/5     | opLED[1]            | LOCATED    | LVCMOS33_OUT | PB15A | BDQS15               |
 | 46/5     | opLED[0]            | LOCATED    | LVCMOS33_OUT | PB14A | BDQ15                |
-| 47/5     | ipButtons[3]        |            | LVCMOS25_IN  | PB15B | BDQ15                |
-| 48/5     | ipButtons[2]        |            | LVCMOS25_IN  | PB14B | BDQ15                |
-| 50/5     | ipButtons[1]        |            | LVCMOS25_IN  | PB16A | BDQ15                |
-| 52/5     | ipButtons[0]        |            | LVCMOS25_IN  | PB16B | BDQ15                |
+| 47/5     |     unused, PULL:UP |            |              | PB15B | BDQ15                |
+| 48/5     |     unused, PULL:UP |            |              | PB14B | BDQ15                |
+| 50/5     |     unused, PULL:UP |            |              | PB16A | BDQ15                |
+| 52/5     |     unused, PULL:UP |            |              | PB16B | BDQ15                |
 | 53/5     |     unused, PULL:UP |            |              | PB17A | BDQ15                |
 | 54/5     |     unused, PULL:UP |            |              | PB17B | BDQ15                |
 | 55/5     |     unused, PULL:UP |            |              | PB18A | BDQ15                |
@@ -256,10 +257,10 @@ Pinout by Pin Number:
 List of All Pins' Locate Preferences Based on Final Placement After PAR 
 to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
 
-LOCATE  COMP  "ipButtons[0]"  SITE  "52";
-LOCATE  COMP  "ipButtons[1]"  SITE  "50";
-LOCATE  COMP  "ipButtons[2]"  SITE  "48";
-LOCATE  COMP  "ipButtons[3]"  SITE  "47";
+LOCATE  COMP  "ipButtons[0]"  SITE  "29";
+LOCATE  COMP  "ipButtons[1]"  SITE  "28";
+LOCATE  COMP  "ipButtons[2]"  SITE  "31";
+LOCATE  COMP  "ipButtons[3]"  SITE  "27";
 LOCATE  COMP  "ipClk"  SITE  "21";
 LOCATE  COMP  "ipUART_Rx"  SITE  "110";
 LOCATE  COMP  "ipnReset"  SITE  "88";
@@ -283,5 +284,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Jul 04 16:42:38 2022
+Wed Jul 13 17:25:45 2022
 
