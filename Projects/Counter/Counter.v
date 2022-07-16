@@ -1,54 +1,80 @@
+import Structures::*;
+
 module Counter(
 	input			ipClk,
 	input			ipReset,
 	input			ipUART_Rx,
+	input	[3:0]	ipBtn,
 	output			opUART_Tx,
 	output	[7:0]	opLED
 );
 
-reg [30:0]Count = 0;
+UART_PACKET RxStream;
+UART_PACKET TxStream;
 
-reg  [7:0]UART_TxData;
-reg       UART_TxSend;
-wire      UART_TxBusy;
+RD_REGISTERS RdRegisters;
+WR_REGISTERS WrRegisters;
 
-wire [7:0]UART_RxData;
-wire      UART_RxValid;
+wire TxReady;
 
-UART UART_Inst(
-  .ipClk    ( ipClk   ),
-  .ipReset  (~ipReset),
+wire [7:0] 	Address;
+wire [31:0] 	WrData;
+wire 			WrEnable;
+wire [31:0]	RdData;
 
-  .ipTxData (  UART_TxData),
-  .ipTxSend (  UART_TxSend),
-  .opTxBusy (  UART_TxBusy),
-  .opTx     (opUART_Tx    ),
+UART_Packets Packetiser(
+  .ipClk	( ipClk		),
+  .ipReset	(!ipReset	),
 
-  .ipRx     (ipUART_Rx     ),
-  .opRxData (  UART_RxData ),
-  .opRxValid(  UART_RxValid)
+  .ipTxStream(TxStream),
+  .opTxReady(TxReady),
+  .opTx(opUART_Tx),
+
+  .ipRx(ipUART_Rx),
+  .opRxStream(RxStream)
 );
 
-always @(posedge ipClk) begin
-	if (~ipReset) Count <= 0;
-	else Count++;
-		
-  if(~UART_TxSend && ~UART_TxBusy) begin
-    case(UART_RxData) inside
-      8'h0D    : UART_TxData <= 8'h0A; // Change enter to linefeed
-      "0"      : UART_TxData <= 8'h0D; // Change 0 to carriage return
-      ["A":"Z"]: UART_TxData <= UART_RxData ^ 8'h20;
-      ["a":"z"]: UART_TxData <= UART_RxData ^ 8'h20;
-      default  : UART_TxData <= UART_RxData;
-    endcase
-    UART_TxSend <= UART_RxValid;
+Controller Control(
+  .ipClk	( ipClk		),
+  .ipReset	(!ipReset	),
 
-  end else if(UART_TxSend && UART_TxBusy) begin
-    UART_TxSend <= 0;
-  end
+    .opTxStream(TxStream),
+    .ipTxReady(TxReady),
+
+	.opAddress(Address),
+    .opWrData(WrData),
+	.opWrEnable(WrEnable),
+	
+	.ipRxStream(RxStream),
+
+    .ipRdData(RdData)
+);
+
+Registers Register(
+  .ipClk	( ipClk		),
+  .ipReset	(!ipReset	),
+
+  .ipRdRegisters (RdRegisters),
+  .opWrRegisters (WrRegisters),
+
+  .ipAddress(Address),
+  .ipWrData(WrData),
+  .ipWrEnable(WrEnable),
+  .opRdData(RdData)
+);
+
+
+
+always @(posedge ipClk) begin
+	if (ipReset) begin //reset inverted - normal functionality here
+		RdRegisters.ClockTicks <= RdRegisters.ClockTicks + 1;
+	end else begin //reset inverted - reset code here
+		RdRegisters.ClockTicks <= 0;
+	end
 end
 
-assign opLED = Count[30:23];
+assign opLED = ~WrRegisters.LEDs;
+assign RdRegisters.Buttons = ~ipBtn;
 
 
 endmodule 

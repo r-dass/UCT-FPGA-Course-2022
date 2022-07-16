@@ -1,9 +1,9 @@
 ---------------------------------------------------
-Report for cell Streamer
-   Instance path: Streamer
+Report for cell Counter
+   Instance path: Counter
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     251.00        100.0
+                                  SLIC	     252.00        100.0
                                  IOLGC	       2.00        100.0
                                   LUT4	     244.00        100.0
                                  IOREG	          2        100.0
@@ -12,12 +12,12 @@ Report for cell Streamer
                                 RIPPLE	         38        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          UART_Packets	          1        52.0
+                          UART_Packets	          1        52.2
                              Registers	          1        13.7
-                            Controller	          1        26.5
+                            Controller	          1        26.4
 ---------------------------------------------------
 Report for cell Registers
-   Instance path: Streamer/Registers_Inst
+   Instance path: Counter/Register
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	      34.50        13.7
@@ -25,18 +25,18 @@ Report for cell Registers
                                 PFUREG	         41        12.9
 ---------------------------------------------------
 Report for cell Controller
-   Instance path: Streamer/RegistersControl_Inst
+   Instance path: Counter/Control
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      66.50        26.5
+                                  SLIC	      66.50        26.4
                                   LUT4	      72.00        29.5
                                 PFUREG	        105        33.0
 ---------------------------------------------------
 Report for cell UART_Packets
-   Instance path: Streamer/UART_Packets_Inst
+   Instance path: Counter/Packetiser
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     130.50        52.0
+                                  SLIC	     131.50        52.2
                                   LUT4	     145.00        59.4
                                 PFUREG	        140        44.0
                                 RIPPLE	         21        55.3
@@ -45,7 +45,7 @@ SUB MODULES
                                   UART	          1        22.0
 ---------------------------------------------------
 Report for cell UART
-   Instance path: Streamer/UART_Packets_Inst/UART_Inst
+   Instance path: Counter/Packetiser/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	      55.33        22.0

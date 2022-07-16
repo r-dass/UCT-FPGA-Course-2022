@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
-Report for cell Streamer.verilog
+Report for cell Counter.verilog
 
 Register bits: 320 of 4752 (7%)
 PIC Latch:       0
@@ -33,7 +33,7 @@ SUB MODULES
                          TOTAL           631           
 ----------------------------------------------------------------------
 Report for cell Registers.netlist
-     Instance path:  Registers_Inst
+     Instance path:  Register
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3IX        8        15.4
@@ -47,7 +47,7 @@ Report for cell Registers.netlist
                          TOTAL            67           
 ----------------------------------------------------------------------
 Report for cell Controller.netlist
-     Instance path:  RegistersControl_Inst
+     Instance path:  Control
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3AX       82        51.9
@@ -61,7 +61,7 @@ Report for cell Controller.netlist
                          TOTAL           179           
 ----------------------------------------------------------------------
 Report for cell UART_Packets.netlist
-     Instance path:  UART_Packets_Inst
+     Instance path:  Packetiser
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2B       21        55.3
@@ -82,7 +82,7 @@ SUB MODULES
                          TOTAL           309           
 ----------------------------------------------------------------------
 Report for cell UART.netlist
-     Instance path:  UART_Packets_Inst.UART_Inst
+     Instance path:  Packetiser.UART_Inst
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2B       12        31.6

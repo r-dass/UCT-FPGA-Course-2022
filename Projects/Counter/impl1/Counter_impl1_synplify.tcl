@@ -55,7 +55,7 @@ add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projec
 add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v}
 
 #-- top module name
-set_option -top_module Streamer
+set_option -top_module Counter
 
 #-- set result format/file last
 project -result_file {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1/Counter_impl1.edi}

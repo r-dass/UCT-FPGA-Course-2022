@@ -13,11 +13,11 @@ Hostname: RD-LAPTOP
 
 Implementation : impl1
 
-# Written on Sat Jul 16 21:52:15 2022
+# Written on Sat Jul 16 22:35:23 2022
 
 ##### DESIGN INFO #######################################################
 
-Top View:                "Streamer"
+Top View:                "Counter"
 Constraint File(s):      "C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.fdc"
 
 
@@ -46,12 +46,12 @@ ipClk        ipClk      |     20.000           |     No paths         |     No p
 Unconstrained Start/End Points
 ******************************
 
-p:ipButtons[0]
-p:ipButtons[1]
-p:ipButtons[2]
-p:ipButtons[3]
+p:ipBtn[0]
+p:ipBtn[1]
+p:ipBtn[2]
+p:ipBtn[3]
+p:ipReset
 p:ipUART_Rx
-p:ipnReset
 p:opLED[0]
 p:opLED[1]
 p:opLED[2]

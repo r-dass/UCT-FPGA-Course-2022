@@ -1,7 +1,7 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Sat Jul 16 21:53:04 2022 *
-NOTE DESIGN NAME: Streamer *
+NOTE DATE CREATED: Sat Jul 16 22:35:58 2022 *
+NOTE DESIGN NAME: Counter *
 NOTE DEVICE NAME: LFXP2-5E-6TQFP144 *
 NOTE PIN ASSIGNMENTS *
 NOTE PINS opUART_Tx : 109 : out *
@@ -14,11 +14,11 @@ NOTE PINS opLED[3] : 43 : out *
 NOTE PINS opLED[2] : 44 : out *
 NOTE PINS opLED[1] : 45 : out *
 NOTE PINS opLED[0] : 46 : out *
-NOTE PINS ipButtons[3] : 50 : in *
-NOTE PINS ipButtons[2] : 53 : in *
-NOTE PINS ipButtons[1] : 52 : in *
-NOTE PINS ipButtons[0] : 54 : in *
+NOTE PINS ipBtn[3] : 50 : in *
+NOTE PINS ipBtn[2] : 53 : in *
+NOTE PINS ipBtn[1] : 52 : in *
+NOTE PINS ipBtn[0] : 54 : in *
 NOTE PINS ipUART_Rx : 110 : in *
-NOTE PINS ipnReset : 88 : in *
+NOTE PINS ipReset : 19 : in *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: off *

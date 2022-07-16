@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
 #--  Project file C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\run_options.txt
-#--  Written on Sat Jul 16 21:52:07 2022
+#--  Written on Sat Jul 16 22:35:17 2022
 
 
 #project files
@@ -32,7 +32,7 @@ set_option -speed_grade -6
 set_option -part_companion ""
 
 #compilation/mapping options
-set_option -top_module "Streamer"
+set_option -top_module "Counter"
 
 # hdl_compiler_options
 set_option -distributed_compile 0

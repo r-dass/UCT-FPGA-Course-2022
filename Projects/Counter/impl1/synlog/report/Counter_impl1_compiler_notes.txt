@@ -16,7 +16,7 @@
 @N: CL189 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v":35:0:35:5|Register bit opTxStream.Length[6] is always 0.
 @N: CL189 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v":35:0:35:5|Register bit opTxStream.Length[7] is always 0.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v":9:7:9:15|Synthesizing module Registers in library work.
-@N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v":24:7:24:14|Synthesizing module Streamer in library work.
+@N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v":3:7:3:13|Synthesizing module Counter in library work.
 @N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v":35:0:35:5|Trying to extract state machine for register tState.
 @N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v":35:0:35:5|Trying to extract state machine for register State.
 @N: CL189 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":148:0:148:5|Register bit opRxStream.EoP is always 0.

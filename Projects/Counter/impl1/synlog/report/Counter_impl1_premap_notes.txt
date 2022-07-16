@@ -19,5 +19,5 @@
 @N: FX493 |Applying initial value "0" on instance txState[4].
 @N: FX493 |Applying initial value "0" on instance txState[5].
 @N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\controller.v":35:0:35:5|There are no possible illegal states for state machine tState[3:0] (in view: work.Controller(verilog)); safe FSM implementation is not required.
-@N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Streamer 
+@N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Counter 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

@@ -50,15 +50,10 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v" (library work)
 Verilog syntax check successful!
-File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART.v changed - recompiling
-File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v changed - recompiling
-File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v changed - recompiling
-File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v changed - recompiling
-File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v changed - recompiling
-File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v changed - recompiling
+Options changed - recompiling
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v":6:0:6:5|Synthesizing module work_C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v_unit in library work.
-Selecting top level module Streamer
+Selecting top level module Counter
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART.v":19:7:19:10|Synthesizing module UART in library work.
 Running optimization stage 1 on UART .......
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":4:7:4:18|Synthesizing module UART_Packets in library work.
@@ -76,9 +71,9 @@ Running optimization stage 1 on Controller .......
 @N: CL189 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v":35:0:35:5|Register bit opTxStream.Length[7] is always 0.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v":9:7:9:15|Synthesizing module Registers in library work.
 Running optimization stage 1 on Registers .......
-@N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v":24:7:24:14|Synthesizing module Streamer in library work.
-Running optimization stage 1 on Streamer .......
-Running optimization stage 2 on Streamer .......
+@N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v":3:7:3:13|Synthesizing module Counter in library work.
+Running optimization stage 1 on Counter .......
+Running optimization stage 2 on Counter .......
 Running optimization stage 2 on Registers .......
 @W: CL246 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v":17:22:17:29|Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.
 Running optimization stage 2 on Controller .......
@@ -137,12 +132,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 99MB peak: 101MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 99MB peak: 101MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Jul 16 21:52:10 2022
+# Sat Jul 16 22:35:19 2022
 
 ###########################################################]
 ###########################################################[
@@ -169,7 +164,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Jul 16 21:52:11 2022
+# Sat Jul 16 22:35:19 2022
 
 ###########################################################]
 
@@ -179,11 +174,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 23MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Jul 16 21:52:11 2022
+# Sat Jul 16 22:35:19 2022
 
 ###########################################################]
