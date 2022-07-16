@@ -29,7 +29,7 @@ Performance Hardware Data Status:   Final          Version 11.5.
 // Package: TQFP144
 // ncd File: counter_impl1.ncd
 // Version: Diamond (64-bit) 3.12.0.240.2
-// Written on Wed Jul 13 17:25:54 2022
+// Written on Sat Jul 16 21:52:59 2022
 // M: Minimum Performance Grade
 // iotiming Counter_impl1.ncd Counter_impl1.prf -gui -msgset C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/promote.xml
 
@@ -41,26 +41,26 @@ Worst Case Results across Performance Grades (M, 7, 6):
 
 Port         Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 ----------------------------------------------------------------------
-ipButtons[0] ipClk R     0.526      6       0.450     6
-ipButtons[1] ipClk R     0.778      6       0.288     7
-ipButtons[2] ipClk R     1.010      6       0.124     M
-ipButtons[3] ipClk R     0.526      6       0.450     6
+ipButtons[0] ipClk R     0.868      6       0.192     M
+ipButtons[1] ipClk R     0.936      6       0.181     M
+ipButtons[2] ipClk R     1.102      6       0.129     M
+ipButtons[3] ipClk R     0.783      6       0.251     7
 ipUART_Rx    ipClk R     0.149      M       1.747     6
-ipnReset     ipClk R     7.986      6       0.450     6
+ipnReset     ipClk R     6.229      6       0.450     6
 
 
 // Clock to Output Delay
 
 Port      Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-opLED[0]  ipClk R     6.703         6        2.278          M
-opLED[1]  ipClk R     5.799         6        2.012          M
-opLED[2]  ipClk R     5.577         6        1.970          M
-opLED[3]  ipClk R     6.146         6        2.144          M
-opLED[4]  ipClk R     6.178         6        2.109          M
-opLED[5]  ipClk R     5.867         6        2.062          M
-opLED[6]  ipClk R     6.202         6        2.135          M
-opLED[7]  ipClk R     5.555         6        1.968          M
+opLED[0]  ipClk R     6.108         6        2.136          M
+opLED[1]  ipClk R     5.300         6        1.887          M
+opLED[2]  ipClk R     6.187         6        2.125          M
+opLED[3]  ipClk R     5.792         6        2.034          M
+opLED[4]  ipClk R     6.086         6        2.137          M
+opLED[5]  ipClk R     6.653         6        2.287          M
+opLED[6]  ipClk R     6.387         6        2.191          M
+opLED[7]  ipClk R     6.381         6        2.194          M
 opUART_Tx ipClk R     4.247         6        1.365          M
 WARNING: you must also run trce with hold speed: 6
 WARNING: you must also run trce with hold speed: 7

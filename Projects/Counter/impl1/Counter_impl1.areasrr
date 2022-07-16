@@ -1,25 +1,26 @@
 ----------------------------------------------------------------------
 Report for cell Streamer.verilog
 
-Register bits: 261 of 4752 (5%)
+Register bits: 320 of 4752 (7%)
 PIC Latch:       0
 I/O cells:       16
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2B       38       100.0
-                            FD1P3AX      121       100.0
-                            FD1P3IX       35       100.0
+                            FD1P3AX      158       100.0
+                            FD1P3IX       52       100.0
                             FD1P3JX        1       100.0
-                            FD1S3AX       30       100.0
+                            FD1S3AX       34       100.0
                             FD1S3AY        2       100.0
                             FD1S3IX       70       100.0
+                            FD1S3JX        1       100.0
                                 GSR        1       100.0
                                  IB        7       100.0
                            IFS1P3IX        1       100.0
                                 INV       11       100.0
                                  OB        9       100.0
                            OFS1P3JX        1       100.0
-                           ORCALUT4      206       100.0
+                           ORCALUT4      230       100.0
                                 PUR        1       100.0
                                 VHI        5       100.0
                                 VLO        5       100.0
@@ -29,17 +30,17 @@ SUB MODULES
                                UART        1       100.0
                        UART_Packets        1       100.0
                             
-                         TOTAL           548           
+                         TOTAL           631           
 ----------------------------------------------------------------------
 Report for cell Registers.netlist
      Instance path:  Registers_Inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3IX        8        22.9
-                            FD1S3AX        9        30.0
+                            FD1P3IX        8        15.4
+                            FD1S3AX        9        26.5
                             FD1S3IX       24        34.3
                                 INV        8        72.7
-                           ORCALUT4       16         7.8
+                           ORCALUT4       16         7.0
                                 VHI        1        20.0
                                 VLO        1        20.0
                             
@@ -49,45 +50,48 @@ Report for cell Controller.netlist
      Instance path:  RegistersControl_Inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3AX       69        57.0
+                            FD1P3AX       82        51.9
+                            FD1P3IX       17        32.7
+                            FD1S3AX        4        11.8
                             FD1S3IX        2         2.9
-                           ORCALUT4       61        29.6
+                           ORCALUT4       72        31.3
                                 VHI        1        20.0
                                 VLO        1        20.0
                             
-                         TOTAL           134           
+                         TOTAL           179           
 ----------------------------------------------------------------------
 Report for cell UART_Packets.netlist
      Instance path:  UART_Packets_Inst
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2B       21        55.3
-                            FD1P3AX       52        43.0
-                            FD1P3IX       27        77.1
+                            FD1P3AX       76        48.1
+                            FD1P3IX       27        51.9
                             FD1P3JX        1       100.0
-                            FD1S3AX       21        70.0
+                            FD1S3AX       21        61.8
                             FD1S3AY        2       100.0
                             FD1S3IX       12        17.1
+                            FD1S3JX        1       100.0
                                 INV        1         9.1
-                           ORCALUT4      129        62.6
+                           ORCALUT4      142        61.7
                                 VHI        2        40.0
                                 VLO        2        40.0
 SUB MODULES 
                                UART        1       100.0
                             
-                         TOTAL           271           
+                         TOTAL           309           
 ----------------------------------------------------------------------
 Report for cell UART.netlist
      Instance path:  UART_Packets_Inst.UART_Inst
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2B       12        31.6
-                            FD1P3AX       34        28.1
-                            FD1P3IX        2         5.7
-                            FD1S3AX       12        40.0
+                            FD1P3AX       34        21.5
+                            FD1P3IX        2         3.8
+                            FD1S3AX       12        35.3
                             FD1S3IX        8        11.4
                                 INV        1         9.1
-                           ORCALUT4       72        35.0
+                           ORCALUT4       72        31.3
                                 VHI        1        20.0
                                 VLO        1        20.0
                             

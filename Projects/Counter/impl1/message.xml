@@ -18,26 +18,14 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:31:10:31:18|Object BytesRead is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
-            <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
-            <Navigation>31</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>31</Navigation>
-            <Navigation>18</Navigation>
-            <Navigation>Object BytesRead is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL271 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:33:0:33:5|Pruning unused bits 31 to 1 of tState[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
-            <Navigation>CL271</Navigation>
-            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
-            <Navigation>33</Navigation>
+            <Dynamic>CL169 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v&quot;:65:0:65:5|Pruning unused register txBuffer.SoP. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v</Navigation>
+            <Navigation>65</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>33</Navigation>
+            <Navigation>65</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Pruning unused bits 31 to 1 of tState[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+            <Navigation>Pruning unused register txBuffer.SoP. Make sure that there are no unused intermediate registers.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -54,25 +42,25 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL246 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:14:21:14:30|Input port bits 18 to 11 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
+            <Dynamic>CL246 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:14:22:14:31|Input port bits 18 to 11 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
             <Navigation>CL246</Navigation>
             <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
             <Navigation>14</Navigation>
-            <Navigation>21</Navigation>
+            <Navigation>22</Navigation>
             <Navigation>14</Navigation>
-            <Navigation>30</Navigation>
+            <Navigation>31</Navigation>
             <Navigation>Input port bits 18 to 11 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL247 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:14:21:14:30|Input port bit 9 of ipRxStream[34:0] is unused</Dynamic>
+            <Dynamic>CL247 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v&quot;:14:22:14:31|Input port bit 9 of ipRxStream[34:0] is unused</Dynamic>
             <Navigation>CL247</Navigation>
             <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v</Navigation>
             <Navigation>14</Navigation>
-            <Navigation>21</Navigation>
+            <Navigation>22</Navigation>
             <Navigation>14</Navigation>
-            <Navigation>30</Navigation>
+            <Navigation>31</Navigation>
             <Navigation>Input port bit 9 of ipRxStream[34:0] is unused</Navigation>
         </Message>
         <Message>
@@ -148,6 +136,30 @@
             <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
             <Navigation>FX474</Navigation>
             <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v&quot;:65:0:65:5|Sequential instance UART_Packets_Inst.txBuffer.Length[0] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v</Navigation>
+            <Navigation>65</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>65</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Sequential instance UART_Packets_Inst.txBuffer.Length[0] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v&quot;:65:0:65:5|Sequential instance UART_Packets_Inst.txBuffer.Length[2] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v</Navigation>
+            <Navigation>65</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>65</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Sequential instance UART_Packets_Inst.txBuffer.Length[2] is reduced to a combinational gate by constant propagation.</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>

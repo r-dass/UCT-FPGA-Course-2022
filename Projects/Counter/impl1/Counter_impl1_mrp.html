@@ -24,19 +24,19 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   6
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  07/13/22  17:25:31
+Mapped on:  07/16/22  21:52:28
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    261 out of  3864 (7%)
-      PFU registers:          259 out of  3564 (7%)
+   Number of registers:    320 out of  3864 (8%)
+      PFU registers:          318 out of  3564 (9%)
       PIO registers:            2 out of   300 (1%)
-   Number of SLICEs:       214 out of  2376 (9%)
-      SLICEs as Logic/ROM:    214 out of  2376 (9%)
+   Number of SLICEs:       251 out of  2376 (11%)
+      SLICEs as Logic/ROM:    251 out of  2376 (11%)
       SLICEs as RAM:            0 out of   405 (0%)
       SLICEs as Carry:         38 out of  2376 (2%)
-   Number of LUT4s:        296 out of  4752 (6%)
-      Number used as logic LUTs:        220
+   Number of LUT4s:        320 out of  4752 (7%)
+      Number used as logic LUTs:        244
       Number used as distributed RAM:     0
       Number used as ripple logic:       76
       Number used as shift registers:     0
@@ -71,47 +71,49 @@ Mapped on:  07/13/22  17:25:31
    --------------------------------
    Number of Used DSP Sites:  0 out of 24 (0 %)
    Number of clocks:  1
-     Net ipClk_c: 140 loads, 140 rising, 0 falling (Driver: PIO ipClk )
+     Net ipClk_c: 171 loads, 171 rising, 0 falling (Driver: PIO ipClk )
    Number of Clock Enables:  20
      Net UART_Packets_Inst.UART_Inst.txClkCount_1_sqmuxa_i: 1 loads, 0 LSLICEs
-     Net Registers_Inst/N_283: 4 loads, 4 LSLICEs
+     Net Registers_Inst/N_545: 4 loads, 4 LSLICEs
      Net ipnReset_c: 8 loads, 8 LSLICEs
-     Net RegistersControl_Inst/un1_ipReset_i: 16 loads, 16 LSLICEs
-     Net RegistersControl_Inst/opWrData_2_sqmuxa: 8 loads, 8 LSLICEs
-     Net RegistersControl_Inst/opWrData_3_sqmuxa: 4 loads, 4 LSLICEs
+     Net RegistersControl_Inst/OutputData_1_sqmuxa_1: 8 loads, 8 LSLICEs
+     Net RegistersControl_Inst/N_66_i: 16 loads, 16 LSLICEs
+     Net RegistersControl_Inst/N_57_i: 4 loads, 4 LSLICEs
      Net RegistersControl_Inst/opAddress_0_sqmuxa: 4 loads, 4 LSLICEs
-     Net RegistersControl_Inst/un1_ipReset_2_i: 1 loads, 1 LSLICEs
+     Net RegistersControl_Inst/un1_OutputData_0_sqmuxa_0_0_0: 17 loads, 17
+     LSLICEs
      Net UART_Packets_Inst/Length_0_sqmuxa_1_0: 5 loads, 5 LSLICEs
      Net UART_Packets_Inst/Data_0_sqmuxa_0: 4 loads, 4 LSLICEs
-     Net UART_Packets_Inst/un1_UART_TxSend_0_sqmuxa_1_0_0_o2: 4 loads, 4 LSLICEs
-     
+     Net UART_Packets_Inst/N_481: 4 loads, 4 LSLICEs
      Net UART_Packets_Inst/UART_Inst/opRxValid_1_sqmuxa_i: 1 loads, 1 LSLICEs
-     Net UART_Packets_Inst/UART_Inst/N_39: 4 loads, 4 LSLICEs
+     Net UART_Packets_Inst/UART_Inst/N_150: 4 loads, 4 LSLICEs
      Net UART_Packets_Inst/UART_Inst/rxData_0_sqmuxa_i: 4 loads, 4 LSLICEs
-     Net UART_Packets_Inst/UART_Inst/N_37: 1 loads, 1 LSLICEs
+     Net UART_Packets_Inst/UART_Inst/N_148: 1 loads, 1 LSLICEs
      Net UART_Packets_Inst/UART_Inst/rxState_3_sqmuxa: 4 loads, 4 LSLICEs
-     Net UART_Packets_Inst/N_253_i: 1 loads, 1 LSLICEs
-     Net UART_Packets_Inst/N_118_i: 2 loads, 2 LSLICEs
+     Net UART_Packets_Inst/N_161_i: 13 loads, 13 LSLICEs
+     Net UART_Packets_Inst/N_119_i: 2 loads, 2 LSLICEs
      Net UART_Packets_Inst/Source_0_sqmuxa_1_0: 4 loads, 4 LSLICEs
      Net UART_Packets_Inst/Destination_0_sqmuxa_1_0: 4 loads, 4 LSLICEs
-   Number of LSRs:  8
-     Net N_54_i: 1 loads, 0 LSLICEs
+   Number of LSRs:  10
+     Net N_157_i: 1 loads, 0 LSLICEs
      Net Registers_Inst/Reset: 4 loads, 4 LSLICEs
      Net Registers_Inst/un1_ipAddress_inv_i: 12 loads, 12 LSLICEs
-     Net ipnReset_c: 34 loads, 33 LSLICEs
+     Net ipnReset_c: 42 loads, 41 LSLICEs
+     Net RegistersControl_Inst/opAddress_0_sqmuxa_1: 1 loads, 1 LSLICEs
+     Net UART_Packets_Inst/fb: 1 loads, 1 LSLICEs
      Net UART_Packets_Inst/UART_Inst/opRxValid_0_sqmuxa: 1 loads, 1 LSLICEs
      Net UART_Packets_Inst/UART_Inst/un1_ipReset_0: 2 loads, 2 LSLICEs
      Net UART_Packets_Inst/UART_Inst/un1_ipReset_1: 2 loads, 2 LSLICEs
      Net UART_Packets_Inst/Valid_0_sqmuxa: 3 loads, 3 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net ipnReset_c: 141 loads
-     Net RegistersControl_Inst/State[0]: 46 loads
-     Net RegistersControl_Inst/tState[0]: 39 loads
+     Net ipnReset_c: 168 loads
+     Net RegistersControl_Inst/tState[0]: 51 loads
      Net VCC: 32 loads
      Net UART_Packets_Inst/UART_Inst/VCC: 21 loads
      Net UART_Packets_Inst/UART_Inst/txClkBaud: 19 loads
-     Net RegistersControl_Inst/un1_ipReset_i: 16 loads
+     Net RegistersControl_Inst/un1_OutputData_0_sqmuxa_0_0_0: 17 loads
+     Net RegistersControl_Inst/N_66_i: 16 loads
      Net UART_Packets_Inst/UART_Inst/rxState[0]: 16 loads
      Net UART_Packets_Inst/UART_Inst/txState[0]: 16 loads
      Net UART_Packets_Inst.UART_Inst.Rx: 15 loads
@@ -122,7 +124,6 @@ Mapped on:  07/13/22  17:25:31
    Number of warnings:  1
    Number of errors:    0
      
-
 
 
 
@@ -186,22 +187,22 @@ Block RegistersControl_Inst/GND undriven or does not drive anything - clipped.
 Block Registers_Inst/GND undriven or does not drive anything - clipped.
 Block Registers_Inst/VCC undriven or does not drive anything - clipped.
 Signal un3_RdRegisters.ClockTicks_s_31_0_S1 undriven or does not drive anything
-     - clipped.
 
+     - clipped.
 Signal un3_RdRegisters.ClockTicks_s_31_0_COUT undriven or does not drive
      anything - clipped.
 Signal UART_Packets_Inst/un1_BytesReceived_3_a_4_cry_0_0_S1 undriven or does not
      drive anything - clipped.
 Signal UART_Packets_Inst/un1_BytesReceived_3_a_4_cry_0_0_S0 undriven or does not
      drive anything - clipped.
-Signal UART_Packets_Inst/N_2 undriven or does not drive anything - clipped.
+Signal UART_Packets_Inst/N_1 undriven or does not drive anything - clipped.
 Signal UART_Packets_Inst/un1_BytesReceived_3_a_4_cry_7_0_COUT undriven or does
      not drive anything - clipped.
 Signal UART_Packets_Inst/un1_BytesReceived_3_0_I_1_0_S1 undriven or does not
      drive anything - clipped.
 Signal UART_Packets_Inst/un1_BytesReceived_3_0_I_1_0_S0 undriven or does not
      drive anything - clipped.
-Signal UART_Packets_Inst/N_3 undriven or does not drive anything - clipped.
+Signal UART_Packets_Inst/N_2 undriven or does not drive anything - clipped.
 Signal UART_Packets_Inst/un1_BytesReceived_3_0_I_21_0_S1 undriven or does not
      drive anything - clipped.
 Signal UART_Packets_Inst/un1_BytesReceived_3_0_I_21_0_S0 undriven or does not
@@ -243,12 +244,11 @@ Signal N_1 undriven or does not drive anything - clipped.
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 -------------------------
 
-   Total CPU Time: 0 secs  
+   Total CPU Time: 1 secs  
    Total REAL Time: 0 secs  
+
    Peak Memory Usage: 61 MB
-
         
-
 
 
 

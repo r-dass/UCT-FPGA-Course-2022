@@ -46,7 +46,7 @@ ReceivePayload
 rState rxState;
 
 typedef enum{ 
-Wait,
+TransmitWait,
 TransmitSync,
 TransmitDestination,
 TransmitSource,
@@ -55,7 +55,7 @@ TransmitPayload
 } tState;
 tState txState;
 
-UART_PACKET BufferPacket;
+UART_PACKET txBuffer;
 
 reg[2:0] BytesReceived;
 //------------------------------------------------------------------------------
@@ -146,7 +146,7 @@ end
 
 // TODO: Implement the Rx stream
 always @(posedge(ipClk)) begin
-if (!ipReset) begin
+ if (!ipReset) begin
         case(rxState) 
         ReceiveSync: begin
             opRxStream.Valid <= 0;

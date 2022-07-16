@@ -13,11 +13,11 @@ operation = Commercial
 #design options
 [Design]
 title = Counter
-path = C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/impl1
-core_generate = C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/impl1
-search_path = C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter
-top = Controller
-lpf = C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.lpf
+path = C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1
+core_generate = C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1
+search_path = C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter
+top = Streamer
+lpf = C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.lpf
 synthesis = synplify
 
 #strategy options
@@ -25,12 +25,12 @@ VHDL2008 = true
 
 #HDLs options
 [HDLs]
-C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v = System Verilog
-C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART.v = System Verilog
-C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v = System Verilog
-C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v = System Verilog
-C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v = System Verilog
-C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/Controller.v = System Verilog
+C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v = System Verilog
+C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v = System Verilog
+C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART.v = System Verilog
+C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v = System Verilog
+C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Controller.v = System Verilog
+C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v = System Verilog
 [HDL_Defines]
 SBP_SYNTHESIS=
 [HDL_Param]

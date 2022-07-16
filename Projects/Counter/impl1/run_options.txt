@@ -1,14 +1,14 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
 #--  Project file C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\run_options.txt
-#--  Written on Wed Jul 13 17:25:17 2022
+#--  Written on Sat Jul 16 21:52:07 2022
 
 
 #project files
 add_file -fpga_constraint "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.fdc"
-add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART.v"
 add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v"
 add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v"
+add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART.v"
 add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v"
 add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Controller.v"
 add_file -verilog -vlog_std sysv "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Counter.v"

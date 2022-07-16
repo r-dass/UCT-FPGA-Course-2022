@@ -17,8 +17,8 @@ if ![catch {set temp $argc} result] {
     }
 }
 #IP Core information
-set Para(ProjectPath) "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/impl1"
-set Para(BuildDir) "C:/Users/reeve/Git/UCT-FPGA-Course-2022/Projects/Counter/impl1/reveal_workspace/tmpreveal"
+set Para(ProjectPath) "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1"
+set Para(BuildDir) "C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1/reveal_workspace/tmpreveal"
 set Para(Module) "reveal"
 set Reveal_Cores {counter_la0 }
 set Para(lib) "C:/lscc/diamond/3.12/module/reveal/lib"

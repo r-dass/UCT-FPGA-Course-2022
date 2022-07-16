@@ -4,4 +4,6 @@
 @W:"c:/users/reeve/git/uct-fpga-course-2022/projects/counter/counter.fdc":9:0:9:0|Duplicate parameter "-syn_tdm" and "-disable" for param "-". Check if any short form of the parameter is specified. This could cause incorrect CC result. Constraint will be disabled.
 @W: MF499 |Found issues with constraints. Check report file C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_scck.rpt.
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MO129 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":65:0:65:5|Sequential instance UART_Packets_Inst.txBuffer.Length[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":65:0:65:5|Sequential instance UART_Packets_Inst.txBuffer.Length[2] is reduced to a combinational gate by constant propagation.
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt" .

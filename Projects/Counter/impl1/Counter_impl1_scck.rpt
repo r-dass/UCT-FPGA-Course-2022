@@ -13,7 +13,7 @@ Hostname: RD-LAPTOP
 
 Implementation : impl1
 
-# Written on Wed Jul 13 17:25:21 2022
+# Written on Sat Jul 16 21:52:13 2022
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.fdc"
@@ -43,7 +43,7 @@ Clock Summary
           Start     Requested     Requested     Clock        Clock                Clock
 Level     Clock     Frequency     Period        Type         Group                Load 
 ---------------------------------------------------------------------------------------
-0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     290  
+0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     319  
 =======================================================================================
 
 
@@ -53,5 +53,5 @@ Clock Load Summary
           Clock     Source          Clock Pin                           Non-clock Pin     Non-clock Pin
 Clock     Load      Pin             Seq Example                         Seq Example       Comb Example 
 -------------------------------------------------------------------------------------------------------
-ipClk     290       ipClk(port)     RdRegisters\.ClockTicks[31:0].C     -                 -            
+ipClk     319       ipClk(port)     RdRegisters\.ClockTicks[31:0].C     -                 -            
 =======================================================================================================
