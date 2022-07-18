@@ -1,4 +1,4 @@
-# Mon Jul 18 14:50:23 2022
+# Mon Jul 18 15:14:37 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -43,7 +43,7 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
 
 @N: MF179 :|Found 9 by 9 bit equality operator ('==') un1_BytesReceived_3 (in view: work.UART_Packets(verilog))
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
@@ -51,54 +51,54 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 174MB peak: 174MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
+Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 177MB peak: 178MB)
 
 @N: FA113 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":185:13:185:51|Pipelining module un1_BytesReceived_3. For more information, search for "pipelining" in Online Help.
 @N: MF169 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":148:0:148:5|Pushed in register opRxStream\\\[Length\\\].
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 178MB peak: 178MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 180MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 178MB peak: 178MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 179MB peak: 180MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 178MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 179MB peak: 180MB)
+Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 178MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 180MB)
+Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 178MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:03s		     4.42ns		 258 /       324
+   1		0h:00m:04s		     4.42ns		 251 /       325
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 180MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 179MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @A: BN291 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart.v":55:0:55:5|Boundary register Packetiser.UART_Inst.opTx.fb (in view: work.Counter(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 180MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 179MB peak: 179MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 144MB peak: 181MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 143MB peak: 179MB)
 
 Writing Analyst data base C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 179MB peak: 181MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 179MB peak: 179MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 184MB peak: 184MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 184MB peak: 184MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 182MB peak: 185MB)
+Start final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 182MB peak: 184MB)
 
 @W: MT246 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":438:10:438:16|Blackbox AGEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":417:10:417:16|Blackbox ALEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -106,7 +106,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon Jul 18 14:50:30 2022
+# Timing report written on Mon Jul 18 15:14:45 2022
 #
 
 
@@ -148,7 +148,7 @@ Starting  Ending  |  constraint  slack   |  constraint  slack  |  constraint  sl
 ---------------------------------------------------------------------------------------------------------
 System    System  |  5.000       4.425   |  No paths    -      |  No paths    -      |  No paths    -    
 System    ipClk   |  20.000      17.919  |  No paths    -      |  No paths    -      |  No paths    -    
-ipClk     System  |  20.000      18.495  |  No paths    -      |  No paths    -      |  No paths    -    
+ipClk     System  |  20.000      18.431  |  No paths    -      |  No paths    -      |  No paths    -    
 ipClk     ipClk   |  20.000      13.825  |  No paths    -      |  No paths    -      |  No paths    -    
 =========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
@@ -201,7 +201,7 @@ Streamer1.wUpper                         ipClk         FD1S3JX     PD      fb   
 Packetiser.UART_Inst.BitsReceived[3]     ipClk         FD1S3IX     D       un1_BitsReceived_4_axbxc3     19.389       14.525
 Packetiser.rxState[4]                    ipClk         FD1S3AX     D       N_90_i                        19.389       14.580
 Streamer1.wUpper                         ipClk         FD1S3JX     D       wUpper_0_sqmuxa_1             19.389       14.744
-Streamer1.rState[0]                      ipClk         FD1S3AX     D       N_38s                         19.389       14.817
+Streamer1.rState[0]                      ipClk         FD1S3AX     D       N_37s                         19.389       14.817
 Packetiser.UART_Inst.rxData[0]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
 Packetiser.UART_Inst.rxData[1]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
 Packetiser.UART_Inst.rxData[2]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
@@ -348,16 +348,16 @@ Streamer1.FIFOBLOCK.AND2_t1     AND2     B        In      0.000     0.575 f     
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 183MB peak: 185MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 183MB peak: 184MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 183MB peak: 185MB)
+Finished timing report (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 183MB peak: 184MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lfxp2_5e-6
 
-Register bits: 335 of 4752 (7%)
+Register bits: 336 of 4752 (7%)
 PIC Latch:       0
 I/O cells:       16
 
@@ -377,12 +377,12 @@ FD1S3AX:        36
 FD1S3AY:        2
 FD1S3BX:        1
 FD1S3DX:        1
-FD1S3IX:        70
+FD1S3IX:        71
 FD1S3JX:        2
 GSR:            1
 IB:             7
 IFS1P3IX:       2
-INV:            15
+INV:            8
 OB:             9
 OFS1P3JX:       1
 ORCALUT4:       246
@@ -394,9 +394,9 @@ VLO:            7
 XOR2:           1
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 66MB peak: 185MB)
+At Mapper Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 66MB peak: 184MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:05s cputime
-# Mon Jul 18 14:50:30 2022
+Process took 0h:00m:08s realtime, 0h:00m:07s cputime
+# Mon Jul 18 15:14:46 2022
 
 ###########################################################]

@@ -51,11 +51,11 @@ assign opFIFO_Size = FIFO_Size1;
  
 always @(posedge(ipClk)) begin
     if (!ipReset) begin
-        opValid <= 0;
-        RE <= 0;
+        RE <= !Empty;
+        opValid <= !Empty;
     end else begin
         RE <= 0;
-        opValid <= 1;
+        opValid <= 0;
     end
 end
 

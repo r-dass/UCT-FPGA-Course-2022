@@ -86,7 +86,7 @@ always @(posedge ipClk) begin
 	end
 end
 
-assign opLED = ~RdRegisters.FIFO_Size;
+assign opLED = ~Stream;
 assign RdRegisters.Buttons = ~ipBtn;
 
 

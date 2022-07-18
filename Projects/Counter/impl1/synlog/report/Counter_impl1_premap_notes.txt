@@ -4,7 +4,6 @@
 @N: FX493 |Applying initial value "00000000" on instance txData[7:0].
 @N: FX493 |Applying initial value "00000000" on instance rxData[7:0].
 @N: FX493 |Applying initial value "0000000000" on instance txClkCount[9:0].
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":52:0:52:5|Removing sequential instance opValid (in view: work.Streamer(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":62:0:62:5|Removing sequential instance ipData[15:0] (in view: work.Streamer(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":279:12:279:16|Removing sequential instance FF_17 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":285:12:285:16|Removing sequential instance FF_16 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.

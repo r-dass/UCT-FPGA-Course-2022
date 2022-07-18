@@ -3,40 +3,40 @@ Report for cell Counter
    Instance path: Counter
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     275.00        100.0
+                                  SLIC	     278.00        100.0
                                  IOLGC	       3.00        100.0
-                                  LUT4	     262.00        100.0
+                                  LUT4	     259.00        100.0
                                  IOREG	          3        100.0
                                  IOBUF	         16        100.0
-                                PFUREG	        331        100.0
-                                RIPPLE	         51        100.0
+                                PFUREG	        333        100.0
+                                RIPPLE	         58        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          UART_Packets	          1        47.5
-                              Streamer	          1        10.0
-                             Registers	          1        11.1
-                            Controller	          1        24.4
+                          UART_Packets	          1        46.9
+                              Streamer	          1        11.0
+                             Registers	          1        11.0
+                            Controller	          1        24.1
 ---------------------------------------------------
 Report for cell Streamer
    Instance path: Counter/Streamer1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      27.50        10.0
-                                  LUT4	      19.00         7.3
-                                PFUREG	         13         3.9
-                                RIPPLE	         13        25.5
+                                  SLIC	      30.50        11.0
+                                  LUT4	      16.00         6.2
+                                PFUREG	         15         4.5
+                                RIPPLE	         20        34.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                  FIFO	          1         8.4
+                                  FIFO	          1         9.2
 ---------------------------------------------------
 Report for cell FIFO
    Instance path: Counter/Streamer1/FIFOBLOCK
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      23.00         8.4
-                                  LUT4	      10.00         3.8
-                                PFUREG	         10         3.0
-                                RIPPLE	         13        25.5
+                                  SLIC	      25.50         9.2
+                                  LUT4	       7.00         2.7
+                                PFUREG	         11         3.3
+                                RIPPLE	         20        34.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                                 FADD2B	          5         1.8
@@ -46,65 +46,69 @@ Report for cell FADD2B
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	       1.00         0.4
-                                RIPPLE	          1         2.0
+                                RIPPLE	          1         1.7
 ---------------------------------------------------
 Report for cell FADD2B
    Instance path: Counter/Streamer1/FIFOBLOCK/bdcnt_bctr_cia
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	       1.00         0.4
-                                RIPPLE	          1         2.0
+                                RIPPLE	          1         1.7
 ---------------------------------------------------
 Report for cell FADD2B
    Instance path: Counter/Streamer1/FIFOBLOCK/e_cmp_ci_a
                      Cell usage:
                                   cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.4
+                                RIPPLE	          1         1.7
 ---------------------------------------------------
 Report for cell FADD2B
    Instance path: Counter/Streamer1/FIFOBLOCK/a0
                      Cell usage:
                                   cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.4
+                                RIPPLE	          1         1.7
 ---------------------------------------------------
 Report for cell FADD2B
    Instance path: Counter/Streamer1/FIFOBLOCK/g_cmp_ci_a
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	       1.00         0.4
-                                RIPPLE	          1         2.0
+                                RIPPLE	          1         1.7
 ---------------------------------------------------
 Report for cell Registers
    Instance path: Counter/Register
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      30.50        11.1
-                                  LUT4	      21.00         8.0
-                                PFUREG	         41        12.4
+                                  SLIC	      30.50        11.0
+                                  LUT4	      21.00         8.1
+                                PFUREG	         41        12.3
 ---------------------------------------------------
 Report for cell Controller
    Instance path: Counter/Control
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      67.00        24.4
-                                  LUT4	      73.00        27.9
-                                PFUREG	        105        31.7
+                                  SLIC	      67.00        24.1
+                                  LUT4	      73.00        28.2
+                                PFUREG	        105        31.5
 ---------------------------------------------------
 Report for cell UART_Packets
    Instance path: Counter/Packetiser
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     130.50        47.5
-                                  LUT4	     146.00        55.7
-                                PFUREG	        140        42.3
-                                RIPPLE	         21        41.2
+                                  SLIC	     130.50        46.9
+                                  LUT4	     146.00        56.4
+                                PFUREG	        140        42.0
+                                RIPPLE	         21        36.2
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                  UART	          1        20.1
+                                  UART	          1        19.9
 ---------------------------------------------------
 Report for cell UART
    Instance path: Counter/Packetiser/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      55.33        20.1
-                                  LUT4	      74.00        28.2
-                                PFUREG	         56        16.9
-                                RIPPLE	         12        23.5
+                                  SLIC	      55.33        19.9
+                                  LUT4	      74.00        28.6
+                                PFUREG	         56        16.8
+                                RIPPLE	         12        20.7

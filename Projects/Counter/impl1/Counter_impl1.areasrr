@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------
 Report for cell Counter.verilog
 
-Register bits: 335 of 4752 (7%)
+Register bits: 336 of 4752 (7%)
 PIC Latch:       0
 I/O cells:       16
                                           Cell usage:
@@ -20,12 +20,12 @@ I/O cells:       16
                             FD1S3AY        2       100.0
                             FD1S3BX        1       100.0
                             FD1S3DX        1       100.0
-                            FD1S3IX       70       100.0
+                            FD1S3IX       71       100.0
                             FD1S3JX        2       100.0
                                 GSR        1       100.0
                                  IB        7       100.0
                            IFS1P3IX        2       100.0
-                                INV       15       100.0
+                                INV        8       100.0
                                  OB        9       100.0
                            OFS1P3JX        1       100.0
                            ORCALUT4      246       100.0
@@ -43,7 +43,7 @@ SUB MODULES
                                UART        1       100.0
                        UART_Packets        1       100.0
                             
-                         TOTAL           702           
+                         TOTAL           696           
 ----------------------------------------------------------------------
 Report for cell Streamer.netlist
      Instance path:  Streamer1
@@ -58,9 +58,9 @@ Report for cell Streamer.netlist
                             FD1S3AX        1         2.8
                             FD1S3BX        1       100.0
                             FD1S3DX        1       100.0
-                            FD1S3IX        1         1.4
+                            FD1S3IX        2         2.8
                             FD1S3JX        1        50.0
-                                INV       12        80.0
+                                INV        5        62.5
                            ORCALUT4        9         3.7
                             ROM16X1        2       100.0
                                 VHI        2        28.6
@@ -69,7 +69,7 @@ Report for cell Streamer.netlist
 SUB MODULES 
                                FIFO        1       100.0
                             
-                         TOTAL            66           
+                         TOTAL            60           
 ----------------------------------------------------------------------
 Report for cell FIFO.netlist
      Instance path:  Streamer1.FIFOBLOCK
@@ -83,13 +83,13 @@ Report for cell FIFO.netlist
                             FD1P3DX        9       100.0
                             FD1S3BX        1       100.0
                             FD1S3DX        1       100.0
-                                INV       12        80.0
+                                INV        5        62.5
                             ROM16X1        2       100.0
                                 VHI        1        14.3
                                 VLO        1        14.3
                                XOR2        1       100.0
                             
-                         TOTAL            51           
+                         TOTAL            44           
 ----------------------------------------------------------------------
 Report for cell Registers.netlist
      Instance path:  Register
@@ -97,7 +97,7 @@ Report for cell Registers.netlist
                                cell       count    Res Usage(%)
                             FD1P3IX        8        13.6
                             FD1S3AX       10        27.8
-                            FD1S3IX       23        32.9
+                            FD1S3IX       23        32.4
                            ORCALUT4       21         8.5
                               PFUMX        4       100.0
                                 VHI        1        14.3
@@ -112,7 +112,7 @@ Report for cell Controller.netlist
                             FD1P3AX       75        49.7
                             FD1P3IX       24        40.7
                             FD1S3AX        4        11.1
-                            FD1S3IX        2         2.9
+                            FD1S3IX        2         2.8
                            ORCALUT4       73        29.7
                                 VHI        1        14.3
                                 VLO        1        14.3
@@ -129,9 +129,9 @@ Report for cell UART_Packets.netlist
                             FD1P3JX        1       100.0
                             FD1S3AX       21        58.3
                             FD1S3AY        2       100.0
-                            FD1S3IX       12        17.1
+                            FD1S3IX       12        16.9
                             FD1S3JX        1        50.0
-                                INV        1         6.7
+                                INV        1        12.5
                            ORCALUT4      143        58.1
                                 VHI        2        28.6
                                 VLO        2        28.6
@@ -148,8 +148,8 @@ Report for cell UART.netlist
                             FD1P3AX       34        22.5
                             FD1P3IX        2         3.4
                             FD1S3AX       12        33.3
-                            FD1S3IX        8        11.4
-                                INV        1         6.7
+                            FD1S3IX        8        11.3
+                                INV        1        12.5
                            ORCALUT4       72        29.3
                                 VHI        1        14.3
                                 VLO        1        14.3

@@ -97,7 +97,6 @@
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v":1274:7:1274:9|Synthesizing module VLO in library work.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":8:7:8:10|Synthesizing module FIFO in library work.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":3:7:3:14|Synthesizing module Streamer in library work.
-@N: CL189 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":52:0:52:5|Register bit RE is always 0.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v":3:7:3:13|Synthesizing module Counter in library work.
 @N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":62:0:62:5|Trying to extract state machine for register rState.
 @N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v":35:0:35:5|Trying to extract state machine for register tState.

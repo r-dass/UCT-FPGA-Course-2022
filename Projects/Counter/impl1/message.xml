@@ -99,6 +99,18 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
+            <Dynamic>CL177 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:52:0:52:5|Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.</Dynamic>
+            <Navigation>CL177</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v</Navigation>
+            <Navigation>52</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>52</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
             <Dynamic>CL246 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:7:29:7:38|Input port bits 34 to 27 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
             <Navigation>CL246</Navigation>
             <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v</Navigation>

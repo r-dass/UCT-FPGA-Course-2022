@@ -116,6 +116,7 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v" (library work)
 Verilog syntax check successful!
+File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v changed - recompiling
 File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v changed - recompiling
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v":6:0:6:5|Synthesizing module work_C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v_unit in library work.
@@ -177,7 +178,7 @@ Running optimization stage 1 on FIFO .......
 @W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":10:32:10:39|Object opStream is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":48:4:48:9|Object rUpper is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on Streamer .......
-@N: CL189 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":52:0:52:5|Register bit RE is always 0.
+@W: CL177 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":52:0:52:5|Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v":3:7:3:13|Synthesizing module Counter in library work.
 Running optimization stage 1 on Counter .......
 Running optimization stage 2 on Counter .......
@@ -263,12 +264,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 99MB peak: 101MB)
+At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 103MB peak: 105MB)
 
 Process took 0h:00m:05s realtime, 0h:00m:05s cputime
 
 Process completed successfully.
-# Mon Jul 18 14:50:19 2022
+# Mon Jul 18 15:14:33 2022
 
 ###########################################################]
 ###########################################################[
@@ -295,7 +296,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jul 18 14:50:19 2022
+# Mon Jul 18 15:14:33 2022
 
 ###########################################################]
 
@@ -305,11 +306,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 29MB peak: 29MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:05s cputime
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
 
 Process completed successfully.
-# Mon Jul 18 14:50:19 2022
+# Mon Jul 18 15:14:33 2022
 
 ###########################################################]

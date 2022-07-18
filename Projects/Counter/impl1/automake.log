@@ -10,7 +10,7 @@ Lattice Diamond Version 3.12.0.240.2
 #OS: Windows 8 6.2
 #Hostname: RD-LAPTOP
 
-# Mon Jul 18 14:50:13 2022
+# Mon Jul 18 15:14:27 2022
 
 #Implementation: impl1
 
@@ -132,6 +132,7 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v" (library work)
 Verilog syntax check successful!
+File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v changed - recompiling
 File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v changed - recompiling
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v":6:0:6:5|Synthesizing module work_C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v_unit in library work.
@@ -193,7 +194,7 @@ Running optimization stage 1 on FIFO .......
 @W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":10:32:10:39|Object opStream is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":48:4:48:9|Object rUpper is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on Streamer .......
-@N: CL189 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":52:0:52:5|Register bit RE is always 0.
+@W: CL177 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":52:0:52:5|Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v":3:7:3:13|Synthesizing module Counter in library work.
 Running optimization stage 1 on Counter .......
 Running optimization stage 2 on Counter .......
@@ -279,12 +280,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 99MB peak: 101MB)
+At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 103MB peak: 105MB)
 
 Process took 0h:00m:05s realtime, 0h:00m:05s cputime
 
 Process completed successfully.
-# Mon Jul 18 14:50:19 2022
+# Mon Jul 18 15:14:33 2022
 
 ###########################################################]
 ###########################################################[
@@ -311,7 +312,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jul 18 14:50:19 2022
+# Mon Jul 18 15:14:33 2022
 
 ###########################################################]
 
@@ -321,12 +322,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 29MB peak: 29MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:05s cputime
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
 
 Process completed successfully.
-# Mon Jul 18 14:50:19 2022
+# Mon Jul 18 15:14:33 2022
 
 ###########################################################]
 ###########################################################[
@@ -354,10 +355,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jul 18 14:50:21 2022
+# Mon Jul 18 15:14:35 2022
 
 ###########################################################]
-# Mon Jul 18 14:50:21 2022
+# Mon Jul 18 15:14:35 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -399,7 +400,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 @N: FX493 |Applying initial value "00000000" on instance txData[7:0].
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
@@ -411,7 +412,6 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @W: MO129 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":65:0:65:5|Sequential instance Packetiser.txBuffer.Length[0] is reduced to a combinational gate by constant propagation.
 @W: MO129 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":65:0:65:5|Sequential instance Packetiser.txBuffer.Length[2] is reduced to a combinational gate by constant propagation.
 @W: BN114 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":162:11:162:23|Removing instance pdp_ram_0_0_0 (in view: work.FIFO(verilog)) of black box view:LUCENT.DP16KB(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":52:0:52:5|Removing sequential instance opValid (in view: work.Streamer(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":62:0:62:5|Removing sequential instance ipData[15:0] (in view: work.Streamer(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":279:12:279:16|Removing sequential instance FF_17 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":285:12:285:16|Removing sequential instance FF_16 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
@@ -484,20 +484,20 @@ original code -> new code
    00000000000000000000000000000001 -> 1
 @N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":62:0:62:5|There are no possible illegal states for state machine rState[1:0] (in view: work.Streamer(verilog)); safe FSM implementation is not required.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 176MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Counter 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 176MB)
 
 
 
@@ -507,7 +507,7 @@ Clock Summary
           Start      Requested     Requested     Clock        Clock                Clock
 Level     Clock      Frequency     Period        Type         Group                Load 
 ----------------------------------------------------------------------------------------
-0 -       ipClk      50.0 MHz      20.000        declared     default_clkgroup     334  
+0 -       ipClk      50.0 MHz      20.000        declared     default_clkgroup     335  
                                                                                         
 0 -       System     200.0 MHz     5.000         system       system_clkgroup      0    
 ========================================================================================
@@ -520,7 +520,7 @@ Clock Load Summary
            Clock     Source          Clock Pin                           Non-clock Pin     Non-clock Pin
 Clock      Load      Pin             Seq Example                         Seq Example       Comb Example 
 --------------------------------------------------------------------------------------------------------
-ipClk      334       ipClk(port)     RdRegisters\.ClockTicks[31:0].C     -                 -            
+ipClk      335       ipClk(port)     RdRegisters\.ClockTicks[31:0].C     -                 -            
                                                                                                         
 System     0         -               -                                   -                 -            
 ========================================================================================================
@@ -536,14 +536,14 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 334 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 335 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ================================== Non-Gated/Non-Generated Clocks ===================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance              
 -----------------------------------------------------------------------------------------------------
-@KP:ckid0_0       ipClk               port                   334        RdRegisters\.ClockTicks[31:0]
+@KP:ckid0_0       ipClk               port                   335        RdRegisters\.ClockTicks[31:0]
 =====================================================================================================
 
 
@@ -552,24 +552,24 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 176MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 93MB peak: 177MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 91MB peak: 177MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Mon Jul 18 14:50:23 2022
+# Mon Jul 18 15:14:37 2022
 
 ###########################################################]
-# Mon Jul 18 14:50:23 2022
+# Mon Jul 18 15:14:37 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -614,7 +614,7 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
 
 @N: MF179 :|Found 9 by 9 bit equality operator ('==') un1_BytesReceived_3 (in view: work.UART_Packets(verilog))
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
@@ -622,54 +622,54 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 174MB peak: 174MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
+Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 177MB peak: 178MB)
 
 @N: FA113 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":185:13:185:51|Pipelining module un1_BytesReceived_3. For more information, search for "pipelining" in Online Help.
 @N: MF169 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":148:0:148:5|Pushed in register opRxStream\\\[Length\\\].
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 178MB peak: 178MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 180MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 178MB peak: 178MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 179MB peak: 180MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 178MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 179MB peak: 180MB)
+Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 178MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 180MB)
+Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 178MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:03s		     4.42ns		 258 /       324
+   1		0h:00m:04s		     4.42ns		 251 /       325
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 180MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 179MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @A: BN291 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart.v":55:0:55:5|Boundary register Packetiser.UART_Inst.opTx.fb (in view: work.Counter(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 180MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 179MB peak: 179MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 144MB peak: 181MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 143MB peak: 179MB)
 
 Writing Analyst data base C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 179MB peak: 181MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 179MB peak: 179MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 184MB peak: 184MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 184MB peak: 184MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 182MB peak: 185MB)
+Start final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 182MB peak: 184MB)
 
 @W: MT246 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":438:10:438:16|Blackbox AGEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":417:10:417:16|Blackbox ALEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -677,7 +677,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon Jul 18 14:50:30 2022
+# Timing report written on Mon Jul 18 15:14:45 2022
 #
 
 
@@ -719,7 +719,7 @@ Starting  Ending  |  constraint  slack   |  constraint  slack  |  constraint  sl
 ---------------------------------------------------------------------------------------------------------
 System    System  |  5.000       4.425   |  No paths    -      |  No paths    -      |  No paths    -    
 System    ipClk   |  20.000      17.919  |  No paths    -      |  No paths    -      |  No paths    -    
-ipClk     System  |  20.000      18.495  |  No paths    -      |  No paths    -      |  No paths    -    
+ipClk     System  |  20.000      18.431  |  No paths    -      |  No paths    -      |  No paths    -    
 ipClk     ipClk   |  20.000      13.825  |  No paths    -      |  No paths    -      |  No paths    -    
 =========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
@@ -772,7 +772,7 @@ Streamer1.wUpper                         ipClk         FD1S3JX     PD      fb   
 Packetiser.UART_Inst.BitsReceived[3]     ipClk         FD1S3IX     D       un1_BitsReceived_4_axbxc3     19.389       14.525
 Packetiser.rxState[4]                    ipClk         FD1S3AX     D       N_90_i                        19.389       14.580
 Streamer1.wUpper                         ipClk         FD1S3JX     D       wUpper_0_sqmuxa_1             19.389       14.744
-Streamer1.rState[0]                      ipClk         FD1S3AX     D       N_38s                         19.389       14.817
+Streamer1.rState[0]                      ipClk         FD1S3AX     D       N_37s                         19.389       14.817
 Packetiser.UART_Inst.rxData[0]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
 Packetiser.UART_Inst.rxData[1]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
 Packetiser.UART_Inst.rxData[2]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
@@ -919,16 +919,16 @@ Streamer1.FIFOBLOCK.AND2_t1     AND2     B        In      0.000     0.575 f     
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 183MB peak: 185MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 183MB peak: 184MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 183MB peak: 185MB)
+Finished timing report (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 183MB peak: 184MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lfxp2_5e-6
 
-Register bits: 335 of 4752 (7%)
+Register bits: 336 of 4752 (7%)
 PIC Latch:       0
 I/O cells:       16
 
@@ -948,12 +948,12 @@ FD1S3AX:        36
 FD1S3AY:        2
 FD1S3BX:        1
 FD1S3DX:        1
-FD1S3IX:        70
+FD1S3IX:        71
 FD1S3JX:        2
 GSR:            1
 IB:             7
 IFS1P3IX:       2
-INV:            15
+INV:            8
 OB:             9
 OFS1P3JX:       1
 ORCALUT4:       246
@@ -965,10 +965,10 @@ VLO:            7
 XOR2:           1
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 66MB peak: 185MB)
+At Mapper Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 66MB peak: 184MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:05s cputime
-# Mon Jul 18 14:50:30 2022
+Process took 0h:00m:08s realtime, 0h:00m:07s cputime
+# Mon Jul 18 15:14:46 2022
 
 ###########################################################]
 
@@ -1010,7 +1010,7 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    695 blocks expanded
+    689 blocks expanded
 Complete the first expansion.
 Writing 'Counter_impl1.ngd' ...
 Total CPU Time: 0 secs 
@@ -1055,17 +1055,17 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:    334 out of  3864 (9%)
-      PFU registers:          331 out of  3564 (9%)
+   Number of registers:    336 out of  3864 (9%)
+      PFU registers:          333 out of  3564 (9%)
       PIO registers:            3 out of   300 (1%)
-   Number of SLICEs:       275 out of  2376 (12%)
-      SLICEs as Logic/ROM:    275 out of  2376 (12%)
+   Number of SLICEs:       278 out of  2376 (12%)
+      SLICEs as Logic/ROM:    278 out of  2376 (12%)
       SLICEs as RAM:            0 out of   405 (0%)
-      SLICEs as Carry:         51 out of  2376 (2%)
-   Number of LUT4s:        364 out of  4752 (8%)
-      Number used as logic LUTs:        262
+      SLICEs as Carry:         58 out of  2376 (2%)
+   Number of LUT4s:        375 out of  4752 (8%)
+      Number used as logic LUTs:        259
       Number used as distributed RAM:     0
-      Number used as ripple logic:      102
+      Number used as ripple logic:      116
       Number used as shift registers:     0
    Number of PIO sites used: 16 out of 100 (16%)
    Number of PIO FIXEDDELAY:    0
@@ -1095,35 +1095,35 @@ Design Summary:
    --------------------------------
    Number of Used DSP Sites:  0 out of 24 (0 %)
    Number of clocks:  1
-     Net ipClk_c: 183 loads, 183 rising, 0 falling (Driver: PIO ipClk )
+     Net ipClk_c: 185 loads, 185 rising, 0 falling (Driver: PIO ipClk )
    Number of Clock Enables:  22
      Net Packetiser.UART_Inst.txClkCount_1_sqmuxa_i: 1 loads, 0 LSLICEs
-     Net Streamer1/FIFOBLOCK/wren_i: 5 loads, 5 LSLICEs
+     Net Streamer1/FIFOBLOCK/fcnt_en: 5 loads, 5 LSLICEs
      Net ipReset_c: 8 loads, 8 LSLICEs
-     Net Register/N_592: 4 loads, 4 LSLICEs
+     Net Register/LEDs11_i: 4 loads, 4 LSLICEs
      Net Control/OutputData_1_sqmuxa_1: 8 loads, 8 LSLICEs
-     Net Control/N_222_i: 16 loads, 16 LSLICEs
+     Net Control/N_240_i: 16 loads, 16 LSLICEs
      Net Control/N_57_i: 4 loads, 4 LSLICEs
      Net Control/opAddress_0_sqmuxa: 4 loads, 4 LSLICEs
      Net Control/un1_OutputData_0_sqmuxa_0_0: 16 loads, 16 LSLICEs
      Net Packetiser/Length_0_sqmuxa_1_0: 5 loads, 5 LSLICEs
      Net Packetiser/Data_0_sqmuxa_0: 4 loads, 4 LSLICEs
-     Net Packetiser/N_498: 4 loads, 4 LSLICEs
+     Net Packetiser/UART_TxSend_0_sqmuxa_1_i_o3_4_o2: 4 loads, 4 LSLICEs
      Net Packetiser/UART_Inst/opRxValid_1_sqmuxa_i: 1 loads, 1 LSLICEs
-     Net Packetiser/UART_Inst/N_202: 4 loads, 4 LSLICEs
+     Net Packetiser/UART_Inst/N_169: 4 loads, 4 LSLICEs
      Net Packetiser/UART_Inst/rxData_0_sqmuxa_i: 4 loads, 4 LSLICEs
-     Net Packetiser/UART_Inst/N_126: 1 loads, 1 LSLICEs
+     Net Packetiser/UART_Inst/N_35: 1 loads, 1 LSLICEs
      Net Packetiser/UART_Inst/rxState_3_sqmuxa: 4 loads, 4 LSLICEs
      Net Packetiser.N_113_1_i: 1 loads, 0 LSLICEs
-     Net Packetiser/N_133_i: 13 loads, 13 LSLICEs
+     Net Packetiser/N_76_i: 13 loads, 13 LSLICEs
      Net Packetiser/N_120_i: 2 loads, 2 LSLICEs
      Net Packetiser/Source_0_sqmuxa_1_0: 4 loads, 4 LSLICEs
      Net Packetiser/Destination_0_sqmuxa_1_0: 4 loads, 4 LSLICEs
-   Number of local set/reset loads for net ipReset_c merged into GSR:  10
+   Number of local set/reset loads for net ipReset_c merged into GSR:  11
    Number of LSRs:  11
-     Net N_207_i: 1 loads, 0 LSLICEs
+     Net N_187_i: 1 loads, 0 LSLICEs
      Net Streamer1/fb: 1 loads, 1 LSLICEs
-     Net ipReset_c: 46 loads, 45 LSLICEs
+     Net ipReset_c: 47 loads, 46 LSLICEs
      Net Register/Reset: 4 loads, 4 LSLICEs
      Net Register/un1_ipAddress_inv_i: 12 loads, 12 LSLICEs
      Net Control/opAddress_0_sqmuxa_1: 1 loads, 1 LSLICEs
@@ -1134,16 +1134,16 @@ Design Summary:
      Net Packetiser.opRxStream.EoP_0_sqmuxa: 4 loads, 3 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net ipReset_c: 173 loads
+     Net ipReset_c: 178 loads
      Net Control/tState[0]: 51 loads
      Net VCC: 32 loads
-     Net Streamer1/FIFOBLOCK/wren_i: 26 loads
      Net Packetiser/UART_Inst/VCC: 21 loads
      Net Address[0]: 20 loads
      Net Packetiser/UART_Inst/txClkBaud: 19 loads
-     Net Control/N_222_i: 16 loads
+     Net Control/N_240_i: 16 loads
      Net Control/un1_OutputData_0_sqmuxa_0_0: 16 loads
      Net Packetiser/UART_Inst/rxState[0]: 16 loads
+     Net Packetiser/UART_Inst/txState[0]: 16 loads
  
 
    Number of warnings:  1
@@ -1180,7 +1180,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Mon Jul 18 14:50:34 2022
+Mon Jul 18 15:14:51 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1210,11 +1210,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 2737 paths, 1 nets, and 1611 connections (89.20% coverage)
+Constraints cover 2850 paths, 1 nets, and 1640 connections (89.91% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Mon Jul 18 14:50:34 2022
+Mon Jul 18 15:14:52 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1244,7 +1244,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 2737 paths, 1 nets, and 1611 connections (89.20% coverage)
+Constraints cover 2850 paths, 1 nets, and 1640 connections (89.91% coverage)
 
 
 
@@ -1258,9 +1258,9 @@ Cumulative negative slack: 0 (0+0)
 
 --------------------------------------------------------------------------------
 
-Total CPU Time: 2 secs 
+Total CPU Time: 1 secs 
 Total REAL Time: 2 secs 
-Peak Memory Usage: 155 MB
+Peak Memory Usage: 156 MB
 
 
 mpartrce -p "Counter_impl1.p2t" -f "Counter_impl1.p3t" -tf "Counter_impl1.pt" "Counter_impl1_map.ncd" "Counter_impl1.ncd"
@@ -1270,7 +1270,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Counter_impl1_map.ncd"
-Mon Jul 18 14:50:35 2022
+Mon Jul 18 15:14:53 2022
 
 PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1 Counter_impl1_map.ncd Counter_impl1.dir/5_1.ncd Counter_impl1.prf
@@ -1298,23 +1298,23 @@ Device utilization summary:
    IOLOGIC            3/196           1% used
    PIO (prelim)      16/174           9% used
                      16/100          16% bonded
-   SLICE            275/2376         11% used
+   SLICE            278/2376         11% used
 
 
 
-Number of Signals: 712
-Number of Connections: 1806
+Number of Signals: 718
+Number of Connections: 1824
 
 Pin Constraint Summary:
    16 out of 16 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    ipClk_c (driver: ipClk, clk load #: 183)
+    ipClk_c (driver: ipClk, clk load #: 185)
 
 No signal is selected as DCS clock.
 
 The following 1 signal is selected to use the secondary clock routing resources:
-    ipReset_c (driver: ipReset, clk load #: 0, sr load #: 46, ce load #: 8)
+    ipReset_c (driver: ipReset, clk load #: 0, sr load #: 47, ce load #: 8)
 
 Signal ipReset_c is selected as Global Set/Reset.
 Starting Placer Phase 0.
@@ -1323,13 +1323,13 @@ Finished Placer Phase 0.  REAL time: 2 secs
 
 Starting Placer Phase 1.
 ....................
-Placer score = 63971.
-Finished Placer Phase 1.  REAL time: 8 secs 
+Placer score = 59884.
+Finished Placer Phase 1.  REAL time: 10 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  63523
-Finished Placer Phase 2.  REAL time: 8 secs 
+Placer score =  58977
+Finished Placer Phase 2.  REAL time: 10 secs 
 
 
 ------------------ Clock Report ------------------
@@ -1340,8 +1340,8 @@ Global Clock Resources:
   CLKDIV     : 0 out of 2 (0%)
 
 Global Clocks:
-  PRIMARY "ipClk_c" from comp "ipClk" on CLK_PIN site "21 (PL12A)", clk load = 183
-  SECONDARY "ipReset_c" from comp "ipReset" on PIO site "19 (PL11A)", clk load = 0, ce load = 8, sr load = 46
+  PRIMARY "ipClk_c" from comp "ipClk" on CLK_PIN site "21 (PL12A)", clk load = 185
+  SECONDARY "ipReset_c" from comp "ipReset" on PIO site "19 (PL11A)", clk load = 0, ce load = 8, sr load = 47
 
   PRIMARY  : 1 out of 8 (12%)
      DCS   : 0 out of 2 (0%)
@@ -1386,16 +1386,16 @@ DSP Block #:              1 2 3
 # of MULT9X9ADDSUBB            
 # of MULT9X9ADDSUBSUMB         
 
-Total placer CPU time: 8 secs 
+Total placer CPU time: 9 secs 
 
 Dumping design to file Counter_impl1.dir/5_1.ncd.
 
-0 connections routed; 1806 unrouted.
+0 connections routed; 1824 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 10 secs 
+Completed router resource preassignment. Real time: 12 secs 
 
-Start NBR router at 14:50:45 07/18/22
+Start NBR router at 15:15:05 07/18/22
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -1410,38 +1410,38 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 14:50:45 07/18/22
+Start NBR special constraint process at 15:15:05 07/18/22
 
-Start NBR section for initial routing at 14:50:45 07/18/22
+Start NBR section for initial routing at 15:15:05 07/18/22
 Level 4, iteration 1
-59(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 12.402ns/0.000ns; real time: 10 secs 
+53(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 12.994ns/0.000ns; real time: 13 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 14:50:45 07/18/22
+Start NBR section for normal routing at 15:15:06 07/18/22
 Level 4, iteration 1
-35(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 12.402ns/0.000ns; real time: 10 secs 
+28(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 13.163ns/0.000ns; real time: 13 secs 
 Level 4, iteration 2
-12(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 12.402ns/0.000ns; real time: 11 secs 
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 13.163ns/0.000ns; real time: 13 secs 
 Level 4, iteration 3
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 12.402ns/0.000ns; real time: 11 secs 
+Estimated worst slack/total negative slack<setup>: 13.163ns/0.000ns; real time: 13 secs 
 Level 4, iteration 4
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 12.402ns/0.000ns; real time: 11 secs 
+Estimated worst slack/total negative slack<setup>: 13.163ns/0.000ns; real time: 13 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 14:50:46 07/18/22
+Start NBR section for setup/hold timing optimization with effort level 3 at 15:15:06 07/18/22
 
-Start NBR section for re-routing at 14:50:47 07/18/22
+Start NBR section for re-routing at 15:15:08 07/18/22
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 12.402ns/0.000ns; real time: 12 secs 
+Estimated worst slack/total negative slack<setup>: 13.163ns/0.000ns; real time: 15 secs 
 
-Start NBR section for post-routing at 14:50:47 07/18/22
+Start NBR section for post-routing at 15:15:08 07/18/22
 
 End NBR router with 0 unrouted connection
 
@@ -1449,17 +1449,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 12.402ns
+  Estimated worst slack<setup> : 13.163ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 12 secs 
-Total REAL time: 13 secs 
+Total CPU time 14 secs 
+Total REAL time: 16 secs 
 Completely routed.
-End of route.  1806 routed (100.00%); 0 unrouted.
+End of route.  1824 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -1470,14 +1470,14 @@ Dumping design to file Counter_impl1.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 12.402
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 13.163
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.175
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 12 secs 
-Total REAL time to completion: 13 secs 
+Total CPU  time to completion: 14 secs 
+Total REAL time to completion: 16 secs 
 
 par done!
 
@@ -1514,7 +1514,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Mon Jul 18 14:50:49 2022
+Mon Jul 18 15:15:10 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1544,11 +1544,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 2737 paths, 1 nets, and 1611 connections (89.20% coverage)
+Constraints cover 2850 paths, 1 nets, and 1640 connections (89.91% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Mon Jul 18 14:50:49 2022
+Mon Jul 18 15:15:10 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1578,7 +1578,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 2737 paths, 1 nets, and 1611 connections (89.20% coverage)
+Constraints cover 2850 paths, 1 nets, and 1640 connections (89.91% coverage)
 
 
 
@@ -1592,9 +1592,9 @@ Cumulative negative slack: 0 (0+0)
 
 --------------------------------------------------------------------------------
 
-Total CPU Time: 2 secs 
+Total CPU Time: 1 secs 
 Total REAL Time: 2 secs 
-Peak Memory Usage: 156 MB
+Peak Memory Usage: 157 MB
 
 
 iotiming  "Counter_impl1.ncd" "Counter_impl1.prf"
@@ -1719,5 +1719,5 @@ Preference Summary:
 Creating bit map...
 Saving bit stream in "Counter_impl1.jed".
 Total CPU Time: 3 secs 
-Total REAL Time: 4 secs 
+Total REAL Time: 3 secs 
 Peak Memory Usage: 277 MB

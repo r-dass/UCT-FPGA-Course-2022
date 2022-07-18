@@ -12,8 +12,8 @@
 #CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\UART.v":1657723536
 #CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\UART_Packets.v":1658127780
 #CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Controller.v":1658143175
-#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Streamer.v":1658148256
-#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Counter.v":1658148604
+#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Streamer.v":1658149125
+#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Counter.v":1658150055
 #numinternalfiles:6
 #defaultlanguage:verilog
 0			"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v" verilog

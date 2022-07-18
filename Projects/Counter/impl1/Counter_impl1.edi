@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2022 7 18 14 50 29)
+      (timeStamp 2022 7 18 15 14 45)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "Q-2020.03L-SP1, mapper map202003lat, Build 172R"))
      )
@@ -324,20 +324,14 @@
        (view netlist (viewType NETLIST)
          (interface
            (port (array (rename fifo_size "FIFO_Size[8:0]") 9) (direction OUTPUT))
-           (port (array (rename fifo_size_i "FIFO_Size_i[7:0]") 8) (direction OUTPUT))
            (port ipReset_c_i (direction INPUT))
            (port ipClk_c (direction INPUT))
+           (port RE (direction INPUT))
            (port WE (direction INPUT))
+           (port Empty_i (direction OUTPUT))
          )
          (contents
-          (instance FF_28_RNIK4F2 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
-          (instance FF_27_RNIJ4F2 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
-          (instance FF_26_RNII4F2 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
-          (instance FF_25_RNIH4F2 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
-          (instance FF_24_RNIG4F2 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
-          (instance FF_23_RNIF4F2 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
-          (instance FF_22_RNIE4F2 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
-          (instance FF_21_RNID4F2 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
+          (instance FF_19_RNIK3F2 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
           (instance AND2_t3 (viewRef PRIM (cellRef AND2 (libraryRef LUCENT)))
           )
           (instance INV_3 (viewRef PRIM (cellRef INV (libraryRef LUCENT)))
@@ -425,101 +419,15 @@
           (instance e_cmp_0 (viewRef verilog (cellRef ALEB2))          )
           (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
           (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
-          (net (rename FIFO_Size_0 "FIFO_Size[0]") (joined
-           (portRef Q (instanceRef FF_28))
-           (portRef A0 (instanceRef e_cmp_0))
-           (portRef A0 (instanceRef g_cmp_0))
-           (portRef PC0 (instanceRef bdcnt_bctr_0))
-           (portRef A (instanceRef FF_28_RNIK4F2))
-           (portRef (member fifo_size 8))
+          (net Empty (joined
+           (portRef Q (instanceRef FF_19))
+           (portRef AD0 (instanceRef LUT4_1))
+           (portRef A (instanceRef INV_2))
+           (portRef A (instanceRef FF_19_RNIK3F2))
           ))
-          (net (rename FIFO_Size_i_0 "FIFO_Size_i[0]") (joined
-           (portRef Z (instanceRef FF_28_RNIK4F2))
-           (portRef (member fifo_size_i 7))
-          ))
-          (net (rename FIFO_Size_1 "FIFO_Size[1]") (joined
-           (portRef Q (instanceRef FF_27))
-           (portRef A1 (instanceRef e_cmp_0))
-           (portRef A1 (instanceRef g_cmp_0))
-           (portRef PC1 (instanceRef bdcnt_bctr_0))
-           (portRef A (instanceRef FF_27_RNIJ4F2))
-           (portRef (member fifo_size 7))
-          ))
-          (net (rename FIFO_Size_i_1 "FIFO_Size_i[1]") (joined
-           (portRef Z (instanceRef FF_27_RNIJ4F2))
-           (portRef (member fifo_size_i 6))
-          ))
-          (net (rename FIFO_Size_2 "FIFO_Size[2]") (joined
-           (portRef Q (instanceRef FF_26))
-           (portRef A0 (instanceRef e_cmp_1))
-           (portRef A0 (instanceRef g_cmp_1))
-           (portRef PC0 (instanceRef bdcnt_bctr_1))
-           (portRef A (instanceRef FF_26_RNII4F2))
-           (portRef (member fifo_size 6))
-          ))
-          (net (rename FIFO_Size_i_2 "FIFO_Size_i[2]") (joined
-           (portRef Z (instanceRef FF_26_RNII4F2))
-           (portRef (member fifo_size_i 5))
-          ))
-          (net (rename FIFO_Size_3 "FIFO_Size[3]") (joined
-           (portRef Q (instanceRef FF_25))
-           (portRef A1 (instanceRef e_cmp_1))
-           (portRef A1 (instanceRef g_cmp_1))
-           (portRef PC1 (instanceRef bdcnt_bctr_1))
-           (portRef A (instanceRef FF_25_RNIH4F2))
-           (portRef (member fifo_size 5))
-          ))
-          (net (rename FIFO_Size_i_3 "FIFO_Size_i[3]") (joined
-           (portRef Z (instanceRef FF_25_RNIH4F2))
-           (portRef (member fifo_size_i 4))
-          ))
-          (net (rename FIFO_Size_4 "FIFO_Size[4]") (joined
-           (portRef Q (instanceRef FF_24))
-           (portRef A0 (instanceRef e_cmp_2))
-           (portRef A0 (instanceRef g_cmp_2))
-           (portRef PC0 (instanceRef bdcnt_bctr_2))
-           (portRef A (instanceRef FF_24_RNIG4F2))
-           (portRef (member fifo_size 4))
-          ))
-          (net (rename FIFO_Size_i_4 "FIFO_Size_i[4]") (joined
-           (portRef Z (instanceRef FF_24_RNIG4F2))
-           (portRef (member fifo_size_i 3))
-          ))
-          (net (rename FIFO_Size_5 "FIFO_Size[5]") (joined
-           (portRef Q (instanceRef FF_23))
-           (portRef A1 (instanceRef e_cmp_2))
-           (portRef A1 (instanceRef g_cmp_2))
-           (portRef PC1 (instanceRef bdcnt_bctr_2))
-           (portRef A (instanceRef FF_23_RNIF4F2))
-           (portRef (member fifo_size 3))
-          ))
-          (net (rename FIFO_Size_i_5 "FIFO_Size_i[5]") (joined
-           (portRef Z (instanceRef FF_23_RNIF4F2))
-           (portRef (member fifo_size_i 2))
-          ))
-          (net (rename FIFO_Size_6 "FIFO_Size[6]") (joined
-           (portRef Q (instanceRef FF_22))
-           (portRef A0 (instanceRef e_cmp_3))
-           (portRef A0 (instanceRef g_cmp_3))
-           (portRef PC0 (instanceRef bdcnt_bctr_3))
-           (portRef A (instanceRef FF_22_RNIE4F2))
-           (portRef (member fifo_size 2))
-          ))
-          (net (rename FIFO_Size_i_6 "FIFO_Size_i[6]") (joined
-           (portRef Z (instanceRef FF_22_RNIE4F2))
-           (portRef (member fifo_size_i 1))
-          ))
-          (net (rename FIFO_Size_7 "FIFO_Size[7]") (joined
-           (portRef Q (instanceRef FF_21))
-           (portRef A1 (instanceRef e_cmp_3))
-           (portRef A1 (instanceRef g_cmp_3))
-           (portRef PC1 (instanceRef bdcnt_bctr_3))
-           (portRef A (instanceRef FF_21_RNID4F2))
-           (portRef (member fifo_size 1))
-          ))
-          (net (rename FIFO_Size_i_7 "FIFO_Size_i[7]") (joined
-           (portRef Z (instanceRef FF_21_RNID4F2))
-           (portRef (member fifo_size_i 0))
+          (net Empty_i (joined
+           (portRef Z (instanceRef FF_19_RNIK3F2))
+           (portRef Empty_i)
           ))
           (net WE (joined
            (portRef WE)
@@ -549,36 +457,8 @@
            (portRef AD0 (instanceRef LUT4_0))
            (portRef A (instanceRef INV_3))
           ))
-          (net GND (joined
-           (portRef Z (instanceRef GND))
-           (portRef B1 (instanceRef e_cmp_0))
-           (portRef B1 (instanceRef e_cmp_1))
-           (portRef B0 (instanceRef e_cmp_1))
-           (portRef B1 (instanceRef e_cmp_2))
-           (portRef B0 (instanceRef e_cmp_2))
-           (portRef B1 (instanceRef e_cmp_3))
-           (portRef B0 (instanceRef e_cmp_3))
-           (portRef B1 (instanceRef e_cmp_4))
-           (portRef B0 (instanceRef e_cmp_4))
-           (portRef A1 (instanceRef e_cmp_4))
-           (portRef B1 (instanceRef g_cmp_4))
-           (portRef A1 (instanceRef g_cmp_4))
-           (portRef B1 (instanceRef a1))
-           (portRef B0 (instanceRef a1))
-           (portRef A1 (instanceRef a1))
-           (portRef A0 (instanceRef a1))
-           (portRef CI (instanceRef g_cmp_ci_a))
-           (portRef B1 (instanceRef a0))
-           (portRef B0 (instanceRef a0))
-           (portRef A1 (instanceRef a0))
-           (portRef A0 (instanceRef a0))
-           (portRef CI (instanceRef e_cmp_ci_a))
-           (portRef PC1 (instanceRef bdcnt_bctr_4))
-           (portRef CI (instanceRef bdcnt_bctr_cia))
-           (portRef B0 (instanceRef bdcnt_bctr_cia))
-           (portRef A0 (instanceRef bdcnt_bctr_cia))
-           (portRef AD3 (instanceRef LUT4_0))
-           (portRef AD3 (instanceRef LUT4_1))
+          (net RE (joined
+           (portRef RE)
            (portRef A (instanceRef AND2_t2))
           ))
           (net invout_0 (joined
@@ -591,11 +471,6 @@
            (portRef AD1 (instanceRef LUT4_0))
            (portRef A (instanceRef INV_1))
            (portRef B (instanceRef XOR2_t0))
-          ))
-          (net Empty (joined
-           (portRef Q (instanceRef FF_19))
-           (portRef AD0 (instanceRef LUT4_1))
-           (portRef A (instanceRef INV_2))
           ))
           (net rden_i_inv (joined
            (portRef Z (instanceRef INV_1))
@@ -630,6 +505,37 @@
           (net cmp_le_1 (joined
            (portRef S0 (instanceRef a0))
            (portRef AD2 (instanceRef LUT4_1))
+          ))
+          (net GND (joined
+           (portRef Z (instanceRef GND))
+           (portRef B1 (instanceRef e_cmp_0))
+           (portRef B1 (instanceRef e_cmp_1))
+           (portRef B0 (instanceRef e_cmp_1))
+           (portRef B1 (instanceRef e_cmp_2))
+           (portRef B0 (instanceRef e_cmp_2))
+           (portRef B1 (instanceRef e_cmp_3))
+           (portRef B0 (instanceRef e_cmp_3))
+           (portRef B1 (instanceRef e_cmp_4))
+           (portRef B0 (instanceRef e_cmp_4))
+           (portRef A1 (instanceRef e_cmp_4))
+           (portRef B1 (instanceRef g_cmp_4))
+           (portRef A1 (instanceRef g_cmp_4))
+           (portRef B1 (instanceRef a1))
+           (portRef B0 (instanceRef a1))
+           (portRef A1 (instanceRef a1))
+           (portRef A0 (instanceRef a1))
+           (portRef CI (instanceRef g_cmp_ci_a))
+           (portRef B1 (instanceRef a0))
+           (portRef B0 (instanceRef a0))
+           (portRef A1 (instanceRef a0))
+           (portRef A0 (instanceRef a0))
+           (portRef CI (instanceRef e_cmp_ci_a))
+           (portRef PC1 (instanceRef bdcnt_bctr_4))
+           (portRef CI (instanceRef bdcnt_bctr_cia))
+           (portRef B0 (instanceRef bdcnt_bctr_cia))
+           (portRef A0 (instanceRef bdcnt_bctr_cia))
+           (portRef AD3 (instanceRef LUT4_0))
+           (portRef AD3 (instanceRef LUT4_1))
           ))
           (net empty_d (joined
            (portRef DO0 (instanceRef LUT4_1))
@@ -675,6 +581,13 @@
            (portRef CD (instanceRef FF_27))
            (portRef CD (instanceRef FF_28))
           ))
+          (net (rename FIFO_Size_0 "FIFO_Size[0]") (joined
+           (portRef Q (instanceRef FF_28))
+           (portRef A0 (instanceRef e_cmp_0))
+           (portRef A0 (instanceRef g_cmp_0))
+           (portRef PC0 (instanceRef bdcnt_bctr_0))
+           (portRef (member fifo_size 8))
+          ))
           (net VCC (joined
            (portRef Z (instanceRef VCC))
            (portRef B1 (instanceRef g_cmp_ci_a))
@@ -690,29 +603,78 @@
            (portRef NC1 (instanceRef bdcnt_bctr_0))
            (portRef D (instanceRef FF_27))
           ))
+          (net (rename FIFO_Size_1 "FIFO_Size[1]") (joined
+           (portRef Q (instanceRef FF_27))
+           (portRef A1 (instanceRef e_cmp_0))
+           (portRef A1 (instanceRef g_cmp_0))
+           (portRef PC1 (instanceRef bdcnt_bctr_0))
+           (portRef (member fifo_size 7))
+          ))
           (net ifcount_2 (joined
            (portRef NC0 (instanceRef bdcnt_bctr_1))
            (portRef D (instanceRef FF_26))
+          ))
+          (net (rename FIFO_Size_2 "FIFO_Size[2]") (joined
+           (portRef Q (instanceRef FF_26))
+           (portRef A0 (instanceRef e_cmp_1))
+           (portRef A0 (instanceRef g_cmp_1))
+           (portRef PC0 (instanceRef bdcnt_bctr_1))
+           (portRef (member fifo_size 6))
           ))
           (net ifcount_3 (joined
            (portRef NC1 (instanceRef bdcnt_bctr_1))
            (portRef D (instanceRef FF_25))
           ))
+          (net (rename FIFO_Size_3 "FIFO_Size[3]") (joined
+           (portRef Q (instanceRef FF_25))
+           (portRef A1 (instanceRef e_cmp_1))
+           (portRef A1 (instanceRef g_cmp_1))
+           (portRef PC1 (instanceRef bdcnt_bctr_1))
+           (portRef (member fifo_size 5))
+          ))
           (net ifcount_4 (joined
            (portRef NC0 (instanceRef bdcnt_bctr_2))
            (portRef D (instanceRef FF_24))
+          ))
+          (net (rename FIFO_Size_4 "FIFO_Size[4]") (joined
+           (portRef Q (instanceRef FF_24))
+           (portRef A0 (instanceRef e_cmp_2))
+           (portRef A0 (instanceRef g_cmp_2))
+           (portRef PC0 (instanceRef bdcnt_bctr_2))
+           (portRef (member fifo_size 4))
           ))
           (net ifcount_5 (joined
            (portRef NC1 (instanceRef bdcnt_bctr_2))
            (portRef D (instanceRef FF_23))
           ))
+          (net (rename FIFO_Size_5 "FIFO_Size[5]") (joined
+           (portRef Q (instanceRef FF_23))
+           (portRef A1 (instanceRef e_cmp_2))
+           (portRef A1 (instanceRef g_cmp_2))
+           (portRef PC1 (instanceRef bdcnt_bctr_2))
+           (portRef (member fifo_size 3))
+          ))
           (net ifcount_6 (joined
            (portRef NC0 (instanceRef bdcnt_bctr_3))
            (portRef D (instanceRef FF_22))
           ))
+          (net (rename FIFO_Size_6 "FIFO_Size[6]") (joined
+           (portRef Q (instanceRef FF_22))
+           (portRef A0 (instanceRef e_cmp_3))
+           (portRef A0 (instanceRef g_cmp_3))
+           (portRef PC0 (instanceRef bdcnt_bctr_3))
+           (portRef (member fifo_size 2))
+          ))
           (net ifcount_7 (joined
            (portRef NC1 (instanceRef bdcnt_bctr_3))
            (portRef D (instanceRef FF_21))
+          ))
+          (net (rename FIFO_Size_7 "FIFO_Size[7]") (joined
+           (portRef Q (instanceRef FF_21))
+           (portRef A1 (instanceRef e_cmp_3))
+           (portRef A1 (instanceRef g_cmp_3))
+           (portRef PC1 (instanceRef bdcnt_bctr_3))
+           (portRef (member fifo_size 1))
           ))
           (net ifcount_8 (joined
            (portRef NC0 (instanceRef bdcnt_bctr_4))
@@ -842,7 +804,7 @@
            (port UART_RxData_i_0 (direction OUTPUT))
            (port opTx_7 (direction OUTPUT))
            (port txClkCount_1_sqmuxa_i (direction OUTPUT))
-           (port N_207_i (direction OUTPUT))
+           (port N_187_i (direction OUTPUT))
            (port UART_RxValid (direction OUTPUT))
            (port UART_TxBusy (direction OUTPUT))
            (port ipReset_c_i (direction INPUT))
@@ -1034,7 +996,7 @@
           (instance txClkBaud_RNIIITK (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B+A)"))
           )
-          (instance opTxBusy_1_sqmuxa_i_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance opTxBusy_1_sqmuxa_i_0_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C+(!B A))"))
           )
           (instance un1_ipReset_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -1097,25 +1059,25 @@
           (instance (rename txState_ns_i_i_o2_0 "txState_ns_i_i_o2[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (!B+A)+C A)"))
           )
+          (instance (rename rxData_7_6 "rxData_7[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(C (B !A))"))
+          )
+          (instance (rename rxData_7_5 "rxData_7[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(C (B !A))"))
+          )
           (instance (rename rxData_7_0 "rxData_7[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B !A))"))
           )
           (instance (rename rxData_7_1 "rxData_7[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B !A))"))
           )
-          (instance (rename rxData_7_3 "rxData_7[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (B !A))"))
-          )
           (instance (rename rxData_7_2 "rxData_7[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B !A))"))
           )
+          (instance (rename rxData_7_3 "rxData_7[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(C (B !A))"))
+          )
           (instance (rename rxData_7_4 "rxData_7[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (B !A))"))
-          )
-          (instance (rename rxData_7_5 "rxData_7[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (B !A))"))
-          )
-          (instance (rename rxData_7_6 "rxData_7[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B !A))"))
           )
           (instance (rename rxData_7_7 "rxData_7[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -1154,7 +1116,7 @@
           (instance un1_ipReset_0_a2_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (C (B !A)))"))
           )
-          (instance opTx_7_iv_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance opTx_7_iv_0_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C+(B A))"))
           )
           (instance (rename rxState_ns_i_a3_0_3_0 "rxState_ns_i_a3_0_3[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -1164,16 +1126,16 @@
            (property lut_function (string "(C (B !A))"))
           )
           (instance rxClkBaud_5 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (C (B A)))"))
+           (property lut_function (string "(D (C (B !A)))"))
           )
           (instance rxClkBaud_6 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (!B !A)))"))
-          )
-          (instance txClkBaud_5 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C (!B !A)))"))
           )
+          (instance txClkBaud_5 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (B A)))"))
+          )
           (instance txClkBaud_6 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (C (B A)))"))
+           (property lut_function (string "(D (C (B !A)))"))
           )
           (instance un1_ipReset_0_a2_0_1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B !A)"))
@@ -1283,7 +1245,7 @@
            (portRef B0 (instanceRef txClkCount_4_s_9_0))
            (portRef A (instanceRef un1_ipReset_1))
            (portRef C (instanceRef txData_RNO_7))
-           (portRef C (instanceRef opTx_7_iv_0))
+           (portRef C (instanceRef opTx_7_iv_0_0))
            (portRef D (instanceRef txData_RNO_0))
            (portRef D (instanceRef txData_RNO_1))
            (portRef D (instanceRef txData_RNO_2))
@@ -1292,18 +1254,18 @@
            (portRef D (instanceRef txData_RNO_5))
            (portRef D (instanceRef txData_RNO_6))
            (portRef C (instanceRef rxData_7_7))
-           (portRef C (instanceRef rxData_7_6))
-           (portRef C (instanceRef rxData_7_5))
            (portRef C (instanceRef rxData_7_4))
-           (portRef C (instanceRef rxData_7_2))
            (portRef C (instanceRef rxData_7_3))
+           (portRef C (instanceRef rxData_7_2))
            (portRef C (instanceRef rxData_7_1))
            (portRef C (instanceRef rxData_7_0))
+           (portRef C (instanceRef rxData_7_5))
+           (portRef C (instanceRef rxData_7_6))
            (portRef D (instanceRef rxState_3_sqmuxa))
            (portRef C (instanceRef opRxValid_0_sqmuxa))
            (portRef C (instanceRef txData_0_sqmuxa_1_i_0))
            (portRef C (instanceRef un1_ipReset_0))
-           (portRef C (instanceRef opTxBusy_1_sqmuxa_i_0))
+           (portRef C (instanceRef opTxBusy_1_sqmuxa_i_0_0))
            (portRef B (instanceRef txClkBaud_RNIIITK))
            (portRef D (instanceRef rxState_srsts_0))
            (portRef D (instanceRef txState_srsts_0))
@@ -1337,7 +1299,7 @@
            (portRef B (instanceRef un1_BitsSent_3_axbxc0))
            (portRef B (instanceRef txData_0_sqmuxa_1_i_0))
            (portRef B (instanceRef un1_ipReset_0))
-           (portRef A (instanceRef opTxBusy_1_sqmuxa_i_0))
+           (portRef A (instanceRef opTxBusy_1_sqmuxa_i_0_0))
            (portRef A (instanceRef txClkBaud_RNIIITK))
            (portRef B (instanceRef txState_srsts_0))
            (portRef B (instanceRef txState_ns_i_i_o2_RNINH5S_0))
@@ -1509,17 +1471,17 @@
            (portRef B (instanceRef opRxValid_RNO))
            (portRef B (instanceRef rxState_srsts_RNO_0))
           ))
-          (net N_103 (joined
+          (net N_151 (joined
            (portRef Z (instanceRef rxState_ns_i_a3_0_3_0))
            (portRef A (instanceRef opRxData_0_sqmuxa))
            (portRef A (instanceRef rxData_7_7))
-           (portRef A (instanceRef rxData_7_6))
-           (portRef A (instanceRef rxData_7_5))
            (portRef A (instanceRef rxData_7_4))
-           (portRef A (instanceRef rxData_7_2))
            (portRef A (instanceRef rxData_7_3))
+           (portRef A (instanceRef rxData_7_2))
            (portRef A (instanceRef rxData_7_1))
            (portRef A (instanceRef rxData_7_0))
+           (portRef A (instanceRef rxData_7_5))
+           (portRef A (instanceRef rxData_7_6))
            (portRef A (instanceRef un1_opRxValid20_1))
            (portRef C (instanceRef opRxValid_RNO))
            (portRef C (instanceRef rxState_srsts_RNO_0))
@@ -1569,7 +1531,7 @@
           (net (rename txState_0 "txState[0]") (joined
            (portRef Q (instanceRef txState_0))
            (portRef A (instanceRef txData_RNO_7))
-           (portRef B (instanceRef opTx_7_iv_0))
+           (portRef B (instanceRef opTx_7_iv_0_0))
            (portRef C (instanceRef un1_ipReset_0_a2_0))
            (portRef B (instanceRef txData_RNO_0))
            (portRef B (instanceRef txData_RNO_1))
@@ -1581,7 +1543,7 @@
            (portRef B (instanceRef txState_ns_i_i_o2_0))
            (portRef C (instanceRef un1_BitsSent_3_ac0))
            (portRef C (instanceRef un1_BitsSent_3_axbxc0))
-           (portRef B (instanceRef opTxBusy_1_sqmuxa_i_0))
+           (portRef B (instanceRef opTxBusy_1_sqmuxa_i_0_0))
            (portRef C (instanceRef txState_srsts_0))
            (portRef B (instanceRef BitsSent_RNO_1))
           ))
@@ -1697,11 +1659,11 @@
            (portRef D1 (instanceRef un4_rxClkCount_s_9_0))
            (portRef D0 (instanceRef un4_rxClkCount_s_9_0))
           ))
-          (net N_276_i (joined
+          (net N_171_i (joined
            (portRef Z (instanceRef txData_RNO_0))
            (portRef D (instanceRef txData_0))
           ))
-          (net N_202 (joined
+          (net N_169 (joined
            (portRef Z (instanceRef txData_0_sqmuxa_1_i_0))
            (portRef SP (instanceRef txData_7))
            (portRef SP (instanceRef txData_6))
@@ -1714,9 +1676,9 @@
           ))
           (net (rename txData_0 "txData[0]") (joined
            (portRef Q (instanceRef txData_0))
-           (portRef A (instanceRef opTx_7_iv_0))
+           (portRef A (instanceRef opTx_7_iv_0_0))
           ))
-          (net N_274_i (joined
+          (net N_173_i (joined
            (portRef Z (instanceRef txData_RNO_1))
            (portRef D (instanceRef txData_1))
           ))
@@ -1724,7 +1686,7 @@
            (portRef Q (instanceRef txData_1))
            (portRef A (instanceRef txData_RNO_0))
           ))
-          (net N_272_i (joined
+          (net N_175_i (joined
            (portRef Z (instanceRef txData_RNO_2))
            (portRef D (instanceRef txData_2))
           ))
@@ -1732,7 +1694,7 @@
            (portRef Q (instanceRef txData_2))
            (portRef A (instanceRef txData_RNO_1))
           ))
-          (net N_270_i (joined
+          (net N_177_i (joined
            (portRef Z (instanceRef txData_RNO_3))
            (portRef D (instanceRef txData_3))
           ))
@@ -1740,7 +1702,7 @@
            (portRef Q (instanceRef txData_3))
            (portRef A (instanceRef txData_RNO_2))
           ))
-          (net N_268_i (joined
+          (net N_179_i (joined
            (portRef Z (instanceRef txData_RNO_4))
            (portRef D (instanceRef txData_4))
           ))
@@ -1748,7 +1710,7 @@
            (portRef Q (instanceRef txData_4))
            (portRef A (instanceRef txData_RNO_3))
           ))
-          (net N_266_i (joined
+          (net N_181_i (joined
            (portRef Z (instanceRef txData_RNO_5))
            (portRef D (instanceRef txData_5))
           ))
@@ -1756,7 +1718,7 @@
            (portRef Q (instanceRef txData_5))
            (portRef A (instanceRef txData_RNO_4))
           ))
-          (net N_264_i (joined
+          (net N_183_i (joined
            (portRef Z (instanceRef txData_RNO_6))
            (portRef D (instanceRef txData_6))
           ))
@@ -1775,52 +1737,52 @@
           (net (rename txClkCount_0 "txClkCount[0]") (joined
            (portRef Q (instanceRef txClkCount_0))
            (portRef B1 (instanceRef txClkCount_4_cry_0_0))
-           (portRef A (instanceRef txClkBaud_6))
+           (portRef A (instanceRef txClkBaud_5))
           ))
           (net (rename txClkCount_1 "txClkCount[1]") (joined
            (portRef Q (instanceRef txClkCount_1))
            (portRef B0 (instanceRef txClkCount_4_cry_1_0))
-           (portRef A (instanceRef txClkBaud_5))
+           (portRef A (instanceRef txClkBaud_6))
           ))
           (net (rename txClkCount_2 "txClkCount[2]") (joined
            (portRef Q (instanceRef txClkCount_2))
            (portRef B1 (instanceRef txClkCount_4_cry_1_0))
-           (portRef B (instanceRef txClkBaud_5))
+           (portRef C (instanceRef txClkBaud))
           ))
           (net (rename txClkCount_3 "txClkCount[3]") (joined
            (portRef Q (instanceRef txClkCount_3))
            (portRef B0 (instanceRef txClkCount_4_cry_3_0))
-           (portRef C (instanceRef txClkBaud_5))
+           (portRef D (instanceRef txClkBaud))
           ))
           (net (rename txClkCount_4 "txClkCount[4]") (joined
            (portRef Q (instanceRef txClkCount_4))
            (portRef B1 (instanceRef txClkCount_4_cry_3_0))
-           (portRef B (instanceRef txClkBaud_6))
+           (portRef B (instanceRef txClkBaud_5))
           ))
           (net (rename txClkCount_5 "txClkCount[5]") (joined
            (portRef Q (instanceRef txClkCount_5))
            (portRef B0 (instanceRef txClkCount_4_cry_5_0))
-           (portRef C (instanceRef txClkBaud_6))
+           (portRef B (instanceRef txClkBaud_6))
           ))
           (net (rename txClkCount_6 "txClkCount[6]") (joined
            (portRef Q (instanceRef txClkCount_6))
            (portRef B1 (instanceRef txClkCount_4_cry_5_0))
-           (portRef C (instanceRef txClkBaud))
+           (portRef C (instanceRef txClkBaud_5))
           ))
           (net (rename txClkCount_7 "txClkCount[7]") (joined
            (portRef Q (instanceRef txClkCount_7))
            (portRef B0 (instanceRef txClkCount_4_cry_7_0))
-           (portRef D (instanceRef txClkBaud_6))
+           (portRef C (instanceRef txClkBaud_6))
           ))
           (net (rename txClkCount_8 "txClkCount[8]") (joined
            (portRef Q (instanceRef txClkCount_8))
            (portRef B1 (instanceRef txClkCount_4_cry_7_0))
-           (portRef D (instanceRef txClkBaud_5))
+           (portRef D (instanceRef txClkBaud_6))
           ))
           (net (rename txClkCount_9 "txClkCount[9]") (joined
            (portRef Q (instanceRef txClkCount_9))
            (portRef A0 (instanceRef txClkCount_4_s_9_0))
-           (portRef D (instanceRef txClkBaud))
+           (portRef D (instanceRef txClkBaud_5))
           ))
           (net N_55s (joined
            (portRef Z (instanceRef rxState_srsts_0))
@@ -1934,7 +1896,7 @@
           (net (rename rxClkCount_2 "rxClkCount[2]") (joined
            (portRef Q (instanceRef rxClkCount_2))
            (portRef A1 (instanceRef un4_rxClkCount_cry_1_0))
-           (portRef B (instanceRef rxClkBaud_6))
+           (portRef A (instanceRef rxClkBaud_5))
           ))
           (net (rename rxClkCount_3_3 "rxClkCount_3[3]") (joined
            (portRef Z (instanceRef rxClkCount_3_iv_3))
@@ -1943,7 +1905,7 @@
           (net (rename rxClkCount_3 "rxClkCount[3]") (joined
            (portRef Q (instanceRef rxClkCount_3))
            (portRef A0 (instanceRef un4_rxClkCount_cry_3_0))
-           (portRef C (instanceRef rxClkBaud_6))
+           (portRef B (instanceRef rxClkBaud_6))
           ))
           (net (rename rxClkCount_3_4 "rxClkCount_3[4]") (joined
            (portRef Z (instanceRef rxClkCount_3_iv_4))
@@ -1952,7 +1914,7 @@
           (net (rename rxClkCount_4 "rxClkCount[4]") (joined
            (portRef Q (instanceRef rxClkCount_4))
            (portRef A1 (instanceRef un4_rxClkCount_cry_3_0))
-           (portRef A (instanceRef rxClkBaud_5))
+           (portRef B (instanceRef rxClkBaud_5))
           ))
           (net (rename rxClkCount_3_5 "rxClkCount_3[5]") (joined
            (portRef Z (instanceRef rxClkCount_RNO_5))
@@ -1961,7 +1923,7 @@
           (net (rename rxClkCount_5 "rxClkCount[5]") (joined
            (portRef Q (instanceRef rxClkCount_5))
            (portRef A0 (instanceRef un4_rxClkCount_cry_5_0))
-           (portRef B (instanceRef rxClkBaud_5))
+           (portRef C (instanceRef rxClkBaud_5))
           ))
           (net (rename rxClkCount_3_6 "rxClkCount_3[6]") (joined
            (portRef Z (instanceRef rxClkCount_3_iv_6))
@@ -1970,7 +1932,7 @@
           (net (rename rxClkCount_6 "rxClkCount[6]") (joined
            (portRef Q (instanceRef rxClkCount_6))
            (portRef A1 (instanceRef un4_rxClkCount_cry_5_0))
-           (portRef D (instanceRef rxClkBaud_6))
+           (portRef C (instanceRef rxClkBaud_6))
           ))
           (net (rename rxClkCount_3_7 "rxClkCount_3[7]") (joined
            (portRef Z (instanceRef rxClkCount_3_iv_7))
@@ -1979,7 +1941,7 @@
           (net (rename rxClkCount_7 "rxClkCount[7]") (joined
            (portRef Q (instanceRef rxClkCount_7))
            (portRef A0 (instanceRef un4_rxClkCount_cry_7_0))
-           (portRef C (instanceRef rxClkBaud_5))
+           (portRef D (instanceRef rxClkBaud_5))
           ))
           (net (rename rxClkCount_3_8 "rxClkCount_3[8]") (joined
            (portRef Z (instanceRef rxClkCount_RNO_8))
@@ -1988,7 +1950,7 @@
           (net (rename rxClkCount_8 "rxClkCount[8]") (joined
            (portRef Q (instanceRef rxClkCount_8))
            (portRef A1 (instanceRef un4_rxClkCount_cry_7_0))
-           (portRef D (instanceRef rxClkBaud_5))
+           (portRef D (instanceRef rxClkBaud_6))
           ))
           (net (rename rxClkCount_3_9 "rxClkCount_3[9]") (joined
            (portRef Z (instanceRef rxClkCount_RNO_9))
@@ -2004,8 +1966,8 @@
            (portRef C (instanceRef txState_ns_i_i_o2_0))
            (portRef D (instanceRef opTxBusy))
           ))
-          (net N_126 (joined
-           (portRef Z (instanceRef opTxBusy_1_sqmuxa_i_0))
+          (net N_35 (joined
+           (portRef Z (instanceRef opTxBusy_1_sqmuxa_i_0_0))
            (portRef SP (instanceRef opTxBusy))
           ))
           (net ipReset_c_i (joined
@@ -2123,15 +2085,15 @@
            (portRef Z (instanceRef un1_BitsReceived_4_ac0))
            (portRef D (instanceRef un1_BitsReceived_4_axbxc3))
           ))
-          (net N_401 (joined
+          (net N_360 (joined
            (portRef Z (instanceRef txState_ns_i_i_o2_0))
            (portRef A (instanceRef txData_0_sqmuxa_1_i_0))
            (portRef A (instanceRef txState_srsts_0))
            (portRef A (instanceRef txState_ns_i_i_o2_RNINH5S_0))
           ))
-          (net N_207_i (joined
+          (net N_187_i (joined
            (portRef Z (instanceRef txState_ns_i_i_o2_RNINH5S_0))
-           (portRef N_207_i)
+           (portRef N_187_i)
           ))
           (net rxClkBaud (joined
            (portRef Z (instanceRef rxClkBaud))
@@ -2155,7 +2117,7 @@
            (portRef Z (instanceRef txClkBaud_RNIIITK))
            (portRef txClkCount_1_sqmuxa_i)
           ))
-          (net N_740 (joined
+          (net N_614 (joined
            (portRef Z (instanceRef un1_ipReset_0_a2_0))
            (portRef A (instanceRef txState_ns_i_i_o2_0))
            (portRef A (instanceRef un1_ipReset_0))
@@ -2250,7 +2212,7 @@
            (portRef D (instanceRef un1_ipReset_0_a2_0))
           ))
           (net opTx_7 (joined
-           (portRef Z (instanceRef opTx_7_iv_0))
+           (portRef Z (instanceRef opTx_7_iv_0_0))
            (portRef opTx_7)
           ))
           (net (rename UART_TxData_7 "UART_TxData[7]") (joined
@@ -2331,11 +2293,10 @@
     (cell Streamer (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
-           (port (array (rename fifo_size_i "FIFO_Size_i[7:0]") 8) (direction OUTPUT))
            (port (array (rename fifo_size "FIFO_Size[8:0]") 9) (direction OUTPUT))
            (port Destination_Q_0 (direction INPUT))
            (port Destination_Q_4 (direction INPUT))
-           (port N_613 (direction INPUT))
+           (port N_535 (direction INPUT))
            (port SoP_Q (direction INPUT))
            (port EoPio (direction INPUT))
            (port Valid_Q (direction INPUT))
@@ -2353,6 +2314,8 @@
           )
           (instance WE (viewRef PRIM (cellRef FD1S3IX (libraryRef LUCENT)))
            (property IOB (string "FALSE"))
+          )
+          (instance RE (viewRef PRIM (cellRef FD1S3IX (libraryRef LUCENT)))
           )
           (instance (rename rState_srsts_0 "rState_srsts[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C A)+D (C B))"))
@@ -2382,7 +2345,7 @@
           )
           (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
           (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
-          (net N_233 (joined
+          (net N_251 (joined
            (portRef Z (instanceRef wUpper_1_sqmuxa_i_0))
            (portRef A (instanceRef wUpper_fb))
           ))
@@ -2403,11 +2366,12 @@
           (net ipClk_c (joined
            (portRef ipClk_c)
            (portRef ipClk_c (instanceRef FIFOBLOCK))
+           (portRef CK (instanceRef RE))
            (portRef CK (instanceRef WE))
            (portRef CK (instanceRef rState_0))
            (portRef CK (instanceRef wUpper))
           ))
-          (net N_38s (joined
+          (net N_37s (joined
            (portRef Z (instanceRef rState_srsts_0))
            (portRef D (instanceRef rState_0))
           ))
@@ -2420,18 +2384,27 @@
            (portRef C (instanceRef wUpper_0_sqmuxa_1_0))
            (portRef A (instanceRef rState_srsts_0))
           ))
-          (net N_230_i_i (joined
+          (net N_248_i_i (joined
            (portRef Z (instanceRef WE_RNO))
            (portRef D (instanceRef WE))
           ))
           (net ipReset_c_i (joined
            (portRef ipReset_c_i)
            (portRef ipReset_c_i (instanceRef FIFOBLOCK))
+           (portRef CD (instanceRef RE))
            (portRef CD (instanceRef WE))
           ))
           (net WE (joined
            (portRef Q (instanceRef WE))
            (portRef WE (instanceRef FIFOBLOCK))
+          ))
+          (net Empty_i (joined
+           (portRef Empty_i (instanceRef FIFOBLOCK))
+           (portRef D (instanceRef RE))
+          ))
+          (net RE (joined
+           (portRef Q (instanceRef RE))
+           (portRef RE (instanceRef FIFOBLOCK))
           ))
           (net (rename rState_ns_0 "rState_ns[0]") (joined
            (portRef Z (instanceRef rState_ns_0__m10_0))
@@ -2453,16 +2426,16 @@
            (portRef D (instanceRef wUpper_1_sqmuxa_i_0))
            (portRef D (instanceRef rState_srsts_0))
           ))
-          (net N_588 (joined
+          (net N_512 (joined
            (portRef Z (instanceRef wUpper_0_sqmuxa_1_0_a2))
            (portRef A (instanceRef wUpper_0_sqmuxa_1_0))
           ))
-          (net N_745 (joined
+          (net N_619 (joined
            (portRef Z (instanceRef wUpper_1_sqmuxa_i_a2_0))
            (portRef A (instanceRef wUpper_1_sqmuxa_i_0))
            (portRef B (instanceRef wUpper_0_sqmuxa_1_0))
           ))
-          (net N_744 (joined
+          (net N_618 (joined
            (portRef Z (instanceRef rState_ns_0__m10_0_a2_1))
            (portRef A (instanceRef wUpper_1_sqmuxa_i_a2_0))
            (portRef A (instanceRef rState_ns_0__m10_0))
@@ -2476,8 +2449,8 @@
            (portRef C (instanceRef wUpper_1_sqmuxa_i_a2_0))
            (portRef D (instanceRef rState_ns_0__m10_0))
           ))
-          (net N_613 (joined
-           (portRef N_613)
+          (net N_535 (joined
+           (portRef N_535)
            (portRef A (instanceRef rState_ns_0__m10_0_a2_1))
           ))
           (net (rename Destination_Q_0 "Destination_Q[0]") (joined
@@ -2524,38 +2497,6 @@
            (portRef (member fifo_size 0) (instanceRef FIFOBLOCK))
            (portRef (member fifo_size 0))
           ))
-          (net (rename FIFO_Size_i_0 "FIFO_Size_i[0]") (joined
-           (portRef (member fifo_size_i 7) (instanceRef FIFOBLOCK))
-           (portRef (member fifo_size_i 7))
-          ))
-          (net (rename FIFO_Size_i_1 "FIFO_Size_i[1]") (joined
-           (portRef (member fifo_size_i 6) (instanceRef FIFOBLOCK))
-           (portRef (member fifo_size_i 6))
-          ))
-          (net (rename FIFO_Size_i_2 "FIFO_Size_i[2]") (joined
-           (portRef (member fifo_size_i 5) (instanceRef FIFOBLOCK))
-           (portRef (member fifo_size_i 5))
-          ))
-          (net (rename FIFO_Size_i_3 "FIFO_Size_i[3]") (joined
-           (portRef (member fifo_size_i 4) (instanceRef FIFOBLOCK))
-           (portRef (member fifo_size_i 4))
-          ))
-          (net (rename FIFO_Size_i_4 "FIFO_Size_i[4]") (joined
-           (portRef (member fifo_size_i 3) (instanceRef FIFOBLOCK))
-           (portRef (member fifo_size_i 3))
-          ))
-          (net (rename FIFO_Size_i_5 "FIFO_Size_i[5]") (joined
-           (portRef (member fifo_size_i 2) (instanceRef FIFOBLOCK))
-           (portRef (member fifo_size_i 2))
-          ))
-          (net (rename FIFO_Size_i_6 "FIFO_Size_i[6]") (joined
-           (portRef (member fifo_size_i 1) (instanceRef FIFOBLOCK))
-           (portRef (member fifo_size_i 1))
-          ))
-          (net (rename FIFO_Size_i_7 "FIFO_Size_i[7]") (joined
-           (portRef (member fifo_size_i 0) (instanceRef FIFOBLOCK))
-           (portRef (member fifo_size_i 0))
-          ))
          )
         (property orig_inst_of (string "Streamer"))
        )
@@ -2565,8 +2506,8 @@
          (interface
            (port (array (rename fifo_size "FIFO_Size[8:0]") 9) (direction INPUT))
            (port (array (rename address "Address[7:0]") 8) (direction INPUT))
-           (port (array (rename ipbtn_c "ipBtn_c[3:0]") 4) (direction INPUT))
            (port (array (rename clockticks "ClockTicks[31:0]") 32) (direction INPUT))
+           (port (array (rename ipbtn_c "ipBtn_c[3:0]") 4) (direction INPUT))
            (port (array (rename rddata "RdData[31:0]") 32) (direction OUTPUT))
            (port (array (rename wrdata "WrData[7:0]") 8) (direction INPUT))
            (port WrEnable (direction INPUT))
@@ -2656,71 +2597,71 @@
           )
           (instance Reset (viewRef PRIM (cellRef FD1S3AX (libraryRef LUCENT)))
           )
-          (instance (rename un1_opWrRegisters_LEDs11_i_a2 "un1_opWrRegisters.LEDs11_i_a2") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (C (B A)))"))
+          (instance (rename un1_opWrRegisters_LEDs11_4_RNIUIKV "un1_opWrRegisters.LEDs11_4_RNIUIKV") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(D (!C (!B A)))"))
           )
-          (instance (rename opRdData_6_3_0_4 "opRdData_6_3_0[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opRdData_6_3_7 "opRdData_6_3[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C B)+D (!C (!B !A)+C (B+!A)))"))
           )
-          (instance (rename opRdData_6_3_0_5 "opRdData_6_3_0[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opRdData_6_3_6 "opRdData_6_3[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C B)+D (!C (!B !A)+C (B+!A)))"))
           )
-          (instance (rename opRdData_6_3_0_6 "opRdData_6_3_0[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opRdData_6_3_5 "opRdData_6_3[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C B)+D (!C (!B !A)+C (B+!A)))"))
           )
-          (instance (rename opRdData_6_3_0_7 "opRdData_6_3_0[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opRdData_6_3_4 "opRdData_6_3[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C B)+D (!C (!B !A)+C (B+!A)))"))
           )
-          (instance (rename opRdData_6_3_0_8 "opRdData_6_3_0[8]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opRdData_6_3_am_3 "opRdData_6_3_am[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (B+A)+C (B !A))"))
+          )
+          (instance (rename opRdData_6_3_bm_3 "opRdData_6_3_bm[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (B A)+C (B+!A))"))
+          )
+          (instance (rename opRdData_6_3_3 "opRdData_6_3[3]") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
+          (instance (rename opRdData_6_3_am_2 "opRdData_6_3_am[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (B+A)+C (B !A))"))
+          )
+          (instance (rename opRdData_6_3_bm_2 "opRdData_6_3_bm[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (B A)+C (B+!A))"))
+          )
+          (instance (rename opRdData_6_3_2 "opRdData_6_3[2]") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
+          (instance (rename opRdData_6_3_am_1 "opRdData_6_3_am[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (B+A)+C (B !A))"))
+          )
+          (instance (rename opRdData_6_3_bm_1 "opRdData_6_3_bm[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (B A)+C (B+!A))"))
+          )
+          (instance (rename opRdData_6_3_1 "opRdData_6_3[1]") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
+          (instance (rename opRdData_6_3_am_0 "opRdData_6_3_am[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (B+A)+C (B !A))"))
+          )
+          (instance (rename opRdData_6_3_bm_0 "opRdData_6_3_bm[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (B A)+C (B+!A))"))
+          )
+          (instance (rename opRdData_6_3_0 "opRdData_6_3[0]") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
+          (instance (rename opRdData_6_3_8 "opRdData_6_3[8]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C (!B !A))+D (!C (B A)+C (!B !A+B A)))"))
           )
-          (instance (rename opRdData_6_3_i_m2_am_3 "opRdData_6_3_i_m2_am[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (B+A)+C (B !A))"))
-          )
-          (instance (rename opRdData_6_3_i_m2_bm_3 "opRdData_6_3_i_m2_bm[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (B A)+C (B+!A))"))
-          )
-          (instance (rename opRdData_6_3_i_m2_3 "opRdData_6_3_i_m2[3]") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
-          (instance (rename opRdData_6_3_i_m2_am_2 "opRdData_6_3_i_m2_am[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (B+A)+C (B !A))"))
-          )
-          (instance (rename opRdData_6_3_i_m2_bm_2 "opRdData_6_3_i_m2_bm[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (B A)+C (B+!A))"))
-          )
-          (instance (rename opRdData_6_3_i_m2_2 "opRdData_6_3_i_m2[2]") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
-          (instance (rename opRdData_6_3_i_m2_am_1 "opRdData_6_3_i_m2_am[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (B+A)+C (B !A))"))
-          )
-          (instance (rename opRdData_6_3_i_m2_bm_1 "opRdData_6_3_i_m2_bm[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (B A)+C (B+!A))"))
-          )
-          (instance (rename opRdData_6_3_i_m2_1 "opRdData_6_3_i_m2[1]") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
-          (instance (rename opRdData_6_3_i_m2_am_0 "opRdData_6_3_i_m2_am[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (B+A)+C (B !A))"))
-          )
-          (instance (rename opRdData_6_3_i_m2_bm_0 "opRdData_6_3_i_m2_bm[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (B A)+C (B+!A))"))
-          )
-          (instance (rename opRdData_6_3_i_m2_0 "opRdData_6_3_i_m2[0]") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
           (instance un1_ipAddress_inv_i (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(B+A)"))
           )
-          (instance (rename un1_opWrRegisters_LEDs11_i_a2_4 "un1_opWrRegisters.LEDs11_i_a2_4") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (!B !A))"))
+          (instance (rename un1_opWrRegisters_LEDs11_4 "un1_opWrRegisters.LEDs11_4") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(C+(B+A))"))
           )
-          (instance (rename un1_opWrRegisters_LEDs11_i_a2_5 "un1_opWrRegisters.LEDs11_i_a2_5") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (!B !A)))"))
+          (instance (rename un1_opWrRegisters_LEDs11_5 "un1_opWrRegisters.LEDs11_5") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(D+(C+(B+A)))"))
           )
-          (instance (rename opRdData_6_2_i_m2_7 "opRdData_6_2_i_m2[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opRdData_6_2_7 "opRdData_6_2[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (B A)+C (B+!A))"))
           )
-          (instance (rename opRdData_6_2_i_m2_6 "opRdData_6_2_i_m2[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opRdData_6_2_6 "opRdData_6_2[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (B A)+C (B+!A))"))
           )
-          (instance (rename opRdData_6_2_i_m2_5 "opRdData_6_2_i_m2[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opRdData_6_2_5 "opRdData_6_2[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (B A)+C (B+!A))"))
           )
-          (instance (rename opRdData_6_2_i_m2_4 "opRdData_6_2_i_m2[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opRdData_6_2_4 "opRdData_6_2[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (B A)+C (B+!A))"))
           )
           (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
@@ -2729,8 +2670,8 @@
            (portRef (member wrdata 7))
            (portRef D (instanceRef opWrRegisters_LEDs_0))
           ))
-          (net N_592 (joined
-           (portRef Z (instanceRef un1_opWrRegisters_LEDs11_i_a2))
+          (net LEDs11_i (joined
+           (portRef Z (instanceRef un1_opWrRegisters_LEDs11_4_RNIUIKV))
            (portRef SP (instanceRef opWrRegisters_LEDs_7))
            (portRef SP (instanceRef opWrRegisters_LEDs_6))
            (portRef SP (instanceRef opWrRegisters_LEDs_5))
@@ -2797,7 +2738,7 @@
           ))
           (net (rename LEDs_0 "LEDs[0]") (joined
            (portRef Q (instanceRef opWrRegisters_LEDs_0))
-           (portRef C (instanceRef opRdData_6_3_i_m2_bm_0))
+           (portRef C (instanceRef opRdData_6_3_bm_0))
           ))
           (net (rename WrData_1 "WrData[1]") (joined
            (portRef (member wrdata 6))
@@ -2805,7 +2746,7 @@
           ))
           (net (rename LEDs_1 "LEDs[1]") (joined
            (portRef Q (instanceRef opWrRegisters_LEDs_1))
-           (portRef C (instanceRef opRdData_6_3_i_m2_bm_1))
+           (portRef C (instanceRef opRdData_6_3_bm_1))
           ))
           (net (rename WrData_2 "WrData[2]") (joined
            (portRef (member wrdata 5))
@@ -2813,7 +2754,7 @@
           ))
           (net (rename LEDs_2 "LEDs[2]") (joined
            (portRef Q (instanceRef opWrRegisters_LEDs_2))
-           (portRef C (instanceRef opRdData_6_3_i_m2_bm_2))
+           (portRef C (instanceRef opRdData_6_3_bm_2))
           ))
           (net (rename WrData_3 "WrData[3]") (joined
            (portRef (member wrdata 4))
@@ -2821,7 +2762,7 @@
           ))
           (net (rename LEDs_3 "LEDs[3]") (joined
            (portRef Q (instanceRef opWrRegisters_LEDs_3))
-           (portRef C (instanceRef opRdData_6_3_i_m2_bm_3))
+           (portRef C (instanceRef opRdData_6_3_bm_3))
           ))
           (net (rename WrData_4 "WrData[4]") (joined
            (portRef (member wrdata 3))
@@ -2829,7 +2770,7 @@
           ))
           (net (rename LEDs_4 "LEDs[4]") (joined
            (portRef Q (instanceRef opWrRegisters_LEDs_4))
-           (portRef C (instanceRef opRdData_6_2_i_m2_4))
+           (portRef C (instanceRef opRdData_6_2_4))
           ))
           (net (rename WrData_5 "WrData[5]") (joined
            (portRef (member wrdata 2))
@@ -2837,7 +2778,7 @@
           ))
           (net (rename LEDs_5 "LEDs[5]") (joined
            (portRef Q (instanceRef opWrRegisters_LEDs_5))
-           (portRef C (instanceRef opRdData_6_2_i_m2_5))
+           (portRef C (instanceRef opRdData_6_2_5))
           ))
           (net (rename WrData_6 "WrData[6]") (joined
            (portRef (member wrdata 1))
@@ -2845,7 +2786,7 @@
           ))
           (net (rename LEDs_6 "LEDs[6]") (joined
            (portRef Q (instanceRef opWrRegisters_LEDs_6))
-           (portRef C (instanceRef opRdData_6_2_i_m2_6))
+           (portRef C (instanceRef opRdData_6_2_6))
           ))
           (net (rename WrData_7 "WrData[7]") (joined
            (portRef (member wrdata 0))
@@ -2853,34 +2794,34 @@
           ))
           (net (rename LEDs_7 "LEDs[7]") (joined
            (portRef Q (instanceRef opWrRegisters_LEDs_7))
-           (portRef C (instanceRef opRdData_6_2_i_m2_7))
+           (portRef C (instanceRef opRdData_6_2_7))
           ))
-          (net N_469 (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_0))
+          (net (rename opRdData_6_0 "opRdData_6[0]") (joined
+           (portRef Z (instanceRef opRdData_6_3_0))
            (portRef D (instanceRef opRdData_0))
           ))
           (net (rename RdData_0 "RdData[0]") (joined
            (portRef Q (instanceRef opRdData_0))
            (portRef (member rddata 31))
           ))
-          (net N_470 (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_1))
+          (net (rename opRdData_6_1 "opRdData_6[1]") (joined
+           (portRef Z (instanceRef opRdData_6_3_1))
            (portRef D (instanceRef opRdData_1))
           ))
           (net (rename RdData_1 "RdData[1]") (joined
            (portRef Q (instanceRef opRdData_1))
            (portRef (member rddata 30))
           ))
-          (net N_471 (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_2))
+          (net (rename opRdData_6_2 "opRdData_6[2]") (joined
+           (portRef Z (instanceRef opRdData_6_3_2))
            (portRef D (instanceRef opRdData_2))
           ))
           (net (rename RdData_2 "RdData[2]") (joined
            (portRef Q (instanceRef opRdData_2))
            (portRef (member rddata 29))
           ))
-          (net N_472 (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_3))
+          (net (rename opRdData_6_3 "opRdData_6[3]") (joined
+           (portRef Z (instanceRef opRdData_6_3_3))
            (portRef D (instanceRef opRdData_3))
           ))
           (net (rename RdData_3 "RdData[3]") (joined
@@ -2888,7 +2829,7 @@
            (portRef (member rddata 28))
           ))
           (net (rename opRdData_6_4 "opRdData_6[4]") (joined
-           (portRef Z (instanceRef opRdData_6_3_0_4))
+           (portRef Z (instanceRef opRdData_6_3_4))
            (portRef D (instanceRef opRdData_4))
           ))
           (net (rename RdData_4 "RdData[4]") (joined
@@ -2896,7 +2837,7 @@
            (portRef (member rddata 27))
           ))
           (net (rename opRdData_6_5 "opRdData_6[5]") (joined
-           (portRef Z (instanceRef opRdData_6_3_0_5))
+           (portRef Z (instanceRef opRdData_6_3_5))
            (portRef D (instanceRef opRdData_5))
           ))
           (net (rename RdData_5 "RdData[5]") (joined
@@ -2904,7 +2845,7 @@
            (portRef (member rddata 26))
           ))
           (net (rename opRdData_6_6 "opRdData_6[6]") (joined
-           (portRef Z (instanceRef opRdData_6_3_0_6))
+           (portRef Z (instanceRef opRdData_6_3_6))
            (portRef D (instanceRef opRdData_6))
           ))
           (net (rename RdData_6 "RdData[6]") (joined
@@ -2912,7 +2853,7 @@
            (portRef (member rddata 25))
           ))
           (net (rename opRdData_6_7 "opRdData_6[7]") (joined
-           (portRef Z (instanceRef opRdData_6_3_0_7))
+           (portRef Z (instanceRef opRdData_6_3_7))
            (portRef D (instanceRef opRdData_7))
           ))
           (net (rename RdData_7 "RdData[7]") (joined
@@ -2920,7 +2861,7 @@
            (portRef (member rddata 24))
           ))
           (net (rename opRdData_6_8 "opRdData_6[8]") (joined
-           (portRef Z (instanceRef opRdData_6_3_0_8))
+           (portRef Z (instanceRef opRdData_6_3_8))
            (portRef D (instanceRef opRdData_8))
           ))
           (net (rename RdData_8 "RdData[8]") (joined
@@ -3144,210 +3085,210 @@
           (net (rename Address_1 "Address[1]") (joined
            (portRef (member address 6))
            (portRef B (instanceRef un1_ipAddress_inv_i))
-           (portRef C0 (instanceRef opRdData_6_3_i_m2_0))
-           (portRef C0 (instanceRef opRdData_6_3_i_m2_1))
-           (portRef C0 (instanceRef opRdData_6_3_i_m2_2))
-           (portRef C0 (instanceRef opRdData_6_3_i_m2_3))
-           (portRef B (instanceRef opRdData_6_3_0_8))
-           (portRef B (instanceRef opRdData_6_3_0_7))
-           (portRef B (instanceRef opRdData_6_3_0_6))
-           (portRef B (instanceRef opRdData_6_3_0_5))
-           (portRef B (instanceRef opRdData_6_3_0_4))
-           (portRef A (instanceRef un1_opWrRegisters_LEDs11_i_a2))
+           (portRef B (instanceRef opRdData_6_3_8))
+           (portRef C0 (instanceRef opRdData_6_3_0))
+           (portRef C0 (instanceRef opRdData_6_3_1))
+           (portRef C0 (instanceRef opRdData_6_3_2))
+           (portRef C0 (instanceRef opRdData_6_3_3))
+           (portRef B (instanceRef opRdData_6_3_4))
+           (portRef B (instanceRef opRdData_6_3_5))
+           (portRef B (instanceRef opRdData_6_3_6))
+           (portRef B (instanceRef opRdData_6_3_7))
+           (portRef A (instanceRef un1_opWrRegisters_LEDs11_4_RNIUIKV))
           ))
-          (net LEDs11_i_a2_4 (joined
-           (portRef Z (instanceRef un1_opWrRegisters_LEDs11_i_a2_4))
-           (portRef B (instanceRef un1_opWrRegisters_LEDs11_i_a2))
+          (net LEDs11_4 (joined
+           (portRef Z (instanceRef un1_opWrRegisters_LEDs11_4))
+           (portRef B (instanceRef un1_opWrRegisters_LEDs11_4_RNIUIKV))
           ))
-          (net LEDs11_i_a2_5 (joined
-           (portRef Z (instanceRef un1_opWrRegisters_LEDs11_i_a2_5))
-           (portRef C (instanceRef un1_opWrRegisters_LEDs11_i_a2))
+          (net LEDs11_5 (joined
+           (portRef Z (instanceRef un1_opWrRegisters_LEDs11_5))
+           (portRef C (instanceRef un1_opWrRegisters_LEDs11_4_RNIUIKV))
           ))
           (net WrEnable (joined
            (portRef WrEnable)
-           (portRef D (instanceRef un1_opWrRegisters_LEDs11_i_a2))
+           (portRef D (instanceRef un1_opWrRegisters_LEDs11_4_RNIUIKV))
           ))
           (net (rename Address_0 "Address[0]") (joined
            (portRef (member address 7))
-           (portRef A (instanceRef opRdData_6_2_i_m2_4))
-           (portRef A (instanceRef opRdData_6_2_i_m2_5))
-           (portRef A (instanceRef opRdData_6_2_i_m2_6))
-           (portRef A (instanceRef opRdData_6_2_i_m2_7))
-           (portRef A (instanceRef un1_opWrRegisters_LEDs11_i_a2_4))
+           (portRef A (instanceRef opRdData_6_2_4))
+           (portRef A (instanceRef opRdData_6_2_5))
+           (portRef A (instanceRef opRdData_6_2_6))
+           (portRef A (instanceRef opRdData_6_2_7))
+           (portRef A (instanceRef un1_opWrRegisters_LEDs11_4))
            (portRef A (instanceRef un1_ipAddress_inv_i))
-           (portRef A (instanceRef opRdData_6_3_i_m2_bm_0))
-           (portRef A (instanceRef opRdData_6_3_i_m2_am_0))
-           (portRef A (instanceRef opRdData_6_3_i_m2_bm_1))
-           (portRef A (instanceRef opRdData_6_3_i_m2_am_1))
-           (portRef A (instanceRef opRdData_6_3_i_m2_bm_2))
-           (portRef A (instanceRef opRdData_6_3_i_m2_am_2))
-           (portRef A (instanceRef opRdData_6_3_i_m2_bm_3))
-           (portRef A (instanceRef opRdData_6_3_i_m2_am_3))
-           (portRef A (instanceRef opRdData_6_3_0_8))
-           (portRef A (instanceRef opRdData_6_3_0_7))
-           (portRef A (instanceRef opRdData_6_3_0_6))
-           (portRef A (instanceRef opRdData_6_3_0_5))
-           (portRef A (instanceRef opRdData_6_3_0_4))
+           (portRef A (instanceRef opRdData_6_3_8))
+           (portRef A (instanceRef opRdData_6_3_bm_0))
+           (portRef A (instanceRef opRdData_6_3_am_0))
+           (portRef A (instanceRef opRdData_6_3_bm_1))
+           (portRef A (instanceRef opRdData_6_3_am_1))
+           (portRef A (instanceRef opRdData_6_3_bm_2))
+           (portRef A (instanceRef opRdData_6_3_am_2))
+           (portRef A (instanceRef opRdData_6_3_bm_3))
+           (portRef A (instanceRef opRdData_6_3_am_3))
+           (portRef A (instanceRef opRdData_6_3_4))
+           (portRef A (instanceRef opRdData_6_3_5))
+           (portRef A (instanceRef opRdData_6_3_6))
+           (portRef A (instanceRef opRdData_6_3_7))
           ))
-          (net N_465 (joined
-           (portRef Z (instanceRef opRdData_6_2_i_m2_4))
-           (portRef C (instanceRef opRdData_6_3_0_4))
-          ))
-          (net (rename ClockTicks_4 "ClockTicks[4]") (joined
-           (portRef (member clockticks 27))
-           (portRef D (instanceRef opRdData_6_3_0_4))
-          ))
-          (net N_466 (joined
-           (portRef Z (instanceRef opRdData_6_2_i_m2_5))
-           (portRef C (instanceRef opRdData_6_3_0_5))
-          ))
-          (net (rename ClockTicks_5 "ClockTicks[5]") (joined
-           (portRef (member clockticks 26))
-           (portRef D (instanceRef opRdData_6_3_0_5))
-          ))
-          (net N_467 (joined
-           (portRef Z (instanceRef opRdData_6_2_i_m2_6))
-           (portRef C (instanceRef opRdData_6_3_0_6))
-          ))
-          (net (rename ClockTicks_6 "ClockTicks[6]") (joined
-           (portRef (member clockticks 25))
-           (portRef D (instanceRef opRdData_6_3_0_6))
-          ))
-          (net N_468 (joined
-           (portRef Z (instanceRef opRdData_6_2_i_m2_7))
-           (portRef C (instanceRef opRdData_6_3_0_7))
+          (net N_28 (joined
+           (portRef Z (instanceRef opRdData_6_2_7))
+           (portRef C (instanceRef opRdData_6_3_7))
           ))
           (net (rename ClockTicks_7 "ClockTicks[7]") (joined
            (portRef (member clockticks 24))
-           (portRef D (instanceRef opRdData_6_3_0_7))
+           (portRef D (instanceRef opRdData_6_3_7))
           ))
-          (net (rename ClockTicks_8 "ClockTicks[8]") (joined
-           (portRef (member clockticks 23))
-           (portRef C (instanceRef opRdData_6_3_0_8))
+          (net N_27 (joined
+           (portRef Z (instanceRef opRdData_6_2_6))
+           (portRef C (instanceRef opRdData_6_3_6))
           ))
-          (net (rename FIFO_Size_8 "FIFO_Size[8]") (joined
-           (portRef (member fifo_size 0))
-           (portRef D (instanceRef opRdData_6_3_0_8))
+          (net (rename ClockTicks_6 "ClockTicks[6]") (joined
+           (portRef (member clockticks 25))
+           (portRef D (instanceRef opRdData_6_3_6))
+          ))
+          (net N_26 (joined
+           (portRef Z (instanceRef opRdData_6_2_5))
+           (portRef C (instanceRef opRdData_6_3_5))
+          ))
+          (net (rename ClockTicks_5 "ClockTicks[5]") (joined
+           (portRef (member clockticks 26))
+           (portRef D (instanceRef opRdData_6_3_5))
+          ))
+          (net N_25 (joined
+           (portRef Z (instanceRef opRdData_6_2_4))
+           (portRef C (instanceRef opRdData_6_3_4))
+          ))
+          (net (rename ClockTicks_4 "ClockTicks[4]") (joined
+           (portRef (member clockticks 27))
+           (portRef D (instanceRef opRdData_6_3_4))
           ))
           (net (rename ClockTicks_3 "ClockTicks[3]") (joined
            (portRef (member clockticks 28))
-           (portRef B (instanceRef opRdData_6_3_i_m2_am_3))
+           (portRef B (instanceRef opRdData_6_3_am_3))
           ))
           (net (rename ipBtn_c_3 "ipBtn_c[3]") (joined
            (portRef (member ipbtn_c 0))
-           (portRef C (instanceRef opRdData_6_3_i_m2_am_3))
+           (portRef C (instanceRef opRdData_6_3_am_3))
           ))
-          (net (rename opRdData_6_3_i_m2_am_3 "opRdData_6_3_i_m2_am[3]") (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_am_3))
-           (portRef BLUT (instanceRef opRdData_6_3_i_m2_3))
+          (net (rename opRdData_6_3_am_3 "opRdData_6_3_am[3]") (joined
+           (portRef Z (instanceRef opRdData_6_3_am_3))
+           (portRef BLUT (instanceRef opRdData_6_3_3))
           ))
           (net (rename FIFO_Size_3 "FIFO_Size[3]") (joined
            (portRef (member fifo_size 5))
-           (portRef B (instanceRef opRdData_6_3_i_m2_bm_3))
+           (portRef B (instanceRef opRdData_6_3_bm_3))
           ))
-          (net (rename opRdData_6_3_i_m2_bm_3 "opRdData_6_3_i_m2_bm[3]") (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_bm_3))
-           (portRef ALUT (instanceRef opRdData_6_3_i_m2_3))
+          (net (rename opRdData_6_3_bm_3 "opRdData_6_3_bm[3]") (joined
+           (portRef Z (instanceRef opRdData_6_3_bm_3))
+           (portRef ALUT (instanceRef opRdData_6_3_3))
           ))
           (net (rename ClockTicks_2 "ClockTicks[2]") (joined
            (portRef (member clockticks 29))
-           (portRef B (instanceRef opRdData_6_3_i_m2_am_2))
+           (portRef B (instanceRef opRdData_6_3_am_2))
           ))
           (net (rename ipBtn_c_2 "ipBtn_c[2]") (joined
            (portRef (member ipbtn_c 1))
-           (portRef C (instanceRef opRdData_6_3_i_m2_am_2))
+           (portRef C (instanceRef opRdData_6_3_am_2))
           ))
-          (net (rename opRdData_6_3_i_m2_am_2 "opRdData_6_3_i_m2_am[2]") (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_am_2))
-           (portRef BLUT (instanceRef opRdData_6_3_i_m2_2))
+          (net (rename opRdData_6_3_am_2 "opRdData_6_3_am[2]") (joined
+           (portRef Z (instanceRef opRdData_6_3_am_2))
+           (portRef BLUT (instanceRef opRdData_6_3_2))
           ))
           (net (rename FIFO_Size_2 "FIFO_Size[2]") (joined
            (portRef (member fifo_size 6))
-           (portRef B (instanceRef opRdData_6_3_i_m2_bm_2))
+           (portRef B (instanceRef opRdData_6_3_bm_2))
           ))
-          (net (rename opRdData_6_3_i_m2_bm_2 "opRdData_6_3_i_m2_bm[2]") (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_bm_2))
-           (portRef ALUT (instanceRef opRdData_6_3_i_m2_2))
+          (net (rename opRdData_6_3_bm_2 "opRdData_6_3_bm[2]") (joined
+           (portRef Z (instanceRef opRdData_6_3_bm_2))
+           (portRef ALUT (instanceRef opRdData_6_3_2))
           ))
           (net (rename ClockTicks_1 "ClockTicks[1]") (joined
            (portRef (member clockticks 30))
-           (portRef B (instanceRef opRdData_6_3_i_m2_am_1))
+           (portRef B (instanceRef opRdData_6_3_am_1))
           ))
           (net (rename ipBtn_c_1 "ipBtn_c[1]") (joined
            (portRef (member ipbtn_c 2))
-           (portRef C (instanceRef opRdData_6_3_i_m2_am_1))
+           (portRef C (instanceRef opRdData_6_3_am_1))
           ))
-          (net (rename opRdData_6_3_i_m2_am_1 "opRdData_6_3_i_m2_am[1]") (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_am_1))
-           (portRef BLUT (instanceRef opRdData_6_3_i_m2_1))
+          (net (rename opRdData_6_3_am_1 "opRdData_6_3_am[1]") (joined
+           (portRef Z (instanceRef opRdData_6_3_am_1))
+           (portRef BLUT (instanceRef opRdData_6_3_1))
           ))
           (net (rename FIFO_Size_1 "FIFO_Size[1]") (joined
            (portRef (member fifo_size 7))
-           (portRef B (instanceRef opRdData_6_3_i_m2_bm_1))
+           (portRef B (instanceRef opRdData_6_3_bm_1))
           ))
-          (net (rename opRdData_6_3_i_m2_bm_1 "opRdData_6_3_i_m2_bm[1]") (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_bm_1))
-           (portRef ALUT (instanceRef opRdData_6_3_i_m2_1))
+          (net (rename opRdData_6_3_bm_1 "opRdData_6_3_bm[1]") (joined
+           (portRef Z (instanceRef opRdData_6_3_bm_1))
+           (portRef ALUT (instanceRef opRdData_6_3_1))
           ))
           (net (rename ClockTicks_0 "ClockTicks[0]") (joined
            (portRef (member clockticks 31))
-           (portRef B (instanceRef opRdData_6_3_i_m2_am_0))
+           (portRef B (instanceRef opRdData_6_3_am_0))
           ))
           (net (rename ipBtn_c_0 "ipBtn_c[0]") (joined
            (portRef (member ipbtn_c 3))
-           (portRef C (instanceRef opRdData_6_3_i_m2_am_0))
+           (portRef C (instanceRef opRdData_6_3_am_0))
           ))
-          (net (rename opRdData_6_3_i_m2_am_0 "opRdData_6_3_i_m2_am[0]") (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_am_0))
-           (portRef BLUT (instanceRef opRdData_6_3_i_m2_0))
+          (net (rename opRdData_6_3_am_0 "opRdData_6_3_am[0]") (joined
+           (portRef Z (instanceRef opRdData_6_3_am_0))
+           (portRef BLUT (instanceRef opRdData_6_3_0))
           ))
           (net (rename FIFO_Size_0 "FIFO_Size[0]") (joined
            (portRef (member fifo_size 8))
-           (portRef B (instanceRef opRdData_6_3_i_m2_bm_0))
+           (portRef B (instanceRef opRdData_6_3_bm_0))
           ))
-          (net (rename opRdData_6_3_i_m2_bm_0 "opRdData_6_3_i_m2_bm[0]") (joined
-           (portRef Z (instanceRef opRdData_6_3_i_m2_bm_0))
-           (portRef ALUT (instanceRef opRdData_6_3_i_m2_0))
+          (net (rename opRdData_6_3_bm_0 "opRdData_6_3_bm[0]") (joined
+           (portRef Z (instanceRef opRdData_6_3_bm_0))
+           (portRef ALUT (instanceRef opRdData_6_3_0))
           ))
-          (net (rename Address_3 "Address[3]") (joined
-           (portRef (member address 4))
-           (portRef B (instanceRef un1_opWrRegisters_LEDs11_i_a2_4))
+          (net (rename ClockTicks_8 "ClockTicks[8]") (joined
+           (portRef (member clockticks 23))
+           (portRef C (instanceRef opRdData_6_3_8))
           ))
-          (net (rename Address_4 "Address[4]") (joined
-           (portRef (member address 3))
-           (portRef C (instanceRef un1_opWrRegisters_LEDs11_i_a2_4))
+          (net (rename FIFO_Size_8 "FIFO_Size[8]") (joined
+           (portRef (member fifo_size 0))
+           (portRef D (instanceRef opRdData_6_3_8))
           ))
           (net (rename Address_2 "Address[2]") (joined
            (portRef (member address 5))
-           (portRef A (instanceRef un1_opWrRegisters_LEDs11_i_a2_5))
+           (portRef B (instanceRef un1_opWrRegisters_LEDs11_4))
+          ))
+          (net (rename Address_3 "Address[3]") (joined
+           (portRef (member address 4))
+           (portRef C (instanceRef un1_opWrRegisters_LEDs11_4))
+          ))
+          (net (rename Address_4 "Address[4]") (joined
+           (portRef (member address 3))
+           (portRef A (instanceRef un1_opWrRegisters_LEDs11_5))
           ))
           (net (rename Address_5 "Address[5]") (joined
            (portRef (member address 2))
-           (portRef B (instanceRef un1_opWrRegisters_LEDs11_i_a2_5))
+           (portRef B (instanceRef un1_opWrRegisters_LEDs11_5))
           ))
           (net (rename Address_6 "Address[6]") (joined
            (portRef (member address 1))
-           (portRef C (instanceRef un1_opWrRegisters_LEDs11_i_a2_5))
+           (portRef C (instanceRef un1_opWrRegisters_LEDs11_5))
           ))
           (net (rename Address_7 "Address[7]") (joined
            (portRef (member address 0))
-           (portRef D (instanceRef un1_opWrRegisters_LEDs11_i_a2_5))
+           (portRef D (instanceRef un1_opWrRegisters_LEDs11_5))
           ))
           (net (rename FIFO_Size_7 "FIFO_Size[7]") (joined
            (portRef (member fifo_size 1))
-           (portRef B (instanceRef opRdData_6_2_i_m2_7))
+           (portRef B (instanceRef opRdData_6_2_7))
           ))
           (net (rename FIFO_Size_6 "FIFO_Size[6]") (joined
            (portRef (member fifo_size 2))
-           (portRef B (instanceRef opRdData_6_2_i_m2_6))
+           (portRef B (instanceRef opRdData_6_2_6))
           ))
           (net (rename FIFO_Size_5 "FIFO_Size[5]") (joined
            (portRef (member fifo_size 3))
-           (portRef B (instanceRef opRdData_6_2_i_m2_5))
+           (portRef B (instanceRef opRdData_6_2_5))
           ))
           (net (rename FIFO_Size_4 "FIFO_Size[4]") (joined
            (portRef (member fifo_size 4))
-           (portRef B (instanceRef opRdData_6_2_i_m2_4))
+           (portRef B (instanceRef opRdData_6_2_4))
           ))
          )
         (property orig_inst_of (string "Registers"))
@@ -3366,7 +3307,7 @@
            (port (array (rename un1_packetiser "un1_Packetiser[8:1]") 8) (direction INPUT))
            (port (array (rename wrdata "WrData[7:0]") 8) (direction OUTPUT))
            (port SoP_Q (direction INPUT))
-           (port N_613 (direction OUTPUT))
+           (port N_535 (direction OUTPUT))
            (port ipReset_c_i (direction INPUT))
            (port EoP_Q (direction OUTPUT))
            (port Valid_Q_0 (direction OUTPUT))
@@ -3608,11 +3549,11 @@
           (instance (rename BytesWritten_RNO_0 "BytesWritten_RNO[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (!B A+B !A))"))
           )
-          (instance (rename State_srsts_0_1 "State_srsts_0[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C+A)+D (C+(B A)))"))
-          )
           (instance (rename BytesWritten_8_0_a2_1 "BytesWritten_8_0_a2[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C B+C (!B A+B !A)))"))
+          )
+          (instance (rename State_srsts_0_1 "State_srsts_0[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (C+A)+D (C+(B A)))"))
           )
           (instance (rename tState_srsts_0 "tState_srsts[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D+(!C (B !A)+C (!B+!A)))"))
@@ -3623,11 +3564,11 @@
           (instance (rename opTxStream_EoP_6_f0_0_0 "opTxStream.EoP_6_f0_0_0") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C+B)+D (C+(B+A)))"))
           )
-          (instance (rename State_ns_1_0__m13_0_a2_0 "State_ns_1_0_.m13_0_a2_0") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C (!B A)))"))
-          )
           (instance (rename State_srsts_0_a2_0_1 "State_srsts_0_a2_0[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C (B A)))"))
+          )
+          (instance (rename State_ns_1_0__m13_0_a2_0 "State_ns_1_0_.m13_0_a2_0") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (C (!B A)))"))
           )
           (instance un1_ipReset_1_i_0_o2_RNIQF5A1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C (!B !A)+C !B))"))
@@ -3635,8 +3576,14 @@
           (instance (rename tState_ns_i_0_m2_1 "tState_ns_i_0_m2[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!B+A)+D (!C (!B !A+B A)+C (!B+A)))"))
           )
+          (instance (rename opTxStream_EoP_6_f0_0_a2_1 "opTxStream.EoP_6_f0_0_a2_1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(D (!C (!B A)))"))
+          )
           (instance opAddress_0_sqmuxa_0_a2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B A))"))
+          )
+          (instance opWrEnable_4_f0_0_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!B !A)+D (C+(!B !A)))"))
           )
           (instance (rename tState_ns_i_0_0 "tState_ns_i_0[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (B+!A)+D (!C A+C (B A)))"))
@@ -3644,31 +3591,25 @@
           (instance (rename BytesWritten_8_i_o2_0 "BytesWritten_8_i_o2[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D !B+D (!C (!B+A)+C !B))"))
           )
-          (instance opWrEnable_4_f0_0_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!B !A)+D (C+(!B !A)))"))
-          )
           (instance un1_OutputData_0_sqmuxa_0_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D+(!C (!B !A)+C !B))"))
-          )
-          (instance (rename opTxStream_EoP_6_f0_0_a2_1 "opTxStream.EoP_6_f0_0_a2_1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (!C (!B A)))"))
           )
           (instance (rename State_srsts_0_a2_1_1 "State_srsts_0_a2_1[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (!B A))"))
           )
-          (instance (rename OutputData_RNO_24 "OutputData_RNO[24]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (B !A))"))
-          )
-          (instance (rename OutputData_RNO_31 "OutputData_RNO[31]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C (B !A))"))
-          )
-          (instance (rename OutputData_RNO_30 "OutputData_RNO[30]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename OutputData_RNO_28 "OutputData_RNO[28]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B !A))"))
           )
           (instance (rename OutputData_RNO_29 "OutputData_RNO[29]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B !A))"))
           )
-          (instance (rename OutputData_RNO_28 "OutputData_RNO[28]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename OutputData_RNO_30 "OutputData_RNO[30]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(C (B !A))"))
+          )
+          (instance (rename OutputData_RNO_24 "OutputData_RNO[24]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(C (B !A))"))
+          )
+          (instance (rename OutputData_RNO_31 "OutputData_RNO[31]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B !A))"))
           )
           (instance (rename OutputData_RNO_27 "OutputData_RNO[27]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -3695,16 +3636,10 @@
           (instance (rename OutputData_RNO_6 "OutputData_RNO[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (B A)+C (!B+A))"))
           )
-          (instance (rename opTxStream_Data_RNO_3 "opTxStream.Data_RNO[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C A+C B)"))
-          )
-          (instance (rename opTxStream_Data_RNO_5 "opTxStream.Data_RNO[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C A+C B)"))
-          )
           (instance (rename opTxStream_Data_RNO_2 "opTxStream.Data_RNO[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C A+C B)"))
           )
-          (instance (rename opTxStream_Data_RNO_4 "opTxStream.Data_RNO[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opTxStream_Data_RNO_5 "opTxStream.Data_RNO[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C A+C B)"))
           )
           (instance (rename OutputData_RNO_7 "OutputData_RNO[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -3713,7 +3648,10 @@
           (instance (rename OutputData_RNO_5 "OutputData_RNO[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (B A)+C (!B+A))"))
           )
-          (instance (rename opTxStream_Data_RNO_7 "opTxStream.Data_RNO[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opTxStream_Data_RNO_3 "opTxStream.Data_RNO[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C A+C B)"))
+          )
+          (instance (rename opTxStream_Data_RNO_6 "opTxStream.Data_RNO[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C A+C B)"))
           )
           (instance (rename OutputData_RNO_4 "OutputData_RNO[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -3722,7 +3660,10 @@
           (instance (rename OutputData_RNO_8 "OutputData_RNO[8]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (B A)+C (!B+A))"))
           )
-          (instance (rename opTxStream_Data_RNO_6 "opTxStream.Data_RNO[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename opTxStream_Data_RNO_7 "opTxStream.Data_RNO[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C A+C B)"))
+          )
+          (instance (rename opTxStream_Data_RNO_4 "opTxStream.Data_RNO[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C A+C B)"))
           )
           (instance (rename OutputData_RNO_3 "OutputData_RNO[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -3788,20 +3729,20 @@
           (instance (rename OutputData_RNO_9 "OutputData_RNO[9]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (B A)+C (!B+A))"))
           )
+          (instance opWrData_1_sqmuxa_i_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!B+!A)"))
+          )
           (instance (rename opTxStream_Valid_5_iv_0_o2_0 "opTxStream.Valid_5_iv_0_o2_0") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B+A)"))
-          )
-          (instance opWrEnable_4_f0_0_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(B+A)"))
           )
           (instance opWrEnable_4_f0_0_o2_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B+!A)"))
           )
+          (instance opWrEnable_4_f0_0_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B+A)"))
+          )
           (instance un1_ipReset_1_i_0_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(B+!A)"))
-          )
-          (instance opWrData_1_sqmuxa_i_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!B+!A)"))
           )
           (instance opAddress_0_sqmuxa_1_0_a2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (!B A))"))
@@ -3832,29 +3773,29 @@
            (portRef B (instanceRef OutputData_RNO_1))
            (portRef B (instanceRef OutputData_RNO_2))
            (portRef B (instanceRef OutputData_RNO_3))
-           (portRef C (instanceRef opTxStream_Data_RNO_6))
+           (portRef C (instanceRef opTxStream_Data_RNO_4))
+           (portRef C (instanceRef opTxStream_Data_RNO_7))
            (portRef B (instanceRef OutputData_RNO_8))
            (portRef B (instanceRef OutputData_RNO_4))
-           (portRef C (instanceRef opTxStream_Data_RNO_7))
+           (portRef C (instanceRef opTxStream_Data_RNO_6))
+           (portRef C (instanceRef opTxStream_Data_RNO_3))
            (portRef B (instanceRef OutputData_RNO_5))
            (portRef B (instanceRef OutputData_RNO_7))
-           (portRef C (instanceRef opTxStream_Data_RNO_4))
-           (portRef C (instanceRef opTxStream_Data_RNO_2))
            (portRef C (instanceRef opTxStream_Data_RNO_5))
-           (portRef C (instanceRef opTxStream_Data_RNO_3))
+           (portRef C (instanceRef opTxStream_Data_RNO_2))
            (portRef B (instanceRef OutputData_RNO_6))
            (portRef A (instanceRef OutputData_RNO_25))
            (portRef A (instanceRef OutputData_RNO_26))
            (portRef A (instanceRef OutputData_RNO_27))
-           (portRef A (instanceRef OutputData_RNO_28))
-           (portRef A (instanceRef OutputData_RNO_29))
-           (portRef A (instanceRef OutputData_RNO_30))
            (portRef A (instanceRef OutputData_RNO_31))
            (portRef A (instanceRef OutputData_RNO_24))
-           (portRef A (instanceRef opTxStream_EoP_6_f0_0_a2_1))
+           (portRef A (instanceRef OutputData_RNO_30))
+           (portRef A (instanceRef OutputData_RNO_29))
+           (portRef A (instanceRef OutputData_RNO_28))
            (portRef A (instanceRef un1_OutputData_0_sqmuxa_0_0))
            (portRef A (instanceRef BytesWritten_8_i_o2_0))
            (portRef A (instanceRef tState_ns_i_0_0))
+           (portRef A (instanceRef opTxStream_EoP_6_f0_0_a2_1))
            (portRef A (instanceRef tState_ns_i_0_m2_1))
            (portRef A (instanceRef un1_ipReset_1_i_0_o2_RNIQF5A1))
            (portRef C (instanceRef tState_srsts_0))
@@ -3865,10 +3806,10 @@
           (net TxReady (joined
            (portRef TxReady)
            (portRef B (instanceRef opTxStream_Valid_5_iv_0_o2_0))
-           (portRef D (instanceRef opTxStream_EoP_6_f0_0_a2_1))
            (portRef C (instanceRef un1_OutputData_0_sqmuxa_0_0))
            (portRef D (instanceRef BytesWritten_8_i_o2_0))
            (portRef D (instanceRef tState_ns_i_0_0))
+           (portRef D (instanceRef opTxStream_EoP_6_f0_0_a2_1))
            (portRef D (instanceRef tState_ns_i_0_m2_1))
            (portRef C (instanceRef un1_ipReset_1_i_0_o2_RNIQF5A1))
            (portRef C (instanceRef opTxStream_Valid_5_iv_0_0_RNO))
@@ -3896,7 +3837,7 @@
            (portRef C (instanceRef tState_RNI1RGA1_1))
            (portRef D (instanceRef State_ns_1_0__m13_0_o2))
           ))
-          (net N_416 (joined
+          (net N_374 (joined
            (portRef Z (instanceRef State_ns_1_0__m13_0_o2))
            (portRef A (instanceRef opTxStream_EoP_6_f0_0_0))
            (portRef B (instanceRef State_srsts_0))
@@ -3908,11 +3849,11 @@
            (portRef C (instanceRef OutputData_RNO_25))
            (portRef C (instanceRef OutputData_RNO_26))
            (portRef C (instanceRef OutputData_RNO_27))
-           (portRef C (instanceRef OutputData_RNO_28))
-           (portRef C (instanceRef OutputData_RNO_29))
-           (portRef C (instanceRef OutputData_RNO_30))
            (portRef C (instanceRef OutputData_RNO_31))
            (portRef C (instanceRef OutputData_RNO_24))
+           (portRef C (instanceRef OutputData_RNO_30))
+           (portRef C (instanceRef OutputData_RNO_29))
+           (portRef C (instanceRef OutputData_RNO_28))
            (portRef D (instanceRef un1_OutputData_0_sqmuxa_0_0))
            (portRef D (instanceRef un1_ipReset_1_i_0_o2_RNIQF5A1))
            (portRef D (instanceRef tState_srsts_0))
@@ -3956,15 +3897,15 @@
           (net (rename State_1 "State[1]") (joined
            (portRef Q (instanceRef State_1))
            (portRef B (instanceRef opAddress_0_sqmuxa_1_0_a2))
-           (portRef A (instanceRef opWrData_1_sqmuxa_i_o2))
            (portRef B (instanceRef opWrEnable_4_f0_0_o2))
+           (portRef A (instanceRef opWrData_1_sqmuxa_i_o2))
            (portRef B (instanceRef State_srsts_0_a2_1_4_1))
            (portRef B (instanceRef opTxStream_EoP_6_f0_0_a2_0))
            (portRef A (instanceRef State_srsts_0))
            (portRef A (instanceRef opTxStream_Valid_5_iv_0_0_RNO))
            (portRef C (instanceRef State_RNILR3V_1))
           ))
-          (net N_222_i (joined
+          (net N_240_i (joined
            (portRef Z (instanceRef State_RNILR3V_1))
            (portRef SP (instanceRef opWrData_31))
            (portRef SP (instanceRef opWrData_30))
@@ -3999,7 +3940,7 @@
            (portRef SP (instanceRef opWrData_1))
            (portRef SP (instanceRef opWrData_0))
           ))
-          (net N_504 (joined
+          (net N_438 (joined
            (portRef Z (instanceRef opTxStream_Valid_5_iv_0_0_RNO))
            (portRef C (instanceRef opTxStream_Valid_5_iv_0_0))
           ))
@@ -4307,8 +4248,8 @@
           ))
           (net (rename Destination_QZ0Z_0 "Destination_Q[0]") (joined
            (portRef (member destination_q 7))
-           (portRef C (instanceRef State_srsts_0_a2_0_1))
            (portRef D (instanceRef State_ns_1_0__m13_0_a2_0))
+           (portRef C (instanceRef State_srsts_0_a2_0_1))
            (portRef D (instanceRef opTxStream_Source_0))
           ))
           (net (rename Source_QZ0Z_0 "Source_Q[0]") (joined
@@ -4317,7 +4258,7 @@
           ))
           (net (rename Destination_Q_1 "Destination_Q[1]") (joined
            (portRef (member destination_q 6))
-           (portRef B (instanceRef State_srsts_0_a2_1_1))
+           (portRef A (instanceRef State_srsts_0_a2_1_3_1))
            (portRef D (instanceRef opTxStream_Source_1))
           ))
           (net (rename Source_Q_1 "Source_Q[1]") (joined
@@ -4326,7 +4267,7 @@
           ))
           (net (rename Destination_Q_2 "Destination_Q[2]") (joined
            (portRef (member destination_q 5))
-           (portRef C (instanceRef State_srsts_0_a2_1_1))
+           (portRef B (instanceRef State_srsts_0_a2_1_3_1))
            (portRef D (instanceRef opTxStream_Source_2))
           ))
           (net (rename Source_Q_2 "Source_Q[2]") (joined
@@ -4335,7 +4276,7 @@
           ))
           (net (rename Destination_Q_3 "Destination_Q[3]") (joined
            (portRef (member destination_q 4))
-           (portRef A (instanceRef State_srsts_0_a2_1_3_1))
+           (portRef B (instanceRef State_srsts_0_a2_1_1))
            (portRef D (instanceRef opTxStream_Source_3))
           ))
           (net (rename Source_Q_3 "Source_Q[3]") (joined
@@ -4354,7 +4295,7 @@
           ))
           (net (rename Destination_Q_5 "Destination_Q[5]") (joined
            (portRef (member destination_q 2))
-           (portRef B (instanceRef State_srsts_0_a2_1_3_1))
+           (portRef C (instanceRef State_srsts_0_a2_1_1))
            (portRef D (instanceRef opTxStream_Source_5))
           ))
           (net (rename Source_Q_5 "Source_Q[5]") (joined
@@ -4453,7 +4394,7 @@
            (portRef Q (instanceRef opTxStream_Destination_7))
            (portRef (member destination_q_0 0))
           ))
-          (net N_432 (joined
+          (net N_220 (joined
            (portRef Z (instanceRef opTxStream_Data_RNO_0))
            (portRef D (instanceRef opTxStream_Data_0))
           ))
@@ -4472,7 +4413,7 @@
            (portRef Q (instanceRef opTxStream_Data_0))
            (portRef (member un1_control 7))
           ))
-          (net N_433 (joined
+          (net N_232 (joined
            (portRef Z (instanceRef opTxStream_Data_RNO_1))
            (portRef D (instanceRef opTxStream_Data_1))
           ))
@@ -4480,7 +4421,7 @@
            (portRef Q (instanceRef opTxStream_Data_1))
            (portRef (member un1_control 6))
           ))
-          (net N_439 (joined
+          (net N_244 (joined
            (portRef Z (instanceRef opTxStream_Data_RNO_2))
            (portRef D (instanceRef opTxStream_Data_2))
           ))
@@ -4488,7 +4429,7 @@
            (portRef Q (instanceRef opTxStream_Data_2))
            (portRef (member un1_control 5))
           ))
-          (net N_438 (joined
+          (net N_256 (joined
            (portRef Z (instanceRef opTxStream_Data_RNO_3))
            (portRef D (instanceRef opTxStream_Data_3))
           ))
@@ -4496,7 +4437,7 @@
            (portRef Q (instanceRef opTxStream_Data_3))
            (portRef (member un1_control 4))
           ))
-          (net N_437 (joined
+          (net N_268 (joined
            (portRef Z (instanceRef opTxStream_Data_RNO_4))
            (portRef D (instanceRef opTxStream_Data_4))
           ))
@@ -4504,7 +4445,7 @@
            (portRef Q (instanceRef opTxStream_Data_4))
            (portRef (member un1_control 3))
           ))
-          (net N_436 (joined
+          (net N_280 (joined
            (portRef Z (instanceRef opTxStream_Data_RNO_5))
            (portRef D (instanceRef opTxStream_Data_5))
           ))
@@ -4512,7 +4453,7 @@
            (portRef Q (instanceRef opTxStream_Data_5))
            (portRef (member un1_control 2))
           ))
-          (net N_435 (joined
+          (net N_292 (joined
            (portRef Z (instanceRef opTxStream_Data_RNO_6))
            (portRef D (instanceRef opTxStream_Data_6))
           ))
@@ -4520,7 +4461,7 @@
            (portRef Q (instanceRef opTxStream_Data_6))
            (portRef (member un1_control 1))
           ))
-          (net N_434 (joined
+          (net N_304 (joined
            (portRef Z (instanceRef opTxStream_Data_RNO_7))
            (portRef D (instanceRef opTxStream_Data_7))
           ))
@@ -4588,7 +4529,7 @@
            (portRef Z (instanceRef State_srsts_0_1))
            (portRef D (instanceRef State_1))
           ))
-          (net N_440 (joined
+          (net N_397 (joined
            (portRef Z (instanceRef OutputData_RNO_0))
            (portRef D (instanceRef OutputData_0))
           ))
@@ -4658,7 +4599,7 @@
            (portRef Q (instanceRef OutputData_0))
            (portRef B (instanceRef opTxStream_Data_RNO_0))
           ))
-          (net N_441 (joined
+          (net N_398 (joined
            (portRef Z (instanceRef OutputData_RNO_1))
            (portRef D (instanceRef OutputData_1))
           ))
@@ -4666,7 +4607,7 @@
            (portRef Q (instanceRef OutputData_1))
            (portRef B (instanceRef opTxStream_Data_RNO_1))
           ))
-          (net N_442 (joined
+          (net N_399 (joined
            (portRef Z (instanceRef OutputData_RNO_2))
            (portRef D (instanceRef OutputData_2))
           ))
@@ -4674,7 +4615,7 @@
            (portRef Q (instanceRef OutputData_2))
            (portRef B (instanceRef opTxStream_Data_RNO_2))
           ))
-          (net N_443 (joined
+          (net N_400 (joined
            (portRef Z (instanceRef OutputData_RNO_3))
            (portRef D (instanceRef OutputData_3))
           ))
@@ -4682,7 +4623,7 @@
            (portRef Q (instanceRef OutputData_3))
            (portRef B (instanceRef opTxStream_Data_RNO_3))
           ))
-          (net N_444 (joined
+          (net N_401 (joined
            (portRef Z (instanceRef OutputData_RNO_4))
            (portRef D (instanceRef OutputData_4))
           ))
@@ -4690,7 +4631,7 @@
            (portRef Q (instanceRef OutputData_4))
            (portRef B (instanceRef opTxStream_Data_RNO_4))
           ))
-          (net N_445 (joined
+          (net N_402 (joined
            (portRef Z (instanceRef OutputData_RNO_5))
            (portRef D (instanceRef OutputData_5))
           ))
@@ -4698,7 +4639,7 @@
            (portRef Q (instanceRef OutputData_5))
            (portRef B (instanceRef opTxStream_Data_RNO_5))
           ))
-          (net N_446 (joined
+          (net N_403 (joined
            (portRef Z (instanceRef OutputData_RNO_6))
            (portRef D (instanceRef OutputData_6))
           ))
@@ -4706,7 +4647,7 @@
            (portRef Q (instanceRef OutputData_6))
            (portRef B (instanceRef opTxStream_Data_RNO_6))
           ))
-          (net N_447 (joined
+          (net N_404 (joined
            (portRef Z (instanceRef OutputData_RNO_7))
            (portRef D (instanceRef OutputData_7))
           ))
@@ -4714,7 +4655,7 @@
            (portRef Q (instanceRef OutputData_7))
            (portRef B (instanceRef opTxStream_Data_RNO_7))
           ))
-          (net N_448 (joined
+          (net N_405 (joined
            (portRef Z (instanceRef OutputData_RNO_8))
            (portRef D (instanceRef OutputData_8))
           ))
@@ -4722,7 +4663,7 @@
            (portRef Q (instanceRef OutputData_8))
            (portRef A (instanceRef OutputData_RNO_0))
           ))
-          (net N_449 (joined
+          (net N_406 (joined
            (portRef Z (instanceRef OutputData_RNO_9))
            (portRef D (instanceRef OutputData_9))
           ))
@@ -4730,7 +4671,7 @@
            (portRef Q (instanceRef OutputData_9))
            (portRef A (instanceRef OutputData_RNO_1))
           ))
-          (net N_450 (joined
+          (net N_407 (joined
            (portRef Z (instanceRef OutputData_RNO_10))
            (portRef D (instanceRef OutputData_10))
           ))
@@ -4738,7 +4679,7 @@
            (portRef Q (instanceRef OutputData_10))
            (portRef A (instanceRef OutputData_RNO_2))
           ))
-          (net N_451 (joined
+          (net N_408 (joined
            (portRef Z (instanceRef OutputData_RNO_11))
            (portRef D (instanceRef OutputData_11))
           ))
@@ -4746,7 +4687,7 @@
            (portRef Q (instanceRef OutputData_11))
            (portRef A (instanceRef OutputData_RNO_3))
           ))
-          (net N_452 (joined
+          (net N_409 (joined
            (portRef Z (instanceRef OutputData_RNO_12))
            (portRef D (instanceRef OutputData_12))
           ))
@@ -4754,7 +4695,7 @@
            (portRef Q (instanceRef OutputData_12))
            (portRef A (instanceRef OutputData_RNO_4))
           ))
-          (net N_453 (joined
+          (net N_410 (joined
            (portRef Z (instanceRef OutputData_RNO_13))
            (portRef D (instanceRef OutputData_13))
           ))
@@ -4762,7 +4703,7 @@
            (portRef Q (instanceRef OutputData_13))
            (portRef A (instanceRef OutputData_RNO_5))
           ))
-          (net N_454 (joined
+          (net N_411 (joined
            (portRef Z (instanceRef OutputData_RNO_14))
            (portRef D (instanceRef OutputData_14))
           ))
@@ -4770,7 +4711,7 @@
            (portRef Q (instanceRef OutputData_14))
            (portRef A (instanceRef OutputData_RNO_6))
           ))
-          (net N_455 (joined
+          (net N_412 (joined
            (portRef Z (instanceRef OutputData_RNO_15))
            (portRef D (instanceRef OutputData_15))
           ))
@@ -4778,7 +4719,7 @@
            (portRef Q (instanceRef OutputData_15))
            (portRef A (instanceRef OutputData_RNO_7))
           ))
-          (net N_456 (joined
+          (net N_413 (joined
            (portRef Z (instanceRef OutputData_RNO_16))
            (portRef D (instanceRef OutputData_16))
           ))
@@ -4786,7 +4727,7 @@
            (portRef Q (instanceRef OutputData_16))
            (portRef A (instanceRef OutputData_RNO_8))
           ))
-          (net N_479 (joined
+          (net N_420 (joined
            (portRef Z (instanceRef OutputData_RNO_17))
            (portRef D (instanceRef OutputData_17))
           ))
@@ -4794,7 +4735,7 @@
            (portRef Q (instanceRef OutputData_17))
            (portRef A (instanceRef OutputData_RNO_9))
           ))
-          (net N_478 (joined
+          (net N_419 (joined
            (portRef Z (instanceRef OutputData_RNO_18))
            (portRef D (instanceRef OutputData_18))
           ))
@@ -4802,7 +4743,7 @@
            (portRef Q (instanceRef OutputData_18))
            (portRef A (instanceRef OutputData_RNO_10))
           ))
-          (net N_477 (joined
+          (net N_418 (joined
            (portRef Z (instanceRef OutputData_RNO_19))
            (portRef D (instanceRef OutputData_19))
           ))
@@ -4810,7 +4751,7 @@
            (portRef Q (instanceRef OutputData_19))
            (portRef A (instanceRef OutputData_RNO_11))
           ))
-          (net N_476 (joined
+          (net N_417 (joined
            (portRef Z (instanceRef OutputData_RNO_20))
            (portRef D (instanceRef OutputData_20))
           ))
@@ -4818,7 +4759,7 @@
            (portRef Q (instanceRef OutputData_20))
            (portRef A (instanceRef OutputData_RNO_12))
           ))
-          (net N_475 (joined
+          (net N_416 (joined
            (portRef Z (instanceRef OutputData_RNO_21))
            (portRef D (instanceRef OutputData_21))
           ))
@@ -4826,7 +4767,7 @@
            (portRef Q (instanceRef OutputData_21))
            (portRef A (instanceRef OutputData_RNO_13))
           ))
-          (net N_474 (joined
+          (net N_415 (joined
            (portRef Z (instanceRef OutputData_RNO_22))
            (portRef D (instanceRef OutputData_22))
           ))
@@ -4834,7 +4775,7 @@
            (portRef Q (instanceRef OutputData_22))
            (portRef A (instanceRef OutputData_RNO_14))
           ))
-          (net N_473 (joined
+          (net N_414 (joined
            (portRef Z (instanceRef OutputData_RNO_23))
            (portRef D (instanceRef OutputData_23))
           ))
@@ -4874,7 +4815,7 @@
            (portRef Q (instanceRef OutputData_27))
            (portRef A (instanceRef OutputData_RNO_19))
           ))
-          (net N_605 (joined
+          (net (rename OutputData_RNO_28 "OutputData_RNO[28]") (joined
            (portRef Z (instanceRef OutputData_RNO_28))
            (portRef D (instanceRef OutputData_28))
           ))
@@ -4882,7 +4823,7 @@
            (portRef Q (instanceRef OutputData_28))
            (portRef A (instanceRef OutputData_RNO_20))
           ))
-          (net N_612 (joined
+          (net (rename OutputData_RNO_29 "OutputData_RNO[29]") (joined
            (portRef Z (instanceRef OutputData_RNO_29))
            (portRef D (instanceRef OutputData_29))
           ))
@@ -4890,7 +4831,7 @@
            (portRef Q (instanceRef OutputData_29))
            (portRef A (instanceRef OutputData_RNO_21))
           ))
-          (net N_619 (joined
+          (net (rename OutputData_RNO_30 "OutputData_RNO[30]") (joined
            (portRef Z (instanceRef OutputData_RNO_30))
            (portRef D (instanceRef OutputData_30))
           ))
@@ -4906,7 +4847,7 @@
            (portRef Q (instanceRef OutputData_31))
            (portRef A (instanceRef OutputData_RNO_23))
           ))
-          (net N_224_i (joined
+          (net N_242_i (joined
            (portRef Z (instanceRef BytesWritten_RNO_0))
            (portRef D (instanceRef BytesWritten_0))
           ))
@@ -4931,7 +4872,7 @@
            (portRef B (instanceRef opWrEnable_4_f0_0_o2_0))
            (portRef B (instanceRef BytesWritten_8_0_a2_1))
           ))
-          (net N_544 (joined
+          (net N_503 (joined
            (portRef Z (instanceRef State_ns_1_0__m13_0_a2_0))
            (portRef C (instanceRef State_srsts_0))
           ))
@@ -4939,7 +4880,7 @@
            (portRef Z (instanceRef tState_ns_i_0_m2_1))
            (portRef A (instanceRef tState_srsts_1))
           ))
-          (net N_407 (joined
+          (net N_366 (joined
            (portRef Z (instanceRef BytesWritten_8_i_o2_0))
            (portRef C (instanceRef BytesWritten_8_0_a2_1))
            (portRef B (instanceRef BytesWritten_RNO_0))
@@ -4948,15 +4889,15 @@
            (portRef Z (instanceRef State_srsts_0_a2_1_4_1))
            (portRef A (instanceRef State_srsts_0_1))
           ))
-          (net N_404 (joined
+          (net N_363 (joined
            (portRef Z (instanceRef opWrEnable_4_f0_0_o2_0))
-           (portRef C (instanceRef opTxStream_EoP_6_f0_0_a2_1))
-           (portRef B (instanceRef opWrEnable_4_f0_0_0))
            (portRef C (instanceRef tState_ns_i_0_0))
+           (portRef B (instanceRef opWrEnable_4_f0_0_0))
+           (portRef C (instanceRef opTxStream_EoP_6_f0_0_a2_1))
            (portRef C (instanceRef tState_ns_i_0_m2_1))
            (portRef B (instanceRef State_srsts_0_1))
           ))
-          (net N_568 (joined
+          (net N_500 (joined
            (portRef Z (instanceRef State_srsts_0_a2_0_1))
            (portRef C (instanceRef State_srsts_0_1))
           ))
@@ -4964,54 +4905,66 @@
            (portRef Z (instanceRef tState_ns_i_0_0))
            (portRef A (instanceRef tState_srsts_0))
           ))
-          (net N_398 (joined
+          (net N_357 (joined
            (portRef Z (instanceRef un1_ipReset_1_i_0_o2))
-           (portRef B (instanceRef opTxStream_EoP_6_f0_0_a2_1))
            (portRef B (instanceRef un1_OutputData_0_sqmuxa_0_0))
            (portRef C (instanceRef BytesWritten_8_i_o2_0))
+           (portRef B (instanceRef opTxStream_EoP_6_f0_0_a2_1))
            (portRef B (instanceRef un1_ipReset_1_i_0_o2_RNIQF5A1))
            (portRef A (instanceRef opTxStream_Valid_5_iv_0_0))
           ))
-          (net N_402 (joined
+          (net N_361 (joined
            (portRef Z (instanceRef opTxStream_Valid_5_iv_0_o2_0))
            (portRef B (instanceRef opTxStream_Valid_5_iv_0_0))
           ))
-          (net N_565 (joined
+          (net N_505 (joined
            (portRef Z (instanceRef opTxStream_EoP_6_f0_0_a2_0))
            (portRef B (instanceRef opTxStream_EoP_6_f0_0_0))
           ))
-          (net N_566 (joined
+          (net N_506 (joined
            (portRef Z (instanceRef opTxStream_EoP_6_f0_0_a2_1))
            (portRef C (instanceRef opTxStream_EoP_6_f0_0_0))
+          ))
+          (net N_535 (joined
+           (portRef Z (instanceRef State_srsts_0_a2_1_1))
+           (portRef C (instanceRef State_ns_1_0__m13_0_a2_0))
+           (portRef B (instanceRef State_srsts_0_a2_0_1))
+           (portRef N_535)
           ))
           (net m13_0_a2_0_0 (joined
            (portRef Z (instanceRef State_ns_1_0__m13_0_a2_0_0))
            (portRef A (instanceRef State_ns_1_0__m13_0_a2_0))
           ))
-          (net N_409 (joined
+          (net N_367 (joined
            (portRef Z (instanceRef opWrEnable_4_f0_0_o2))
            (portRef C (instanceRef opWrEnable_4_f0_0_0))
            (portRef B (instanceRef State_ns_1_0__m13_0_a2_0))
-          ))
-          (net N_613 (joined
-           (portRef Z (instanceRef State_srsts_0_a2_1_1))
-           (portRef B (instanceRef State_srsts_0_a2_0_1))
-           (portRef C (instanceRef State_ns_1_0__m13_0_a2_0))
-           (portRef N_613)
           ))
           (net SoP_Q (joined
            (portRef SoP_Q)
            (portRef B (instanceRef State_ns_1_0__m13_0_a2_0_0))
            (portRef C (instanceRef opAddress_0_sqmuxa_0_a2))
           ))
-          (net N_395 (joined
+          (net N_354 (joined
            (portRef Z (instanceRef opWrData_1_sqmuxa_i_o2))
-           (portRef A (instanceRef opWrEnable_4_f0_0_0))
            (portRef B (instanceRef BytesWritten_8_i_o2_0))
+           (portRef A (instanceRef opWrEnable_4_f0_0_0))
           ))
           (net (rename State_srsts_0_a2_1_3_1 "State_srsts_0_a2_1_3[1]") (joined
            (portRef Z (instanceRef State_srsts_0_a2_1_3_1))
            (portRef A (instanceRef State_srsts_0_a2_1_1))
+          ))
+          (net (rename RdData_28 "RdData[28]") (joined
+           (portRef (member rddata 3))
+           (portRef B (instanceRef OutputData_RNO_28))
+          ))
+          (net (rename RdData_29 "RdData[29]") (joined
+           (portRef (member rddata 2))
+           (portRef B (instanceRef OutputData_RNO_29))
+          ))
+          (net (rename RdData_30 "RdData[30]") (joined
+           (portRef (member rddata 1))
+           (portRef B (instanceRef OutputData_RNO_30))
           ))
           (net (rename RdData_24 "RdData[24]") (joined
            (portRef (member rddata 7))
@@ -5020,18 +4973,6 @@
           (net (rename RdData_31 "RdData[31]") (joined
            (portRef (member rddata 0))
            (portRef B (instanceRef OutputData_RNO_31))
-          ))
-          (net (rename RdData_30 "RdData[30]") (joined
-           (portRef (member rddata 1))
-           (portRef B (instanceRef OutputData_RNO_30))
-          ))
-          (net (rename RdData_29 "RdData[29]") (joined
-           (portRef (member rddata 2))
-           (portRef B (instanceRef OutputData_RNO_29))
-          ))
-          (net (rename RdData_28 "RdData[28]") (joined
-           (portRef (member rddata 3))
-           (portRef B (instanceRef OutputData_RNO_28))
           ))
           (net (rename RdData_27 "RdData[27]") (joined
            (portRef (member rddata 4))
@@ -5155,7 +5096,7 @@
            (port (array (rename destination_q "Destination_Q[7:0]") 8) (direction INPUT))
            (port (array (rename source_q "Source_Q[7:0]") 8) (direction INPUT))
            (port Rx (direction INPUT))
-           (port N_207_i_0 (direction OUTPUT))
+           (port N_187_i (direction OUTPUT))
            (port txClkCount_1_sqmuxa_i (direction OUTPUT))
            (port opTx_7 (direction OUTPUT))
            (port Valid_Q_0 (direction INPUT))
@@ -5170,20 +5111,14 @@
            (port TxReady (direction OUTPUT))
          )
          (contents
-          (instance (rename UART_TxData_13_0_iv_0_1_RNO_2 "UART_TxData_13_0_iv_0_1_RNO[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename UART_TxData_13_0_iv_0_0_1_RNO_2 "UART_TxData_13_0_iv_0_0_1_RNO[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C (!B A)))"))
           )
-          (instance (rename UART_TxData_13_0_iv_0_1_RNO_0 "UART_TxData_13_0_iv_0_1_RNO[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename UART_TxData_13_0_iv_0_0_1_RNO_0 "UART_TxData_13_0_iv_0_0_1_RNO[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C (!B A)))"))
           )
           (instance (rename txState_RNO_0_5 "txState_RNO_0[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C !A+C (!B !A))"))
-          )
-          (instance (rename txState_RNI4DVK1_5 "txState_RNI4DVK1[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C+(!B+!A))+D (!B+!A))"))
-          )
-          (instance (rename txState_RNIN4KJ1_1 "txState_RNIN4KJ1[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B A)))"))
           )
           (instance un1_BytesReceived_3_0_I_27_0_RNIAJ7T (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D A+D (!C (B A)+C A))"))
@@ -5371,26 +5306,8 @@
           (instance (rename rxState_RNO_4 "rxState_RNO[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C+(!B+!A)))"))
           )
-          (instance UART_TxSend_0_sqmuxa_1_i_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B+!A)+C B)+D (B+!A))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_5 "UART_TxData_13_0_iv_0[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C B+C (B+A))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_7 "UART_TxData_13_0_iv_0[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C B+C (B+A))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_3 "UART_TxData_13_0_iv_0[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C B+C (B+A))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_1 "UART_TxData_13_0_iv_0[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C B+C (B+A))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_6 "UART_TxData_13_0_iv_0[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C+A)+D (C+(B+A)))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_4 "UART_TxData_13_0_iv_0[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C+A)+D (C+(B+A)))"))
+          (instance UART_TxSend_0_sqmuxa_1_i_0_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (!B+A)+C A)+D (!B+A))"))
           )
           (instance (rename UART_TxData_13_0_iv_i_0 "UART_TxData_13_0_iv_i[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D !B+D (!C (!B !A)+C !B))"))
@@ -5416,32 +5333,14 @@
           (instance (rename rxState_srsts_0_1 "rxState_srsts_0[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D A+D (!C A+C (!B+A)))"))
           )
-          (instance UART_TxData_0_sqmuxa_4_i_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance UART_TxSend_0_sqmuxa_1_i_o3_4_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D+(!C (B A)+C B))"))
           )
           (instance (rename txState_srsts_0_0_0 "txState_srsts_0_0[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C+(B+A))+D (!C+A))"))
           )
-          (instance (rename txState_RNI6VAI2_0 "txState_RNI6VAI2[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename txBuffer_Data_1_sqmuxa_1_i_0_o2_RNIUDQ01 "txBuffer.Data_1_sqmuxa_1_i_0_o2_RNIUDQ01") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (C (B+!A)))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_0_7 "UART_TxData_13_0_iv_0_0[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C B)+D (!C A+C (B+A)))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_1_6 "UART_TxData_13_0_iv_0_1[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C A)+D (!C B+C (B+A)))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_0_5 "UART_TxData_13_0_iv_0_0[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C B)+D (!C A+C (B+A)))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_0_3 "UART_TxData_13_0_iv_0_0[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C B)+D (!C A+C (B+A)))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_0_1 "UART_TxData_13_0_iv_0_0[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C B)+D (!C A+C (B+A)))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_1_4 "UART_TxData_13_0_iv_0_1[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (C A)+D (!C B+C (B+A)))"))
           )
           (instance (rename txState_RNO_2 "txState_RNO[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C (B !A)+C (B+A)))"))
@@ -5458,6 +5357,24 @@
           (instance opTxReady_RNO (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (!B !A))"))
           )
+          (instance (rename UART_TxData_13_0_iv_0_0_5 "UART_TxData_13_0_iv_0_0[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C B+C (B+A))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_7 "UART_TxData_13_0_iv_0_0[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C B+C (B+A))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_3 "UART_TxData_13_0_iv_0_0[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C B+C (B+A))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_1 "UART_TxData_13_0_iv_0_0[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C B+C (B+A))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_4 "UART_TxData_13_0_iv_0_0[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (C+A)+D (C+(B+A)))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_6 "UART_TxData_13_0_iv_0_0[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (C+A)+D (C+(B+A)))"))
+          )
           (instance (rename rxState_srsts_i_a3_0_0 "rxState_srsts_i_a3_0[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (C (B A)))"))
           )
@@ -5470,19 +5387,37 @@
           (instance (rename BytesReceived_5_0 "BytesReceived_5[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C A+C (!B A+B !A)))"))
           )
-          (instance (rename txState_srsts_i_0_a2_0_5 "txState_srsts_i_0_a2_0[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (!C (B !A)))"))
-          )
-          (instance opTxReady_2_sqmuxa_i_a2_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance opTxReady_2_sqmuxa_i_0_0_a2_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (C (B !A)))"))
           )
-          (instance (rename UART_TxData_13_0_iv_0_1_2 "UART_TxData_13_0_iv_0_1[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename txState_srsts_i_0_0_a2_0_5 "txState_srsts_i_0_0_a2_0[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(D (!C (B !A)))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_0_3 "UART_TxData_13_0_iv_0_0_0[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (C A)+D (!C B+C (B+A)))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_0_1 "UART_TxData_13_0_iv_0_0_0[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (C A)+D (!C B+C (B+A)))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_1_4 "UART_TxData_13_0_iv_0_0_1[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (C A)+D (!C B+C (B+A)))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_0_5 "UART_TxData_13_0_iv_0_0_0[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (C A)+D (!C B+C (B+A)))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_1_6 "UART_TxData_13_0_iv_0_0_1[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (C A)+D (!C B+C (B+A)))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_0_7 "UART_TxData_13_0_iv_0_0_0[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (C A)+D (!C B+C (B+A)))"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_0_1_2 "UART_TxData_13_0_iv_0_0_1[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D+(!C A+C (!B+A)))"))
           )
-          (instance (rename UART_TxData_13_0_iv_0_1_0 "UART_TxData_13_0_iv_0_1[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename UART_TxData_13_0_iv_0_0_1_0 "UART_TxData_13_0_iv_0_0_1[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D+(!C A+C (!B+A)))"))
           )
-          (instance opTxReady_2_sqmuxa_i_0_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance opTxReady_2_sqmuxa_i_0_0_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!B A)+D (!C (!B A)+C (B+A)))"))
           )
           (instance (rename rxState_srsts_i_0_4 "rxState_srsts_i_0[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -5509,16 +5444,16 @@
           (instance (rename opRxStream_SoP_1_sqmuxa_0_a3 "opRxStream.SoP_1_sqmuxa_0_a3") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C (B A))"))
           )
+          (instance opTxReady_0_sqmuxa_2_i_0_a2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C !B+C (!B A))+D (!C+A))"))
+          )
           (instance (rename txState_srsts_i_0_a2_1 "txState_srsts_i_0_a2[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C !B+C (!B !A))"))
-          )
-          (instance opTxReady_0_sqmuxa_2_i_a2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C !B+C (!B A))+D (!C+A))"))
           )
           (instance (rename opRxStream_SoP6 "opRxStream.SoP6") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (!B A))"))
           )
-          (instance UART_TxData_0_sqmuxa_4_i_o2_0_1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance UART_TxSend_0_sqmuxa_1_i_o3_4_o2_0_1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(C+(B+A))"))
           )
           (instance (rename rxState_srsts_i_a3_0_5_0 "rxState_srsts_i_a3_0_5[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -5530,26 +5465,32 @@
           (instance (rename opRxStream_EoP_0_sqmuxa_0_a3 "opRxStream.EoP_0_sqmuxa_0_a3") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(B A)"))
           )
-          (instance (rename UART_TxData_13_0_iv_0_a2_2_2 "UART_TxData_13_0_iv_0_a2_2[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename UART_TxData_13_0_iv_0_0_a2_4 "UART_TxData_13_0_iv_0_0_a2[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B A)"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_a2_2_0 "UART_TxData_13_0_iv_0_a2_2[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B !A)"))
           )
-          (instance (rename txState_srsts_i_0_o2_0_5 "txState_srsts_i_0_o2_0[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename UART_TxData_13_0_iv_0_a2_4_4 "UART_TxData_13_0_iv_0_a2_4[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B A)"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_a2_5_4 "UART_TxData_13_0_iv_0_a2_5[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B A)"))
+          )
+          (instance (rename UART_TxData_13_0_iv_0_a2_6_4 "UART_TxData_13_0_iv_0_a2_6[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B A)"))
+          )
+          (instance (rename txState_srsts_i_0_0_o2_0_5 "txState_srsts_i_0_0_o2_0[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(B+A)"))
           )
-          (instance (rename txState_srsts_i_0_o2_5 "txState_srsts_i_0_o2[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename txState_srsts_i_0_0_o2_5 "txState_srsts_i_0_0_o2[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B+!A)"))
           )
           (instance (rename rxState_srsts_i_a3_0_0_0 "rxState_srsts_i_a3_0_0[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(B A)"))
           )
-          (instance (rename UART_TxData_13_0_iv_0_a2_2_5 "UART_TxData_13_0_iv_0_a2_2[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B A)))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_a2_3_5 "UART_TxData_13_0_iv_0_a2_3[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B A)))"))
-          )
-          (instance (rename UART_TxData_13_0_iv_0_a2_4_5 "UART_TxData_13_0_iv_0_a2_4[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B A)))"))
+          (instance (rename txBuffer_Data_1_sqmuxa_1_i_0_o2 "txBuffer.Data_1_sqmuxa_1_i_0_o2") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C+(!B+!A))+D (!B+!A))"))
           )
           (instance un1_BytesReceived_3_0_I_27_0 (viewRef PRIM (cellRef CCU2B (libraryRef LUCENT)))
            (property INIT0 (string "0x0a0c"))
@@ -5611,80 +5552,63 @@
           (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
           (net (rename txState_3 "txState[3]") (joined
            (portRef Q (instanceRef txState_3))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_a2_3_5))
-           (portRef C (instanceRef UART_TxData_0_sqmuxa_4_i_o2_0_1))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_a2_5_4))
+           (portRef C (instanceRef UART_TxSend_0_sqmuxa_1_i_o3_4_o2_0_1))
            (portRef B (instanceRef txState_RNO_4))
            (portRef C (instanceRef txState_RNO_3))
            (portRef D (instanceRef UART_TxData_13_0_iv_i_0))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_1_RNO_2))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_1_RNO_2))
           ))
           (net (rename Source_2 "Source[2]") (joined
            (portRef Q (instanceRef txBuffer_Source_2))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_1_RNO_2))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_1_RNO_2))
           ))
           (net UART_TxSend (joined
            (portRef Q (instanceRef UART_TxSend))
            (portRef UART_TxSend (instanceRef UART_Inst))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_a2_4_5))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_a2_3_5))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_a2_2_5))
-           (portRef B (instanceRef txState_srsts_i_0_o2_5))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_a2_2_2))
-           (portRef A (instanceRef opTxReady_0_sqmuxa_2_i_a2))
+           (portRef C (instanceRef txBuffer_Data_1_sqmuxa_1_i_0_o2))
+           (portRef B (instanceRef txState_srsts_i_0_0_o2_5))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_a2_2_0))
+           (portRef A (instanceRef opTxReady_0_sqmuxa_2_i_0_a2))
            (portRef B (instanceRef UART_TxSend_fb))
-           (portRef C (instanceRef txState_RNIN4KJ1_1))
-           (portRef C (instanceRef txState_RNI4DVK1_5))
            (portRef B (instanceRef txState_RNO_0_5))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_1_RNO_0))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_1_RNO_2))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_1_RNO_0))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_1_RNO_2))
           ))
           (net UART_TxBusy (joined
            (portRef UART_TxBusy (instanceRef UART_Inst))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_a2_4_5))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_a2_3_5))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_a2_2_5))
-           (portRef A (instanceRef txState_srsts_i_0_o2_5))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_a2_2_2))
+           (portRef D (instanceRef txBuffer_Data_1_sqmuxa_1_i_0_o2))
+           (portRef A (instanceRef txState_srsts_i_0_0_o2_5))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_a2_2_0))
            (portRef B (instanceRef opTxReady_RNO))
-           (portRef D (instanceRef txState_RNIN4KJ1_1))
-           (portRef D (instanceRef txState_RNI4DVK1_5))
            (portRef C (instanceRef txState_RNO_0_5))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_1_RNO_0))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_1_RNO_2))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_1_RNO_0))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_1_RNO_2))
           ))
-          (net N_523 (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_1_RNO_2))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_1_2))
-          ))
-          (net (rename txState_2 "txState[2]") (joined
-           (portRef Q (instanceRef txState_2))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_a2_2_5))
-           (portRef B (instanceRef UART_TxData_0_sqmuxa_4_i_o2_0_1))
-           (portRef B (instanceRef txState_RNO_3))
-           (portRef C (instanceRef txState_RNO_2))
-           (portRef D (instanceRef UART_TxData_13_0_iv_i_2))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_1_RNO_0))
-          ))
-          (net (rename Destination_0 "Destination[0]") (joined
-           (portRef Q (instanceRef txBuffer_Destination_0))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_1_RNO_0))
-          ))
-          (net N_533 (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_1_RNO_0))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_1_0))
+          (net N_450 (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_1_RNO_2))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_1_2))
           ))
           (net (rename txState_5 "txState[5]") (joined
            (portRef Q (instanceRef txState_5))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_a2_4_5))
-           (portRef B (instanceRef txState_srsts_i_0_o2_0_5))
-           (portRef C (instanceRef opTxReady_0_sqmuxa_2_i_a2))
-           (portRef B (instanceRef opTxReady_2_sqmuxa_i_0_0))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_1_0))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_1_2))
-           (portRef C (instanceRef opTxReady_2_sqmuxa_i_a2_0))
-           (portRef D (instanceRef UART_TxSend_0_sqmuxa_1_i_0))
-           (portRef B (instanceRef txState_RNI4DVK1_5))
+           (portRef B (instanceRef txBuffer_Data_1_sqmuxa_1_i_0_o2))
+           (portRef B (instanceRef txState_srsts_i_0_0_o2_0_5))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_a2_4_4))
+           (portRef C (instanceRef opTxReady_0_sqmuxa_2_i_0_a2))
+           (portRef B (instanceRef opTxReady_2_sqmuxa_i_0_0_0))
+           (portRef C (instanceRef opTxReady_2_sqmuxa_i_0_0_a2_0))
+           (portRef D (instanceRef UART_TxData_13_0_iv_i_2))
+           (portRef D (instanceRef UART_TxSend_0_sqmuxa_1_i_0_0))
            (portRef A (instanceRef txState_RNO_0_5))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_1_RNO_0))
+          ))
+          (net (rename Data_0 "Data[0]") (joined
+           (portRef Q (instanceRef txBuffer_Data_0))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_1_RNO_0))
+          ))
+          (net N_444 (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_1_RNO_0))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_1_0))
           ))
           (net GND (joined
            (portRef Z (instanceRef GND))
@@ -5715,80 +5639,9 @@
            (portRef B0 (instanceRef un1_BytesReceived_3_0_I_27_0))
            (portRef A0 (instanceRef un1_BytesReceived_3_0_I_27_0))
           ))
-          (net N_537 (joined
+          (net N_440 (joined
            (portRef Z (instanceRef txState_RNO_0_5))
            (portRef B (instanceRef txState_RNO_5))
-          ))
-          (net TxReady (joined
-           (portRef Q (instanceRef opTxReady))
-           (portRef C (instanceRef opTxReady_2_sqmuxa_i_0_0))
-           (portRef D (instanceRef opTxReady_2_sqmuxa_i_a2_0))
-           (portRef D (instanceRef txState_srsts_i_0_a2_0_5))
-           (portRef A (instanceRef opTxReady_fb))
-           (portRef A (instanceRef txState_RNI4DVK1_5))
-           (portRef TxReady)
-          ))
-          (net N_495 (joined
-           (portRef Z (instanceRef txState_RNI4DVK1_5))
-           (portRef A (instanceRef txState_RNI6VAI2_0))
-          ))
-          (net ipReset_c (joined
-           (portRef ipReset_c)
-           (portRef ipReset_c (instanceRef UART_Inst))
-           (portRef B1 (instanceRef un1_BytesReceived_3_a_4_cry_0_0))
-           (portRef B1 (instanceRef un1_BytesReceived_3_a_4_cry_1_0))
-           (portRef B0 (instanceRef un1_BytesReceived_3_a_4_cry_1_0))
-           (portRef B1 (instanceRef un1_BytesReceived_3_a_4_cry_3_0))
-           (portRef B0 (instanceRef un1_BytesReceived_3_a_4_cry_3_0))
-           (portRef B1 (instanceRef un1_BytesReceived_3_a_4_cry_5_0))
-           (portRef B0 (instanceRef un1_BytesReceived_3_a_4_cry_5_0))
-           (portRef B0 (instanceRef un1_BytesReceived_3_a_4_cry_7_0))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_a2_4_5))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_a2_3_5))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_a2_2_5))
-           (portRef B (instanceRef opRxStream_EoP_0_sqmuxa_0_a3))
-           (portRef D (instanceRef rxState_srsts_i_a3_0_6_0))
-           (portRef C (instanceRef opRxStream_SoP_1_sqmuxa_0_a3))
-           (portRef C (instanceRef un1_opRxStream_Source_0_sqmuxa_1_0))
-           (portRef C (instanceRef un1_opRxStream_Length_0_sqmuxa_1_0))
-           (portRef C (instanceRef un1_opRxStream_Destination_0_sqmuxa_1_0))
-           (portRef C (instanceRef un1_opRxStream_Data_0_sqmuxa_0))
-           (portRef B (instanceRef rxState_RNI0AKH_4))
-           (portRef D (instanceRef rxState_srsts_i_0_4))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_1_0))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_1_2))
-           (portRef D (instanceRef BytesReceived_5_0))
-           (portRef D (instanceRef rxState_RNO_3))
-           (portRef D (instanceRef rxState_RNO_2))
-           (portRef C (instanceRef opTxReady_RNO))
-           (portRef C (instanceRef BytesReceived_5_1))
-           (portRef D (instanceRef txState_RNO_4))
-           (portRef D (instanceRef txState_RNO_3))
-           (portRef D (instanceRef txState_RNO_2))
-           (portRef C (instanceRef txState_RNI6VAI2_0))
-           (portRef C (instanceRef txState_srsts_0_0_0))
-           (portRef D (instanceRef UART_TxData_0_sqmuxa_4_i_o2))
-           (portRef D (instanceRef rxState_srsts_0_1))
-           (portRef D (instanceRef BytesReceived_5_2))
-           (portRef D (instanceRef rxState_srsts_i_a3_1_0))
-           (portRef D (instanceRef txState_RNO_5))
-           (portRef D (instanceRef txState_RNO_1))
-           (portRef C (instanceRef opRxStream_SoP_RNO))
-           (portRef A (instanceRef rxState_RNI30EM1_4))
-           (portRef B (instanceRef opTxReady_fb))
-           (portRef A (instanceRef txState_RNIN4KJ1_1))
-          ))
-          (net (rename txState_1 "txState[1]") (joined
-           (portRef Q (instanceRef txState_1))
-           (portRef A (instanceRef UART_TxData_0_sqmuxa_4_i_o2_0_1))
-           (portRef B (instanceRef txState_srsts_i_0_a2_1))
-           (portRef B (instanceRef txState_RNO_2))
-           (portRef B (instanceRef txState_RNIN4KJ1_1))
-          ))
-          (net N_515 (joined
-           (portRef Z (instanceRef txState_RNIN4KJ1_1))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_4))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_6))
           ))
           (net un1_BytesReceived_3_0_I_27_0_S0 (joined
            (portRef S0 (instanceRef un1_BytesReceived_3_0_I_27_0))
@@ -5823,12 +5676,67 @@
            (portRef B (instanceRef rxState_RNO_4))
            (portRef C (instanceRef rxState_RNI30EM1_4))
           ))
-          (net opTxReady_2_sqmuxa_i_0_0 (joined
-           (portRef Z (instanceRef opTxReady_2_sqmuxa_i_0_0))
+          (net TxReady (joined
+           (portRef Q (instanceRef opTxReady))
+           (portRef A (instanceRef txBuffer_Data_1_sqmuxa_1_i_0_o2))
+           (portRef C (instanceRef opTxReady_2_sqmuxa_i_0_0_0))
+           (portRef D (instanceRef txState_srsts_i_0_0_a2_0_5))
+           (portRef D (instanceRef opTxReady_2_sqmuxa_i_0_0_a2_0))
+           (portRef A (instanceRef opTxReady_fb))
+           (portRef TxReady)
+          ))
+          (net ipReset_c (joined
+           (portRef ipReset_c)
+           (portRef ipReset_c (instanceRef UART_Inst))
+           (portRef B1 (instanceRef un1_BytesReceived_3_a_4_cry_0_0))
+           (portRef B1 (instanceRef un1_BytesReceived_3_a_4_cry_1_0))
+           (portRef B0 (instanceRef un1_BytesReceived_3_a_4_cry_1_0))
+           (portRef B1 (instanceRef un1_BytesReceived_3_a_4_cry_3_0))
+           (portRef B0 (instanceRef un1_BytesReceived_3_a_4_cry_3_0))
+           (portRef B1 (instanceRef un1_BytesReceived_3_a_4_cry_5_0))
+           (portRef B0 (instanceRef un1_BytesReceived_3_a_4_cry_5_0))
+           (portRef B0 (instanceRef un1_BytesReceived_3_a_4_cry_7_0))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_a2_6_4))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_a2_5_4))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_a2_4_4))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_a2_4))
+           (portRef B (instanceRef opRxStream_EoP_0_sqmuxa_0_a3))
+           (portRef D (instanceRef rxState_srsts_i_a3_0_6_0))
+           (portRef C (instanceRef opRxStream_SoP_1_sqmuxa_0_a3))
+           (portRef C (instanceRef un1_opRxStream_Source_0_sqmuxa_1_0))
+           (portRef C (instanceRef un1_opRxStream_Length_0_sqmuxa_1_0))
+           (portRef C (instanceRef un1_opRxStream_Destination_0_sqmuxa_1_0))
+           (portRef C (instanceRef un1_opRxStream_Data_0_sqmuxa_0))
+           (portRef B (instanceRef rxState_RNI0AKH_4))
+           (portRef D (instanceRef rxState_srsts_i_0_4))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_1_0))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_1_2))
+           (portRef D (instanceRef BytesReceived_5_0))
+           (portRef D (instanceRef rxState_RNO_3))
+           (portRef D (instanceRef rxState_RNO_2))
+           (portRef C (instanceRef opTxReady_RNO))
+           (portRef C (instanceRef BytesReceived_5_1))
+           (portRef D (instanceRef txState_RNO_4))
+           (portRef D (instanceRef txState_RNO_3))
+           (portRef D (instanceRef txState_RNO_2))
+           (portRef C (instanceRef txBuffer_Data_1_sqmuxa_1_i_0_o2_RNIUDQ01))
+           (portRef C (instanceRef txState_srsts_0_0_0))
+           (portRef D (instanceRef UART_TxSend_0_sqmuxa_1_i_o3_4_o2))
+           (portRef D (instanceRef rxState_srsts_0_1))
+           (portRef D (instanceRef BytesReceived_5_2))
+           (portRef D (instanceRef rxState_srsts_i_a3_1_0))
+           (portRef D (instanceRef txState_RNO_5))
+           (portRef D (instanceRef txState_RNO_1))
+           (portRef C (instanceRef opRxStream_SoP_RNO))
+           (portRef A (instanceRef rxState_RNI30EM1_4))
+           (portRef B (instanceRef opTxReady_fb))
+          ))
+          (net opTxReady_2_sqmuxa_i_0_0_0 (joined
+           (portRef Z (instanceRef opTxReady_2_sqmuxa_i_0_0_0))
            (portRef C (instanceRef opTxReady_fb))
           ))
-          (net N_607 (joined
-           (portRef Z (instanceRef opTxReady_2_sqmuxa_i_a2_0))
+          (net N_529 (joined
+           (portRef Z (instanceRef opTxReady_2_sqmuxa_i_0_0_a2_0))
            (portRef A (instanceRef txState_srsts_0_0_0))
            (portRef D (instanceRef opTxReady_fb))
           ))
@@ -5870,8 +5778,8 @@
            (portRef Z (instanceRef rxState_RNI30EM1_4))
            (portRef N_113_1_i)
           ))
-          (net N_153 (joined
-           (portRef Z (instanceRef UART_TxSend_0_sqmuxa_1_i_0))
+          (net UART_TxSend_0_sqmuxa_1_i_0_0 (joined
+           (portRef Z (instanceRef UART_TxSend_0_sqmuxa_1_i_0_0))
            (portRef A (instanceRef UART_TxSend_fb))
           ))
           (net fb_0 (joined
@@ -5972,13 +5880,13 @@
           ))
           (net (rename txState_0 "txState[0]") (joined
            (portRef Q (instanceRef txState_0))
-           (portRef B (instanceRef opTxReady_0_sqmuxa_2_i_a2))
            (portRef A (instanceRef txState_srsts_i_0_a2_1))
-           (portRef A (instanceRef opTxReady_2_sqmuxa_i_0_0))
-           (portRef B (instanceRef txState_RNI6VAI2_0))
+           (portRef B (instanceRef opTxReady_0_sqmuxa_2_i_0_a2))
+           (portRef A (instanceRef opTxReady_2_sqmuxa_i_0_0_0))
+           (portRef B (instanceRef txBuffer_Data_1_sqmuxa_1_i_0_o2_RNIUDQ01))
            (portRef B (instanceRef txState_srsts_0_0_0))
            (portRef C (instanceRef txState_RNO_1))
-           (portRef C (instanceRef UART_TxSend_0_sqmuxa_1_i_0))
+           (portRef C (instanceRef UART_TxSend_0_sqmuxa_1_i_0_0))
           ))
           (net VCC (joined
            (portRef Z (instanceRef VCC))
@@ -6005,9 +5913,25 @@
            (portRef Z (instanceRef txState_RNO_1))
            (portRef D (instanceRef txState_1))
           ))
+          (net (rename txState_1 "txState[1]") (joined
+           (portRef Q (instanceRef txState_1))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_a2_4))
+           (portRef A (instanceRef UART_TxSend_0_sqmuxa_1_i_o3_4_o2_0_1))
+           (portRef B (instanceRef txState_srsts_i_0_a2_1))
+           (portRef B (instanceRef txState_RNO_2))
+          ))
           (net N_209_i (joined
            (portRef Z (instanceRef txState_RNO_2))
            (portRef D (instanceRef txState_2))
+          ))
+          (net (rename txState_2 "txState[2]") (joined
+           (portRef Q (instanceRef txState_2))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_a2_6_4))
+           (portRef B (instanceRef UART_TxSend_0_sqmuxa_1_i_o3_4_o2_0_1))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_1_0))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_1_2))
+           (portRef B (instanceRef txState_RNO_3))
+           (portRef C (instanceRef txState_RNO_2))
           ))
           (net N_207_i (joined
            (portRef Z (instanceRef txState_RNO_3))
@@ -6019,8 +5943,8 @@
           ))
           (net (rename txState_4 "txState[4]") (joined
            (portRef Q (instanceRef txState_4))
-           (portRef A (instanceRef txState_srsts_i_0_o2_0_5))
-           (portRef C (instanceRef txState_srsts_i_0_a2_0_5))
+           (portRef A (instanceRef txState_srsts_i_0_0_o2_0_5))
+           (portRef C (instanceRef txState_srsts_i_0_0_a2_0_5))
            (portRef C (instanceRef txState_RNO_4))
           ))
           (net N_203_i (joined
@@ -6031,8 +5955,8 @@
            (portRef (member source_q 7))
            (portRef D (instanceRef txBuffer_Source_0))
           ))
-          (net N_133_i (joined
-           (portRef Z (instanceRef txState_RNI6VAI2_0))
+          (net N_76_i (joined
+           (portRef Z (instanceRef txBuffer_Data_1_sqmuxa_1_i_0_o2_RNIUDQ01))
            (portRef SP (instanceRef txBuffer_Data_7))
            (portRef SP (instanceRef txBuffer_Data_6))
            (portRef SP (instanceRef txBuffer_Data_5))
@@ -6069,7 +5993,7 @@
           ))
           (net (rename Source_1 "Source[1]") (joined
            (portRef Q (instanceRef txBuffer_Source_1))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_1))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_0_1))
           ))
           (net (rename Source_Q_2 "Source_Q[2]") (joined
            (portRef (member source_q 5))
@@ -6081,7 +6005,7 @@
           ))
           (net (rename Source_3 "Source[3]") (joined
            (portRef Q (instanceRef txBuffer_Source_3))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_3))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_0_3))
           ))
           (net (rename Source_Q_4 "Source_Q[4]") (joined
            (portRef (member source_q 3))
@@ -6089,7 +6013,7 @@
           ))
           (net (rename Source_4 "Source[4]") (joined
            (portRef Q (instanceRef txBuffer_Source_4))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_1_4))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_4))
           ))
           (net (rename Source_Q_5 "Source_Q[5]") (joined
            (portRef (member source_q 2))
@@ -6097,7 +6021,7 @@
           ))
           (net (rename Source_5 "Source[5]") (joined
            (portRef Q (instanceRef txBuffer_Source_5))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_5))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_0_5))
           ))
           (net (rename Source_Q_6 "Source_Q[6]") (joined
            (portRef (member source_q 1))
@@ -6105,7 +6029,7 @@
           ))
           (net (rename Source_6 "Source[6]") (joined
            (portRef Q (instanceRef txBuffer_Source_6))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_1_6))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_6))
           ))
           (net (rename Source_Q_7 "Source_Q[7]") (joined
            (portRef (member source_q 0))
@@ -6113,7 +6037,7 @@
           ))
           (net (rename Source_7 "Source[7]") (joined
            (portRef Q (instanceRef txBuffer_Source_7))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_7))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_0_7))
           ))
           (net EoP_Q (joined
            (portRef EoP_Q)
@@ -6121,12 +6045,16 @@
           ))
           (net EoP (joined
            (portRef Q (instanceRef txBuffer_EoP))
-           (portRef B (instanceRef opTxReady_2_sqmuxa_i_a2_0))
-           (portRef B (instanceRef txState_srsts_i_0_a2_0_5))
+           (portRef B (instanceRef txState_srsts_i_0_0_a2_0_5))
+           (portRef B (instanceRef opTxReady_2_sqmuxa_i_0_0_a2_0))
           ))
           (net (rename Destination_QZ0Z_0 "Destination_Q[0]") (joined
            (portRef (member destination_q 7))
            (portRef D (instanceRef txBuffer_Destination_0))
+          ))
+          (net (rename Destination_0 "Destination[0]") (joined
+           (portRef Q (instanceRef txBuffer_Destination_0))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_1_0))
           ))
           (net (rename Destination_Q_1 "Destination_Q[1]") (joined
            (portRef (member destination_q 6))
@@ -6134,7 +6062,7 @@
           ))
           (net (rename Destination_1 "Destination[1]") (joined
            (portRef Q (instanceRef txBuffer_Destination_1))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_1))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_1))
           ))
           (net (rename Destination_Q_2 "Destination_Q[2]") (joined
            (portRef (member destination_q 5))
@@ -6142,7 +6070,7 @@
           ))
           (net (rename Destination_2 "Destination[2]") (joined
            (portRef Q (instanceRef txBuffer_Destination_2))
-           (portRef C (instanceRef UART_TxData_13_0_iv_i_2))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_1_2))
           ))
           (net (rename Destination_Q_3 "Destination_Q[3]") (joined
            (portRef (member destination_q 4))
@@ -6150,7 +6078,7 @@
           ))
           (net (rename Destination_3 "Destination[3]") (joined
            (portRef Q (instanceRef txBuffer_Destination_3))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_3))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_3))
           ))
           (net (rename Destination_Q_4 "Destination_Q[4]") (joined
            (portRef (member destination_q 3))
@@ -6158,7 +6086,7 @@
           ))
           (net (rename Destination_4 "Destination[4]") (joined
            (portRef Q (instanceRef txBuffer_Destination_4))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_1_4))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_1_4))
           ))
           (net (rename Destination_Q_5 "Destination_Q[5]") (joined
            (portRef (member destination_q 2))
@@ -6166,7 +6094,7 @@
           ))
           (net (rename Destination_5 "Destination[5]") (joined
            (portRef Q (instanceRef txBuffer_Destination_5))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_5))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_5))
           ))
           (net (rename Destination_Q_6 "Destination_Q[6]") (joined
            (portRef (member destination_q 1))
@@ -6174,7 +6102,7 @@
           ))
           (net (rename Destination_6 "Destination[6]") (joined
            (portRef Q (instanceRef txBuffer_Destination_6))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_1_6))
+           (portRef D (instanceRef UART_TxData_13_0_iv_0_0_1_6))
           ))
           (net (rename Destination_Q_7 "Destination_Q[7]") (joined
            (portRef (member destination_q 0))
@@ -6182,15 +6110,11 @@
           ))
           (net (rename Destination_7 "Destination[7]") (joined
            (portRef Q (instanceRef txBuffer_Destination_7))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_7))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_7))
           ))
           (net (rename un1_Control_1 "un1_Control[1]") (joined
            (portRef (member un1_control 7))
            (portRef D (instanceRef txBuffer_Data_0))
-          ))
-          (net (rename Data_0 "Data[0]") (joined
-           (portRef Q (instanceRef txBuffer_Data_0))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_1_0))
           ))
           (net (rename un1_Control_2 "un1_Control[2]") (joined
            (portRef (member un1_control 6))
@@ -6198,7 +6122,7 @@
           ))
           (net (rename Data_1 "Data[1]") (joined
            (portRef Q (instanceRef txBuffer_Data_1))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_1))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_0_1))
           ))
           (net (rename un1_Control_3 "un1_Control[3]") (joined
            (portRef (member un1_control 5))
@@ -6206,7 +6130,7 @@
           ))
           (net (rename Data_2 "Data[2]") (joined
            (portRef Q (instanceRef txBuffer_Data_2))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_1_2))
+           (portRef C (instanceRef UART_TxData_13_0_iv_i_2))
           ))
           (net (rename un1_Control_4 "un1_Control[4]") (joined
            (portRef (member un1_control 4))
@@ -6214,7 +6138,7 @@
           ))
           (net (rename Data_3 "Data[3]") (joined
            (portRef Q (instanceRef txBuffer_Data_3))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_3))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_0_3))
           ))
           (net (rename un1_Control_5 "un1_Control[5]") (joined
            (portRef (member un1_control 3))
@@ -6222,7 +6146,7 @@
           ))
           (net (rename Data_4 "Data[4]") (joined
            (portRef Q (instanceRef txBuffer_Data_4))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_4))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_1_4))
           ))
           (net (rename un1_Control_6 "un1_Control[6]") (joined
            (portRef (member un1_control 2))
@@ -6230,7 +6154,7 @@
           ))
           (net (rename Data_5 "Data[5]") (joined
            (portRef Q (instanceRef txBuffer_Data_5))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_5))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_0_5))
           ))
           (net (rename un1_Control_7 "un1_Control[7]") (joined
            (portRef (member un1_control 1))
@@ -6238,7 +6162,7 @@
           ))
           (net (rename Data_6 "Data[6]") (joined
            (portRef Q (instanceRef txBuffer_Data_6))
-           (portRef D (instanceRef UART_TxData_13_0_iv_0_6))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_1_6))
           ))
           (net (rename un1_Control_8 "un1_Control[8]") (joined
            (portRef (member un1_control 0))
@@ -6246,7 +6170,7 @@
           ))
           (net (rename Data_7 "Data[7]") (joined
            (portRef Q (instanceRef txBuffer_Data_7))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_7))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_0_7))
           ))
           (net N_83_i (joined
            (portRef Z (instanceRef rxState_RNO_0))
@@ -6293,7 +6217,7 @@
            (portRef Z (instanceRef rxState_RNO_4))
            (portRef D (instanceRef rxState_4))
           ))
-          (net N_131_i (joined
+          (net N_31_i (joined
            (portRef Z (instanceRef opTxReady_RNO))
            (portRef D (instanceRef opTxReady))
           ))
@@ -6637,9 +6561,9 @@
            (portRef Z (instanceRef UART_TxData_13_0_iv_i_0))
            (portRef D (instanceRef UART_TxData_0))
           ))
-          (net N_498 (joined
-           (portRef Z (instanceRef UART_TxData_0_sqmuxa_4_i_o2))
-           (portRef B (instanceRef UART_TxSend_0_sqmuxa_1_i_0))
+          (net UART_TxSend_0_sqmuxa_1_i_o3_4_o2 (joined
+           (portRef Z (instanceRef UART_TxSend_0_sqmuxa_1_i_o3_4_o2))
+           (portRef A (instanceRef UART_TxSend_0_sqmuxa_1_i_0_0))
            (portRef SP (instanceRef UART_TxData_7))
            (portRef SP (instanceRef UART_TxData_6))
            (portRef SP (instanceRef UART_TxData_5))
@@ -6654,7 +6578,7 @@
            (portRef (member uart_txdata 7) (instanceRef UART_Inst))
           ))
           (net (rename UART_TxData_13_1 "UART_TxData_13[1]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_1))
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_1))
            (portRef D (instanceRef UART_TxData_1))
           ))
           (net (rename UART_TxData_1 "UART_TxData[1]") (joined
@@ -6670,7 +6594,7 @@
            (portRef (member uart_txdata 5) (instanceRef UART_Inst))
           ))
           (net (rename UART_TxData_13_3 "UART_TxData_13[3]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_3))
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_3))
            (portRef D (instanceRef UART_TxData_3))
           ))
           (net (rename UART_TxData_3 "UART_TxData[3]") (joined
@@ -6678,7 +6602,7 @@
            (portRef (member uart_txdata 4) (instanceRef UART_Inst))
           ))
           (net (rename UART_TxData_13_4 "UART_TxData_13[4]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_4))
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_4))
            (portRef D (instanceRef UART_TxData_4))
           ))
           (net (rename UART_TxData_4 "UART_TxData[4]") (joined
@@ -6686,7 +6610,7 @@
            (portRef (member uart_txdata 3) (instanceRef UART_Inst))
           ))
           (net (rename UART_TxData_13_5 "UART_TxData_13[5]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_5))
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_5))
            (portRef D (instanceRef UART_TxData_5))
           ))
           (net (rename UART_TxData_5 "UART_TxData[5]") (joined
@@ -6694,7 +6618,7 @@
            (portRef (member uart_txdata 2) (instanceRef UART_Inst))
           ))
           (net (rename UART_TxData_13_6 "UART_TxData_13[6]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_6))
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_6))
            (portRef D (instanceRef UART_TxData_6))
           ))
           (net (rename UART_TxData_6 "UART_TxData[6]") (joined
@@ -6702,7 +6626,7 @@
            (portRef (member uart_txdata 1) (instanceRef UART_Inst))
           ))
           (net (rename UART_TxData_13_7 "UART_TxData_13[7]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_7))
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_7))
            (portRef D (instanceRef UART_TxData_7))
           ))
           (net (rename UART_TxData_7 "UART_TxData[7]") (joined
@@ -6734,87 +6658,45 @@
            (portRef Z (instanceRef rxState_srsts_i_0_4))
            (portRef D (instanceRef rxState_RNO_4))
           ))
-          (net N_397 (joined
-           (portRef Z (instanceRef txState_srsts_i_0_o2_5))
-           (portRef A (instanceRef opTxReady_2_sqmuxa_i_a2_0))
-           (portRef A (instanceRef txState_srsts_i_0_a2_0_5))
+          (net N_356 (joined
+           (portRef Z (instanceRef txState_srsts_i_0_0_o2_5))
+           (portRef A (instanceRef txState_srsts_i_0_0_a2_0_5))
+           (portRef A (instanceRef opTxReady_2_sqmuxa_i_0_0_a2_0))
            (portRef A (instanceRef txState_RNO_4))
            (portRef A (instanceRef txState_RNO_3))
            (portRef A (instanceRef txState_RNO_2))
            (portRef A (instanceRef txState_RNO_1))
-           (portRef A (instanceRef UART_TxSend_0_sqmuxa_1_i_0))
+           (portRef B (instanceRef UART_TxSend_0_sqmuxa_1_i_0_0))
           ))
-          (net N_604 (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_a2_2_5))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_1_4))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_1_6))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_1))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_3))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_7))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_5))
-          ))
-          (net (rename UART_TxData_13_0_iv_0_0_5 "UART_TxData_13_0_iv_0_0[5]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_5))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_5))
-          ))
-          (net (rename UART_TxData_13_0_iv_0_0_7 "UART_TxData_13_0_iv_0_0[7]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_7))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_7))
-          ))
-          (net (rename UART_TxData_13_0_iv_0_0_3 "UART_TxData_13_0_iv_0_0[3]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_3))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_3))
-          ))
-          (net (rename UART_TxData_13_0_iv_0_0_1 "UART_TxData_13_0_iv_0_0[1]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_1))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_1))
-          ))
-          (net N_606 (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_a2_4_5))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_1))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_3))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_5))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_7))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_4))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_6))
-          ))
-          (net (rename UART_TxData_13_0_iv_0_1_6 "UART_TxData_13_0_iv_0_1[6]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_1_6))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_6))
-          ))
-          (net (rename UART_TxData_13_0_iv_0_1_4 "UART_TxData_13_0_iv_0_1[4]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_1_4))
-           (portRef C (instanceRef UART_TxData_13_0_iv_0_4))
-          ))
-          (net N_600 (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_a2_2_2))
-           (portRef B (instanceRef UART_TxData_0_sqmuxa_4_i_o2))
+          (net N_523 (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_a2_2_0))
+           (portRef B (instanceRef UART_TxSend_0_sqmuxa_1_i_o3_4_o2))
            (portRef A (instanceRef UART_TxData_13_0_iv_i_2))
            (portRef A (instanceRef UART_TxData_13_0_iv_i_0))
           ))
-          (net (rename UART_TxData_13_0_iv_0_1_0 "UART_TxData_13_0_iv_0_1[0]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_1_0))
+          (net (rename UART_TxData_13_0_iv_0_0_1_0 "UART_TxData_13_0_iv_0_0_1[0]") (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_1_0))
            (portRef B (instanceRef UART_TxData_13_0_iv_i_0))
           ))
-          (net (rename UART_TxData_13_0_iv_0_1_2 "UART_TxData_13_0_iv_0_1[2]") (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_1_2))
+          (net (rename UART_TxData_13_0_iv_0_0_1_2 "UART_TxData_13_0_iv_0_0_1[2]") (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_1_2))
            (portRef B (instanceRef UART_TxData_13_0_iv_i_2))
           ))
           (net SoP6 (joined
            (portRef Z (instanceRef opRxStream_SoP6))
            (portRef B (instanceRef opRxStream_SoP_RNO))
           ))
-          (net N_540 (joined
+          (net N_477 (joined
            (portRef Z (instanceRef txState_srsts_i_0_a2_1))
            (portRef B (instanceRef txState_RNO_1))
           ))
-          (net N_405 (joined
-           (portRef Z (instanceRef txState_srsts_i_0_o2_0_5))
-           (portRef A (instanceRef UART_TxData_0_sqmuxa_4_i_o2))
+          (net N_364 (joined
+           (portRef Z (instanceRef txState_srsts_i_0_0_o2_0_5))
+           (portRef A (instanceRef UART_TxSend_0_sqmuxa_1_i_o3_4_o2))
            (portRef A (instanceRef txState_RNO_5))
           ))
-          (net N_538 (joined
-           (portRef Z (instanceRef txState_srsts_i_0_a2_0_5))
+          (net N_441 (joined
+           (portRef Z (instanceRef txState_srsts_i_0_0_a2_0_5))
            (portRef C (instanceRef txState_RNO_5))
           ))
           (net CO0 (joined
@@ -6822,30 +6704,72 @@
            (portRef B (instanceRef BytesReceived_5_1))
            (portRef C (instanceRef BytesReceived_5_2))
           ))
-          (net UART_TxData_0_sqmuxa_4_i_o2_0_1 (joined
-           (portRef Z (instanceRef UART_TxData_0_sqmuxa_4_i_o2_0_1))
-           (portRef C (instanceRef UART_TxData_0_sqmuxa_4_i_o2))
+          (net UART_TxSend_0_sqmuxa_1_i_o3_4_o2_0_1 (joined
+           (portRef Z (instanceRef UART_TxSend_0_sqmuxa_1_i_o3_4_o2_0_1))
+           (portRef C (instanceRef UART_TxSend_0_sqmuxa_1_i_o3_4_o2))
           ))
           (net Valid_Q_0 (joined
            (portRef Valid_Q_0)
-           (portRef D (instanceRef opTxReady_0_sqmuxa_2_i_a2))
            (portRef C (instanceRef txState_srsts_i_0_a2_1))
-           (portRef D (instanceRef opTxReady_2_sqmuxa_i_0_0))
-           (portRef D (instanceRef txState_RNI6VAI2_0))
+           (portRef D (instanceRef opTxReady_0_sqmuxa_2_i_0_a2))
+           (portRef D (instanceRef opTxReady_2_sqmuxa_i_0_0_0))
+           (portRef D (instanceRef txBuffer_Data_1_sqmuxa_1_i_0_o2_RNIUDQ01))
            (portRef D (instanceRef txState_srsts_0_0_0))
           ))
-          (net N_605 (joined
-           (portRef Z (instanceRef UART_TxData_13_0_iv_0_a2_3_5))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_1_4))
+          (net N_429 (joined
+           (portRef Z (instanceRef txBuffer_Data_1_sqmuxa_1_i_0_o2))
+           (portRef A (instanceRef txBuffer_Data_1_sqmuxa_1_i_0_o2_RNIUDQ01))
+          ))
+          (net N_458 (joined
+           (portRef Z (instanceRef opTxReady_0_sqmuxa_2_i_0_a2))
+           (portRef A (instanceRef opTxReady_RNO))
+          ))
+          (net N_528 (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_a2_6_4))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_1_6))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_1_4))
            (portRef A (instanceRef UART_TxData_13_0_iv_0_0_1))
            (portRef A (instanceRef UART_TxData_13_0_iv_0_0_3))
-           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_5))
-           (portRef B (instanceRef UART_TxData_13_0_iv_0_1_6))
            (portRef A (instanceRef UART_TxData_13_0_iv_0_0_7))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_5))
           ))
-          (net N_508 (joined
-           (portRef Z (instanceRef opTxReady_0_sqmuxa_2_i_a2))
-           (portRef A (instanceRef opTxReady_RNO))
+          (net (rename UART_TxData_13_0_iv_0_0_0_5 "UART_TxData_13_0_iv_0_0_0[5]") (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_0_5))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_5))
+          ))
+          (net (rename UART_TxData_13_0_iv_0_0_0_7 "UART_TxData_13_0_iv_0_0_0[7]") (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_0_7))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_7))
+          ))
+          (net (rename UART_TxData_13_0_iv_0_0_0_3 "UART_TxData_13_0_iv_0_0_0[3]") (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_0_3))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_3))
+          ))
+          (net (rename UART_TxData_13_0_iv_0_0_0_1 "UART_TxData_13_0_iv_0_0_0[1]") (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_0_1))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_1))
+          ))
+          (net N_445 (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_a2_4))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_6))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_4))
+          ))
+          (net N_527 (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_a2_5_4))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_0_7))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_0_5))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_0_1))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_0_3))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_6))
+           (portRef B (instanceRef UART_TxData_13_0_iv_0_0_4))
+          ))
+          (net (rename UART_TxData_13_0_iv_0_0_1_4 "UART_TxData_13_0_iv_0_0_1[4]") (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_1_4))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_4))
+          ))
+          (net (rename UART_TxData_13_0_iv_0_0_1_6 "UART_TxData_13_0_iv_0_0_1[6]") (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_0_1_6))
+           (portRef C (instanceRef UART_TxData_13_0_iv_0_0_6))
           ))
           (net (rename rxState_srsts_i_a3_0_0_0 "rxState_srsts_i_a3_0_0[0]") (joined
            (portRef Z (instanceRef rxState_srsts_i_a3_0_0_0))
@@ -6858,6 +6782,15 @@
           (net (rename rxState_srsts_i_a3_0_6_0 "rxState_srsts_i_a3_0_6[0]") (joined
            (portRef Z (instanceRef rxState_srsts_i_a3_0_6_0))
            (portRef D (instanceRef rxState_srsts_i_a3_0_0))
+          ))
+          (net N_526 (joined
+           (portRef Z (instanceRef UART_TxData_13_0_iv_0_a2_4_4))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_0_7))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_1_6))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_0_5))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_1_4))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_0_1))
+           (portRef A (instanceRef UART_TxData_13_0_iv_0_0_0_3))
           ))
           (net un1_BytesReceived_3_0_I_27_cry (joined
            (portRef COUT (instanceRef un1_BytesReceived_3_0_I_9_0))
@@ -6928,9 +6861,9 @@
            (portRef txClkCount_1_sqmuxa_i (instanceRef UART_Inst))
            (portRef txClkCount_1_sqmuxa_i)
           ))
-          (net N_207_i_0 (joined
-           (portRef N_207_i (instanceRef UART_Inst))
-           (portRef N_207_i_0)
+          (net N_187_i (joined
+           (portRef N_187_i (instanceRef UART_Inst))
+           (portRef N_187_i)
           ))
           (net Rx (joined
            (portRef Rx)
@@ -7323,9 +7256,29 @@
            (portRef (member address 7) (instanceRef Control))
            (portRef (member address 7) (instanceRef Register))
           ))
-          (net (rename Address_1 "Address[1]") (joined
-           (portRef (member address 6) (instanceRef Control))
-           (portRef (member address 6) (instanceRef Register))
+          (net (rename Address_2 "Address[2]") (joined
+           (portRef (member address 5) (instanceRef Control))
+           (portRef (member address 5) (instanceRef Register))
+          ))
+          (net (rename Address_3 "Address[3]") (joined
+           (portRef (member address 4) (instanceRef Control))
+           (portRef (member address 4) (instanceRef Register))
+          ))
+          (net (rename Address_4 "Address[4]") (joined
+           (portRef (member address 3) (instanceRef Control))
+           (portRef (member address 3) (instanceRef Register))
+          ))
+          (net (rename Address_5 "Address[5]") (joined
+           (portRef (member address 2) (instanceRef Control))
+           (portRef (member address 2) (instanceRef Register))
+          ))
+          (net (rename Address_6 "Address[6]") (joined
+           (portRef (member address 1) (instanceRef Control))
+           (portRef (member address 1) (instanceRef Register))
+          ))
+          (net (rename Address_7 "Address[7]") (joined
+           (portRef (member address 0) (instanceRef Control))
+           (portRef (member address 0) (instanceRef Register))
           ))
           (net WrEnable (joined
            (portRef WrEnable (instanceRef Control))
@@ -7436,109 +7389,61 @@
            (portRef opTx_7 (instanceRef Packetiser))
            (portRef D (instanceRef Packetiser_UART_Inst_opTxio))
           ))
-          (net N_613 (joined
-           (portRef N_613 (instanceRef Control))
-           (portRef N_613 (instanceRef Streamer1))
-          ))
-          (net (rename un1_Packetiser_4 "un1_Packetiser[4]") (joined
-           (portRef (member un1_packetiser 4) (instanceRef Packetiser))
-           (portRef (member un1_packetiser 4) (instanceRef Control))
-          ))
-          (net (rename un1_Packetiser_6 "un1_Packetiser[6]") (joined
-           (portRef (member un1_packetiser 2) (instanceRef Packetiser))
-           (portRef (member un1_packetiser 2) (instanceRef Control))
+          (net N_535 (joined
+           (portRef N_535 (instanceRef Control))
+           (portRef N_535 (instanceRef Streamer1))
           ))
           (net (rename un1_Packetiser_3 "un1_Packetiser[3]") (joined
            (portRef (member un1_packetiser 5) (instanceRef Packetiser))
            (portRef (member un1_packetiser 5) (instanceRef Control))
           ))
-          (net (rename un1_Packetiser_5 "un1_Packetiser[5]") (joined
-           (portRef (member un1_packetiser 3) (instanceRef Packetiser))
-           (portRef (member un1_packetiser 3) (instanceRef Control))
+          (net (rename un1_Packetiser_6 "un1_Packetiser[6]") (joined
+           (portRef (member un1_packetiser 2) (instanceRef Packetiser))
+           (portRef (member un1_packetiser 2) (instanceRef Control))
           ))
-          (net (rename un1_Packetiser_8 "un1_Packetiser[8]") (joined
-           (portRef (member un1_packetiser 0) (instanceRef Packetiser))
-           (portRef (member un1_packetiser 0) (instanceRef Control))
+          (net (rename un1_Packetiser_4 "un1_Packetiser[4]") (joined
+           (portRef (member un1_packetiser 4) (instanceRef Packetiser))
+           (portRef (member un1_packetiser 4) (instanceRef Control))
           ))
           (net (rename un1_Packetiser_7 "un1_Packetiser[7]") (joined
            (portRef (member un1_packetiser 1) (instanceRef Packetiser))
            (portRef (member un1_packetiser 1) (instanceRef Control))
           ))
-          (net (rename Address_3 "Address[3]") (joined
-           (portRef (member address 4) (instanceRef Control))
-           (portRef (member address 4) (instanceRef Register))
+          (net (rename un1_Packetiser_8 "un1_Packetiser[8]") (joined
+           (portRef (member un1_packetiser 0) (instanceRef Packetiser))
+           (portRef (member un1_packetiser 0) (instanceRef Control))
           ))
-          (net (rename un1_Control_4 "un1_Control[4]") (joined
-           (portRef (member un1_control 4) (instanceRef Control))
-           (portRef (member un1_control 4) (instanceRef Packetiser))
-          ))
-          (net (rename Address_5 "Address[5]") (joined
-           (portRef (member address 2) (instanceRef Control))
-           (portRef (member address 2) (instanceRef Register))
-          ))
-          (net (rename un1_Control_6 "un1_Control[6]") (joined
-           (portRef (member un1_control 2) (instanceRef Control))
-           (portRef (member un1_control 2) (instanceRef Packetiser))
-          ))
-          (net (rename Address_2 "Address[2]") (joined
-           (portRef (member address 5) (instanceRef Control))
-           (portRef (member address 5) (instanceRef Register))
+          (net (rename un1_Packetiser_5 "un1_Packetiser[5]") (joined
+           (portRef (member un1_packetiser 3) (instanceRef Packetiser))
+           (portRef (member un1_packetiser 3) (instanceRef Control))
           ))
           (net (rename un1_Control_3 "un1_Control[3]") (joined
            (portRef (member un1_control 5) (instanceRef Control))
            (portRef (member un1_control 5) (instanceRef Packetiser))
           ))
-          (net (rename Address_4 "Address[4]") (joined
-           (portRef (member address 3) (instanceRef Control))
-           (portRef (member address 3) (instanceRef Register))
+          (net (rename un1_Control_6 "un1_Control[6]") (joined
+           (portRef (member un1_control 2) (instanceRef Control))
+           (portRef (member un1_control 2) (instanceRef Packetiser))
           ))
-          (net (rename un1_Control_5 "un1_Control[5]") (joined
-           (portRef (member un1_control 3) (instanceRef Control))
-           (portRef (member un1_control 3) (instanceRef Packetiser))
-          ))
-          (net (rename Address_7 "Address[7]") (joined
-           (portRef (member address 0) (instanceRef Control))
-           (portRef (member address 0) (instanceRef Register))
-          ))
-          (net (rename un1_Control_8 "un1_Control[8]") (joined
-           (portRef (member un1_control 0) (instanceRef Control))
-           (portRef (member un1_control 0) (instanceRef Packetiser))
-          ))
-          (net (rename Address_6 "Address[6]") (joined
-           (portRef (member address 1) (instanceRef Control))
-           (portRef (member address 1) (instanceRef Register))
+          (net (rename un1_Control_4 "un1_Control[4]") (joined
+           (portRef (member un1_control 4) (instanceRef Control))
+           (portRef (member un1_control 4) (instanceRef Packetiser))
           ))
           (net (rename un1_Control_7 "un1_Control[7]") (joined
            (portRef (member un1_control 1) (instanceRef Control))
            (portRef (member un1_control 1) (instanceRef Packetiser))
           ))
+          (net (rename un1_Control_8 "un1_Control[8]") (joined
+           (portRef (member un1_control 0) (instanceRef Control))
+           (portRef (member un1_control 0) (instanceRef Packetiser))
+          ))
+          (net (rename un1_Control_5 "un1_Control[5]") (joined
+           (portRef (member un1_control 3) (instanceRef Control))
+           (portRef (member un1_control 3) (instanceRef Packetiser))
+          ))
           (net (rename un1_Control_2 "un1_Control[2]") (joined
            (portRef (member un1_control 6) (instanceRef Control))
            (portRef (member un1_control 6) (instanceRef Packetiser))
-          ))
-          (net (rename RdData_6 "RdData[6]") (joined
-           (portRef (member rddata 25) (instanceRef Register))
-           (portRef (member rddata 25) (instanceRef Control))
-          ))
-          (net (rename RdData_7 "RdData[7]") (joined
-           (portRef (member rddata 24) (instanceRef Register))
-           (portRef (member rddata 24) (instanceRef Control))
-          ))
-          (net (rename RdData_5 "RdData[5]") (joined
-           (portRef (member rddata 26) (instanceRef Register))
-           (portRef (member rddata 26) (instanceRef Control))
-          ))
-          (net (rename RdData_4 "RdData[4]") (joined
-           (portRef (member rddata 27) (instanceRef Register))
-           (portRef (member rddata 27) (instanceRef Control))
-          ))
-          (net (rename RdData_8 "RdData[8]") (joined
-           (portRef (member rddata 23) (instanceRef Register))
-           (portRef (member rddata 23) (instanceRef Control))
-          ))
-          (net (rename un1_Control_1 "un1_Control[1]") (joined
-           (portRef (member un1_control 7) (instanceRef Control))
-           (portRef (member un1_control 7) (instanceRef Packetiser))
           ))
           (net (rename WrData_7 "WrData[7]") (joined
            (portRef (member wrdata 0) (instanceRef Control))
@@ -7568,9 +7473,33 @@
            (portRef (member wrdata 6) (instanceRef Control))
            (portRef (member wrdata 6) (instanceRef Register))
           ))
+          (net (rename un1_Control_1 "un1_Control[1]") (joined
+           (portRef (member un1_control 7) (instanceRef Control))
+           (portRef (member un1_control 7) (instanceRef Packetiser))
+          ))
           (net (rename un1_Packetiser_2 "un1_Packetiser[2]") (joined
            (portRef (member un1_packetiser 6) (instanceRef Packetiser))
            (portRef (member un1_packetiser 6) (instanceRef Control))
+          ))
+          (net (rename RdData_8 "RdData[8]") (joined
+           (portRef (member rddata 23) (instanceRef Register))
+           (portRef (member rddata 23) (instanceRef Control))
+          ))
+          (net (rename RdData_7 "RdData[7]") (joined
+           (portRef (member rddata 24) (instanceRef Register))
+           (portRef (member rddata 24) (instanceRef Control))
+          ))
+          (net (rename RdData_6 "RdData[6]") (joined
+           (portRef (member rddata 25) (instanceRef Register))
+           (portRef (member rddata 25) (instanceRef Control))
+          ))
+          (net (rename RdData_5 "RdData[5]") (joined
+           (portRef (member rddata 26) (instanceRef Register))
+           (portRef (member rddata 26) (instanceRef Control))
+          ))
+          (net (rename RdData_4 "RdData[4]") (joined
+           (portRef (member rddata 27) (instanceRef Register))
+           (portRef (member rddata 27) (instanceRef Control))
           ))
           (net (rename WrData_0 "WrData[0]") (joined
            (portRef (member wrdata 7) (instanceRef Control))
@@ -7591,6 +7520,10 @@
           (net (rename un1_Packetiser_1 "un1_Packetiser[1]") (joined
            (portRef (member un1_packetiser 7) (instanceRef Packetiser))
            (portRef (member un1_packetiser 7) (instanceRef Control))
+          ))
+          (net (rename Address_1 "Address[1]") (joined
+           (portRef (member address 6) (instanceRef Control))
+           (portRef (member address 6) (instanceRef Register))
           ))
           (net (rename RdData_0 "RdData[0]") (joined
            (portRef (member rddata 31) (instanceRef Register))
@@ -7980,8 +7913,8 @@
            (portRef COUT (instanceRef RdRegisters_ClockTicks_1_cry_29_0))
            (portRef CIN (instanceRef RdRegisters_ClockTicks_1_s_31_0))
           ))
-          (net N_207_i (joined
-           (portRef N_207_i_0 (instanceRef Packetiser))
+          (net N_187_i (joined
+           (portRef N_187_i (instanceRef Packetiser))
            (portRef PD (instanceRef Packetiser_UART_Inst_opTxio))
           ))
           (net (rename Packetiser_UART_Inst_txClkCount_1_sqmuxa_i "Packetiser.UART_Inst.txClkCount_1_sqmuxa_i") (joined
@@ -8037,6 +7970,14 @@
            (portRef D0 (instanceRef RdRegisters_ClockTicks_1_cry_29_0))
            (portRef D1 (instanceRef RdRegisters_ClockTicks_1_s_31_0))
            (portRef D0 (instanceRef RdRegisters_ClockTicks_1_s_31_0))
+           (portRef I (instanceRef opLED_pad_0))
+           (portRef I (instanceRef opLED_pad_1))
+           (portRef I (instanceRef opLED_pad_2))
+           (portRef I (instanceRef opLED_pad_3))
+           (portRef I (instanceRef opLED_pad_4))
+           (portRef I (instanceRef opLED_pad_5))
+           (portRef I (instanceRef opLED_pad_6))
+           (portRef I (instanceRef opLED_pad_7))
            (portRef SP (instanceRef Packetiser_UART_Inst_Rxio))
            (portRef GSR (instanceRef GSR_INST))
           ))
@@ -8297,38 +8238,6 @@
           (net (rename Packetiser_N_113_1_i "Packetiser.N_113_1_i") (joined
            (portRef N_113_1_i (instanceRef Packetiser))
            (portRef SP (instanceRef Packetiser_opRxStream_EoPio))
-          ))
-          (net (rename RdRegisters_FIFO_Size_i_7 "RdRegisters.FIFO_Size_i[7]") (joined
-           (portRef (member fifo_size_i 0) (instanceRef Streamer1))
-           (portRef I (instanceRef opLED_pad_7))
-          ))
-          (net (rename RdRegisters_FIFO_Size_i_6 "RdRegisters.FIFO_Size_i[6]") (joined
-           (portRef (member fifo_size_i 1) (instanceRef Streamer1))
-           (portRef I (instanceRef opLED_pad_6))
-          ))
-          (net (rename RdRegisters_FIFO_Size_i_5 "RdRegisters.FIFO_Size_i[5]") (joined
-           (portRef (member fifo_size_i 2) (instanceRef Streamer1))
-           (portRef I (instanceRef opLED_pad_5))
-          ))
-          (net (rename RdRegisters_FIFO_Size_i_4 "RdRegisters.FIFO_Size_i[4]") (joined
-           (portRef (member fifo_size_i 3) (instanceRef Streamer1))
-           (portRef I (instanceRef opLED_pad_4))
-          ))
-          (net (rename RdRegisters_FIFO_Size_i_3 "RdRegisters.FIFO_Size_i[3]") (joined
-           (portRef (member fifo_size_i 4) (instanceRef Streamer1))
-           (portRef I (instanceRef opLED_pad_3))
-          ))
-          (net (rename RdRegisters_FIFO_Size_i_2 "RdRegisters.FIFO_Size_i[2]") (joined
-           (portRef (member fifo_size_i 5) (instanceRef Streamer1))
-           (portRef I (instanceRef opLED_pad_2))
-          ))
-          (net (rename RdRegisters_FIFO_Size_i_1 "RdRegisters.FIFO_Size_i[1]") (joined
-           (portRef (member fifo_size_i 6) (instanceRef Streamer1))
-           (portRef I (instanceRef opLED_pad_1))
-          ))
-          (net (rename RdRegisters_FIFO_Size_i_0 "RdRegisters.FIFO_Size_i[0]") (joined
-           (portRef (member fifo_size_i 7) (instanceRef Streamer1))
-           (portRef I (instanceRef opLED_pad_0))
           ))
           (net N_1 (joined
            (portRef CIN (instanceRef RdRegisters_ClockTicks_1_cry_0_0))
