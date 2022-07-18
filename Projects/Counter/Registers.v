@@ -27,6 +27,7 @@ always @(posedge ipClk) begin
     8'h00  : opRdData <= ipRdRegisters.ClockTicks;
     8'h01  : opRdData <= ipRdRegisters.Buttons;
     8'h02  : opRdData <= opWrRegisters.LEDs;
+	8'h10  : opRdData <= ipRdRegisters.FIFO_Size;
     default: opRdData <= 32'hX;
   endcase
   //----------------------------------------------------------------------------
