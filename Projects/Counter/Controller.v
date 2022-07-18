@@ -13,7 +13,7 @@ module Controller(
 	
 	input   UART_PACKET 	ipRxStream,
 
-    input   [31:0]   	ipRdData
+    input   [31:0]   	ipRdData 
 );
 
 enum {

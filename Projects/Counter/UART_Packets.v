@@ -183,6 +183,7 @@ always @(posedge(ipClk)) begin
 					if(BytesReceived == 1)
 						opRxStream.SoP <= 0;
 					else if(BytesReceived == opRxStream.Length - 1) begin
+                        opRxStream.EoP <= 1;
 						rxState <= ReceiveSync;
 					end
 					BytesReceived <= BytesReceived + 1;

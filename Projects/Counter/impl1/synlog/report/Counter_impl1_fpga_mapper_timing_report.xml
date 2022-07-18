@@ -17,7 +17,13 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>ipClk</data>
 <data>50.0 MHz</data>
-<data>182.7 MHz</data>
-<data>14.525</data>
+<data>162.0 MHz</data>
+<data>13.825</data>
+</row>
+<row>
+<data>System</data>
+<data>200.0 MHz</data>
+<data>1738.8 MHz</data>
+<data>4.425</data>
 </row>
 </report_table>

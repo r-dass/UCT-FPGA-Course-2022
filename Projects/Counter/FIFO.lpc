@@ -17,7 +17,7 @@ ModuleName=FIFO
 SourceFormat=Verilog HDL
 ParameterFileVersion=1.0
 Date=07/18/2022
-Time=04:24:32
+Time=14:02:50
 
 [Parameters]
 Verilog=1

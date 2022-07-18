@@ -11,10 +11,10 @@ module Counter(
 
 UART_PACKET RxStream;
 UART_PACKET TxStream; 
-
+ 
 RD_REGISTERS RdRegisters;
-WR_REGISTERS WrRegisters;
-
+WR_REGISTERS WrRegisters; 
+ 
 wire TxReady;
 
 wire [7:0] 	Address;
@@ -22,7 +22,7 @@ wire [31:0] 	WrData;
 wire 			WrEnable;
 wire [31:0]	RdData;
 
-wire [16:0]	Stream;
+wire [15:0]	Stream;
 wire Valid;
 
 UART_Packets Packetiser(
@@ -74,10 +74,9 @@ Streamer Streamer1(
     .opFIFO_Size(RdRegisters.FIFO_Size), 
 
     .opStream(Stream),     
-    .opValid(Valid)       
-
+    .opValid(Valid)
 );
-
+ 
 
 always @(posedge ipClk) begin
 	if (ipReset) begin //reset inverted - normal functionality here

@@ -4,6 +4,24 @@
 @N: FX493 |Applying initial value "00000000" on instance txData[7:0].
 @N: FX493 |Applying initial value "00000000" on instance rxData[7:0].
 @N: FX493 |Applying initial value "0000000000" on instance txClkCount[9:0].
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":52:0:52:5|Removing sequential instance opValid (in view: work.Streamer(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":62:0:62:5|Removing sequential instance ipData[15:0] (in view: work.Streamer(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":279:12:279:16|Removing sequential instance FF_17 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":285:12:285:16|Removing sequential instance FF_16 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":291:12:291:16|Removing sequential instance FF_15 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":297:12:297:16|Removing sequential instance FF_14 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":303:12:303:16|Removing sequential instance FF_13 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":309:12:309:16|Removing sequential instance FF_12 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":315:12:315:16|Removing sequential instance FF_11 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":321:12:321:16|Removing sequential instance FF_10 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":333:12:333:15|Removing sequential instance FF_8 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":339:12:339:15|Removing sequential instance FF_7 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":345:12:345:15|Removing sequential instance FF_6 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":351:12:351:15|Removing sequential instance FF_5 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":357:12:357:15|Removing sequential instance FF_4 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":363:12:363:15|Removing sequential instance FF_3 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":369:12:369:15|Removing sequential instance FF_2 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":375:12:375:15|Removing sequential instance FF_1 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\controller.v":35:0:35:5|Removing sequential instance opTxStream\.SoP (in view: work.Controller(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 @N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart.v":103:0:103:5|There are no possible illegal states for state machine rxState[1:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
 @N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart.v":55:0:55:5|There are no possible illegal states for state machine txState[1:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
@@ -19,5 +37,6 @@
 @N: FX493 |Applying initial value "0" on instance txState[4].
 @N: FX493 |Applying initial value "0" on instance txState[5].
 @N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\controller.v":35:0:35:5|There are no possible illegal states for state machine tState[3:0] (in view: work.Controller(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":62:0:62:5|There are no possible illegal states for state machine rState[1:0] (in view: work.Streamer(verilog)); safe FSM implementation is not required.
 @N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Counter 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

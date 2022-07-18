@@ -13,7 +13,7 @@ Hostname: RD-LAPTOP
 
 Implementation : impl1
 
-# Written on Sat Jul 16 22:35:23 2022
+# Written on Mon Jul 18 14:50:23 2022
 
 ##### DESIGN INFO #######################################################
 
@@ -37,6 +37,9 @@ Clock Relationships
 
 Starting     Ending     |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 -----------------------------------------------------------------------------------------------------------------------------------
+System       System     |     5.000            |     No paths         |     No paths         |     No paths                         
+System       ipClk      |     20.000           |     No paths         |     No paths         |     No paths                         
+ipClk        System     |     20.000           |     No paths         |     No paths         |     No paths                         
 ipClk        ipClk      |     20.000           |     No paths         |     No paths         |     No paths                         
 ===================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.

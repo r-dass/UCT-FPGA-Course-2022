@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ipReset_c</Dynamic>
+        </Message>
+    </Task>
     <Task name="Synplify_Synthesis">
         <Message>
             <ID>2011000</ID>
@@ -16,6 +23,102 @@
             <Navigation>65</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning unused register txBuffer.SoP. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:479:8:479:14|Removing instance r_ctr_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v</Navigation>
+            <Navigation>479</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>479</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Removing instance r_ctr_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:459:8:459:14|Removing instance w_ctr_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v</Navigation>
+            <Navigation>459</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>459</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Removing instance w_ctr_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:381:12:381:15|Removing instance FF_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v</Navigation>
+            <Navigation>381</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>381</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Removing instance FF_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:327:12:327:15|Removing instance FF_9 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Navigation>CL168</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v</Navigation>
+            <Navigation>327</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>327</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Removing instance FF_9 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:10:32:10:39|Object opStream is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>39</Navigation>
+            <Navigation>Object opStream is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:48:4:48:9|Object rUpper is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v</Navigation>
+            <Navigation>48</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>48</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Object rUpper is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL246 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:7:29:7:38|Input port bits 34 to 27 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
+            <Navigation>CL246</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>Input port bits 34 to 27 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL246 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:7:29:7:38|Input port bits 18 to 11 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
+            <Navigation>CL246</Navigation>
+            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>Input port bits 18 to 11 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -130,6 +233,30 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
+            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:162:11:162:23|Instance pdp_ram_0_0_0 parameter type does not match module declaration.</Dynamic>
+            <Navigation>FX367</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Instance pdp_ram_0_0_0 parameter type does not match module declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:162:11:162:23|Instance pdp_ram_0_0_0 parameter type does not match module declaration.</Dynamic>
+            <Navigation>FX367</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Instance pdp_ram_0_0_0 parameter type does not match module declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
             <Dynamic>MO129 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v&quot;:65:0:65:5|Sequential instance Packetiser.txBuffer.Length[0] is reduced to a combinational gate by constant propagation.</Dynamic>
             <Navigation>MO129</Navigation>
             <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v</Navigation>
@@ -152,6 +279,18 @@
             <Navigation>Sequential instance Packetiser.txBuffer.Length[2] is reduced to a combinational gate by constant propagation.</Navigation>
         </Message>
         <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN114 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:162:11:162:23|Removing instance pdp_ram_0_0_0 (in view: work.FIFO(verilog)) of black box view:LUCENT.DP16KB(PRIM) because it does not drive other instances.</Dynamic>
+            <Navigation>BN114</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>162</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Removing instance pdp_ram_0_0_0 (in view: work.FIFO(verilog)) of black box view:LUCENT.DP16KB(PRIM) because it does not drive other instances.</Navigation>
+        </Message>
+        <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
             <Dynamic>MF511 |Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Dynamic>
@@ -164,6 +303,30 @@
             <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
             <Navigation>FX474</Navigation>
             <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:438:10:438:16|Blackbox AGEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>438</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>438</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>Blackbox AGEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:417:10:417:16|Blackbox ALEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>417</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>417</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>Blackbox ALEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

@@ -7,16 +7,17 @@ module Streamer(
     input   UART_PACKET     	ipRxStream,
     output  reg     [8:0]  	    opFIFO_Size, 
 
-    output  reg    [16:0]       opStream,    
-    output  reg         		opValid        
+    output  reg    [15:0]       opStream,    
+    output  reg         		opValid
+);  
 
-); 
-
-reg WE;
+reg WE;  
 reg RE;
-
+ 
 wire Empty;
 wire Full;
+
+wire [8:0] FIFO_Size1;
 
 reg [15:0] ipData;
 reg [15:0] opData;
@@ -34,8 +35,8 @@ FIFO FIFOBLOCK(
     .Empty(Empty),
     .Full(Full),
 
-    .WCNT(opFIFO_Size)
-); 
+    .WCNT(FIFO_Size1)
+);  
 
 typedef enum{ 
 ReceiveWait,
@@ -46,24 +47,15 @@ RState rState;
 reg wUpper;
 reg rUpper;
 
+assign opFIFO_Size = FIFO_Size1;
+ 
 always @(posedge(ipClk)) begin
     if (!ipReset) begin
-        RE <= !Empty;
-
-        if (rUpper && !Empty) begin
-            opStream <= opData[15:8];
-            rUpper <= 0;
-            opValid  <= 1;
-        end else if (!rUpper && !Empty) begin
-            opStream <= opData[7:0];
-            rUpper <= 1;
-            opValid <= 0;
-        end
-
+        opValid <= 0;
+        RE <= 0;
     end else begin
         RE <= 0;
         opValid <= 1;
-        rUpper <= 0;
     end
 end
 
@@ -71,12 +63,14 @@ always @(posedge(ipClk)) begin
     if (!ipReset) begin
         case (rState)
             ReceiveWait: begin
-                if (ipRxStream.Valid && ipRxStream.SoP)
-                if (ipRxStream.Destination == 8'h10) begin
-                    ipData[7:0] <= ipRxStream.Data;
-                    wUpper <= 1;
-                    rState <= ReceiveData;
-                end
+                WE <= 0;
+                if (ipRxStream.Valid && ipRxStream.SoP) begin
+                    if (ipRxStream.Destination == 8'h10) begin
+                        ipData[7:0] <= ipRxStream.Data;
+                        wUpper <= 1;
+                        rState <= ReceiveData;
+                    end 
+                end  
             end
             ReceiveData: begin
                 if (ipRxStream.Valid) begin
@@ -93,7 +87,7 @@ always @(posedge(ipClk)) begin
                         rState <= ReceiveWait;
                     end
                 end else
-                    WE <= 0;
+					WE <= 0;
             end
             default:;
         endcase

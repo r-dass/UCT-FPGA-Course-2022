@@ -16,22 +16,22 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   6
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  07/16/22  22:35:32
+Mapped on:  07/18/22  14:50:32
 
 Design Summary
 --------------
 
-   Number of registers:    320 out of  3864 (8%)
-      PFU registers:          318 out of  3564 (9%)
-      PIO registers:            2 out of   300 (1%)
-   Number of SLICEs:       252 out of  2376 (11%)
-      SLICEs as Logic/ROM:    252 out of  2376 (11%)
+   Number of registers:    334 out of  3864 (9%)
+      PFU registers:          331 out of  3564 (9%)
+      PIO registers:            3 out of   300 (1%)
+   Number of SLICEs:       275 out of  2376 (12%)
+      SLICEs as Logic/ROM:    275 out of  2376 (12%)
       SLICEs as RAM:            0 out of   405 (0%)
-      SLICEs as Carry:         38 out of  2376 (2%)
-   Number of LUT4s:        320 out of  4752 (7%)
-      Number used as logic LUTs:        244
+      SLICEs as Carry:         51 out of  2376 (2%)
+   Number of LUT4s:        364 out of  4752 (8%)
+      Number used as logic LUTs:        262
       Number used as distributed RAM:     0
-      Number used as ripple logic:       76
+      Number used as ripple logic:      102
       Number used as shift registers:     0
    Number of PIO sites used: 16 out of 100 (16%)
    Number of PIO FIXEDDELAY:    0
@@ -39,7 +39,7 @@ Design Summary
    Number of PLLs:  0 out of 2 (0%)
    Number of block RAMs:  0 out of 9 (0%)
    Number of CLKDIVs:  0 out of 2 (0%)
-   Number of GSRs:  0 out of 1 (0%)
+   Number of GSRs:  1 out of 1 (100%)
    JTAG used :      No
    Readback used :  No
    Oscillator used :  No
@@ -66,65 +66,65 @@ Design Summary
 
 
 
-Design:  Counter                                       Date:  07/16/22  22:35:32
+Design:  Counter                                       Date:  07/18/22  14:50:32
 
 Design Summary (cont)
 ---------------------
    --------------------------------
    Number of Used DSP Sites:  0 out of 24 (0 %)
    Number of clocks:  1
-     Net ipClk_c: 171 loads, 171 rising, 0 falling (Driver: PIO ipClk )
-   Number of Clock Enables:  20
+     Net ipClk_c: 183 loads, 183 rising, 0 falling (Driver: PIO ipClk )
+   Number of Clock Enables:  22
      Net Packetiser.UART_Inst.txClkCount_1_sqmuxa_i: 1 loads, 0 LSLICEs
-     Net Register/N_545: 4 loads, 4 LSLICEs
+     Net Streamer1/FIFOBLOCK/wren_i: 5 loads, 5 LSLICEs
      Net ipReset_c: 8 loads, 8 LSLICEs
+     Net Register/N_592: 4 loads, 4 LSLICEs
      Net Control/OutputData_1_sqmuxa_1: 8 loads, 8 LSLICEs
-     Net Control/N_66_i: 16 loads, 16 LSLICEs
+     Net Control/N_222_i: 16 loads, 16 LSLICEs
      Net Control/N_57_i: 4 loads, 4 LSLICEs
      Net Control/opAddress_0_sqmuxa: 4 loads, 4 LSLICEs
-     Net Control/un1_OutputData_0_sqmuxa_0_0_0: 17 loads, 17 LSLICEs
+     Net Control/un1_OutputData_0_sqmuxa_0_0: 16 loads, 16 LSLICEs
      Net Packetiser/Length_0_sqmuxa_1_0: 5 loads, 5 LSLICEs
      Net Packetiser/Data_0_sqmuxa_0: 4 loads, 4 LSLICEs
-     Net Packetiser/N_481: 4 loads, 4 LSLICEs
+     Net Packetiser/N_498: 4 loads, 4 LSLICEs
      Net Packetiser/UART_Inst/opRxValid_1_sqmuxa_i: 1 loads, 1 LSLICEs
-     Net Packetiser/UART_Inst/N_150: 4 loads, 4 LSLICEs
+     Net Packetiser/UART_Inst/N_202: 4 loads, 4 LSLICEs
      Net Packetiser/UART_Inst/rxData_0_sqmuxa_i: 4 loads, 4 LSLICEs
-     Net Packetiser/UART_Inst/N_148: 1 loads, 1 LSLICEs
+     Net Packetiser/UART_Inst/N_126: 1 loads, 1 LSLICEs
      Net Packetiser/UART_Inst/rxState_3_sqmuxa: 4 loads, 4 LSLICEs
-     Net Packetiser/N_161_i: 13 loads, 13 LSLICEs
-     Net Packetiser/N_119_i: 2 loads, 2 LSLICEs
+     Net Packetiser.N_113_1_i: 1 loads, 0 LSLICEs
+     Net Packetiser/N_133_i: 13 loads, 13 LSLICEs
+     Net Packetiser/N_120_i: 2 loads, 2 LSLICEs
      Net Packetiser/Source_0_sqmuxa_1_0: 4 loads, 4 LSLICEs
      Net Packetiser/Destination_0_sqmuxa_1_0: 4 loads, 4 LSLICEs
-   Number of LSRs:  10
-     Net N_157_i: 1 loads, 0 LSLICEs
+   Number of local set/reset loads for net ipReset_c merged into GSR:  10
+   Number of LSRs:  11
+     Net N_207_i: 1 loads, 0 LSLICEs
+     Net Streamer1/fb: 1 loads, 1 LSLICEs
+     Net ipReset_c: 46 loads, 45 LSLICEs
      Net Register/Reset: 4 loads, 4 LSLICEs
      Net Register/un1_ipAddress_inv_i: 12 loads, 12 LSLICEs
-     Net ipReset_c: 42 loads, 41 LSLICEs
      Net Control/opAddress_0_sqmuxa_1: 1 loads, 1 LSLICEs
      Net Packetiser/fb: 1 loads, 1 LSLICEs
      Net Packetiser/UART_Inst/opRxValid_0_sqmuxa: 1 loads, 1 LSLICEs
      Net Packetiser/UART_Inst/un1_ipReset_0: 2 loads, 2 LSLICEs
      Net Packetiser/UART_Inst/un1_ipReset_1: 2 loads, 2 LSLICEs
-     Net Packetiser/Valid_0_sqmuxa: 3 loads, 3 LSLICEs
+     Net Packetiser.opRxStream.EoP_0_sqmuxa: 4 loads, 3 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net ipReset_c: 172 loads
+     Net ipReset_c: 173 loads
      Net Control/tState[0]: 51 loads
      Net VCC: 32 loads
+     Net Streamer1/FIFOBLOCK/wren_i: 26 loads
      Net Packetiser/UART_Inst/VCC: 21 loads
+     Net Address[0]: 20 loads
      Net Packetiser/UART_Inst/txClkBaud: 19 loads
-     Net Control/un1_OutputData_0_sqmuxa_0_0_0: 17 loads
-     Net Control/N_66_i: 16 loads
+     Net Control/N_222_i: 16 loads
+     Net Control/un1_OutputData_0_sqmuxa_0_0: 16 loads
      Net Packetiser/UART_Inst/rxState[0]: 16 loads
-     Net Packetiser/UART_Inst/txState[0]: 16 loads
-     Net Packetiser.UART_Inst.Rx: 15 loads
 
 
 
-
-   Number of warnings:  0
-   Number of errors:    0
-     
 
 
                                     Page 2
@@ -132,12 +132,19 @@ Design Summary (cont)
 
 
 
-Design:  Counter                                       Date:  07/16/22  22:35:32
+Design:  Counter                                       Date:  07/18/22  14:50:32
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
 
 Design Errors/Warnings
 ----------------------
 
-   No errors or warnings present.
+WARNING - map: Using local reset signal 'ipReset_c' to infer global GSR net.
 
 IO (PIO) Attributes
 -------------------
@@ -176,35 +183,91 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+------------+
 | ipUART_Rx           | INPUT     | LVCMOS25  | IN         |            |
 +---------------------+-----------+-----------+------------+------------+
-| ipReset             | INPUT     | LVCMOS25  |            |            |
+| ipReset             | INPUT     | LVCMOS25  | IN         |            |
 +---------------------+-----------+-----------+------------+------------+
 
 Removed logic
 -------------
 
-Block GSR_INST undriven or does not drive anything - clipped.
-Block Control/VCC undriven or does not drive anything - clipped.
-Block Control/GND undriven or does not drive anything - clipped.
-Block Register/GND undriven or does not drive anything - clipped.
-Block Register/VCC undriven or does not drive anything - clipped.
-Signal RdRegisters.ClockTicks_1_s_31_0_S1 undriven or does not drive anything -
-     clipped.
-Signal RdRegisters.ClockTicks_1_s_31_0_COUT undriven or does not drive anything
-     - clipped.
-Signal Packetiser/un1_BytesReceived_3_a_4_cry_0_0_S1 undriven or does not drive
+Block Streamer1/FIFOBLOCK/INV_2 undriven or does not drive anything - clipped.
+Block Streamer1/FIFOBLOCK/e_cmp_1 undriven or does not drive anything - clipped.
+     
 
                                     Page 3
 
 
 
 
-Design:  Counter                                       Date:  07/16/22  22:35:32
+Design:  Counter                                       Date:  07/18/22  14:50:32
 
 Removed logic (cont)
 --------------------
+Block Streamer1/FIFOBLOCK/e_cmp_2 undriven or does not drive anything - clipped.
+     
+Block Streamer1/FIFOBLOCK/e_cmp_3 undriven or does not drive anything - clipped.
+     
+Block Streamer1/FIFOBLOCK/e_cmp_4 undriven or does not drive anything - clipped.
+     
+Block Streamer1/FIFOBLOCK/a0 undriven or does not drive anything - clipped.
+Block Streamer1/FIFOBLOCK/e_cmp_ci_a undriven or does not drive anything -
+     clipped.
+Block Streamer1/FIFOBLOCK/LUT4_1 undriven or does not drive anything - clipped.
+Block Streamer1/FIFOBLOCK/e_cmp_0 undriven or does not drive anything - clipped.
+     
+Block Streamer1/FIFOBLOCK/FF_19 undriven or does not drive anything - clipped.
+Block Control/VCC undriven or does not drive anything - clipped.
+Block Control/GND undriven or does not drive anything - clipped.
+Block Register/GND undriven or does not drive anything - clipped.
+Block Register/VCC undriven or does not drive anything - clipped.
+Block Streamer1/VCC undriven or does not drive anything - clipped.
+Block Streamer1/GND undriven or does not drive anything - clipped.
+Signal Streamer1/FIFOBLOCK/wren_i_inv was merged into signal
+     Streamer1/FIFOBLOCK/wren_i
+Signal Streamer1/FIFOBLOCK/invout_1 was merged into signal
+     Streamer1/FIFOBLOCK/Full
+Signal Streamer1/FIFOBLOCK/cnt_con was merged into signal
+     Streamer1/FIFOBLOCK/wren_i
+Signal Streamer1/FIFOBLOCK/fcnt_en was merged into signal
+     Streamer1/FIFOBLOCK/wren_i
+Signal Streamer1/FIFOBLOCK/invout_0 undriven or does not drive anything -
+     clipped.
+Signal Streamer1/FIFOBLOCK/co1_1 undriven or does not drive anything - clipped.
+Signal Streamer1/FIFOBLOCK/co2_1 undriven or does not drive anything - clipped.
+Signal Streamer1/FIFOBLOCK/co3_1 undriven or does not drive anything - clipped.
+Signal Streamer1/FIFOBLOCK/cmp_le_1_c undriven or does not drive anything -
+     clipped.
+Signal Streamer1/FIFOBLOCK/cmp_le_1 undriven or does not drive anything -
+     clipped.
+Signal Streamer1/FIFOBLOCK/co0_1 undriven or does not drive anything - clipped.
+Signal Streamer1/FIFOBLOCK/cmp_ci undriven or does not drive anything - clipped.
+     
+Signal Streamer1/FIFOBLOCK/Empty undriven or does not drive anything - clipped.
+Signal Streamer1/FIFOBLOCK/empty_d undriven or does not drive anything -
+     clipped.
+Signal Streamer1/FIFOBLOCK/VCC undriven or does not drive anything - clipped.
+Signal Streamer1/FIFOBLOCK/GND undriven or does not drive anything - clipped.
+Signal Streamer1/FIFOBLOCK/rden_i undriven or does not drive anything - clipped.
+     
+Signal Streamer1/FIFOBLOCK/rden_i_inv undriven or does not drive anything -
+     clipped.
+Signal RdRegisters.ClockTicks_1_s_31_0_S1 undriven or does not drive anything -
+     clipped.
+Signal RdRegisters.ClockTicks_1_s_31_0_COUT undriven or does not drive anything
+     - clipped.
+Signal Packetiser/un1_BytesReceived_3_a_4_cry_0_0_S1 undriven or does not drive
      anything - clipped.
 Signal Packetiser/un1_BytesReceived_3_a_4_cry_0_0_S0 undriven or does not drive
      anything - clipped.
+
+                                    Page 4
+
+
+
+
+Design:  Counter                                       Date:  07/18/22  14:50:32
+
+Removed logic (cont)
+--------------------
 Signal Packetiser/N_1 undriven or does not drive anything - clipped.
 Signal Packetiser/un1_BytesReceived_3_a_4_cry_7_0_COUT undriven or does not
      drive anything - clipped.
@@ -241,11 +304,196 @@ Signal Packetiser/UART_Inst/un4_rxClkCount_s_9_0_S1 undriven or does not drive
      anything - clipped.
 Signal Packetiser/UART_Inst/un4_rxClkCount_s_9_0_COUT undriven or does not drive
      anything - clipped.
+Signal Streamer1/FIFOBLOCK/g_cmp_ci_a_S1 undriven or does not drive anything -
+     clipped.
+Signal Streamer1/FIFOBLOCK/g_cmp_ci_a_S0 undriven or does not drive anything -
+     clipped.
+Signal Streamer1/FIFOBLOCK/a0_S1 undriven or does not drive anything - clipped.
+Signal Streamer1/FIFOBLOCK/a0_COUT undriven or does not drive anything -
+     clipped.
+Signal Streamer1/FIFOBLOCK/e_cmp_ci_a_S1 undriven or does not drive anything -
+     clipped.
+Signal Streamer1/FIFOBLOCK/e_cmp_ci_a_S0 undriven or does not drive anything -
+     clipped.
+Signal Streamer1/FIFOBLOCK/bdcnt_bctr_cia_S1 undriven or does not drive anything
+     - clipped.
+Signal Streamer1/FIFOBLOCK/bdcnt_bctr_cia_S0 undriven or does not drive anything
+     - clipped.
+Signal Streamer1/FIFOBLOCK/a1_S1 undriven or does not drive anything - clipped.
+Signal Streamer1/FIFOBLOCK/a1_COUT undriven or does not drive anything -
+     clipped.
+Signal Streamer1/FIFOBLOCK/bdcnt_bctr_4_NC1 undriven or does not drive anything
+     - clipped.
+
+                                    Page 5
+
+
+
+
+Design:  Counter                                       Date:  07/18/22  14:50:32
+
+Removed logic (cont)
+--------------------
+Signal Streamer1/FIFOBLOCK/co4 undriven or does not drive anything - clipped.
 Signal RdRegisters.ClockTicks_1_cry_0_0_S1 undriven or does not drive anything -
      clipped.
 Signal RdRegisters.ClockTicks_1_cry_0_0_S0 undriven or does not drive anything -
      clipped.
 Signal N_1 undriven or does not drive anything - clipped.
+Block Streamer1/FIFOBLOCK/INV_0 was optimized away.
+Block Streamer1/FIFOBLOCK/INV_3 was optimized away.
+Block Streamer1/FIFOBLOCK/AND2_t1 was optimized away.
+Block Streamer1/FIFOBLOCK/XOR2_t0 was optimized away.
+Block Streamer1/FIFOBLOCK/VCC was optimized away.
+Block Streamer1/FIFOBLOCK/GND was optimized away.
+Block Streamer1/FIFOBLOCK/AND2_t2 was optimized away.
+Block Streamer1/FIFOBLOCK/INV_1 was optimized away.
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'ipReset_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'ipReset_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components on inferred reset domain with GSR Property disabled
+--------------------------------------------------------------
+
+     These components have the GSR property set to DISABLED and are on the
+     inferred reset domain. The components will respond to the reset signal
+     'ipReset_c' via the local reset on the component and not the GSR component.
+     
+
+     Type and number of components of the type: 
+   Register = 99 
+
+     Type and instance name of component: 
+   Register : RdRegisters.ClockTicks[31]
+   Register : Packetiser_UART_Inst_Rxio
+   Register : Streamer1/WE
+   Register : Control/OutputData[0]
+   Register : Control/OutputData[1]
+   Register : Control/OutputData[2]
+   Register : Control/OutputData[3]
+   Register : Control/OutputData[4]
+   Register : Control/OutputData[5]
+   Register : Control/OutputData[6]
+   Register : Control/OutputData[7]
+   Register : Control/OutputData[8]
+   Register : Control/OutputData[9]
+   Register : Control/OutputData[10]
+   Register : Control/OutputData[11]
+
+                                    Page 6
+
+
+
+
+Design:  Counter                                       Date:  07/18/22  14:50:32
+
+GSR Usage (cont)
+----------------
+   Register : Control/OutputData[12]
+   Register : Control/OutputData[13]
+   Register : Control/OutputData[14]
+   Register : Control/OutputData[15]
+   Register : Control/OutputData[16]
+   Register : Control/OutputData[17]
+   Register : Control/OutputData[18]
+   Register : Control/OutputData[19]
+   Register : Control/OutputData[20]
+   Register : Control/OutputData[21]
+   Register : Control/OutputData[22]
+   Register : Control/OutputData[23]
+   Register : Packetiser/opRxStream.Length_pipe
+   Register : Packetiser/opRxStream.Data[7]
+   Register : Packetiser/UART_Inst/opTxBusy
+   Register : Packetiser/opRxStream.Source[0]
+   Register : Packetiser/opRxStream.Source[1]
+   Register : Packetiser/opRxStream.Source[2]
+   Register : Packetiser/opRxStream.Source[3]
+   Register : Packetiser/opRxStream.Source[4]
+   Register : Packetiser/opRxStream.Source[5]
+   Register : Packetiser/opRxStream.Source[6]
+   Register : Packetiser/opRxStream.Source[7]
+   Register : Packetiser/opRxStream.Destination[0]
+   Register : Packetiser/opRxStream.Destination[1]
+   Register : Packetiser/opRxStream.Destination[2]
+   Register : Packetiser/opRxStream.Destination[3]
+   Register : Packetiser/opRxStream.Destination[4]
+   Register : Packetiser/opRxStream.Destination[5]
+   Register : Packetiser/opRxStream.Destination[6]
+   Register : Packetiser/opRxStream.Destination[7]
+   Register : Packetiser/opRxStream.Data[0]
+   Register : Packetiser/opRxStream.Data[1]
+   Register : Packetiser/opRxStream.Data[2]
+   Register : Packetiser/opRxStream.Data[3]
+   Register : Packetiser/opRxStream.Data[4]
+   Register : Packetiser/opRxStream.Data[5]
+   Register : Packetiser/opRxStream.Data[6]
+   Register : Packetiser/UART_TxSend
+   Register : RdRegisters.ClockTicks[0]
+   Register : RdRegisters.ClockTicks[1]
+   Register : RdRegisters.ClockTicks[2]
+   Register : RdRegisters.ClockTicks[3]
+   Register : RdRegisters.ClockTicks[4]
+   Register : RdRegisters.ClockTicks[5]
+   Register : RdRegisters.ClockTicks[6]
+   Register : RdRegisters.ClockTicks[7]
+   Register : RdRegisters.ClockTicks[8]
+   Register : RdRegisters.ClockTicks[9]
+   Register : RdRegisters.ClockTicks[10]
+   Register : RdRegisters.ClockTicks[11]
+   Register : RdRegisters.ClockTicks[12]
+   Register : RdRegisters.ClockTicks[13]
+   Register : RdRegisters.ClockTicks[14]
+   Register : RdRegisters.ClockTicks[15]
+   Register : RdRegisters.ClockTicks[16]
+
+                                    Page 7
+
+
+
+
+Design:  Counter                                       Date:  07/18/22  14:50:32
+
+GSR Usage (cont)
+----------------
+   Register : RdRegisters.ClockTicks[17]
+   Register : RdRegisters.ClockTicks[18]
+   Register : RdRegisters.ClockTicks[19]
+   Register : RdRegisters.ClockTicks[20]
+   Register : RdRegisters.ClockTicks[21]
+   Register : RdRegisters.ClockTicks[22]
+   Register : RdRegisters.ClockTicks[23]
+   Register : RdRegisters.ClockTicks[24]
+   Register : RdRegisters.ClockTicks[25]
+   Register : RdRegisters.ClockTicks[26]
+   Register : RdRegisters.ClockTicks[27]
+   Register : RdRegisters.ClockTicks[28]
+   Register : RdRegisters.ClockTicks[29]
+   Register : RdRegisters.ClockTicks[30]
+   Register : Packetiser_opRxStream.EoPio
+   Register : Packetiser/UART_Inst/rxClkCount[9]
+   Register : Packetiser/UART_Inst/rxClkCount[8]
+   Register : Packetiser/UART_Inst/rxClkCount[7]
+   Register : Packetiser/UART_Inst/rxClkCount[6]
+   Register : Packetiser/UART_Inst/rxClkCount[5]
+   Register : Packetiser/UART_Inst/rxClkCount[4]
+   Register : Packetiser/UART_Inst/rxClkCount[3]
+   Register : Packetiser/UART_Inst/rxClkCount[2]
+   Register : Packetiser/UART_Inst/rxClkCount[1]
+   Register : Packetiser/UART_Inst/rxClkCount[0]
+   Register : Control/opTxStream.EoP
+   Register : Control/opTxStream.Valid
+   Register : Control/opWrEnable
 
 Run Time and Memory Usage
 -------------------------
@@ -259,7 +507,23 @@ Run Time and Memory Usage
 
 
 
-                                    Page 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 8
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

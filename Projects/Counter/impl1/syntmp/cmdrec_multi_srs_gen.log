@@ -1,7 +1,7 @@
 C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  Counter  -multisrs  C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_comp.srs  -osyn  C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_mult.srs  -log  C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synlog\Counter_impl1_multi_srs_gen.srr 
 relcom:..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top Counter -multisrs ..\synwork\Counter_impl1_comp.srs -osyn ..\synwork\Counter_impl1_mult.srs -log ..\synlog\Counter_impl1_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:..\synwork\Counter_impl1_comp.srs|io:i|time:1658003719|size:19783|exec:0|csum:4D1E4B8961DF7A951B8578A7C78CCD81
-file:..\synwork\Counter_impl1_mult.srs|io:o|time:1658003721|size:4053|exec:0|csum:
-file:..\synlog\Counter_impl1_multi_srs_gen.srr|io:o|time:1658003721|size:1066|exec:0|csum:
+file:..\synwork\Counter_impl1_comp.srs|io:i|time:1658148619|size:35212|exec:0|csum:B6AE975DEB6D7FC57FE78BE428E5561B
+file:..\synwork\Counter_impl1_mult.srs|io:o|time:1658148621|size:4472|exec:0|csum:
+file:..\synlog\Counter_impl1_multi_srs_gen.srr|io:o|time:1658148621|size:1157|exec:0|csum:
 file:..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603959522|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD
