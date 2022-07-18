@@ -22,7 +22,7 @@
             <Options/>
         </Source>
         <Source name="Streamer.v" type="Verilog" type_short="Verilog">
-            <Options top_module="Streamer"/>
+            <Options/>
         </Source>
         <Source name="Counter.v" type="Verilog" type_short="Verilog">
             <Options top_module="Counter"/>

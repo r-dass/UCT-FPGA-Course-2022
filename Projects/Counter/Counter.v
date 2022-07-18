@@ -10,7 +10,7 @@ module Counter(
 );
 
 UART_PACKET RxStream;
-UART_PACKET TxStream;
+UART_PACKET TxStream; 
 
 RD_REGISTERS RdRegisters;
 WR_REGISTERS WrRegisters;
@@ -21,6 +21,9 @@ wire [7:0] 	Address;
 wire [31:0] 	WrData;
 wire 			WrEnable;
 wire [31:0]	RdData;
+
+wire [16:0]	Stream;
+wire Valid;
 
 UART_Packets Packetiser(
   .ipClk	( ipClk		),
@@ -47,7 +50,7 @@ Controller Control(
 	
 	.ipRxStream(RxStream),
 
-    .ipRdData(RdData)
+    .ipRdData(RdData) 
 );
 
 Registers Register(
@@ -63,6 +66,17 @@ Registers Register(
   .opRdData(RdData)
 );
 
+Streamer Streamer1(
+    .ipClk	( ipClk		),
+    .ipReset	(!ipReset	),
+
+  	.ipRxStream(RxStream),
+    .opFIFO_Size(RdRegisters.FIFO_Size), 
+
+    .opStream(Stream),     
+    .opValid(Valid)       
+
+);
 
 
 always @(posedge ipClk) begin
@@ -73,7 +87,7 @@ always @(posedge ipClk) begin
 	end
 end
 
-assign opLED = ~WrRegisters.LEDs;
+assign opLED = ~RdRegisters.FIFO_Size;
 assign RdRegisters.Buttons = ~ipBtn;
 
 

@@ -5,12 +5,12 @@ module Streamer(
     input              			ipReset,
 
     input   UART_PACKET     	ipRxStream,
-    output  reg     [8:0]  	FIFO_Size, 
+    output  reg     [8:0]  	    opFIFO_Size, 
 
-    output  reg    [16:0]      Stream,    
-    output  reg         			Valid        
+    output  reg    [16:0]       opStream,    
+    output  reg         		opValid        
 
-);
+); 
 
 reg WE;
 reg RE;
@@ -34,10 +34,8 @@ FIFO FIFOBLOCK(
     .Empty(Empty),
     .Full(Full),
 
-    .WCNT(FIFO_Size)
+    .WCNT(opFIFO_Size)
 ); 
-
-
 
 typedef enum{ 
 ReceiveWait,
@@ -53,18 +51,18 @@ always @(posedge(ipClk)) begin
         RE <= !Empty;
 
         if (rUpper && !Empty) begin
-            Stream <= opData[15:8];
+            opStream <= opData[15:8];
             rUpper <= 0;
-            Valid  <= 1;
+            opValid  <= 1;
         end else if (!rUpper && !Empty) begin
-            Stream <= opData[7:0];
+            opStream <= opData[7:0];
             rUpper <= 1;
-            Valid <= 0;
+            opValid <= 0;
         end
 
     end else begin
         RE <= 0;
-        Valid <= 1;
+        opValid <= 1;
         rUpper <= 0;
     end
 end
