@@ -46,8 +46,8 @@ reg[7:0] rxData = 0;
 reg[3:0] BitsSent = 0; 
 reg[3:0] BitsReceived = 0; 
 
-wire txClkBaud = (txClkCount == 433); //Divide the Clock to 115200
-wire rxClkBaud = (rxClkCount == 433); //Divide the Clock to 115200
+wire txClkBaud = (txClkCount == 16); //Divide the Clock to 115200
+wire rxClkBaud = (rxClkCount == 16); //Divide the Clock to 115200
  
 reg Rx;
 
@@ -104,7 +104,7 @@ always @(posedge(ipClk)) begin
 	Rx <= ipRx;
 	if (!ipReset) begin
 		if (rxState == Wait && Rx) begin
-			rxClkCount <= 221; //Sync data to halfway
+			rxClkCount <= 7; //Sync data to halfway
 		end else if(rxClkBaud) begin
 			rxClkCount <= 9'd1;
 		end else begin 
