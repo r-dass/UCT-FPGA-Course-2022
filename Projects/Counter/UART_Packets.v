@@ -57,7 +57,7 @@ tState txState;
 
 UART_PACKET txBuffer;
 
-reg[2:0] BytesReceived;
+reg[7:0] BytesReceived;
 //------------------------------------------------------------------------------
 
 // TODO: Implement the Tx stream

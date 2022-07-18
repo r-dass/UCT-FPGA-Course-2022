@@ -29,7 +29,7 @@ enum {
 	TransmitWait
 } tState;
 
-reg [1:0] 	BytesWritten;
+reg [7:0] 	BytesWritten;
 reg [31:0] OutputData;
 
 always @ (posedge(ipClk)) begin
