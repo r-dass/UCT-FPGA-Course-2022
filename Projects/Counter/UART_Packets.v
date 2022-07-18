@@ -150,7 +150,7 @@ always @(posedge(ipClk)) begin
         case(rxState) 
         ReceiveSync: begin
             opRxStream.Valid <= 0;
-			BytesReceived <= 0;
+			BytesReceived <= 1;
 			opRxStream.EoP <= 0;
 			
             if (UART_RxValid && (UART_RxData == 8'h55)) begin
@@ -180,9 +180,9 @@ always @(posedge(ipClk)) begin
 				if(UART_RxValid) begin
 					opRxStream.Data  <= UART_RxData;
 					opRxStream.Valid <= 1;
-					if(BytesReceived == 1)
+					if(BytesReceived == 2)
 						opRxStream.SoP <= 0;
-					else if(BytesReceived == opRxStream.Length - 1) begin
+					else if(BytesReceived == opRxStream.Length) begin
                         opRxStream.EoP <= 1;
 						rxState <= ReceiveSync;
 					end
