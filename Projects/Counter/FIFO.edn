@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2022 7 18 14 2 51)
+      (timestamp 2022 7 18 20 29 7)
       (program "SCUBA" (version "Diamond (64-bit) 3.12.0.240.2"))))
-      (comment "C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n FIFO -lang verilog -synth synplify -bus_exp 7 -bb -arch mg5a00 -type ebfifo -depth 256 -width 16 -depth 256 -no_enable -pe -1 -pf -1 -fill ")
+      (comment "C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n FIFO -lang verilog -synth synplify -bus_exp 7 -bb -arch mg5a00 -type ebfifo -depth 256 -width 16 -depth 256 -regout -no_enable -pe -1 -pf -1 -fill ")
   (library ORCLIB
     (edifLevel 0)
     (technology
@@ -503,7 +503,7 @@
             (property MEM_INIT_FILE
               (string ""))
             (property CSDECODE_B
-              (string "0b000"))
+              (string "0b001"))
             (property CSDECODE_A
               (string "0b000"))
             (property WRITEMODE_B
@@ -515,9 +515,9 @@
             (property RESETMODE
               (string "ASYNC"))
             (property REGMODE_B
-              (string "NOREG"))
+              (string "OUTREG"))
             (property REGMODE_A
-              (string "NOREG"))
+              (string "OUTREG"))
             (property DATA_WIDTH_B
               (string "18"))
             (property DATA_WIDTH_A
@@ -881,7 +881,7 @@
               (portRef B (instanceRef XOR2_t0))
               (portRef A (instanceRef INV_1))
               (portRef AD1 (instanceRef LUT4_0))
-              (portRef CEB (instanceRef pdp_ram_0_0_0))
+              (portRef CSB0 (instanceRef pdp_ram_0_0_0))
               (portRef SP (instanceRef FF_8))
               (portRef SP (instanceRef FF_7))
               (portRef SP (instanceRef FF_6))
@@ -1078,6 +1078,7 @@
           (net scuba_vhi
             (joined
               (portRef Z (instanceRef scuba_vhi_inst))
+              (portRef CEB (instanceRef pdp_ram_0_0_0))
               (portRef WEA (instanceRef pdp_ram_0_0_0))
               (portRef ADA1 (instanceRef pdp_ram_0_0_0))
               (portRef ADA0 (instanceRef pdp_ram_0_0_0))
@@ -1205,7 +1206,6 @@
               (portRef CSA2 (instanceRef pdp_ram_0_0_0))
               (portRef CSB1 (instanceRef pdp_ram_0_0_0))
               (portRef CSA1 (instanceRef pdp_ram_0_0_0))
-              (portRef CSB0 (instanceRef pdp_ram_0_0_0))
               (portRef CSA0 (instanceRef pdp_ram_0_0_0))
               (portRef WEB (instanceRef pdp_ram_0_0_0))
               (portRef ADB13 (instanceRef pdp_ram_0_0_0))

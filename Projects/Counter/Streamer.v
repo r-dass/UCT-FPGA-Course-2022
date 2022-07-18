@@ -1,4 +1,4 @@
-import Structures::*;
+import Structures::*; 
 
 module Streamer(
     input              			ipClk,
@@ -20,7 +20,8 @@ wire Full;
 wire [8:0] FIFO_Size1;
 
 reg [15:0] ipData;
-reg [15:0] opData;
+
+reg [12:0] txClkCount;
 
 FIFO FIFOBLOCK(
     .Clock(ipClk),
@@ -30,7 +31,7 @@ FIFO FIFOBLOCK(
     .RdEn(RE),
 
     .Data(ipData),
-    .Q(opData), 
+    .Q(opStream), 
 
     .Empty(Empty),
     .Full(Full),
@@ -51,11 +52,20 @@ assign opFIFO_Size = FIFO_Size1;
  
 always @(posedge(ipClk)) begin
     if (!ipReset) begin
-        RE <= !Empty;
-        opValid <= !Empty;
+        if (txClkCount == 1133 && !Empty) begin
+            RE <= 1;
+            opValid <= 1;
+            txClkCount <= 0;
+        end else begin
+            txClkCount <= txClkCount + 1;
+            RE <= 0;
+            opValid <= 0;
+        end
+
     end else begin
         RE <= 0;
         opValid <= 0;
+        txClkCount <= 0;
     end
 end
 

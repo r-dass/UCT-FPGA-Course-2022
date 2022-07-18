@@ -6,7 +6,7 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.42
 
-Mon Jul 18 15:15:03 2022
+Mon Jul 18 20:44:13 2022
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-------------------------------+
@@ -27,6 +27,7 @@ Pinout by Port Name:
 | opLED[5]  | 39/5     | LVCMOS33_OUT | PB8B  | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[6]  | 38/5     | LVCMOS33_OUT | PB7A  | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[7]  | 37/5     | LVCMOS33_OUT | PB8A  | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opPWM     | 103/2    | LVCMOS33_OUT | PR5B  | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opUART_Tx | 109/1    | LVCMOS25_OUT | PT28B | DRIVE:12mA SLEW:FAST PULL:UP  |
 +-----------+----------+--------------+-------+-------------------------------+
 
@@ -35,6 +36,7 @@ Vccio by Bank:
 | Bank | Vccio |
 +------+-------+
 | 1    | 2.5V  |
+| 2    | 3.3V  |
 | 5    | 3.3V  |
 | 7    |       |
 +------+-------+
@@ -119,7 +121,7 @@ Pinout by Pin Number:
 | 100/2    |     unused, PULL:UP |            |              | PR6B  | RDQ9                 |
 | 101/2    |     unused, PULL:UP |            |              | PR7A  | RDQ9                 |
 | 102/2    |     unused, PULL:UP |            |              | PR6A  | RDQ9                 |
-| 103/2    |     unused, PULL:UP |            |              | PR5B  | RDQ9                 |
+| 103/2    | opPWM               | LOCATED    | LVCMOS33_OUT | PR5B  | RDQ9                 |
 | 104/2    |     unused, PULL:UP |            |              | PR5A  | RDQ9                 |
 | 107/2    |     unused, PULL:UP |            |              | PR2B  | VREF2_2              |
 | 108/2    |     unused, PULL:UP |            |              | PR2A  | VREF1_2              |
@@ -270,6 +272,7 @@ LOCATE  COMP  "opLED[4]"  SITE  "40";
 LOCATE  COMP  "opLED[5]"  SITE  "39";
 LOCATE  COMP  "opLED[6]"  SITE  "38";
 LOCATE  COMP  "opLED[7]"  SITE  "37";
+LOCATE  COMP  "opPWM"  SITE  "103";
 LOCATE  COMP  "opUART_Tx"  SITE  "109";
 
 
@@ -282,5 +285,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Jul 18 15:15:03 2022
+Mon Jul 18 20:44:13 2022
 

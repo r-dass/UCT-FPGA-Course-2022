@@ -12,7 +12,7 @@
 #OS: Windows 8 6.2
 #Hostname: RD-LAPTOP
 
-# Mon Jul 18 15:14:27 2022
+# Mon Jul 18 20:43:30 2022
 
 #Implementation: impl1
 
@@ -128,14 +128,14 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @N: CG333 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":380:16:380:27|Read directive translate_on.
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v" (library work)
+@I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\PWM.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v" (library work)
 Verilog syntax check successful!
-File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v changed - recompiling
-File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v changed - recompiling
+File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART.v changed - recompiling
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v":6:0:6:5|Synthesizing module work_C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v_unit in library work.
 Selecting top level module Counter
@@ -193,22 +193,23 @@ Running optimization stage 1 on FIFO .......
 @W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":381:12:381:15|Removing instance FF_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
 @W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":327:12:327:15|Removing instance FF_9 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":3:7:3:14|Synthesizing module Streamer in library work.
-@W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":10:32:10:39|Object opStream is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":48:4:48:9|Object rUpper is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":49:4:49:9|Object rUpper is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on Streamer .......
-@W: CL177 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":52:0:52:5|Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":53:0:53:5|Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\PWM.v":1:7:1:9|Synthesizing module PWM in library work.
+Running optimization stage 1 on PWM .......
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v":3:7:3:13|Synthesizing module Counter in library work.
 Running optimization stage 1 on Counter .......
 Running optimization stage 2 on Counter .......
+Running optimization stage 2 on PWM .......
 Running optimization stage 2 on Streamer .......
-@N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":62:0:62:5|Trying to extract state machine for register rState.
+@N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":72:0:72:5|Trying to extract state machine for register rState.
 Extracted state machine for register rState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
    00000000000000000000000000000001
 @W: CL246 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":7:29:7:38|Input port bits 34 to 27 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.
 @W: CL246 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":7:29:7:38|Input port bits 18 to 11 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.
-@A: CL153 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":10:32:10:39|*Unassigned bits of opStream[15:0] are referenced and tied to 0 -- simulation mismatch possible.
 Running optimization stage 2 on FIFO .......
 Running optimization stage 2 on VLO .......
 Running optimization stage 2 on VHI .......
@@ -246,14 +247,6 @@ State machine has 3 reachable states with original encodings of:
 
 Running optimization stage 2 on UART_Packets .......
 @N: CL189 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":65:0:65:5|Register bit txBuffer.Valid is always 1.
-@N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":148:0:148:5|Trying to extract state machine for register rxState.
-Extracted state machine for register rxState
-State machine has 5 reachable states with original encodings of:
-   00000000000000000000000000000000
-   00000000000000000000000000000001
-   00000000000000000000000000000010
-   00000000000000000000000000000011
-   00000000000000000000000000000100
 @N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":65:0:65:5|Trying to extract state machine for register txState.
 Extracted state machine for register txState
 State machine has 6 reachable states with original encodings of:
@@ -263,6 +256,14 @@ State machine has 6 reachable states with original encodings of:
    00000000000000000000000000000011
    00000000000000000000000000000100
    00000000000000000000000000000101
+@N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":148:0:148:5|Trying to extract state machine for register rxState.
+Extracted state machine for register rxState
+State machine has 5 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+   00000000000000000000000000000100
 @W: CL247 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":8:21:8:30|Input port bit 10 of ipTxStream[34:0] is unused
 
 Running optimization stage 2 on UART .......
@@ -282,12 +283,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 103MB peak: 105MB)
+At c_ver Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 100MB peak: 102MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
 
 Process completed successfully.
-# Mon Jul 18 15:14:33 2022
+# Mon Jul 18 20:43:36 2022
 
 ###########################################################]
 ###########################################################[
@@ -314,7 +315,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jul 18 15:14:33 2022
+# Mon Jul 18 20:43:37 2022
 
 ###########################################################]
 
@@ -324,12 +325,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 29MB peak: 29MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 23MB peak: 23MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
 
 Process completed successfully.
-# Mon Jul 18 15:14:33 2022
+# Mon Jul 18 20:43:37 2022
 
 ###########################################################]
 ###########################################################[
@@ -357,10 +358,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jul 18 15:14:35 2022
+# Mon Jul 18 20:43:38 2022
 
 ###########################################################]
-# Mon Jul 18 15:14:35 2022
+# Mon Jul 18 20:43:38 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -399,10 +400,10 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 129MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 140MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 142MB)
 
 @N: FX493 |Applying initial value "00000000" on instance txData[7:0].
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
@@ -413,24 +414,6 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @W: FX367 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":162:11:162:23|Instance pdp_ram_0_0_0 parameter type does not match module declaration.
 @W: MO129 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":65:0:65:5|Sequential instance Packetiser.txBuffer.Length[0] is reduced to a combinational gate by constant propagation.
 @W: MO129 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":65:0:65:5|Sequential instance Packetiser.txBuffer.Length[2] is reduced to a combinational gate by constant propagation.
-@W: BN114 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":162:11:162:23|Removing instance pdp_ram_0_0_0 (in view: work.FIFO(verilog)) of black box view:LUCENT.DP16KB(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":62:0:62:5|Removing sequential instance ipData[15:0] (in view: work.Streamer(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":279:12:279:16|Removing sequential instance FF_17 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":285:12:285:16|Removing sequential instance FF_16 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":291:12:291:16|Removing sequential instance FF_15 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":297:12:297:16|Removing sequential instance FF_14 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":303:12:303:16|Removing sequential instance FF_13 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":309:12:309:16|Removing sequential instance FF_12 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":315:12:315:16|Removing sequential instance FF_11 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":321:12:321:16|Removing sequential instance FF_10 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":333:12:333:15|Removing sequential instance FF_8 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":339:12:339:15|Removing sequential instance FF_7 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":345:12:345:15|Removing sequential instance FF_6 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":351:12:351:15|Removing sequential instance FF_5 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":357:12:357:15|Removing sequential instance FF_4 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":363:12:363:15|Removing sequential instance FF_3 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":369:12:369:15|Removing sequential instance FF_2 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
-@N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":375:12:375:15|Removing sequential instance FF_1 (in view: work.FIFO(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
 @N: BN362 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\controller.v":35:0:35:5|Removing sequential instance opTxStream\.SoP (in view: work.Controller(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 Encoding state machine rxState[1:0] (in view: work.UART(verilog))
 original code -> new code
@@ -484,22 +467,22 @@ Encoding state machine rState[1:0] (in view: work.Streamer(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0
    00000000000000000000000000000001 -> 1
-@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":62:0:62:5|There are no possible illegal states for state machine rState[1:0] (in view: work.Streamer(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\streamer.v":72:0:72:5|There are no possible illegal states for state machine rState[1:0] (in view: work.Streamer(verilog)); safe FSM implementation is not required.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
-
-
-Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 176MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 176MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Counter 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 176MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
 
 
 
@@ -509,7 +492,7 @@ Clock Summary
           Start      Requested     Requested     Clock        Clock                Clock
 Level     Clock      Frequency     Period        Type         Group                Load 
 ----------------------------------------------------------------------------------------
-0 -       ipClk      50.0 MHz      20.000        declared     default_clkgroup     335  
+0 -       ipClk      50.0 MHz      20.000        declared     default_clkgroup     402  
                                                                                         
 0 -       System     200.0 MHz     5.000         system       system_clkgroup      0    
 ========================================================================================
@@ -522,7 +505,7 @@ Clock Load Summary
            Clock     Source          Clock Pin                           Non-clock Pin     Non-clock Pin
 Clock      Load      Pin             Seq Example                         Seq Example       Comb Example 
 --------------------------------------------------------------------------------------------------------
-ipClk      335       ipClk(port)     RdRegisters\.ClockTicks[31:0].C     -                 -            
+ipClk      402       ipClk(port)     RdRegisters\.ClockTicks[31:0].C     -                 -            
                                                                                                         
 System     0         -               -                                   -                 -            
 ========================================================================================================
@@ -538,14 +521,14 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 335 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 402 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ================================== Non-Gated/Non-Generated Clocks ===================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance              
 -----------------------------------------------------------------------------------------------------
-@KP:ckid0_0       ipClk               port                   335        RdRegisters\.ClockTicks[31:0]
+@KP:ckid0_0       ipClk               port                   402        RdRegisters\.ClockTicks[31:0]
 =====================================================================================================
 
 
@@ -554,24 +537,24 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
+Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 176MB peak: 176MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 91MB peak: 177MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 90MB peak: 177MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Mon Jul 18 15:14:37 2022
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Mon Jul 18 20:43:42 2022
 
 ###########################################################]
-# Mon Jul 18 15:14:37 2022
+# Mon Jul 18 20:43:42 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -605,73 +588,71 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 134MB peak: 136MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 168MB peak: 168MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
 
-@N: MF179 :|Found 9 by 9 bit equality operator ('==') un1_BytesReceived_3 (in view: work.UART_Packets(verilog))
+@N: MF179 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":185:13:185:47|Found 8 by 8 bit equality operator ('==') un1_opRxStream\.Length (in view: work.UART_Packets(verilog))
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 
-Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 174MB peak: 174MB)
+Starting factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 180MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 177MB peak: 178MB)
-
-@N: FA113 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":185:13:185:51|Pipelining module un1_BytesReceived_3. For more information, search for "pipelining" in Online Help.
-@N: MF169 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":148:0:148:5|Pushed in register opRxStream\\\[Length\\\].
-
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 178MB peak: 178MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 180MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 178MB peak: 178MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 180MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 178MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 180MB peak: 181MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 178MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 180MB peak: 181MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 178MB)
+Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 180MB peak: 181MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:04s; Memory used current: 181MB peak: 181MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:04s		     4.42ns		 251 /       325
+   1		0h:00m:05s		     4.42ns		 278 /       373
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:04s; Memory used current: 178MB peak: 179MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 181MB peak: 182MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @A: BN291 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart.v":55:0:55:5|Boundary register Packetiser.UART_Inst.opTx.fb (in view: work.Counter(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 179MB peak: 179MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 182MB peak: 182MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 143MB peak: 179MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 144MB peak: 182MB)
 
 Writing Analyst data base C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\Counter_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 179MB peak: 179MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 181MB peak: 182MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 184MB peak: 184MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 186MB peak: 186MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 182MB peak: 184MB)
+Start final timing analysis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 184MB peak: 186MB)
 
 @W: MT246 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":438:10:438:16|Blackbox AGEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v":417:10:417:16|Blackbox ALEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -679,7 +660,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon Jul 18 15:14:45 2022
+# Timing report written on Mon Jul 18 20:43:51 2022
 #
 
 
@@ -704,7 +685,7 @@ Worst slack in design: 4.425
                    Requested     Estimated      Requested     Estimated                Clock        Clock           
 Starting Clock     Frequency     Frequency      Period        Period        Slack      Type         Group           
 --------------------------------------------------------------------------------------------------------------------
-ipClk              50.0 MHz      162.0 MHz      20.000        6.175         13.825     declared     default_clkgroup
+ipClk              50.0 MHz      158.1 MHz      20.000        6.326         13.674     declared     default_clkgroup
 System             200.0 MHz     1738.8 MHz     5.000         0.575         4.425      system       system_clkgroup 
 ====================================================================================================================
 
@@ -721,8 +702,8 @@ Starting  Ending  |  constraint  slack   |  constraint  slack  |  constraint  sl
 ---------------------------------------------------------------------------------------------------------
 System    System  |  5.000       4.425   |  No paths    -      |  No paths    -      |  No paths    -    
 System    ipClk   |  20.000      17.919  |  No paths    -      |  No paths    -      |  No paths    -    
-ipClk     System  |  20.000      18.431  |  No paths    -      |  No paths    -      |  No paths    -    
-ipClk     ipClk   |  20.000      13.825  |  No paths    -      |  No paths    -      |  No paths    -    
+ipClk     System  |  20.000      18.390  |  No paths    -      |  No paths    -      |  No paths    -    
+ipClk     ipClk   |  20.000      13.674  |  No paths    -      |  No paths    -      |  No paths    -    
 =========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -745,41 +726,41 @@ Detailed Report for Clock: ipClk
 Starting Points with Worst Slack
 ********************************
 
-                                         Starting                                                         Arrival           
-Instance                                 Reference     Type        Pin     Net                            Time        Slack 
-                                         Clock                                                                              
-----------------------------------------------------------------------------------------------------------------------------
-Packetiser.BytesReceived[0]              ipClk         FD1S3IX     Q       BytesReceived[0]               1.067       13.825
-Packetiser.BytesReceived[1]              ipClk         FD1S3IX     Q       BytesReceived[1]               1.067       13.825
-Packetiser.BytesReceived[2]              ipClk         FD1S3IX     Q       BytesReceived[2]               1.035       13.931
-Packetiser.opRxStream\.Length_pipe       ipClk         FD1P3JX     Q       un1_BytesReceived_3_a_4[0]     0.857       14.036
-Packetiser.opRxStream\.Length_pipe_1     ipClk         FD1P3AX     Q       un1_BytesReceived_3_a_4[1]     0.857       14.036
-Packetiser.opRxStream\.Length_pipe_2     ipClk         FD1P3AX     Q       un1_BytesReceived_3_a_4[2]     0.857       14.109
-Packetiser.opRxStream\.Length_pipe_3     ipClk         FD1P3AX     Q       un1_BytesReceived_3_a_4[3]     0.857       14.109
-Packetiser.opRxStream\.Length_pipe_4     ipClk         FD1P3AX     Q       un1_BytesReceived_3_a_4[4]     0.857       14.109
-Packetiser.opRxStream\.Length_pipe_5     ipClk         FD1P3AX     Q       un1_BytesReceived_3_a_4[5]     0.857       14.109
-Packetiser.opRxStream\.Length_pipe_6     ipClk         FD1P3AX     Q       un1_BytesReceived_3_a_4[6]     0.857       14.182
-============================================================================================================================
+                                          Starting                                                 Arrival           
+Instance                                  Reference     Type        Pin     Net                    Time        Slack 
+                                          Clock                                                                      
+---------------------------------------------------------------------------------------------------------------------
+Packetiser.opRxStream\.Destination[2]     ipClk         FD1P3IX     Q       Destination_Q_0[2]     0.929       13.674
+Packetiser.opRxStream\.Destination[3]     ipClk         FD1P3IX     Q       Destination_Q_0[3]     0.929       13.674
+Packetiser.opRxStream\.Destination[6]     ipClk         FD1P3IX     Q       Destination_Q_0[6]     0.929       13.674
+Packetiser.opRxStream\.Destination[7]     ipClk         FD1P3IX     Q       Destination_Q_0[7]     0.929       13.674
+Packetiser.BytesReceived[0]               ipClk         FD1S3JX     Q       BytesReceived[0]       0.994       13.971
+Packetiser.BytesReceived[1]               ipClk         FD1S3IX     Q       BytesReceived[1]       0.994       13.971
+Packetiser.BytesReceived[2]               ipClk         FD1S3IX     Q       BytesReceived[2]       0.994       14.044
+Packetiser.BytesReceived[3]               ipClk         FD1S3IX     Q       BytesReceived[3]       0.994       14.044
+Packetiser.BytesReceived[4]               ipClk         FD1S3IX     Q       BytesReceived[4]       0.994       14.044
+Packetiser.BytesReceived[5]               ipClk         FD1S3IX     Q       BytesReceived[5]       0.994       14.044
+=====================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                         Starting                                                        Required           
-Instance                                 Reference     Type        Pin     Net                           Time         Slack 
-                                         Clock                                                                              
-----------------------------------------------------------------------------------------------------------------------------
-Packetiser.rxState[0]                    ipClk         FD1S3AY     D       N_83_i                        19.389       13.825
-Streamer1.wUpper                         ipClk         FD1S3JX     PD      fb                            19.701       14.302
-Packetiser.UART_Inst.BitsReceived[3]     ipClk         FD1S3IX     D       un1_BitsReceived_4_axbxc3     19.389       14.525
-Packetiser.rxState[4]                    ipClk         FD1S3AX     D       N_90_i                        19.389       14.580
-Streamer1.wUpper                         ipClk         FD1S3JX     D       wUpper_0_sqmuxa_1             19.389       14.744
-Streamer1.rState[0]                      ipClk         FD1S3AX     D       N_37s                         19.389       14.817
-Packetiser.UART_Inst.rxData[0]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
-Packetiser.UART_Inst.rxData[1]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
-Packetiser.UART_Inst.rxData[2]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
-Packetiser.UART_Inst.rxData[3]           ipClk         FD1P3AX     SP      rxData_0_sqmuxa_i             19.701       15.001
-============================================================================================================================
+                          Starting                                      Required           
+Instance                  Reference     Type        Pin     Net         Time         Slack 
+                          Clock                                                            
+-------------------------------------------------------------------------------------------
+Streamer1.ipData[0]       ipClk         FD1P3AX     D       N_190_i     19.389       13.674
+Streamer1.ipData[1]       ipClk         FD1P3AX     D       N_192_i     19.389       13.674
+Streamer1.ipData[2]       ipClk         FD1P3AX     D       N_194_i     19.389       13.674
+Streamer1.ipData[3]       ipClk         FD1P3AX     D       N_196_i     19.389       13.674
+Streamer1.ipData[4]       ipClk         FD1P3AX     D       N_198_i     19.389       13.674
+Streamer1.ipData[5]       ipClk         FD1P3AX     D       N_200_i     19.389       13.674
+Streamer1.ipData[6]       ipClk         FD1P3AX     D       N_202_i     19.389       13.674
+Streamer1.ipData[7]       ipClk         FD1P3AX     D       N_204_i     19.389       13.674
+Packetiser.rxState[0]     ipClk         FD1S3AY     D       N_83_i      19.389       13.971
+Streamer1.wUpper          ipClk         FD1S3JX     PD      fb          19.701       14.237
+===========================================================================================
 
 
 
@@ -793,44 +774,41 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         19.389
 
-    - Propagation time:                      5.564
+    - Propagation time:                      5.715
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 13.825
+    = Slack (non-critical) :                 13.674
 
-    Number of logic level(s):                7
-    Starting point:                          Packetiser.BytesReceived[0] / Q
-    Ending point:                            Packetiser.rxState[0] / D
+    Number of logic level(s):                6
+    Starting point:                          Packetiser.opRxStream\.Destination[2] / Q
+    Ending point:                            Streamer1.ipData[0] / D
     The start point is clocked by            ipClk [rising] (rise=0.000 fall=10.000 period=20.000) on pin CK
     The end   point is clocked by            ipClk [rising] (rise=0.000 fall=10.000 period=20.000) on pin CK
 
-Instance / Net                                                   Pin      Pin               Arrival     No. of    
-Name                                                Type         Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------
-Packetiser.BytesReceived[0]                         FD1S3IX      Q        Out     1.067     1.067 r     -         
-BytesReceived[0]                                    Net          -        -       -         -           5         
-Packetiser.un1_BytesReceived_3_0_I_1_0              CCU2B        D1       In      0.000     1.067 r     -         
-Packetiser.un1_BytesReceived_3_0_I_1_0              CCU2B        COUT     Out     1.056     2.123 r     -         
-un1_BytesReceived_3_0_data_tmp[0]                   Net          -        -       -         -           1         
-Packetiser.un1_BytesReceived_3_0_I_21_0             CCU2B        CIN      In      0.000     2.123 r     -         
-Packetiser.un1_BytesReceived_3_0_I_21_0             CCU2B        COUT     Out     0.073     2.196 r     -         
-un1_BytesReceived_3_0_data_tmp[2]                   Net          -        -       -         -           1         
-Packetiser.un1_BytesReceived_3_0_I_9_0              CCU2B        CIN      In      0.000     2.196 r     -         
-Packetiser.un1_BytesReceived_3_0_I_9_0              CCU2B        COUT     Out     0.073     2.269 r     -         
-un1_BytesReceived_3_0_I_27_cry                      Net          -        -       -         -           1         
-Packetiser.un1_BytesReceived_3_0_I_27_0             CCU2B        CIN      In      0.000     2.269 r     -         
-Packetiser.un1_BytesReceived_3_0_I_27_0             CCU2B        S0       Out     1.234     3.503 r     -         
-un1_BytesReceived_3_0_I_27_0_S0                     Net          -        -       -         -           1         
-Packetiser.un1_BytesReceived_3_0_I_27_0_RNIAJ7T     ORCALUT4     A        In      0.000     3.503 r     -         
-Packetiser.un1_BytesReceived_3_0_I_27_0_RNIAJ7T     ORCALUT4     Z        Out     0.892     4.395 r     -         
-SoP7                                                Net          -        -       -         -           3         
-Packetiser.rxState_srsts_i_a3_1[0]                  ORCALUT4     B        In      0.000     4.395 r     -         
-Packetiser.rxState_srsts_i_a3_1[0]                  ORCALUT4     Z        Out     0.754     5.149 f     -         
-N_113_1                                             Net          -        -       -         -           1         
-Packetiser.rxState_RNO[0]                           ORCALUT4     A        In      0.000     5.149 f     -         
-Packetiser.rxState_RNO[0]                           ORCALUT4     Z        Out     0.415     5.564 r     -         
-N_83_i                                              Net          -        -       -         -           1         
-Packetiser.rxState[0]                               FD1S3AY      D        In      0.000     5.564 r     -         
-==================================================================================================================
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+Packetiser.opRxStream\.Destination[2]     FD1P3IX      Q        Out     0.929     0.929 r     -         
+Destination_Q_0[2]                        Net          -        -       -         -           2         
+Streamer1.rState_ns_0_.m10_0_o2_3         ORCALUT4     A        In      0.000     0.929 r     -         
+Streamer1.rState_ns_0_.m10_0_o2_3         ORCALUT4     Z        Out     0.754     1.684 r     -         
+m10_0_o2_3                                Net          -        -       -         -           1         
+Streamer1.rState_ns_0_.m10_0_o2           ORCALUT4     A        In      0.000     1.684 r     -         
+Streamer1.rState_ns_0_.m10_0_o2           ORCALUT4     Z        Out     0.827     2.511 r     -         
+N_401                                     Net          -        -       -         -           2         
+Control.State_ns_1_0_.m13_0_o2            ORCALUT4     A        In      0.000     2.511 r     -         
+Control.State_ns_1_0_.m13_0_o2            ORCALUT4     Z        Out     0.892     3.403 r     -         
+N_402                                     Net          -        -       -         -           3         
+Streamer1.wUpper_1_sqmuxa_i_o2            ORCALUT4     A        In      0.000     3.403 r     -         
+Streamer1.wUpper_1_sqmuxa_i_o2            ORCALUT4     Z        Out     0.892     4.295 r     -         
+N_404                                     Net          -        -       -         -           3         
+Streamer1.ipData_12_i_o2[0]               ORCALUT4     A        In      0.000     4.295 r     -         
+Streamer1.ipData_12_i_o2[0]               ORCALUT4     Z        Out     1.006     5.301 r     -         
+N_407                                     Net          -        -       -         -           8         
+Streamer1.ipData_RNO[0]                   ORCALUT4     A        In      0.000     5.301 r     -         
+Streamer1.ipData_RNO[0]                   ORCALUT4     Z        Out     0.415     5.715 r     -         
+N_190_i                                   Net          -        -       -         -           1         
+Streamer1.ipData[0]                       FD1P3AX      D        In      0.000     5.715 r     -         
+========================================================================================================
 
 
 
@@ -908,7 +886,7 @@ Instance / Net                           Pin      Pin               Arrival     
 Name                            Type     Name     Dir     Delay     Time        Fan Out(s)
 ------------------------------------------------------------------------------------------
 Streamer1.FIFOBLOCK.AND2_t2     AND2     Z        Out     0.000     0.000 r     -         
-rden_i                          Net      -        -       -         -           4         
+rden_i                          Net      -        -       -         -           13        
 Streamer1.FIFOBLOCK.INV_1       INV      A        In      0.000     0.000 r     -         
 Streamer1.FIFOBLOCK.INV_1       INV      Z        Out     0.575     0.575 f     -         
 rden_i_inv                      Net      -        -       -         -           1         
@@ -921,18 +899,19 @@ Streamer1.FIFOBLOCK.AND2_t1     AND2     B        In      0.000     0.575 f     
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 183MB peak: 184MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 185MB peak: 186MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 183MB peak: 184MB)
+Finished timing report (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 185MB peak: 186MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lfxp2_5e-6
 
-Register bits: 336 of 4752 (7%)
+Register bits: 400 of 4752 (8%)
 PIC Latch:       0
-I/O cells:       16
+I/O cells:       17
+Block Rams : 1 of 9 (11%)
 
 
 Details:
@@ -940,37 +919,39 @@ AGEB2:          5
 ALEB2:          5
 AND2:           3
 CB2:            5
-CCU2B:          38
-FADD2B:         5
-FD1P3AX:        151
-FD1P3DX:        9
-FD1P3IX:        59
-FD1P3JX:        1
+CCU2B:          59
+CU2:            8
+DP16KB:         1
+FADD2B:         7
+FD1P3AX:        162
+FD1P3DX:        25
+FD1P3IX:        64
 FD1S3AX:        36
 FD1S3AY:        2
 FD1S3BX:        1
 FD1S3DX:        1
-FD1S3IX:        71
-FD1S3JX:        2
+FD1S3IX:        102
+FD1S3JX:        3
 GSR:            1
 IB:             7
 IFS1P3IX:       2
-INV:            8
-OB:             9
+INV:            16
+OB:             10
+OFS1P3DX:       1
 OFS1P3JX:       1
-ORCALUT4:       246
+ORCALUT4:       265
 PFUMX:          4
 PUR:            1
 ROM16X1:        2
-VHI:            7
-VLO:            7
+VHI:            8
+VLO:            8
 XOR2:           1
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 66MB peak: 184MB)
+At Mapper Exit (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 69MB peak: 186MB)
 
-Process took 0h:00m:08s realtime, 0h:00m:07s cputime
-# Mon Jul 18 15:14:46 2022
+Process took 0h:00m:09s realtime, 0h:00m:08s cputime
+# Mon Jul 18 20:43:52 2022
 
 ###########################################################]
 

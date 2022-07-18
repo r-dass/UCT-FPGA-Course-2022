@@ -50,6 +50,7 @@ set_option -include_path {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Count
 add_file -verilog -vlog_std v2001 {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/FIFO.v}
 add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Structures.v}
 add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Registers.v}
+add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/PWM.v}
 add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART.v}
 add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/UART_Packets.v}
 add_file -verilog -vlog_std sysv {C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/Controller.v}

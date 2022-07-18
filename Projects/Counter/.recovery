@@ -12,6 +12,9 @@
         <Source name="Registers.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="PWM.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="UART.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>

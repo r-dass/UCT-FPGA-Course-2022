@@ -3,19 +3,19 @@ Device = LFXP2-5E;
 Package = TQFP144;
 Performance = 6;
 LUTS_avail = 4752;
-LUTS_used = 375;
+LUTS_used = 468;
 FF_avail = 3664;
-FF_used = 336;
+FF_used = 400;
 INPUT_LVCMOS25 = 6;
 INPUT_LVCMOS33 = 1;
 OUTPUT_LVCMOS25 = 1;
-OUTPUT_LVCMOS33 = 8;
+OUTPUT_LVCMOS33 = 9;
 IO_avail = 100;
-IO_used = 16;
+IO_used = 17;
 PLL_avail = 2;
 PLL_used = 0;
 EBR_avail = 9;
-EBR_used = 0;
+EBR_used = 1;
 ;
 ; start of DSP statistics
 MULT36X36B = 0;
@@ -30,3 +30,17 @@ DSP_avail = 24;
 DSP_used = 0;
 ; end of DSP statistics
 ;
+; Begin EBR Section
+Instance_Name = Streamer1/FIFOBLOCK/pdp_ram_0_0_0;
+Type = DP16KB;
+Width_B = 8;
+Depth_A = 256;
+Depth_B = 256;
+REGMODE_A = OUTREG;
+REGMODE_B = OUTREG;
+RESETMODE = ASYNC;
+WRITEMODE_A = NORMAL;
+WRITEMODE_B = NORMAL;
+GSR = DISABLED;
+MEM_LPC_FILE = FIFO.lpc;
+; End EBR Section

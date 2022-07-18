@@ -7,6 +7,13 @@
             <Dynamic>ipReset_c</Dynamic>
         </Message>
     </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121027</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MEM_INIT_FILE</Dynamic>
+        </Message>
+    </Task>
     <Task name="Synplify_Synthesis">
         <Message>
             <ID>2011000</ID>
@@ -75,36 +82,24 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:10:32:10:39|Object opStream is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:49:4:49:9|Object rUpper is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
             <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>32</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>Object opStream is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:48:4:48:9|Object rUpper is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
-            <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v</Navigation>
-            <Navigation>48</Navigation>
+            <Navigation>49</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>48</Navigation>
+            <Navigation>49</Navigation>
             <Navigation>9</Navigation>
             <Navigation>Object rUpper is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL177 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:52:0:52:5|Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.</Dynamic>
+            <Dynamic>CL177 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v&quot;:53:0:53:5|Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.</Dynamic>
             <Navigation>CL177</Navigation>
             <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v</Navigation>
-            <Navigation>52</Navigation>
+            <Navigation>53</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>52</Navigation>
+            <Navigation>53</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.</Navigation>
         </Message>
@@ -289,18 +284,6 @@
             <Navigation>65</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Sequential instance Packetiser.txBuffer.Length[2] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN114 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:162:11:162:23|Removing instance pdp_ram_0_0_0 (in view: work.FIFO(verilog)) of black box view:LUCENT.DP16KB(PRIM) because it does not drive other instances.</Dynamic>
-            <Navigation>BN114</Navigation>
-            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
-            <Navigation>162</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>162</Navigation>
-            <Navigation>23</Navigation>
-            <Navigation>Removing instance pdp_ram_0_0_0 (in view: work.FIFO(verilog)) of black box view:LUCENT.DP16KB(PRIM) because it does not drive other instances.</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>

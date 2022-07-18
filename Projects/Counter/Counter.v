@@ -6,7 +6,8 @@ module Counter(
 	input			ipUART_Rx,
 	input	[3:0]	ipBtn,
 	output			opUART_Tx,
-	output	[7:0]	opLED
+	output	[7:0]	opLED,
+  output      opPWM
 );
 
 UART_PACKET RxStream;
@@ -65,7 +66,7 @@ Registers Register(
   .ipWrEnable(WrEnable),
   .opRdData(RdData)
 );
-
+ 
 Streamer Streamer1(
     .ipClk	( ipClk		),
     .ipReset	(!ipReset	),
@@ -76,6 +77,14 @@ Streamer Streamer1(
     .opStream(Stream),     
     .opValid(Valid)
 );
+
+PWM PWM1(
+  .ipClk	( ipClk		), 
+  .ipReset	(!ipReset	),
+  .ipDutyCycle ({~Stream[15], Stream[14:8]}),
+  .opPWM (opPWM)
+);
+
  
 
 always @(posedge ipClk) begin
@@ -86,7 +95,7 @@ always @(posedge ipClk) begin
 	end
 end
 
-assign opLED = ~Stream;
+assign opLED = ~WrRegisters.LEDs;
 assign RdRegisters.Buttons = ~ipBtn;
 
 

@@ -1,9 +1,7 @@
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: MF179 :|Found 9 by 9 bit equality operator ('==') un1_BytesReceived_3 (in view: work.UART_Packets(verilog))
-@N: FA113 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":185:13:185:51|Pipelining module un1_BytesReceived_3. For more information, search for "pipelining" in Online Help.
-@N: MF169 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":148:0:148:5|Pushed in register opRxStream\\\[Length\\\].
+@N: MF179 :"c:\users\reeve\git\uct-fpga-course-2022\projects\counter\uart_packets.v":185:13:185:47|Found 8 by 8 bit equality operator ('==') un1_opRxStream\.Length (in view: work.UART_Packets(verilog))
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: FX1056 |Writing EDF file: C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 

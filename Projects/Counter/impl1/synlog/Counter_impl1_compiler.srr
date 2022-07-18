@@ -110,14 +110,14 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @N: CG333 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":380:16:380:27|Read directive translate_on.
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v" (library work)
+@I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\PWM.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v" (library work)
 @I::"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v" (library work)
 Verilog syntax check successful!
-File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v changed - recompiling
-File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v changed - recompiling
+File C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART.v changed - recompiling
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v":6:0:6:5|Synthesizing module work_C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v_unit in library work.
 Selecting top level module Counter
@@ -175,22 +175,23 @@ Running optimization stage 1 on FIFO .......
 @W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":381:12:381:15|Removing instance FF_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
 @W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":327:12:327:15|Removing instance FF_9 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":3:7:3:14|Synthesizing module Streamer in library work.
-@W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":10:32:10:39|Object opStream is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":48:4:48:9|Object rUpper is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":49:4:49:9|Object rUpper is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on Streamer .......
-@W: CL177 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":52:0:52:5|Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":53:0:53:5|Sharing sequential element opValid. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\PWM.v":1:7:1:9|Synthesizing module PWM in library work.
+Running optimization stage 1 on PWM .......
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v":3:7:3:13|Synthesizing module Counter in library work.
 Running optimization stage 1 on Counter .......
 Running optimization stage 2 on Counter .......
+Running optimization stage 2 on PWM .......
 Running optimization stage 2 on Streamer .......
-@N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":62:0:62:5|Trying to extract state machine for register rState.
+@N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":72:0:72:5|Trying to extract state machine for register rState.
 Extracted state machine for register rState
 State machine has 2 reachable states with original encodings of:
    00000000000000000000000000000000
    00000000000000000000000000000001
 @W: CL246 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":7:29:7:38|Input port bits 34 to 27 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.
 @W: CL246 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":7:29:7:38|Input port bits 18 to 11 of ipRxStream[34:0] are unused. Assign logic for all port bits or change the input port size.
-@A: CL153 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":10:32:10:39|*Unassigned bits of opStream[15:0] are referenced and tied to 0 -- simulation mismatch possible.
 Running optimization stage 2 on FIFO .......
 Running optimization stage 2 on VLO .......
 Running optimization stage 2 on VHI .......
@@ -228,14 +229,6 @@ State machine has 3 reachable states with original encodings of:
 
 Running optimization stage 2 on UART_Packets .......
 @N: CL189 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":65:0:65:5|Register bit txBuffer.Valid is always 1.
-@N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":148:0:148:5|Trying to extract state machine for register rxState.
-Extracted state machine for register rxState
-State machine has 5 reachable states with original encodings of:
-   00000000000000000000000000000000
-   00000000000000000000000000000001
-   00000000000000000000000000000010
-   00000000000000000000000000000011
-   00000000000000000000000000000100
 @N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":65:0:65:5|Trying to extract state machine for register txState.
 Extracted state machine for register txState
 State machine has 6 reachable states with original encodings of:
@@ -245,6 +238,14 @@ State machine has 6 reachable states with original encodings of:
    00000000000000000000000000000011
    00000000000000000000000000000100
    00000000000000000000000000000101
+@N: CL201 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":148:0:148:5|Trying to extract state machine for register rxState.
+Extracted state machine for register rxState
+State machine has 5 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+   00000000000000000000000000000100
 @W: CL247 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v":8:21:8:30|Input port bit 10 of ipTxStream[34:0] is unused
 
 Running optimization stage 2 on UART .......
@@ -264,12 +265,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 103MB peak: 105MB)
+At c_ver Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 100MB peak: 102MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
 
 Process completed successfully.
-# Mon Jul 18 15:14:33 2022
+# Mon Jul 18 20:43:36 2022
 
 ###########################################################]
 ###########################################################[
@@ -296,7 +297,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jul 18 15:14:33 2022
+# Mon Jul 18 20:43:37 2022
 
 ###########################################################]
 
@@ -306,11 +307,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 29MB peak: 29MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 23MB peak: 23MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
 
 Process completed successfully.
-# Mon Jul 18 15:14:33 2022
+# Mon Jul 18 20:43:37 2022
 
 ###########################################################]

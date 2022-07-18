@@ -19,7 +19,6 @@ always @(posedge ipClk) begin
 
     end else begin
         Count <= 0;
-        DutyCycle <= 9;
     end
 end
 

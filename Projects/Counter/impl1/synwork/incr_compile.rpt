@@ -14,41 +14,29 @@ Hostname: RD-LAPTOP
 Implementation : impl1
 Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
-Modified Files: 2
+Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-29       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v (2022-07-18 14:50:04, 2022-07-18 15:14:15)
-35       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v (2022-07-18 14:44:16, 2022-07-18 14:58:45)
+32       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART.v (2022-07-18 20:41:39, 2022-07-18 20:43:13)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 7
+Modules that may have changed as a result of file changes: 2
 MID:  lib.cell.view
-62       work.Controller.verilog may have changed because the following files changed:
-                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v (2022-07-18 14:50:04, 2022-07-18 15:14:15) <-- (may instantiate this module)
-0        work.Counter.verilog may have changed because the following files changed:
-                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v (2022-07-18 14:50:04, 2022-07-18 15:14:15) <-- (module definition)
-64       work.FIFO.verilog may have changed because the following files changed:
-                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v (2022-07-18 14:50:04, 2022-07-18 15:14:15) <-- (may instantiate this module)
-                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v (2022-07-18 14:44:16, 2022-07-18 14:58:45) <-- (may instantiate this module)
 59       work.Registers.verilog may have changed because the following files changed:
-                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v (2022-07-18 14:50:04, 2022-07-18 15:14:15) <-- (may instantiate this module)
-                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v (2022-07-18 14:44:16, 2022-07-18 14:58:45) <-- (may instantiate this module)
-63       work.Streamer.verilog may have changed because the following files changed:
-                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v (2022-07-18 14:50:04, 2022-07-18 15:14:15) <-- (may instantiate this module)
-                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v (2022-07-18 14:44:16, 2022-07-18 14:58:45) <-- (module definition)
+                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART.v (2022-07-18 20:41:39, 2022-07-18 20:43:13) <-- (may instantiate this module)
 2        work.UART.verilog may have changed because the following files changed:
-                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v (2022-07-18 14:50:04, 2022-07-18 15:14:15) <-- (may instantiate this module)
-60       work.UART_Packets.verilog may have changed because the following files changed:
-                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v (2022-07-18 14:50:04, 2022-07-18 15:14:15) <-- (may instantiate this module)
+                        C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART.v (2022-07-18 20:41:39, 2022-07-18 20:43:13) <-- (module definition)
 
 *******************************************************************
-Unmodified files: 12
+Unmodified files: 14
 FID:  path (timestamp)
-28       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v (2022-07-18 13:19:35)
-34       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v (2022-07-18 14:02:51)
+28       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Controller.v (2022-07-18 19:16:27)
+29       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Counter.v (2022-07-18 20:41:31)
+34       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v (2022-07-18 20:29:07)
+36       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\PWM.v (2022-07-18 18:02:04)
 30       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v (2022-07-18 09:05:32)
+35       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v (2022-07-18 20:32:57)
 31       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v (2022-07-18 04:28:40)
-32       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART.v (2022-07-13 16:45:36)
-33       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v (2022-07-18 09:03:00)
+33       C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\UART_Packets.v (2022-07-18 20:06:20)
 2        C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v (2020-10-29 10:20:54)
 3        C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v (2020-10-29 10:20:54)
 4        C:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v (2020-10-29 10:23:10)
@@ -57,5 +45,11 @@ FID:  path (timestamp)
 7        C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v (2020-10-29 10:23:10)
 
 *******************************************************************
-Unchanged modules: 0
+Unchanged modules: 6
 MID:  lib.cell.view
+62       work.Controller.verilog
+0        work.Counter.verilog
+64       work.FIFO.verilog
+65       work.PWM.verilog
+63       work.Streamer.verilog
+60       work.UART_Packets.verilog
