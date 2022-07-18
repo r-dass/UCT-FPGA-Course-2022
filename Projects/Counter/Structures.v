@@ -4,7 +4,7 @@ package Structures;
 typedef struct{
   logic [31:0]ClockTicks;
   logic [ 3:0]Buttons;
-  logic [ 8:0]FIFO_Size;
+  logic [ 12:0]FIFO_Size;
 } RD_REGISTERS;
 
 typedef struct{

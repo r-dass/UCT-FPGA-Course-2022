@@ -7,7 +7,7 @@ module tb;
     reg RdEn = 0;
     reg Reset = 0;
     wire [15:0] Q;
-    wire [8:0] WCNT;
+    wire [12:0] WCNT;
     wire Empty;
     wire Full;
 
@@ -23,7 +23,7 @@ module tb;
     initial
     begin
        Data <= 0;
-      for (i1 = 0; i1 < 260; i1 = i1 + 1) begin
+      for (i1 = 0; i1 < 4100; i1 = i1 + 1) begin
         @(posedge Clock);
         #1  Data <= Data + 1'b1;
       end
@@ -36,7 +36,7 @@ module tb;
        WrEn <= 1'b0;
       #100;
       @(Reset == 1'b0);
-      for (i3 = 0; i3 < 260; i3 = i3 + 1) begin
+      for (i3 = 0; i3 < 4100; i3 = i3 + 1) begin
         @(posedge Clock);
         #1  WrEn <= 1'b1;
       end
@@ -48,7 +48,7 @@ module tb;
       @(Reset == 1'b0);
       @(WrEn == 1'b1);
       @(WrEn == 1'b0);
-      for (i4 = 0; i4 < 258; i4 = i4 + 1) begin
+      for (i4 = 0; i4 < 4098; i4 = i4 + 1) begin
         @(posedge Clock);
         #1  RdEn <= 1'b1;
       end

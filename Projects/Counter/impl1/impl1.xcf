@@ -21,8 +21,8 @@
 			</Bypass>
 			<File>C:/Users/reeve/git/UCT-FPGA-Course-2022/Projects/Counter/impl1/Counter_impl1.jed</File>
 			<MaskFile>C:/lscc/diamond/3.12/data/vmdata/database\xpga\xp2\lfxp2-5.msk</MaskFile>
-			<FileTime>07/18/22 20:30:46</FileTime>
-			<JedecChecksum>0x9A38</JedecChecksum>
+			<FileTime>07/18/22 20:44:31</FileTime>
+			<JedecChecksum>0x7B8F</JedecChecksum>
 			<Operation>SRAM Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

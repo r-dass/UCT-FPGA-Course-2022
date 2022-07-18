@@ -5,7 +5,7 @@ module Streamer(
     input              			ipReset,
 
     input   UART_PACKET     	ipRxStream,
-    output  reg     [8:0]  	    opFIFO_Size, 
+    output  reg     [12:0]  	    opFIFO_Size, 
 
     output  reg    [15:0]       opStream,    
     output  reg         		opValid
@@ -17,7 +17,7 @@ reg RE;
 wire Empty;
 wire Full;
 
-wire [8:0] FIFO_Size1;
+wire [12:0] FIFO_Size1;
 
 reg [15:0] ipData;
 

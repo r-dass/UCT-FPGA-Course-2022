@@ -13,6 +13,11 @@
             <Severity>Warning</Severity>
             <Dynamic>MEM_INIT_FILE</Dynamic>
         </Message>
+        <Message>
+            <ID>1121027</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MEM_INIT_FILE</Dynamic>
+        </Message>
     </Task>
     <Task name="Synplify_Synthesis">
         <Message>
@@ -34,50 +39,50 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:479:8:479:14|Removing instance r_ctr_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:771:8:771:14|Removing instance r_ctr_6 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
             <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v</Navigation>
-            <Navigation>479</Navigation>
+            <Navigation>771</Navigation>
             <Navigation>8</Navigation>
-            <Navigation>479</Navigation>
+            <Navigation>771</Navigation>
             <Navigation>14</Navigation>
-            <Navigation>Removing instance r_ctr_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+            <Navigation>Removing instance r_ctr_6 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:459:8:459:14|Removing instance w_ctr_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:745:8:745:14|Removing instance w_ctr_6 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
             <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v</Navigation>
-            <Navigation>459</Navigation>
+            <Navigation>745</Navigation>
             <Navigation>8</Navigation>
-            <Navigation>459</Navigation>
+            <Navigation>745</Navigation>
             <Navigation>14</Navigation>
-            <Navigation>Removing instance w_ctr_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+            <Navigation>Removing instance w_ctr_6 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:381:12:381:15|Removing instance FF_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:643:12:643:15|Removing instance FF_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
             <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v</Navigation>
-            <Navigation>381</Navigation>
+            <Navigation>643</Navigation>
             <Navigation>12</Navigation>
-            <Navigation>381</Navigation>
+            <Navigation>643</Navigation>
             <Navigation>15</Navigation>
             <Navigation>Removing instance FF_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:327:12:327:15|Removing instance FF_9 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
+            <Dynamic>CL168 :&quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v&quot;:564:12:564:16|Removing instance FF_13 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Dynamic>
             <Navigation>CL168</Navigation>
             <Navigation>C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v</Navigation>
-            <Navigation>327</Navigation>
+            <Navigation>564</Navigation>
             <Navigation>12</Navigation>
-            <Navigation>327</Navigation>
-            <Navigation>15</Navigation>
-            <Navigation>Removing instance FF_9 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
+            <Navigation>564</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>Removing instance FF_13 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -240,26 +245,98 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:162:11:162:23|Instance pdp_ram_0_0_0 parameter type does not match module declaration.</Dynamic>
+            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:346:11:346:23|Instance pdp_ram_0_3_0 parameter type does not match module declaration.</Dynamic>
             <Navigation>FX367</Navigation>
             <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
-            <Navigation>162</Navigation>
+            <Navigation>346</Navigation>
             <Navigation>11</Navigation>
-            <Navigation>162</Navigation>
+            <Navigation>346</Navigation>
             <Navigation>23</Navigation>
-            <Navigation>Instance pdp_ram_0_0_0 parameter type does not match module declaration.</Navigation>
+            <Navigation>Instance pdp_ram_0_3_0 parameter type does not match module declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:162:11:162:23|Instance pdp_ram_0_0_0 parameter type does not match module declaration.</Dynamic>
+            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:346:11:346:23|Instance pdp_ram_0_3_0 parameter type does not match module declaration.</Dynamic>
             <Navigation>FX367</Navigation>
             <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
-            <Navigation>162</Navigation>
+            <Navigation>346</Navigation>
             <Navigation>11</Navigation>
-            <Navigation>162</Navigation>
+            <Navigation>346</Navigation>
             <Navigation>23</Navigation>
-            <Navigation>Instance pdp_ram_0_0_0 parameter type does not match module declaration.</Navigation>
+            <Navigation>Instance pdp_ram_0_3_0 parameter type does not match module declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:296:11:296:23|Instance pdp_ram_0_2_1 parameter type does not match module declaration.</Dynamic>
+            <Navigation>FX367</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>296</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>296</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Instance pdp_ram_0_2_1 parameter type does not match module declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:296:11:296:23|Instance pdp_ram_0_2_1 parameter type does not match module declaration.</Dynamic>
+            <Navigation>FX367</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>296</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>296</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Instance pdp_ram_0_2_1 parameter type does not match module declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:246:11:246:23|Instance pdp_ram_0_1_2 parameter type does not match module declaration.</Dynamic>
+            <Navigation>FX367</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>246</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>246</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Instance pdp_ram_0_1_2 parameter type does not match module declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:246:11:246:23|Instance pdp_ram_0_1_2 parameter type does not match module declaration.</Dynamic>
+            <Navigation>FX367</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>246</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>246</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Instance pdp_ram_0_1_2 parameter type does not match module declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:196:11:196:23|Instance pdp_ram_0_0_3 parameter type does not match module declaration.</Dynamic>
+            <Navigation>FX367</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>196</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>196</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Instance pdp_ram_0_0_3 parameter type does not match module declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX367 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:196:11:196:23|Instance pdp_ram_0_0_3 parameter type does not match module declaration.</Dynamic>
+            <Navigation>FX367</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>196</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>196</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Instance pdp_ram_0_0_3 parameter type does not match module declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -286,6 +363,30 @@
             <Navigation>Sequential instance Packetiser.txBuffer.Length[2] is reduced to a combinational gate by constant propagation.</Navigation>
         </Message>
         <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN114 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:196:11:196:23|Removing instance pdp_ram_0_0_3 (in view: work.FIFO(verilog)) of black box view:LUCENT.DP16KB(PRIM) because it does not drive other instances.</Dynamic>
+            <Navigation>BN114</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>196</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>196</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Removing instance pdp_ram_0_0_3 (in view: work.FIFO(verilog)) of black box view:LUCENT.DP16KB(PRIM) because it does not drive other instances.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN114 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:246:11:246:23|Removing instance pdp_ram_0_1_2 (in view: work.FIFO(verilog)) of black box view:LUCENT.DP16KB(PRIM) because it does not drive other instances.</Dynamic>
+            <Navigation>BN114</Navigation>
+            <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
+            <Navigation>246</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>246</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Removing instance pdp_ram_0_1_2 (in view: work.FIFO(verilog)) of black box view:LUCENT.DP16KB(PRIM) because it does not drive other instances.</Navigation>
+        </Message>
+        <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
             <Dynamic>MF511 |Found issues with constraints. Please check constraint checker report &quot;C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Dynamic>
@@ -302,24 +403,24 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:438:10:438:16|Blackbox AGEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:718:10:718:16|Blackbox AGEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
             <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
-            <Navigation>438</Navigation>
+            <Navigation>718</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>438</Navigation>
+            <Navigation>718</Navigation>
             <Navigation>16</Navigation>
             <Navigation>Blackbox AGEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:417:10:417:16|Blackbox ALEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v&quot;:691:10:691:16|Blackbox ALEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
             <Navigation>c:\users\reeve\git\uct-fpga-course-2022\projects\counter\fifo.v</Navigation>
-            <Navigation>417</Navigation>
+            <Navigation>691</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>417</Navigation>
+            <Navigation>691</Navigation>
             <Navigation>16</Navigation>
             <Navigation>Blackbox ALEB2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
         </Message>

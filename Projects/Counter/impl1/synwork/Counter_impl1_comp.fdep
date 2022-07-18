@@ -6,15 +6,15 @@
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vlog\\umr_capim.v":1603959790
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vlog\\scemi_objects.v":1603959790
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1603959790
-#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\FIFO.v":1658168947
-#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Structures.v":1658111320
+#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\FIFO.v":1658171437
+#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Structures.v":1658171567
 #CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Registers.v":1658127932
 #CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\PWM.v":1658160124
 #CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\UART.v":1658169793
 #CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\UART_Packets.v":1658167580
 #CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Controller.v":1658164587
-#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Streamer.v":1658169177
-#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Counter.v":1658169691
+#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Streamer.v":1658171492
+#CUR:"C:\\Users\\reeve\\git\\UCT-FPGA-Course-2022\\Projects\\Counter\\Counter.v":1658171579
 0			"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v" verilog
 1			"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Structures.v" verilog
 2			"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Registers.v" verilog

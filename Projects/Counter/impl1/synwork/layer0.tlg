@@ -50,10 +50,10 @@ Running optimization stage 1 on VHI .......
 Running optimization stage 1 on VLO .......
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":8:7:8:10|Synthesizing module FIFO in library work.
 Running optimization stage 1 on FIFO .......
-@W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":479:8:479:14|Removing instance r_ctr_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":459:8:459:14|Removing instance w_ctr_4 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":381:12:381:15|Removing instance FF_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-@W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":327:12:327:15|Removing instance FF_9 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":771:8:771:14|Removing instance r_ctr_6 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":745:8:745:14|Removing instance w_ctr_6 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":643:12:643:15|Removing instance FF_0 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\FIFO.v":564:12:564:16|Removing instance FF_13 because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
 @N: CG364 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":3:7:3:14|Synthesizing module Streamer in library work.
 @W: CG133 :"C:\Users\reeve\git\UCT-FPGA-Course-2022\Projects\Counter\Streamer.v":49:4:49:9|Object rUpper is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on Streamer .......
