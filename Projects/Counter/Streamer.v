@@ -7,8 +7,10 @@ module Streamer(
     input   UART_PACKET     	ipRxStream,
     output  reg     [12:0]  	    opFIFO_Size, 
 
-    output  reg    [15:0]       opStream,    
-    output  reg         		opValid
+    output  reg    [15:0]       opStream,     
+    output  reg         		opValid,
+
+    output UART_PACKET          opTxStream
 );  
 
 reg WE;  
@@ -45,6 +47,14 @@ ReceiveData
 } RState;
 
 RState rState;
+
+typedef enum{ 
+CheckSize,
+TransmitPacket,
+TransmitComplete
+} TState;
+
+TState tState;
 reg wUpper;
 reg rUpper;
 
@@ -52,7 +62,7 @@ assign opFIFO_Size = FIFO_Size1;
  
 always @(posedge(ipClk)) begin
     if (!ipReset) begin
-        if (txClkCount == 1133 && !Empty) begin
+        if (txClkCount == 566 && !Empty) begin
             RE <= 1;
             opValid <= 1;
             txClkCount <= 0;
@@ -105,6 +115,46 @@ always @(posedge(ipClk)) begin
         rState <= ReceiveWait;
         wUpper <= 0;
         WE <= 0;
+    end
+end
+
+always @(posedge(ipClk)) begin
+    if(!ipReset) begin
+            opTxStream.SoP    <= 1;
+            opTxStream.EoP    <= 1;
+            opTxStream.Length <= 1;
+            opTxStream.Source <= 8'hAA;
+            opTxStream.Data <= FIFO_Size1 >> 11;
+
+        case (tState) 
+            CheckSize: begin
+                if (FIFO_Size1 == 3171 || FIFO_Size1 == 2047 || FIFO_Size1 == 1023 || Empty) begin 
+                   tState<= TransmitPacket
+                end
+            end 
+            TransmitPacket: begin
+                if (ipTxReady) begin
+                    opTxStream.Valid <= 1;
+                    tState<= TransmitComplete
+                end
+            end
+            TransmitComplete: begin
+                if (ipTxReady) begin
+                    opTxStream.Valid <= 0;
+                    tState<= CheckSize;
+                end
+            end
+            default:;
+        endcase
+    end else begin
+        opTxStream.SoP    <= 0;
+        opTxStream.EoP    <= 0;
+        opTxStream.Length <= 0;
+        opTxStream.Source <= 0;
+        opTxStream.Data <= 0;
+
+        opTxStream.Valid <= 1;
+        
     end
 end
 
